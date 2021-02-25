@@ -4,4 +4,5 @@ class City < ApplicationRecord
   has_many :users
   has_many :potential_destinations
   has_many :trip_participants, through: :potential_destinations
+  has_many :trips
 end
