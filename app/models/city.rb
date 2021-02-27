@@ -5,4 +5,9 @@ class City < ApplicationRecord
   has_many :potential_destinations
   has_many :trip_participants, through: :potential_destinations
   has_many :trips
+
+  validates :name, presence: true
+  validates :country, presence: true
+
+  validates_uniqueness_of :name, scope: [:country]
 end
