@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_25_212255) do
+ActiveRecord::Schema.define(version: 2021_02_27_152621) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,16 @@ ActiveRecord::Schema.define(version: 2021_02_25_212255) do
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "airport_code"
+  end
+
+  create_table "date_preferences", force: :cascade do |t|
+    t.date "start_date"
+    t.date "end_date"
+    t.bigint "trip_participant_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["trip_participant_id"], name: "index_date_preferences_on_trip_participant_id"
   end
 
   create_table "participant_scores", force: :cascade do |t|
@@ -40,6 +50,7 @@ ActiveRecord::Schema.define(version: 2021_02_25_212255) do
     t.bigint "trip_participant_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "status"
     t.index ["city_id"], name: "index_potential_destinations_on_city_id"
     t.index ["trip_participant_id"], name: "index_potential_destinations_on_trip_participant_id"
   end
@@ -63,6 +74,8 @@ ActiveRecord::Schema.define(version: 2021_02_25_212255) do
     t.bigint "trip_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "budget_preference"
+    t.integer "time_preference"
     t.index ["trip_id"], name: "index_trip_participants_on_trip_id"
     t.index ["user_id"], name: "index_trip_participants_on_user_id"
   end
@@ -99,6 +112,7 @@ ActiveRecord::Schema.define(version: 2021_02_25_212255) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "date_preferences", "trip_participants"
   add_foreign_key "participant_scores", "potential_destinations"
   add_foreign_key "participant_scores", "trip_participants"
   add_foreign_key "potential_destinations", "cities"
