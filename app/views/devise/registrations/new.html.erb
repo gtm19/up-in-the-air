@@ -1,6 +1,5 @@
 <%= render "shared/container" do %>
   <h2>Sign up</h2>
-
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
 
@@ -9,6 +8,23 @@
                   required: true,
                   autofocus: true,
                   input_html: { autocomplete: "email" }%>
+      <%= f.input :first_name,
+                  required: true,
+                  input_html: { autocomplete: "given-name" }%>
+      <%= f.input :last_name,
+                  required: true,
+                  input_html: { autocomplete: "family-name" }%>
+      <%= f.input :address_1,
+                  input_html: { autocomplete: "address-line1" }%>
+      <%= f.input :address_2,
+                  input_html: { autocomplete: "address-line2" }%>
+      <%= f.input :postcode,
+                  input_html: { autocomplete: "postal-code" }%>
+      <%= f.input :city_id, 
+                  required: true,
+                  as: :select,
+                  input_html: { class: "select2" },
+                  collection: City.all.order(:name) %>
       <%= f.input :password,
                   required: true,
                   hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
@@ -21,7 +37,7 @@
     <div class="form-actions">
       <%= f.button :submit, "Sign up" %>
     </div>
-  <% end %>
+  <% end %> 
 
   <%= render "devise/shared/links" %>
 <% end %>
