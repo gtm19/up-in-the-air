@@ -2,11 +2,8 @@ import $ from 'jquery';
 import 'select2';
 
 const initSelect2 = () => {
-  const selects = $('.select2');
-  console.log(selects);
-
-  selects.select2({
-    placeholder: "Search for a city"
+  $('.select2').select2({
+    placeholder: "Click and type to search"
   }); // (~ document.querySelectorAll)
 };
 
