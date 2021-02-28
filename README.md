@@ -3,6 +3,8 @@ Up In The Air is a service which helps you find mutually convenient (or inconven
 
 # Useful information
 
+## Putting your view inside a consistent container
+
 To create a new view inside the `container` partial, create a file (say `app/views/pages/help.html.erb`) and put the following inside:
 
 ```ruby
