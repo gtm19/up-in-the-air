@@ -16,7 +16,7 @@ To create a new view inside the `container` partial, create a file (say `app/vie
 
 ## Pundit
 
-This project uses Pundit to authorise user actions. The lecture slides on this can be found [here](https://kitt.lewagon.com/camps/476/lectures/05-Rails%2F07-Airbnb-Facebook-connect). If in doubt, ask/blame @gtm19.
+This project uses Pundit to authorise user actions. The lecture slides on this can be found [here](https://kitt.lewagon.com/camps/476/lectures/05-Rails%2F07-Airbnb-Facebook-connect). If in doubt, ask/blame [@gtm19](https://github.com/gtm19).
 
 ---
 
