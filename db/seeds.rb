@@ -110,7 +110,7 @@ end
 def create_trip_estimates
 # Create Trip Estimates
   i = 0
-  5000.times do
+  2500.times do
     i += 1
     t = TripEstimate.new
     t.low_cost = rand(0..500)
