@@ -132,11 +132,11 @@ def create_trip_estimates
 end
 
 TripEstimate.delete_all
-# User.delete_all
-# City.delete_all
+User.delete_all
+City.delete_all
 
-# load_city_airports
-# create_users
+load_city_airports
+create_users
 create_trip_estimates
 
 
