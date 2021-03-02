@@ -1,0 +1,14 @@
+<%= render "shared/container" do %>
+<h1>Cities</h1>
+  <ul>
+    <% @cities.each do |city| %>
+      <li>
+        <% if policy(city).show? %>
+          <%= link_to city.name, city_path(city) %>
+        <% else %>
+          <%= city.name %>
+        <% end %>
+      </li>
+    <% end %>
+</ul>
+<% end %>
