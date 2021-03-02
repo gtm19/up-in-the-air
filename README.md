@@ -14,6 +14,10 @@ To create a new view inside the `container` partial, create a file (say `app/vie
 <%= end %>
 ```
 
+## Pundit
+
+This project uses Pundit to authorise user actions. The lecture slides on this can be found [here](https://kitt.lewagon.com/camps/476/lectures/05-Rails%2F07-Airbnb-Facebook-connect). If in doubt, ask/blame @gtm19.
+
 ---
 
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
