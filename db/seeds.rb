@@ -110,6 +110,7 @@ end
 def create_trip_estimates
 # Create Trip Estimates
   i = 0
+
   2500.times do
     i += 1
     t = TripEstimate.new
