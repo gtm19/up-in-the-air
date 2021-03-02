@@ -109,7 +109,9 @@ end
 
 def create_trip_estimates
 # Create Trip Estimates
+  i = 0
   5000.times do
+    i += 1
     t = TripEstimate.new
     t.low_cost = rand(0..500)
     t.high_cost = t.low_cost + rand(0..200)
@@ -125,18 +127,16 @@ def create_trip_estimates
     end
     t.save!
 
-    puts "#{t.start_city.name} to #{t.destination_city.name} at #{t.low_cost}"
+    puts "#{i}. #{t.start_city.name} to #{t.destination_city.name} at #{t.low_cost}"
   end
 end
 
-
-City.delete_all
-load_city_airports
-
-User.delete_all
-create_users
-
 TripEstimate.delete_all
+# User.delete_all
+# City.delete_all
+
+# load_city_airports
+# create_users
 create_trip_estimates
 
 
