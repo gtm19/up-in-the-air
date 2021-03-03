@@ -43,8 +43,6 @@ def load_city_airports
   offset = 0
   count = 0
 
-  pages = 10
-
   loop do
     puts "Page: #{page}"
     aviation = aviationstack_data(offset)
@@ -131,7 +129,7 @@ def create_trip_estimates
 end
 
 def seed_trip_participant(trip, user, budget, time)
-  tp = TripParticipants.new
+  tp = TripParticipant.new
   tp.user = user
   tp.trip = trip
   tp.budget_preference = budget
@@ -145,11 +143,18 @@ def seed_trip
   trip.name = "Away with uni friends"
   trip.description = "After a zoom chat, desperate to meet somewhere in Europe as soon as possible"
   trip.lead_user = lead_user
-  trip.save
+  trip.save!
+
+  puts ("Created trip with Pat Sharpe as lead")
 
   seed_trip_participant(trip, lead_user, 400, 250)
   friend = User.find_by(first_name: "Julia")
   seed_trip_participant(trip, friend, 500, 350)
+
+  puts ("Created trip participiants ...")
+  puts ("Pat Sharpe, Budget: £400, Time: 250mins")
+  puts ("Julia Roberts, Budget: £500, Time: 350mins")
+
 end
 
 
@@ -161,6 +166,8 @@ end
 # create_users
 # create_trip_estimates
 
+TripParticipant.delete_all
+Trip.delete_all
 seed_trip
 
 
