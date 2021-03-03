@@ -130,12 +130,37 @@ def create_trip_estimates
   end
 end
 
-TripEstimate.delete_all
-User.delete_all
-City.delete_all
+def seed_trip_participant(trip, user, budget, time)
+  tp = TripParticipants.new
+  tp.user = user
+  tp.trip = trip
+  tp.budget_preference = budget
+  tp.time_preference = time
+  tp.save
+end
 
-load_city_airports
-create_users
-create_trip_estimates
+def seed_trip
+  lead_user = User.find_by(first_name: "Pat")
+  trip = Trip.new
+  trip.name = "Away with uni friends"
+  trip.description = "After a zoom chat, desperate to meet somewhere in Europe as soon as possible"
+  trip.lead_user = lead_user
+  trip.save
+
+  seed_trip_participant(trip, lead_user, 400, 250)
+  friend = User.find_by(first_name: "Julia")
+  seed_trip_participant(trip, friend, 500, 350)
+end
+
+
+# TripEstimate.delete_all
+# User.delete_all
+# City.delete_all
+
+# load_city_airports
+# create_users
+# create_trip_estimates
+
+seed_trip
 
 
