@@ -79,16 +79,16 @@ end
 def create_users
 # Create users
   user_array = [
-    {firstname: "Pat", lastname: "Sharp", address1: "89 High Street", address2: "Teddington", postcode: "TW11 8HG"},
-    {firstname: "Bob", lastname: "Hope", address1: "18 Teddington Park Rd", address2: "Teddington", postcode: "TW11 0AQ"},
-    {firstname: "Ken", lastname: "Bruce", address1: "70 London Rd", address2: "Kingston upon Thames", postcode: "KT2 6PY"},
-    {firstname: "Lee", lastname: "Mack", address1: "210 Kingston Rd", address2: "Teddington", postcode: "TW11 9JF"},
-    {firstname: "Julia", lastname: "Roberts", address1: "113 Heath Rd", address2: "Twickenham", postcode: "TW1 4AZ"}
+    {firstname: "Pat", lastname: "Sharp", address1: "89 High Street", address2: "Teddington", postcode: "TW11 8HG", airport: "LHR"},
+    {firstname: "Bob", lastname: "Hope", address1: "18 Teddington Park Rd", address2: "Teddington", postcode: "TW11 0AQ", airport: "CGD"},
+    {firstname: "Ken", lastname: "Bruce", address1: "70 London Rd", address2: "Kingston upon Thames", postcode: "KT2 6PY", airport: "SXF" },
+    {firstname: "Lee", lastname: "Mack", address1: "210 Kingston Rd", address2: "Teddington", postcode: "TW11 9JF", airport: "FLR"},
+    {firstname: "Julia", lastname: "Roberts", address1: "113 Heath Rd", address2: "Twickenham", postcode: "TW1 4AZ", airport: "MAD"}
     ]
 
   user_array.each do |user|
     p "Creating #{user[:firstname]} #{user[:lastname]}"
-    city = City.all.sample
+    city = City.find_by(airport_code: user[:airport])
     u = User.new
     u.first_name = user[:firstname]
     u.last_name = user[:lastname]
@@ -107,23 +107,23 @@ def create_trip_estimates
   i = 0
 
   users = User.all
-  cities = City.all
+  cities = City.where("timezone LIKE 'Europe%'")
 
   users.each do |user|
     cities.each do |city|
-    break unless TripEstimate.where(start_city_id: user.city_id, destination_city: city).empty?
-      i += 1
-      t = TripEstimate.new
-      t.low_cost = rand(0..500)
-      t.high_cost = t.low_cost + rand(0..200)
-      t.flight_mins = (t.low_cost + t.high_cost)/2
-      t.valid_from = Date.parse('01-04-2021')
-      t.valid_until = Date.parse('01-04-2022')
-      t.start_city_id = user.city_id
-      t.destination_city = city
-      t.save!
-
-      puts "#{i}. #{t.start_city.name} to #{t.destination_city.name} at #{t.low_cost}"
+      if city.airport_code != user.city.airport_code
+        i += 1
+        t = TripEstimate.new
+        t.low_cost = rand(0..500)
+        t.high_cost = t.low_cost + rand(0..200)
+        t.flight_mins = (t.low_cost + t.high_cost)/2
+        t.valid_from = Date.parse('01-04-2021')
+        t.valid_until = Date.parse('01-04-2022')
+        t.start_city_id = user.city_id
+        t.destination_city = city
+        t.save!
+        puts "#{i}. #{t.start_city.name} to #{t.destination_city.name} at #{t.low_cost}"
+      end
     end
   end
 end
@@ -146,19 +146,26 @@ def seed_trip
   trip.save!
 
   puts ("Created trip with Pat Sharpe as lead")
+  puts ("Created trip participiants ...")
 
   seed_trip_participant(trip, lead_user, 400, 250)
+  puts ("Pat Sharpe, Budget: £400, Time: 250mins")
+
   friend = User.find_by(first_name: "Julia")
   seed_trip_participant(trip, friend, 500, 350)
-
-  puts ("Created trip participiants ...")
-  puts ("Pat Sharpe, Budget: £400, Time: 250mins")
   puts ("Julia Roberts, Budget: £500, Time: 350mins")
+
+  friend = User.find_by(first_name: "Bob")
+  seed_trip_participant(trip, friend, 600, 450)
+  puts ("Bob Hope, Budget: £600, Time: 450mins")
+
 
 end
 
 
 # TripEstimate.delete_all
+TripParticipant.delete_all
+Trip.delete_all
 # User.delete_all
 # City.delete_all
 
@@ -166,8 +173,6 @@ end
 # create_users
 # create_trip_estimates
 
-TripParticipant.delete_all
-Trip.delete_all
 seed_trip
 
 
