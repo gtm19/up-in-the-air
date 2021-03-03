@@ -63,7 +63,6 @@ def load_city_airports
       city.airport_name = airport["airport_name"]
       city.country_name = airport["country_name"]
       city.timezone = airport["timezone"]
-
       city.save
 
       puts "#{count}. #{airport["iata_code"]} in #{airport["country_name"]}" if city.id
@@ -79,26 +78,21 @@ end
 def create_users
 # Create users
   user_array = [
-    {firstname: "Pat", lastname: "Sharp", address1: "89 High Street", address2: "Teddington", postcode: "TW11 8HG", airport: "LHR"},
-    {firstname: "Bob", lastname: "Hope", address1: "18 Teddington Park Rd", address2: "Teddington", postcode: "TW11 0AQ", airport: "CGD"},
-    {firstname: "Ken", lastname: "Bruce", address1: "70 London Rd", address2: "Kingston upon Thames", postcode: "KT2 6PY", airport: "SXF" },
-    {firstname: "Lee", lastname: "Mack", address1: "210 Kingston Rd", address2: "Teddington", postcode: "TW11 9JF", airport: "FLR"},
-    {firstname: "Julia", lastname: "Roberts", address1: "113 Heath Rd", address2: "Twickenham", postcode: "TW1 4AZ", airport: "MAD"}
+    {first_name: "Pat", last_name: "Sharp", address_1: "89 High Street", address_2: "Teddington", postcode: "TW11 8HG", airport: "LHR"},
+    {first_name: "Bob", last_name: "Hope", address_1: "18 Teddington Park Rd", address_2: "Teddington", postcode: "TW11 0AQ", airport: "CGD"},
+    {first_name: "Ken", last_name: "Bruce", address_1: "70 London Rd", address_2: "Kingston upon Thames", postcode: "KT2 6PY", airport: "SXF"},
+    {first_name: "Lee", last_name: "Mack", address_1: "210 Kingston Rd", address_2: "Teddington", postcode: "TW11 9JF", airport: "FLR"},
+    {first_name: "Julia", last_name: "Roberts", address_1: "113 Heath Rd", address_2: "Twickenham", postcode: "TW1 4AZ", airport: "MAD"}
     ]
 
   user_array.each do |user|
-    p "Creating #{user[:firstname]} #{user[:lastname]}"
+    p "Creating #{user[:first_name]} #{user[:last_name]}"
     city = City.find_by(airport_code: user[:airport])
-    u = User.new
-    u.first_name = user[:firstname]
-    u.last_name = user[:lastname]
-    u.email = "#{user[:firstname]}.#{user[:lastname]}@upintheair.com"
-    u.password = "topsecret"
-    u.address_1 = user[:address1]
-    u.address_2 = user[:address2]
-    u.postcode = user[:postcode]
-    u.city_id = city.id
-    u.save!
+    user[:email] = "#{user[:first_name]}.#{user[:last_name]}@upintheair.com"
+    user[:password] = "topsecret"
+    user[:city_id] = city.id
+    user.delete(:airport)
+    User.create(user)
   end
 end
 
@@ -183,21 +177,15 @@ end
 
 
 PotentialDestination.delete_all
-# TripEstimate.delete_all
-# TripParticipant.delete_all
-# Trip.delete_all
-# User.delete_all
+TripEstimate.delete_all
+TripParticipant.delete_all
+Trip.delete_all
+User.delete_all
 # City.delete_all
 
 # load_city_airports
-# create_users
-# create_trip_estimates
+create_users
+create_trip_estimates
 
-# trip = seed_trip("Away with friends")
+seed_trip("Away with friends")
 seed_potential_destinations
-
-
-
-
-
-
