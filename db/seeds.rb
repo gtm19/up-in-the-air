@@ -137,10 +137,10 @@ def seed_trip_participant(trip, user, budget, time)
   tp.save
 end
 
-def seed_trip
+def seed_trip(trip_name)
   lead_user = User.find_by(first_name: "Pat")
   trip = Trip.new
-  trip.name = "Away with uni friends"
+  trip.name = trip_name
   trip.description = "After a zoom chat, desperate to meet somewhere in Europe as soon as possible"
   trip.lead_user = lead_user
   trip.save!
@@ -159,13 +159,33 @@ def seed_trip
   seed_trip_participant(trip, friend, 600, 450)
   puts ("Bob Hope, Budget: £600, Time: 450mins")
 
+  trip
+end
 
+def seed_potential_destinations
+  trip = Trip.last
+  tps = TripParticipant.where(trip: trip)
+  #For each trip participant, create potential destinations that meet their preferences
+  tps.each do |tp|
+    trip_estimate = TripEstimate.where("low_cost < #{tp.budget_preference} AND flight_mins < #{tp.time_preference} AND start_city_id = #{tp.user.city_id}")
+    puts "Creating PD for #{tp.user.first_name} with budget #{tp.budget_preference} and time limt #{tp.time_preference} :"
+    # Only create 3 potential destinations for each
+    trip_estimate[0..2].each do |te|
+      pd = PotentialDestination.new
+      pd.city = te.destination_city
+      pd.trip_participant = tp
+      status = 'submitted'
+      pd.save!
+      puts "Created PD for #{tp.user.first_name} to #{pd.city.name} / #{pd.city.country_name}"
+    end
+  end
 end
 
 
+PotentialDestination.delete_all
 # TripEstimate.delete_all
-TripParticipant.delete_all
-Trip.delete_all
+# TripParticipant.delete_all
+# Trip.delete_all
 # User.delete_all
 # City.delete_all
 
@@ -173,6 +193,11 @@ Trip.delete_all
 # create_users
 # create_trip_estimates
 
-seed_trip
+# trip = seed_trip("Away with friends")
+seed_potential_destinations
+
+
+
+
 
 
