@@ -12,6 +12,7 @@ require 'open-uri'
 require 'net/http'
 require 'openssl'
 require 'json'
+require 'geokit'
 
 
 def aviationstack_data(offset)
@@ -79,7 +80,7 @@ def create_users
 # Create users
   user_array = [
     {first_name: "Pat", last_name: "Sharp", address_1: "89 High Street", address_2: "Teddington", postcode: "TW11 8HG", airport: "LHR"},
-    {first_name: "Bob", last_name: "Hope", address_1: "18 Teddington Park Rd", address_2: "Teddington", postcode: "TW11 0AQ", airport: "CGD"},
+    {first_name: "Bob", last_name: "Hope", address_1: "18 Teddington Park Rd", address_2: "Teddington", postcode: "TW11 0AQ", airport: "CDG"},
     {first_name: "Ken", last_name: "Bruce", address_1: "70 London Rd", address_2: "Kingston upon Thames", postcode: "KT2 6PY", airport: "SXF"},
     {first_name: "Lee", last_name: "Mack", address_1: "210 Kingston Rd", address_2: "Teddington", postcode: "TW11 9JF", airport: "FLR"},
     {first_name: "Julia", last_name: "Roberts", address_1: "113 Heath Rd", address_2: "Twickenham", postcode: "TW1 4AZ", airport: "MAD"}
@@ -102,25 +103,47 @@ def create_trip_estimates
 
   users = User.all
   cities = City.where("timezone LIKE 'Europe%'")
-
+  # Assuming it costs roughly a £1/mile to fly with a little random adjustment
   users.each do |user|
     cities.each do |city|
-      if city.airport_code != user.city.airport_code
+      if city != user.city
         i += 1
         t = TripEstimate.new
-        t.low_cost = rand(0..500)
-        t.high_cost = t.low_cost + rand(0..200)
-        t.flight_mins = (t.low_cost + t.high_cost)/2
+        t.flight_mins = time_between(user.city, city)
+        t.low_cost = t.flight_mins - rand(0..30)
+        t.high_cost = t.flight_mins + rand(20..40)
         t.valid_from = Date.parse('01-04-2021')
         t.valid_until = Date.parse('01-04-2022')
         t.start_city_id = user.city_id
         t.destination_city = city
         t.save!
-        puts "#{i}. #{t.start_city.name} to #{t.destination_city.name} at #{t.low_cost}"
+        puts "#{i}. #{t.start_city.name} (#{t.start_city.country_name}) to #{t.destination_city.name} (#{t.destination_city.country_name}) at best £#{t.low_cost} in #{t.flight_mins} mins"
       end
     end
   end
 end
+
+def time_between(start_city, dest_city)
+  Geokit::default_units = :kms
+  start = Geokit::LatLng.new(start_city.latitude,start_city.longitude)
+  destination = "#{dest_city.latitude},#{dest_city.longitude}"
+  distance = start.distance_to(destination)
+  # Assume a plane typically flies at 500 km/h when cruising.
+  aircraft_speed = 500
+  mins = (distance * 60) / aircraft_speed || 1440
+
+  # Flights are typically 45 mins minimum
+  mins = 45 if mins < 45
+  mins.to_i
+end
+
+def test_time
+  te = TripEstimate.all.sample
+  start_city = te.start_city
+  dest_city = te.destination_city
+  puts "#{time_between(start_city, dest_city)} mins for #{start_city.name} (#{start_city.country_name}) to #{dest_city.name} (#{dest_city.country_name})"
+end
+
 
 def seed_trip_participant(trip, user, budget, time)
   tp = TripParticipant.new
@@ -181,11 +204,15 @@ TripEstimate.delete_all
 TripParticipant.delete_all
 Trip.delete_all
 User.delete_all
-City.delete_all
+# City.delete_all
 
-load_city_airports
+# load_city_airports
 create_users
 create_trip_estimates
 
 seed_trip("Away with friends")
 seed_potential_destinations
+
+# 10.times do
+#   test_time
+# end
