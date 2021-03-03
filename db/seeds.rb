@@ -137,14 +137,6 @@ def time_between(start_city, dest_city)
   mins.to_i
 end
 
-def test_time
-  te = TripEstimate.all.sample
-  start_city = te.start_city
-  dest_city = te.destination_city
-  puts "#{time_between(start_city, dest_city)} mins for #{start_city.name} (#{start_city.country_name}) to #{dest_city.name} (#{dest_city.country_name})"
-end
-
-
 def seed_trip_participant(trip, user, budget, time)
   tp = TripParticipant.new
   tp.user = user
@@ -204,15 +196,12 @@ TripEstimate.delete_all
 TripParticipant.delete_all
 Trip.delete_all
 User.delete_all
-# City.delete_all
+City.delete_all
 
-# load_city_airports
+load_city_airports
 create_users
 create_trip_estimates
 
 seed_trip("Away with friends")
 seed_potential_destinations
 
-# 10.times do
-#   test_time
-# end
