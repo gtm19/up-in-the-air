@@ -181,9 +181,9 @@ TripEstimate.delete_all
 TripParticipant.delete_all
 Trip.delete_all
 User.delete_all
-# City.delete_all
+City.delete_all
 
-# load_city_airports
+load_city_airports
 create_users
 create_trip_estimates
 
