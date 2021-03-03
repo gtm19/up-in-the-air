@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   has_many :trips
   has_many :trip_participants
-  belongs_to :city
+  belongs_to :city, optional: true
 
   validates :email, presence: true
 end

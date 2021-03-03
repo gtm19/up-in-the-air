@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_27_171809) do
+ActiveRecord::Schema.define(version: 2021_03_03_095956) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,12 @@ ActiveRecord::Schema.define(version: 2021_02_27_171809) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "airport_code"
+    t.string "gmt"
+    t.string "city_iata_code"
+    t.string "country_iso2"
+    t.string "airport_name"
+    t.string "country_name"
+    t.string "timezone"
   end
 
   create_table "date_preferences", force: :cascade do |t|
@@ -89,7 +95,7 @@ ActiveRecord::Schema.define(version: 2021_02_27_171809) do
     t.date "end_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "city_id", null: false
+    t.bigint "city_id"
     t.index ["city_id"], name: "index_trips_on_city_id"
     t.index ["user_id"], name: "index_trips_on_user_id"
   end
