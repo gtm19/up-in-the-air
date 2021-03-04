@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_04_112210) do
+ActiveRecord::Schema.define(version: 2021_03_04_185831) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 2021_03_04_112210) do
     t.float "score"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "position"
     t.index ["potential_destination_id"], name: "index_participant_scores_on_potential_destination_id"
     t.index ["trip_participant_id"], name: "index_participant_scores_on_trip_participant_id"
   end
@@ -92,6 +93,7 @@ ActiveRecord::Schema.define(version: 2021_03_04_112210) do
     t.bigint "destination_city_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "source"
     t.index ["destination_city_id"], name: "index_trip_estimates_on_destination_city_id"
     t.index ["start_city_id"], name: "index_trip_estimates_on_start_city_id"
   end
