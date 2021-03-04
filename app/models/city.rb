@@ -5,6 +5,7 @@ class City < ApplicationRecord
   has_many :potential_destinations
   has_many :trip_participants, through: :potential_destinations
   has_many :trips
+  has_one_attached :photo
 
   validates :name, presence: true
   validates :country, presence: true
