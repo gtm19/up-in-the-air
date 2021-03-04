@@ -50,6 +50,7 @@ def load_city_airports
     airports = aviation["data"]
 
     airports.each do |airport|
+      next unless airport["timezone"].match?(/^Europe/)
       count += 1
 
       city = City.new
