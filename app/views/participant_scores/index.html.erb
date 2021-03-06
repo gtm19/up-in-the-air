@@ -1,0 +1,8 @@
+<%= render "shared/container" do %>
+  <h1>Rank It!</h1>
+  <ul>
+    <% @participant_scores.each do |ps| %>
+      <li><%= ps.potential_destination.city.name %></li>
+    <% end %>
+  </ul>
+<% end %>

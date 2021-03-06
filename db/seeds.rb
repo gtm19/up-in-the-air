@@ -184,7 +184,7 @@ def seed_potential_destinations
       pd = PotentialDestination.new
       pd.city = te.destination_city
       pd.trip_participant = tp
-      status = 'submitted'
+      pd.status = 'submitted'
       pd.save!
       puts "Created PD for #{tp.user.first_name} to #{pd.city.name} / #{pd.city.country_name}"
     end
@@ -237,11 +237,11 @@ PotentialDestination.delete_all
 TripEstimate.delete_all
 TripParticipant.delete_all
 Trip.delete_all
-User.delete_all
-City.delete_all
+# User.delete_all
+# City.delete_all
 
-load_city_airports
-create_users
+# load_city_airports
+# create_users
 create_trip_estimates
 
 seed_trip("Away with friends")
