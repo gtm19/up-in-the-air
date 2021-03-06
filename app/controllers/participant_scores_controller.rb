@@ -9,6 +9,7 @@ class ParticipantScoresController < ApplicationController
     @participant_scores = ParticipantScore.where(trip_participant: @trip_participant)
     # @trips = policy_scope(Trip)
     @participant_scores = policy_scope(ParticipantScore)
+
   end
 
   private

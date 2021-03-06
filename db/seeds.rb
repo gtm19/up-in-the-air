@@ -188,6 +188,12 @@ def seed_potential_destinations
       pd.save!
       puts "Created PD for #{tp.user.first_name} to #{pd.city.name} / #{pd.city.country_name}"
     end
+
+    date_pref = DatePreference.new(
+      start_date: Date.parse('01-05-2021'),
+      end_date: Date.parse('04-05-2021'),
+      trip_participant: tp)
+    date_pref.save
   end
 end
 
@@ -233,16 +239,17 @@ def delete_photos
   end
 end
 
+ParticipantScore.delete_all
 PotentialDestination.delete_all
-TripEstimate.delete_all
 TripParticipant.delete_all
 Trip.delete_all
+# TripEstimate.delete_all
 # User.delete_all
 # City.delete_all
 
 # load_city_airports
 # create_users
-create_trip_estimates
+# create_trip_estimates
 
 seed_trip("Away with friends")
 seed_potential_destinations
