@@ -206,21 +206,20 @@ CLOUDINARY_URLS = [
 ]
 
 def attach_random_photos(replace_existing: false)
-    # Do something later
-    puts "Adding random photos to cities ..."
-    i = 0
-    cities = City.all
-    cities.each do |c|
-      next if c.photo.attached? && !replace_existing
+  # Do something later
+  puts "Adding random photos to cities ..."
+  i = 0
+  cities = City.all
+  cities.each do |c|
+    next if c.photo.attached? && !replace_existing
 
-      c.photo.purge if c.photo.attached?
-      i += 1
-      url = CLOUDINARY_URLS.sample
-      file = URI.open(url)
-      filename = url.match(/[\w-]+\.jpg$/)
-      c.photo.attach(io: file, filename: filename)
-      puts "#{i}. #{c.name} got #{filename} photo"
-    end
+    c.photo.purge if c.photo.attached?
+    i += 1
+    url = CLOUDINARY_URLS.sample
+    file = URI.open(url)
+    filename = url.match(/[\w-]+\.jpg$/)
+    c.photo.attach(io: file, filename: filename)
+    puts "#{i}. #{c.name} got #{filename} photo"
   end
 end
 
