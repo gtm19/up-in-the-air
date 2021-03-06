@@ -31,6 +31,8 @@ gem 'devise'
 gem 'dotenv'
 gem 'pundit'
 gem 'geokit'
+gem 'sidekiq'
+gem 'sidekiq-failures', '~> 1.0'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
