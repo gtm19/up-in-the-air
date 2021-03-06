@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
+
+  resources :trip_participants do
+    resources :participant_scores, only: [:index, :update]
+  end
+
   resources :cities, only: [ :index, :show ]
   resources :trips
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
