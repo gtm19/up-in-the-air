@@ -234,19 +234,19 @@ def delete_photos
   end
 end
 
-# PotentialDestination.delete_all
-# TripEstimate.delete_all
-# TripParticipant.delete_all
-# Trip.delete_all
-# User.delete_all
-# City.delete_all
+PotentialDestination.delete_all
+TripEstimate.delete_all
+TripParticipant.delete_all
+Trip.delete_all
+User.delete_all
+City.delete_all
 
-# load_city_airports
-# create_users
-# create_trip_estimates
+load_city_airports
+create_users
+create_trip_estimates
 
-# seed_trip("Away with friends")
-# seed_potential_destinations
+seed_trip("Away with friends")
+seed_potential_destinations
 
 # delete_photos
 attach_random_photos
