@@ -3,6 +3,7 @@
   <%= simple_form_for(@trip) do |f| %>
       <%= f.input :name, label: "Trip Name" %>
       <%= f.input :description %>
+      <!--
       <%= f.input :start_date %>
       <%= f.input :end_date %>
       <%= f.input :city_id, 
@@ -10,6 +11,7 @@
             as: :select,
             input_html: { class: "select2" },
             collection: City.all.order(:name) %>
+      -->
       <%= f.submit %>
   <% end %>
     

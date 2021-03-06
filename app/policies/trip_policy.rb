@@ -10,6 +10,6 @@ class TripPolicy < ApplicationPolicy
   end
 
   def show?
-    true
+    record.users.include? user
   end
 end
