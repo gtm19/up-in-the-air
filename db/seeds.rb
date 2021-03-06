@@ -211,9 +211,9 @@ def attach_random_photos(replace_existing: false)
     i = 0
     cities = City.all
     cities.each do |c|
-      next if c.photo_attached? && !replace_existing
+      next if c.photo.attached? && !replace_existing
 
-      c.photo.purge if c.photo_attached?
+      c.photo.purge if c.photo.attached?
       i += 1
       url = CLOUDINARY_URLS.sample
       file = URI.open(url)
@@ -234,19 +234,20 @@ def delete_photos
   end
 end
 
-# PotentialDestination.delete_all
-# TripEstimate.delete_all
-# TripParticipant.delete_all
-# Trip.delete_all
-# User.delete_all
-# City.delete_all
+PotentialDestination.delete_all
+TripEstimate.delete_all
+TripParticipant.delete_all
+Trip.delete_all
+User.delete_all
+City.delete_all
 
-# load_city_airports
-# create_users
-# create_trip_estimates
+load_city_airports
+create_users
+create_trip_estimates
 
-# seed_trip("Away with friends")
-# seed_potential_destinations
+seed_trip("Away with friends")
+seed_potential_destinations
 
+# There is now a batch (sidekiq) job that adds photos called AddPhotosJob. So we don't need to do the following.
 # delete_photos
-attach_random_photos
+# attach_random_photos
