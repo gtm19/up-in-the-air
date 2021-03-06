@@ -1,0 +1,875 @@
+"id","name","known_for","country","latitude","longitude","created_at","updated_at","airport_code","gmt","city_iata_code","country_iso2","airport_name","country_name","timezone"
+8517,Aachen/Merzbruck,,Germany,50.75,6.133333,2021-03-04 22:16:21,2021-03-04 22:16:21,AAH,"1",AAH,DE,Aachen/Merzbruck,Germany,Europe/Berlin
+8518,Aalborg,,Denmark,57.08655,9.872241,2021-03-04 22:16:21,2021-03-04 22:16:21,AAL,"1",AAL,DK,Aalborg,Denmark,Europe/Copenhagen
+8519,Anapa,,Russia,44.9,37.316666,2021-03-04 22:16:21,2021-03-04 22:16:21,AAQ,"3",AAQ,RU,Anapa,Russia,Europe/Moscow
+8520,Aarhus Airport,,Denmark,56.30823,10.626351,2021-03-04 22:16:21,2021-03-04 22:16:21,AAR,"1",AAR,DK,Aarhus Airport,Denmark,Europe/Copenhagen
+8521,Los Llanos,,Spain,38.948334,-1.863333,2021-03-04 22:16:21,2021-03-04 22:16:21,ABC,"1",ABC,ES,Los Llanos,Spain,Europe/Madrid
+8522,Dyce,,United Kingdom,57.200253,-2.204186,2021-03-04 22:16:21,2021-03-04 22:16:21,ABZ,,ABZ,GB,Dyce,United Kingdom,Europe/London
+8523,Altenrhein,,Switzerland,47.483334,9.566667,2021-03-04 22:16:21,2021-03-04 22:16:21,ACH,"1",ACH,CH,Altenrhein,Switzerland,Europe/Zurich
+8524,The Blaye,,Guernsey,49.709347,-2.215369,2021-03-04 22:16:21,2021-03-04 22:16:21,ACI,,ACI,GG,The Blaye,Guernsey,Europe/Guernsey
+8525,Adana,,Turkey,36.98503,35.29736,2021-03-04 22:16:21,2021-03-04 22:16:21,ADA,"3",ADA,TR,Adana,Turkey,Europe/Istanbul
+8526,Adnan Menderes Airport,,Turkey,38.294403,27.147594,2021-03-04 22:16:21,2021-03-04 22:16:21,ADB,"3",IZM,TR,Adnan Menderes Airport,Turkey,Europe/Istanbul
+8527,Adiyaman,,Turkey,37.75,38.266666,2021-03-04 22:16:21,2021-03-04 22:16:21,ADF,"3",ADF,TR,Adiyaman,Turkey,Europe/Istanbul
+8528,Leuchars,,United Kingdom,56.36667,-2.866667,2021-03-04 22:16:21,2021-03-04 22:16:21,ADX,,ADX,GB,Leuchars,United Kingdom,Europe/London
+8529,Sochi/Adler International Airport,,Russia,43.44884,39.941105,2021-03-04 22:16:21,2021-03-04 22:16:21,AER,"3",AER,RU,Sochi/Adler International Airport,Russia,Europe/Moscow
+8530,Vigra,,Norway,62.559643,6.116605,2021-03-04 22:16:21,2021-03-04 22:16:21,AES,"1",AES,NO,Vigra,Norway,Europe/Oslo
+8531,Afyon,,Turkey,38.733334,30.6,2021-03-04 22:16:21,2021-03-04 22:16:21,AFY,"3",AFY,TR,Afyon,Turkey,Europe/Istanbul
+8532,Augsburg - Muehlhausen,,Germany,48.425278,10.931667,2021-03-04 22:16:21,2021-03-04 22:16:21,AGB,"1",MUC,DE,Augsburg - Muehlhausen,Germany,Europe/Berlin
+8533,La Garenne,,France,44.17361,0.598611,2021-03-04 22:16:21,2021-03-04 22:16:21,AGF,"1",AGF,FR,La Garenne,France,Europe/Paris
+8534,Angelholm,,Sweden,56.293056,12.8625,2021-03-04 22:16:21,2021-03-04 22:16:21,AGH,"1",AGH,SE,Angelholm,Sweden,Europe/Stockholm
+8535,Pablo Ruiz Picasso,,Spain,36.675182,-4.489616,2021-03-04 22:16:21,2021-03-04 22:16:21,AGP,"1",AGP,ES,Pablo Ruiz Picasso,Spain,Europe/Madrid
+8536,Fertilia,,Italy,40.630405,8.295891,2021-03-04 22:16:21,2021-03-04 22:16:21,AHO,"1",AHO,IT,Fertilia,Italy,Europe/Rome
+8537,Alpe D Huez,,France,45.083332,6.083333,2021-03-04 22:16:21,2021-03-04 22:16:21,AHZ,"1",AHZ,FR,Alpe D Huez,France,Europe/Paris
+8538,Campo Dell Oro,,France,41.91987,8.794013,2021-03-04 22:16:21,2021-03-04 22:16:21,AJA,"1",AJA,FR,Campo Dell Oro,France,Europe/Paris
+8539,Agri,,Turkey,39.65,43.025,2021-03-04 22:16:21,2021-03-04 22:16:21,AJI,"3",AJI,TR,Agri,Turkey,Europe/Istanbul
+8540,Arvidsjaur,,Sweden,65.59139,19.285557,2021-03-04 22:16:21,2021-03-04 22:16:21,AJR,"1",AJR,SE,Arvidsjaur,Sweden,Europe/Stockholm
+8541,Alicante El Altet,,Spain,38.287098,-0.557381,2021-03-04 22:16:21,2021-03-04 22:16:21,ALC,"1",ALC,ES,Alicante El Altet,Spain,Europe/Madrid
+8542,Alta,,Norway,69.977165,23.355808,2021-03-04 22:16:21,2021-03-04 22:16:21,ALF,"1",ALF,NO,Alta,Norway,Europe/Oslo
+8543,Albenga,,Italy,44.05,8.216667,2021-03-04 22:16:21,2021-03-04 22:16:21,ALL,"1",ALL,IT,Albenga,Italy,Europe/Rome
+8544,Schiphol,,Netherlands,52.30907,4.763385,2021-03-04 22:16:22,2021-03-04 22:16:22,AMS,"1",AMS,NL,Schiphol,Netherlands,Europe/Amsterdam
+8545,Amderma,,Russia,69.76667,61.55,2021-03-04 22:16:22,2021-03-04 22:16:22,AMV,"3",AMV,RU,Amderma,Russia,Europe/Moscow
+8546,Marce,,France,47.466667,-0.55,2021-03-04 22:16:22,2021-03-04 22:16:22,ANE,"1",ANE,FR,Marce,France,Europe/Paris
+8547,Brie-Champniers,,France,45.733334,0.216667,2021-03-04 22:16:22,2021-03-04 22:16:22,ANG,"1",ANG,FR,Brie-Champniers,France,Europe/Paris
+8548,Etimesgut,,Turkey,39.983334,32.833332,2021-03-04 22:16:22,2021-03-04 22:16:22,ANK,"3",ANK,TR,Etimesgut,Turkey,Europe/Istanbul
+8549,Deurne/ Antwerp Airport,,Belgium,51.18916,4.450672,2021-03-04 22:16:22,2021-03-04 22:16:22,ANR,"1",ANR,BE,Deurne/ Antwerp Airport,Belgium,Europe/Brussels
+8550,"Andøya Lufthavn, Andenes",,Norway,69.30492,16.133326,2021-03-04 22:16:22,2021-03-04 22:16:22,ANX,"1",ANX,NO,"Andøya Lufthavn, Andenes",Norway,Europe/Oslo
+8551,Altenburg Nobitz,,Germany,50.983334,12.45,2021-03-04 22:16:22,2021-03-04 22:16:22,AOC,"1",AOC,DE,Altenburg Nobitz,Germany,Europe/Berlin
+8552,Anadolu University,,Turkey,39.81,30.519444,2021-03-04 22:16:22,2021-03-04 22:16:22,AOE,"3",ESK,TR,Anadolu University,Turkey,Europe/Istanbul
+8553,Falconara,,Italy,43.60691,13.355723,2021-03-04 22:16:22,2021-03-04 22:16:22,AOI,"1",AOI,IT,Falconara,Italy,Europe/Rome
+8554,Karpathos,,Greece,35.420685,27.146729,2021-03-04 22:16:22,2021-03-04 22:16:22,AOK,"2",AOK,GR,Karpathos,Greece,Europe/Athens
+8555,Corrado Gex,,Italy,45.73861,7.3625,2021-03-04 22:16:22,2021-03-04 22:16:22,AOT,"1",AOT,IT,Corrado Gex,Italy,Europe/Rome
+8556,Arkhangelsk,,Russia,64.594795,40.711903,2021-03-04 22:16:22,2021-03-04 22:16:22,ARH,"3",ARH,RU,Arkhangelsk,Russia,Europe/Moscow
+8557,Arlanda,,Sweden,59.64982,17.930365,2021-03-04 22:16:22,2021-03-04 22:16:22,ARN,"1",STO,SE,Arlanda,Sweden,Europe/Stockholm
+8558,Arad,,Romania,46.183334,21.266666,2021-03-04 22:16:22,2021-03-04 22:16:22,ARW,"2",ARW,RO,Arad,Romania,Europe/Bucharest
+8559,Astrakhan,,Russia,46.2877,47.999977,2021-03-04 22:16:22,2021-03-04 22:16:22,ASF,"3",ASF,RU,Astrakhan,Russia,Europe/Volgograd
+8560,Erkilet International Airport,,Turkey,38.7742,35.490707,2021-03-04 22:16:22,2021-03-04 22:16:22,ASR,"3",ASR,TR,Erkilet International Airport,Turkey,Europe/Istanbul
+8561,"Athens International Airport ""Eleftherios Venizelos""",,Greece,37.93635,23.946486,2021-03-04 22:16:22,2021-03-04 22:16:22,ATH,"2",ATH,GR,"Athens International Airport ""Eleftherios Venizelos""",Greece,Europe/Athens
+8562,Auxerre Branches,,France,47.85,3.5,2021-03-04 22:16:22,2021-03-04 22:16:22,AUF,"1",AUF,FR,Auxerre Branches,France,Europe/Paris
+8563,Aurillac,,France,44.8975,2.418056,2021-03-04 22:16:22,2021-03-04 22:16:22,AUR,"1",AUR,FR,Aurillac,France,Europe/Paris
+8564,Aviano,,Italy,46.033333,12.6,2021-03-04 22:16:22,2021-03-04 22:16:22,AVB,"1",AVB,IT,Aviano,Italy,Europe/Rome
+8565,Avignon-Caumont,,France,43.9,4.9,2021-03-04 22:16:22,2021-03-04 22:16:22,AVN,"1",AVN,FR,Avignon-Caumont,France,Europe/Paris
+8566,Dimokritos,,Greece,40.856785,25.944893,2021-03-04 22:16:22,2021-03-04 22:16:22,AXD,"2",AXD,GR,Dimokritos,Greece,Europe/Athens
+8567,Antalya,,Turkey,36.89928,30.80135,2021-03-04 22:16:22,2021-03-04 22:16:22,AYT,"3",AYT,TR,Antalya,Turkey,Europe/Istanbul
+8568,Barcelonnette,,France,44.38333,6.666667,2021-03-04 22:16:22,2021-03-04 22:16:22,BAE,"1",BAE,FR,Barcelonnette,France,Europe/Paris
+8569,Batman,,Turkey,37.916668,41.083332,2021-03-04 22:16:22,2021-03-04 22:16:22,BAL,"3",BAL,TR,Batman,Turkey,Europe/Istanbul
+8570,Bauru,,Italy,-22.343056,-49.0525,2021-03-04 22:16:23,2021-03-04 22:16:23,BAU,"1",BRI,IT,Bauru,Italy,Europe/Rome
+8571,Baia Mare,,Romania,47.65,23.466667,2021-03-04 22:16:23,2021-03-04 22:16:23,BAY,"2",BAY,RO,Baia Mare,Romania,Europe/Bucharest
+8572,Barth,,Germany,54.33972,12.711667,2021-03-04 22:16:23,2021-03-04 22:16:23,BBH,"1",BBH,DE,Barth,Germany,Europe/Berlin
+8573,Bitburg Air Base,,Germany,49.966667,6.516667,2021-03-04 22:16:23,2021-03-04 22:16:23,BBJ,"1",BBJ,DE,Bitburg Air Base,Germany,Europe/Berlin
+8574,Bembridge,,United Kingdom,50.683334,-1.083333,2021-03-04 22:16:23,2021-03-04 22:16:23,BBP,,BBP,GB,Bembridge,United Kingdom,Europe/London
+8575,Blackbushe,,United Kingdom,51.333332,-0.85,2021-03-04 22:16:23,2021-03-04 22:16:23,BBS,,BBS,GB,Blackbushe,United Kingdom,Europe/London
+8576,Baneasa,,Romania,44.495934,26.080996,2021-03-04 22:16:23,2021-03-04 22:16:23,BBU,"2",BUH,RO,Baneasa,Romania,Europe/Bucharest
+8577,Bacau,,Romania,46.59861,26.881945,2021-03-04 22:16:23,2021-03-04 22:16:23,BCM,"2",BCM,RO,Bacau,Romania,Europe/Bucharest
+8578,El Prat De Llobregat,,Spain,41.30303,2.07593,2021-03-04 22:16:23,2021-03-04 22:16:23,BCN,"1",BCN,ES,El Prat De Llobregat,Spain,Europe/Madrid
+8579,Bandirma,,Turkey,40.318333,27.977222,2021-03-04 22:16:23,2021-03-04 22:16:23,BDM,"3",BDM,TR,Bandirma,Turkey,Europe/Istanbul
+8580,Papola Casale,,Italy,40.657993,17.939053,2021-03-04 22:16:23,2021-03-04 22:16:23,BDS,"1",BDS,IT,Papola Casale,Italy,Europe/Rome
+8581,Bardufoss,,Norway,69.056114,18.54,2021-03-04 22:16:23,2021-03-04 22:16:23,BDU,"1",BDU,NO,Bardufoss,Norway,Europe/Oslo
+8582,Benbecula,,United Kingdom,57.473415,-7.376028,2021-03-04 22:16:23,2021-03-04 22:16:23,BEB,,BEB,GB,Benbecula,United Kingdom,Europe/London
+8583,Belgrade Nikola Tesla,,Serbia,44.819443,20.306944,2021-03-04 22:16:23,2021-03-04 22:16:23,BEG,"1",BEG,RS,Belgrade Nikola Tesla,Serbia,Europe/Belgrade
+8584,Brest Lesquin,,France,48.445374,-4.415827,2021-03-04 22:16:23,2021-03-04 22:16:23,BES,"1",BES,FR,Brest Lesquin,France,Europe/Paris
+8585,Benson (RAF Station),,United Kingdom,51.63333,-1.083333,2021-03-04 22:16:23,2021-03-04 22:16:23,BEX,,BEX,GB,Benson (RAF Station),United Kingdom,Europe/London
+8586,Bielefeld,,Germany,52.016666,8.55,2021-03-04 22:16:23,2021-03-04 22:16:23,BFE,"1",BFE,DE,Bielefeld,Germany,Europe/Berlin
+8587,Aldergrove International Airport,,United Kingdom,54.662395,-6.217616,2021-03-04 22:16:23,2021-03-04 22:16:23,BFS,,BFS,GB,Aldergrove International Airport,United Kingdom,Europe/London
+8588,Braganca,,Portugal,41.816666,-6.75,2021-03-04 22:16:23,2021-03-04 22:16:23,BGC,,BGC,PT,Braganca,Portugal,Europe/Lisbon
+8589,"Bergen Airport, Flesland",,Norway,60.289062,5.228169,2021-03-04 22:16:23,2021-03-04 22:16:23,BGO,"1",BGO,NO,"Bergen Airport, Flesland",Norway,Europe/Oslo
+8590,Bergamo - Orio al Serio,,Italy,45.665314,9.698713,2021-03-04 22:16:23,2021-03-04 22:16:23,BGY,"1",MIL,IT,Bergamo - Orio al Serio,Italy,Europe/Rome
+8591,Braga,,Portugal,41.55,-8.433333,2021-03-04 22:16:23,2021-03-04 22:16:23,BGZ,,BGZ,PT,Braga,Portugal,Europe/Lisbon
+8592,George Best Belfast City,,United Kingdom,54.61452,-5.870215,2021-03-04 22:16:23,2021-03-04 22:16:23,BHD,,BFS,GB,George Best Belfast City,United Kingdom,Europe/London
+8593,Birmingham International Airport,,United Kingdom,52.45252,-1.733256,2021-03-04 22:16:23,2021-03-04 22:16:23,BHX,,BHX,GB,Birmingham International Airport,United Kingdom,Europe/London
+8594,Poretta,,France,42.547615,9.480124,2021-03-04 22:16:23,2021-03-04 22:16:23,BIA,"1",BIA,FR,Poretta,France,Europe/Paris
+8595,Bilbao,,Spain,43.305534,-2.905808,2021-03-04 22:16:23,2021-03-04 22:16:23,BIO,"1",BIO,ES,Bilbao,Spain,Europe/Madrid
+8596,Biarritz Parme,,France,43.472416,-1.531242,2021-03-04 22:16:23,2021-03-04 22:16:23,BIQ,"1",BIQ,FR,Biarritz Parme,France,Europe/Paris
+8597,Batsfjord,,Norway,70.6,29.666668,2021-03-04 22:16:23,2021-03-04 22:16:23,BJF,"1",BJF,NO,Batsfjord,Norway,Europe/Oslo
+8598,Milas,,Turkey,37.243954,27.672781,2021-03-04 22:16:23,2021-03-04 22:16:23,BJV,"3",BJV,TR,Milas,Turkey,Europe/Istanbul
+8599,Batajnica,,Serbia,44.93528,20.2575,2021-03-04 22:16:23,2021-03-04 22:16:23,BJY,"1",BEG,RS,Batajnica,Serbia,Europe/Belgrade
+8600,Talaveral La Real,,Spain,38.891666,-6.82,2021-03-04 22:16:23,2021-03-04 22:16:23,BJZ,"1",BJZ,ES,Talaveral La Real,Spain,Europe/Madrid
+8601,Dala Airport,,Sweden,60.42973,15.50826,2021-03-04 22:16:23,2021-03-04 22:16:23,BLE,"1",BLE,SE,Dala Airport,Sweden,Europe/Stockholm
+8602,Blackpool Airport,,United Kingdom,53.778385,-3.041985,2021-03-04 22:16:23,2021-03-04 22:16:23,BLK,,BLK,GB,Blackpool Airport,United Kingdom,Europe/London
+8603,Billund,,Denmark,55.747383,9.147874,2021-03-04 22:16:24,2021-03-04 22:16:24,BLL,"1",BLL,DK,Billund,Denmark,Europe/Copenhagen
+8604,Guglielmo Marconi,,Italy,44.529266,11.293289,2021-03-04 22:16:24,2021-03-04 22:16:24,BLQ,"1",BLQ,IT,Guglielmo Marconi,Italy,Europe/Rome
+8605,Belmullet,,Ireland,54.233334,-10.0,2021-03-04 22:16:24,2021-03-04 22:16:24,BLY,,BLY,IE,Belmullet,Ireland,Europe/Dublin
+8606,Bromma,,Sweden,59.35566,17.94608,2021-03-04 22:16:24,2021-03-04 22:16:24,BMA,"1",STO,SE,Bromma,Sweden,Europe/Stockholm
+8607,Bronnoy,,Norway,65.4617,12.215772,2021-03-04 22:16:24,2021-03-04 22:16:24,BNN,"1",BNN,NO,Bronnoy,Norway,Europe/Oslo
+8608,Banja Luka,,Bosnia and Herzegovina,44.933334,17.3,2021-03-04 22:16:24,2021-03-04 22:16:24,BNX,"1",BNX,BA,Banja Luka,Bosnia and Herzegovina,Europe/Sarajevo
+8609,Mérignac,,France,44.83102,-0.70217,2021-03-04 22:16:24,2021-03-04 22:16:24,BOD,"1",BOD,FR,Mérignac,France,Europe/Paris
+8610,Bournemouth International,,United Kingdom,50.77827,-1.832476,2021-03-04 22:16:24,2021-03-04 22:16:24,BOH,,BOH,GB,Bournemouth International,United Kingdom,Europe/London
+8611,Bourgas,,Bulgaria,42.416668,27.283333,2021-03-04 22:16:24,2021-03-04 22:16:24,BOJ,"2",BOJ,BG,Bourgas,Bulgaria,Europe/Sofia
+8612,Ballykelly,,United Kingdom,55.0,-7.0,2021-03-04 22:16:24,2021-03-04 22:16:24,BOL,,BOL,GB,Ballykelly,United Kingdom,Europe/London
+8613,Bodo,,Norway,67.27262,14.367839,2021-03-04 22:16:24,2021-03-04 22:16:24,BOO,"1",BOO,NO,Bodo,Norway,Europe/Oslo
+8614,Bourges,,France,47.15,2.416667,2021-03-04 22:16:24,2021-03-04 22:16:24,BOU,"1",BOU,FR,Bourges,France,Europe/Paris
+8615,Biggin Hill,,United Kingdom,51.333332,0.033333,2021-03-04 22:16:24,2021-03-04 22:16:24,BQH,,LON,GB,Biggin Hill,United Kingdom,Europe/London
+8616,Brest,,Belarus,52.11667,23.883333,2021-03-04 22:16:24,2021-03-04 22:16:24,BQT,"3",BQT,BY,Brest,Belarus,Europe/Minsk
+8617,Bremen,,Germany,53.05297,8.785352,2021-03-04 22:16:24,2021-03-04 22:16:24,BRE,"1",BRE,DE,Bremen,Germany,Europe/Berlin
+8618,Palese,,Italy,41.13388,16.76391,2021-03-04 22:16:24,2021-03-04 22:16:24,BRI,"1",BRI,IT,Palese,Italy,Europe/Rome
+8619,Belp,,Switzerland,46.911728,7.50356,2021-03-04 22:16:24,2021-03-04 22:16:24,BRN,"1",BRN,CH,Belp,Switzerland,Europe/Zurich
+8620,Turany,,Czech Republic,49.15,16.7,2021-03-04 22:16:24,2021-03-04 22:16:24,BRQ,"1",BRQ,CZ,Turany,Czech Republic,Europe/Prague
+8621,North Bay,,United Kingdom,57.023335,-7.440278,2021-03-04 22:16:24,2021-03-04 22:16:24,BRR,,BRR,GB,North Bay,United Kingdom,Europe/London
+8622,Bristol,,United Kingdom,51.386757,-2.710659,2021-03-04 22:16:24,2021-03-04 22:16:24,BRS,,BRS,GB,Bristol,United Kingdom,Europe/London
+8623,Brussels Airport,,Belgium,50.89717,4.483602,2021-03-04 22:16:24,2021-03-04 22:16:24,BRU,"1",BRU,BE,Brussels Airport,Belgium,Europe/Brussels
+8624,Euroairport Swiss,,Switzerland,47.59961,7.532604,2021-03-04 22:16:24,2021-03-04 22:16:24,BSL,"1",EAP,CH,Euroairport Swiss,Switzerland,Europe/Zurich
+8625,M. R. Štefánika,,Slovakia,48.170017,17.199799,2021-03-04 22:16:24,2021-03-04 22:16:24,BTS,"1",BTS,SK,M. R. Štefánika,Slovakia,Europe/Bratislava
+8626,Liszt Ferenc International,,Hungary,47.433037,19.261621,2021-03-04 22:16:24,2021-03-04 22:16:24,BUD,"1",BUD,HU,Liszt Ferenc International,Hungary,Europe/Budapest
+8627,Beauvais-Tille,,France,49.459488,2.110815,2021-03-04 22:16:24,2021-03-04 22:16:24,BVA,"1",PAR,FR,Beauvais-Tille,France,Europe/Paris
+8628,Laroche,,France,45.166668,1.533333,2021-03-04 22:16:24,2021-03-04 22:16:24,BVE,"1",BVE,FR,Laroche,France,Europe/Paris
+8629,Berlevag,,Norway,70.86667,29.0,2021-03-04 22:16:24,2021-03-04 22:16:24,BVG,"1",BVG,NO,Berlevag,Norway,Europe/Oslo
+8630,Braunschweig,,Germany,52.266666,10.533333,2021-03-04 22:16:24,2021-03-04 22:16:24,BWE,"1",BWE,DE,Braunschweig,Germany,Europe/Berlin
+8631,Walney Island,,United Kingdom,54.11667,-3.233333,2021-03-04 22:16:24,2021-03-04 22:16:24,BWF,,BWF,GB,Walney Island,United Kingdom,Europe/London
+8632,Brac,,Croatia,43.283333,16.683332,2021-03-04 22:16:24,2021-03-04 22:16:24,BWK,"1",BWK,HR,Brac,Croatia,Europe/Zagreb
+8633,Balakovo,,Russia,51.86667,47.75,2021-03-04 22:16:24,2021-03-04 22:16:24,BWO,"3",BWO,RU,Balakovo,Russia,Europe/Volgograd
+8634,Imsik,,Turkey,37.134724,27.667221,2021-03-04 22:16:24,2021-03-04 22:16:24,BXN,"3",BJV,TR,Imsik,Turkey,Europe/Istanbul
+8635,Buochs,,Switzerland,46.966667,8.383333,2021-03-04 22:16:24,2021-03-04 22:16:24,BXO,"1",BXO,CH,Buochs,Switzerland,Europe/Zurich
+8636,Biala Podlaska,,Poland,52.00551,23.14542,2021-03-04 22:16:24,2021-03-04 22:16:24,BXP,"1",BXP,PL,Biala Podlaska,Poland,Europe/Warsaw
+8637,Beja International,,Portugal,38.0789,-7.9324,2021-03-04 22:16:25,2021-03-04 22:16:25,BYJ,,BYJ,PT,Beja International,Portugal,Europe/Lisbon
+8638,Bantry,,Ireland,51.683334,-9.45,2021-03-04 22:16:25,2021-03-04 22:16:25,BYT,,BYT,IE,Bantry,Ireland,Europe/Dublin
+8639,Bindlacher-Berg,,Germany,49.985558,11.64,2021-03-04 22:16:25,2021-03-04 22:16:25,BYU,"1",BYU,DE,Bindlacher-Berg,Germany,Europe/Berlin
+8640,Bydgoszcz I. J. Paderewski Airport,,Poland,53.09667,17.978611,2021-03-04 22:16:25,2021-03-04 22:16:25,BZG,"1",BZG,PL,Bydgoszcz I. J. Paderewski Airport,Poland,Europe/Warsaw
+8641,Balikesir,,Turkey,39.61722,27.927778,2021-03-04 22:16:25,2021-03-04 22:16:25,BZI,"3",BZI,TR,Balikesir,Turkey,Europe/Istanbul
+8642,Briansk,,Russia,53.266666,34.333332,2021-03-04 22:16:25,2021-03-04 22:16:25,BZK,"3",BZK,RU,Briansk,Russia,Europe/Moscow
+8643,Bolzano,,Italy,46.462444,11.330511,2021-03-04 22:16:25,2021-03-04 22:16:25,BZO,"1",BZO,IT,Bolzano,Italy,Europe/Rome
+8644,Beziers Vias,,France,43.324165,3.354444,2021-03-04 22:16:25,2021-03-04 22:16:25,BZR,"1",BZR,FR,Beziers Vias,France,Europe/Paris
+8645,Raf Brize Norton,,United Kingdom,51.75,-1.587093,2021-03-04 22:16:25,2021-03-04 22:16:25,BZZ,,BZZ,GB,Raf Brize Norton,United Kingdom,Europe/London
+8646,Elmas,,Italy,39.254333,9.060673,2021-03-04 22:16:25,2021-03-04 22:16:25,CAG,"1",CAG,IT,Elmas,Italy,Europe/Rome
+8647,Machrihanish,,United Kingdom,55.43639,-5.686667,2021-03-04 22:16:25,2021-03-04 22:16:25,CAL,,CAL,GB,Machrihanish,United Kingdom,Europe/London
+8648,Carlisle,,United Kingdom,54.93667,-2.809444,2021-03-04 22:16:25,2021-03-04 22:16:25,CAX,,CAX,GB,Carlisle,United Kingdom,Europe/London
+8649,Cambridge,,United Kingdom,52.2,0.183333,2021-03-04 22:16:25,2021-03-04 22:16:25,CBG,,CBG,GB,Cambridge,United Kingdom,Europe/London
+8650,Coimbra,,Portugal,40.2,-8.416667,2021-03-04 22:16:25,2021-03-04 22:16:25,CBP,,CBP,PT,Coimbra,Portugal,Europe/Lisbon
+8651,Salvaza,,France,43.216667,2.316667,2021-03-04 22:16:25,2021-03-04 22:16:25,CCF,"1",CCF,FR,Salvaza,France,Europe/Paris
+8652,Charles De Gaulle,,France,49.003197,2.567023,2021-03-04 22:16:25,2021-03-04 22:16:25,CDG,"1",PAR,FR,Charles De Gaulle,France,Europe/Paris
+8653,Castellon,,Spain,40.2097,0.06972,2021-03-04 22:16:25,2021-03-04 22:16:25,CDT,"1",CDT,ES,Castellon,Spain,Europe/Madrid
+8654,Cherepovets,,Russia,59.283333,38.066666,2021-03-04 22:16:25,2021-03-04 22:16:25,CEE,"3",CEE,RU,Cherepovets,Russia,Europe/Moscow
+8655,Chester,,United Kingdom,53.166668,-2.916667,2021-03-04 22:16:25,2021-03-04 22:16:25,CEG,,CEG,GB,Chester,United Kingdom,Europe/London
+8656,Mandelieu,,France,43.54639,6.954167,2021-03-04 22:16:25,2021-03-04 22:16:25,CEQ,"1",CEQ,FR,Mandelieu,France,Europe/Paris
+8657,Maupertus,,France,49.65111,-1.465278,2021-03-04 22:16:25,2021-03-04 22:16:25,CER,"1",CER,FR,Maupertus,France,Europe/Paris
+8658,Clermont/Ferrand Auvergne International (Aulnat),,France,45.78032,3.163893,2021-03-04 22:16:25,2021-03-04 22:16:25,CFE,"1",CFE,FR,Clermont/Ferrand Auvergne International (Aulnat),France,Europe/Paris
+8659,Donegal,,Ireland,55.041668,-8.340278,2021-03-04 22:16:25,2021-03-04 22:16:25,CFN,,CFN,IE,Donegal,Ireland,Europe/Dublin
+8660,Carpiquet,,France,49.183437,-0.459276,2021-03-04 22:16:25,2021-03-04 22:16:25,CFR,"1",CFR,FR,Carpiquet,France,Europe/Paris
+8661,Ioannis Kapodistrias,,Greece,39.60784,19.914644,2021-03-04 22:16:25,2021-03-04 22:16:25,CFU,"2",CFU,GR,Ioannis Kapodistrias,Greece,Europe/Athens
+8662,Cologne/bonn,,Germany,50.878365,7.122224,2021-03-04 22:16:25,2021-03-04 22:16:25,CGN,"1",CGN,DE,Cologne/bonn,Germany,Europe/Berlin
+8663,Souda,,Greece,35.5402,24.140373,2021-03-04 22:16:25,2021-03-04 22:16:25,CHQ,"2",CHQ,GR,Souda,Greece,Europe/Athens
+8664,Chateauroux,,France,46.816666,1.7,2021-03-04 22:16:25,2021-03-04 22:16:25,CHR,"1",CHR,FR,Chateauroux,France,Europe/Paris
+8665,Chaves,,Portugal,41.733334,-7.466667,2021-03-04 22:16:25,2021-03-04 22:16:25,CHV,,CHV,PT,Chaves,Portugal,Europe/Lisbon
+8666,Ciampino,,Italy,41.799065,12.590987,2021-03-04 22:16:25,2021-03-04 22:16:25,CIA,"1",ROM,IT,Ciampino,Italy,Europe/Rome
+8667,Cildir,,Turkey,47.90278,-112.312225,2021-03-04 22:16:25,2021-03-04 22:16:25,CII,"3",CII,TR,Cildir,Turkey,Europe/Istanbul
+8668,Comiso,,Italy,36.99167,14.606944,2021-03-04 22:16:25,2021-03-04 22:16:25,CIY,"1",CIY,IT,Comiso,Italy,Europe/Rome
+8669,Cherkassy,,Ukraine,49.416668,32.0,2021-03-04 22:16:25,2021-03-04 22:16:25,CKC,"2",CKC,UA,Cherkassy,Ukraine,Europe/Kiev
+8670,Chkalovsky,,Russia,55.86667,38.051945,2021-03-04 22:16:25,2021-03-04 22:16:25,CKL,"3",CKL,RU,Chkalovsky,Russia,Europe/Moscow
+8671,Canakkale,,Turkey,40.13333,26.4,2021-03-04 22:16:26,2021-03-04 22:16:26,CKZ,"3",CKZ,TR,Canakkale,Turkey,Europe/Istanbul
+8672,Cluj Napoca International Airport,,Romania,46.782063,23.687014,2021-03-04 22:16:26,2021-03-04 22:16:26,CLJ,"2",CLJ,RO,Cluj Napoca International Airport,Romania,Europe/Bucharest
+8673,Ste Catherine,,France,42.52778,8.791667,2021-03-04 22:16:26,2021-03-04 22:16:26,CLY,"1",CLY,FR,Ste Catherine,France,Europe/Paris
+8674,Chambery,,France,45.637993,5.88437,2021-03-04 22:16:26,2021-03-04 22:16:26,CMF,"1",CMF,FR,Chambery,France,Europe/Paris
+8675,Colmar-houssen,,France,48.083332,7.366667,2021-03-04 22:16:26,2021-03-04 22:16:26,CMR,"1",CMR,FR,Colmar-houssen,France,Europe/Paris
+8676,Kogalniceanu,,Romania,44.35,28.483334,2021-03-04 22:16:26,2021-03-04 22:16:26,CND,"2",CND,RO,Kogalniceanu,Romania,Europe/Bucharest
+8677,Parvaud,,France,45.683334,-0.333333,2021-03-04 22:16:26,2021-03-04 22:16:26,CNG,"1",CNG,FR,Parvaud,France,Europe/Paris
+8678,Sindal,,Denmark,57.483334,10.216667,2021-03-04 22:16:26,2021-03-04 22:16:26,CNL,"1",CNL,DK,Sindal,Denmark,Europe/Copenhagen
+8679,Covilha,,Portugal,40.283333,-7.5,2021-03-04 22:16:26,2021-03-04 22:16:26,COV,,COV,PT,Covilha,Portugal,Europe/Lisbon
+8680,Kastrup,,Denmark,55.62905,12.647601,2021-03-04 22:16:26,2021-03-04 22:16:26,CPH,"1",CPH,DK,Kastrup,Denmark,Europe/Copenhagen
+8681,Calais,,France,50.95,1.933333,2021-03-04 22:16:26,2021-03-04 22:16:26,CQF,"1",CQF,FR,Calais,France,Europe/Paris
+8682,Craiova,,Romania,44.31889,23.886389,2021-03-04 22:16:26,2021-03-04 22:16:26,CRA,"2",CRA,RO,Craiova,Romania,Europe/Bucharest
+8683,Charleroi Brussels South,,Belgium,50.456696,4.451703,2021-03-04 22:16:26,2021-03-04 22:16:26,CRL,"1",BRU,BE,Charleroi Brussels South,Belgium,Europe/Brussels
+8684,Crotone,,Italy,39.0,17.083332,2021-03-04 22:16:26,2021-03-04 22:16:26,CRV,"1",CRV,IT,Crotone,Italy,Europe/Rome
+8685,Isle Of Colonsay,,United Kingdom,56.083332,-6.2,2021-03-04 22:16:26,2021-03-04 22:16:26,CSA,,CSA,GB,Isle Of Colonsay,United Kingdom,Europe/London
+8686,Caransebes,,Romania,45.416668,22.216667,2021-03-04 22:16:26,2021-03-04 22:16:26,CSB,"2",CSB,RO,Caransebes,Romania,Europe/Bucharest
+8687,Solovky,,Russia,65.02944,35.733334,2021-03-04 22:16:26,2021-03-04 22:16:26,CSH,"3",CSH,RU,Solovky,Russia,Europe/Moscow
+8688,Cheboksary,,Russia,56.13333,47.266666,2021-03-04 22:16:26,2021-03-04 22:16:26,CSY,"3",CSY,RU,Cheboksary,Russia,Europe/Moscow
+8689,Fontanarossa,,Italy,37.47066,15.065877,2021-03-04 22:16:26,2021-03-04 22:16:26,CTA,"1",CTA,IT,Fontanarossa,Italy,Europe/Rome
+8690,Le Castellet,,France,43.25,5.783333,2021-03-04 22:16:26,2021-03-04 22:16:26,CTT,"1",CTT,FR,Le Castellet,France,Europe/Paris
+8691,Levaldigi,,Italy,44.53528,7.6175,2021-03-04 22:16:26,2021-03-04 22:16:26,CUF,"1",CUF,IT,Levaldigi,Italy,Europe/Rome
+8692,West Midlands International,,United Kingdom,52.369167,-1.478611,2021-03-04 22:16:26,2021-03-04 22:16:26,CVT,,CVT,GB,West Midlands International,United Kingdom,Europe/London
+8693,Chernovtsy,,Ukraine,48.266666,25.966667,2021-03-04 22:16:26,2021-03-04 22:16:26,CWC,"2",CWC,UA,Chernovtsy,Ukraine,Europe/Kiev
+8694,Cardiff,,United Kingdom,51.39877,-3.339075,2021-03-04 22:16:26,2021-03-04 22:16:26,CWL,,CWL,GB,Cardiff,United Kingdom,Europe/London
+8695,Dubrovnik,,Croatia,42.56072,18.260616,2021-03-04 22:16:26,2021-03-04 22:16:26,DBV,"1",DBV,HR,Dubrovnik,Croatia,Europe/Zagreb
+8696,Mazamet,,France,43.555832,2.284167,2021-03-04 22:16:26,2021-03-04 22:16:26,DCM,"1",DCM,FR,Mazamet,France,Europe/Paris
+8697,Debrecen,,Hungary,47.55,21.7,2021-03-04 22:16:26,2021-03-04 22:16:26,DEB,"1",DEB,HU,Debrecen,Hungary,Europe/Budapest
+8698,Daugavpils,,Latvia,55.88333,26.533333,2021-03-04 22:16:27,2021-03-04 22:16:27,DGP,"2",DGP,LV,Daugavpils,Latvia,Europe/Riga
+8699,De Kooy/Den Helder Airport,,Netherlands,52.95,4.75,2021-03-04 22:16:27,2021-03-04 22:16:27,DHR,"1",DHR,NL,De Kooy/Den Helder Airport,Netherlands,Europe/Amsterdam
+8700,Dijon,,France,47.270832,5.088889,2021-03-04 22:16:27,2021-03-04 22:16:27,DIJ,"1",DIJ,FR,Dijon,France,Europe/Paris
+8701,Diyarbakir,,Turkey,37.903873,40.20458,2021-03-04 22:16:27,2021-03-04 22:16:27,DIY,"3",DIY,TR,Diyarbakir,Turkey,Europe/Istanbul
+8702,Tavaux,,France,47.05,5.433333,2021-03-04 22:16:27,2021-03-04 22:16:27,DLE,"1",DLE,FR,Tavaux,France,Europe/Paris
+8703,Dalaman,,Turkey,36.716667,28.783333,2021-03-04 22:16:27,2021-03-04 22:16:27,DLM,"3",DLM,TR,Dalaman,Turkey,Europe/Istanbul
+8704,Domodedovo,,Russia,55.414566,37.899494,2021-03-04 22:16:27,2021-03-04 22:16:27,DME,"3",MOW,RU,Domodedovo,Russia,Europe/Moscow
+8705,Dundee,,United Kingdom,56.45409,-3.014531,2021-03-04 22:16:27,2021-03-04 22:16:27,DND,,DND,GB,Dundee,United Kingdom,Europe/London
+8706,Dnepropetrovsk,,Ukraine,48.36874,35.09446,2021-03-04 22:16:27,2021-03-04 22:16:27,DNK,"2",DNK,UA,Dnepropetrovsk,Ukraine,Europe/Kiev
+8707,Pleurtuit,,France,48.587776,-2.083611,2021-03-04 22:16:27,2021-03-04 22:16:27,DNR,"1",DNR,FR,Pleurtuit,France,Europe/Paris
+8708,Cardak,,Turkey,37.787224,29.703333,2021-03-04 22:16:27,2021-03-04 22:16:27,DNZ,"3",DNZ,TR,Cardak,Turkey,Europe/Istanbul
+8709,Donetsk International Airport,,Ukraine,48.083332,37.75,2021-03-04 22:16:27,2021-03-04 22:16:27,DOK,"2",DOK,UA,Donetsk International Airport,Ukraine,Europe/Kiev
+8710,St Gatien,,France,49.362778,0.164167,2021-03-04 22:16:27,2021-03-04 22:16:27,DOL,"1",DOL,FR,St Gatien,France,Europe/Paris
+8711,Dresden Airport,,Germany,51.124332,13.766082,2021-03-04 22:16:27,2021-03-04 22:16:27,DRS,"1",DRS,DE,Dresden Airport,Germany,Europe/Berlin
+8712,Robin Hood,,United Kingdom,53.481003,-1.01155,2021-03-04 22:16:27,2021-03-04 22:16:27,DSA,,DSA,GB,Robin Hood,United Kingdom,Europe/London
+8713,Dortmund,,Germany,51.514828,7.613139,2021-03-04 22:16:27,2021-03-04 22:16:27,DTM,"1",DTM,DE,Dortmund,Germany,Europe/Berlin
+8714,Dublin International,,Ireland,53.42728,-6.24357,2021-03-04 22:16:27,2021-03-04 22:16:27,DUB,,DUB,IE,Dublin International,Ireland,Europe/Dublin
+8715,Düsseldorf International Airport,,Germany,51.278328,6.76558,2021-03-04 22:16:27,2021-03-04 22:16:27,DUS,"1",DUS,DE,Düsseldorf International Airport,Germany,Europe/Berlin
+8716,Donostia - San Sebastian,,Spain,43.3564,-1.793538,2021-03-04 22:16:27,2021-03-04 22:16:27,EAS,"1",EAS,ES,Donostia - San Sebastian,Spain,Europe/Madrid
+8717,Marina Di Campo,,Italy,42.766666,10.283333,2021-03-04 22:16:27,2021-03-04 22:16:27,EBA,"1",EBA,IT,Marina Di Campo,Italy,Europe/Rome
+8718,Esbjerg,,Denmark,55.52143,8.549062,2021-03-04 22:16:27,2021-03-04 22:16:27,EBJ,"1",EBJ,DK,Esbjerg,Denmark,Europe/Copenhagen
+8719,Boutheon,,France,45.54139,4.296944,2021-03-04 22:16:27,2021-03-04 22:16:27,EBU,"1",EBU,FR,Boutheon,France,Europe/Paris
+8720,Edinburgh,,United Kingdom,55.948143,-3.364177,2021-03-04 22:16:27,2021-03-04 22:16:27,EDI,,EDI,GB,Edinburgh,United Kingdom,Europe/London
+8721,Les Ajoncs,,France,46.7,-1.383333,2021-03-04 22:16:27,2021-03-04 22:16:27,EDM,"1",EDM,FR,Les Ajoncs,France,Europe/Paris
+8722,Edremit/korfez,,Turkey,39.583332,27.033333,2021-03-04 22:16:27,2021-03-04 22:16:27,EDO,"3",EDO,TR,Edremit/korfez,Turkey,Europe/Istanbul
+8723,Kefalonia Istland International Airport,,Greece,38.118057,20.505556,2021-03-04 22:16:28,2021-03-04 22:16:28,EFL,"2",EFL,GR,Kefalonia Istland International Airport,Greece,Europe/Athens
+8724,Roumanieres,,France,44.85,0.483333,2021-03-04 22:16:28,2021-03-04 22:16:28,EGC,"1",EGC,FR,Roumanieres,France,Europe/Paris
+8725,Belgorod,,Russia,50.63333,36.65,2021-03-04 22:16:28,2021-03-04 22:16:28,EGO,"3",EGO,RU,Belgorod,Russia,Europe/Moscow
+8726,Eindhoven,,Netherlands,51.457954,5.391795,2021-03-04 22:16:28,2021-03-04 22:16:28,EIN,"1",EIN,NL,Eindhoven,Netherlands,Europe/Amsterdam
+8727,Eskilstuna,,Sweden,59.36667,16.533333,2021-03-04 22:16:28,2021-03-04 22:16:28,EKT,"1",EKT,SE,Eskilstuna,Sweden,Europe/Stockholm
+8728,East Midlands,,United Kingdom,52.82587,-1.330595,2021-03-04 22:16:28,2021-03-04 22:16:28,EMA,,NQT,GB,East Midlands,United Kingdom,Europe/London
+8729,Essey,,France,48.691666,6.231667,2021-03-04 22:16:28,2021-03-04 22:16:28,ENC,"1",ETZ,FR,Essey,France,Europe/Paris
+8730,Enontekio,,Finland,68.35,23.416668,2021-03-04 22:16:28,2021-03-04 22:16:28,ENF,"2",ENF,FI,Enontekio,Finland,Europe/Helsinki
+8731,Enniskillen St. Angelo,,United Kingdom,54.35,-7.633333,2021-03-04 22:16:28,2021-03-04 22:16:28,ENK,,ENK,GB,Enniskillen St. Angelo,United Kingdom,Europe/London
+8732,Twente,,Netherlands,52.271667,6.878333,2021-03-04 22:16:28,2021-03-04 22:16:28,ENS,"1",ENS,NL,Twente,Netherlands,Europe/Amsterdam
+8733,Eday,,United Kingdom,59.183334,-2.783333,2021-03-04 22:16:28,2021-03-04 22:16:28,EOI,,EOI,GB,Eday,United Kingdom,Europe/London
+8734,Mirecourt,,France,48.325832,6.069444,2021-03-04 22:16:28,2021-03-04 22:16:28,EPL,"1",EPL,FR,Mirecourt,France,Europe/Paris
+8735,Parnu,,Estonia,58.418888,24.472778,2021-03-04 22:16:28,2021-03-04 22:16:28,EPU,"2",EPU,EE,Parnu,Estonia,Europe/Tallinn
+8736,Erzincan,,Turkey,39.711666,39.516945,2021-03-04 22:16:28,2021-03-04 22:16:28,ERC,"3",ERC,TR,Erzincan,Turkey,Europe/Istanbul
+8737,Berdyansk,,Ukraine,46.733334,36.783333,2021-03-04 22:16:28,2021-03-04 22:16:28,ERD,"2",ERD,UA,Berdyansk,Ukraine,Europe/Zaporozhye
+8738,Erfurt,,Germany,50.974915,10.961163,2021-03-04 22:16:28,2021-03-04 22:16:28,ERF,"1",ERF,DE,Erfurt,Germany,Europe/Berlin
+8739,Erzurum Hava Alani,,Turkey,39.955555,41.17361,2021-03-04 22:16:28,2021-03-04 22:16:28,ERZ,"3",ERZ,TR,Erzurum Hava Alani,Turkey,Europe/Istanbul
+8740,Esenboga International,,Turkey,40.11494,32.993145,2021-03-04 22:16:28,2021-03-04 22:16:28,ESB,"3",ANK,TR,Esenboga International,Turkey,Europe/Istanbul
+8741,Shoreham,,United Kingdom,50.833332,-0.3,2021-03-04 22:16:28,2021-03-04 22:16:28,ESH,,ESH,GB,Shoreham,United Kingdom,Europe/London
+8742,Eskisehir,,Turkey,39.784138,30.582111,2021-03-04 22:16:28,2021-03-04 22:16:28,ESK,"3",ESK,TR,Eskisehir,Turkey,Europe/Istanbul
+8743,Elista,,Russia,46.36667,44.333332,2021-03-04 22:16:28,2021-03-04 22:16:28,ESL,"3",ESL,RU,Elista,Russia,Europe/Moscow
+8744,Essen,,Germany,51.40389,6.941667,2021-03-04 22:16:28,2021-03-04 22:16:28,ESS,"1",ESS,DE,Essen,Germany,Europe/Berlin
+8745,Metz-nancy-lorraine,,France,48.98165,6.243003,2021-03-04 22:16:28,2021-03-04 22:16:28,ETZ,"1",ETZ,FR,Metz-nancy-lorraine,France,Europe/Paris
+8746,Evenes,,Norway,68.496666,16.679722,2021-03-04 22:16:28,2021-03-04 22:16:28,EVE,"1",EVE,NO,Evenes,Norway,Europe/Oslo
+8747,Sveg,,Sweden,62.033333,14.35,2021-03-04 22:16:28,2021-03-04 22:16:28,EVG,"1",EVG,SE,Sveg,Sweden,Europe/Stockholm
+8748,Exeter,,United Kingdom,50.73111,-3.410968,2021-03-04 22:16:28,2021-03-04 22:16:28,EXT,,EXT,GB,Exeter,United Kingdom,Europe/London
+8749,Elazig,,Turkey,38.608334,39.291668,2021-03-04 22:16:28,2021-03-04 22:16:28,EZS,"3",EZS,TR,Elazig,Turkey,Europe/Istanbul
+8750,Farnborough,,United Kingdom,51.283333,-0.766667,2021-03-04 22:16:28,2021-03-04 22:16:28,FAB,,FAB,GB,Farnborough,United Kingdom,Europe/London
+8751,Faro,,Portugal,37.020645,-7.968545,2021-03-04 22:16:28,2021-03-04 22:16:28,FAO,,FAO,PT,Faro,Portugal,Europe/Lisbon
+8752,Leonardo Da Vinci (Fiumicino),,Italy,41.794594,12.250346,2021-03-04 22:16:28,2021-03-04 22:16:28,FCO,"1",ROM,IT,Leonardo Da Vinci (Fiumicino),Italy,Europe/Rome
+8753,Bringeland,,Norway,61.39178,5.762073,2021-03-04 22:16:28,2021-03-04 22:16:28,FDE,"1",FDE,NO,Bringeland,Norway,Europe/Oslo
+8754,Friedrichshafen,,Germany,47.672775,9.523482,2021-03-04 22:16:28,2021-03-04 22:16:28,FDH,"1",FDH,DE,Friedrichshafen,Germany,Europe/Berlin
+8755,Fuerstenfeldbruck,,Germany,48.2,11.266667,2021-03-04 22:16:28,2021-03-04 22:16:28,FEL,"1",FEL,DE,Fuerstenfeldbruck,Germany,Europe/Berlin
+8756,Fair Isle,,United Kingdom,59.5,-1.666667,2021-03-04 22:16:29,2021-03-04 22:16:29,FIE,,FIE,GB,Fair Isle,United Kingdom,Europe/London
+8757,Karlsruhe/Baden-Baden,,Germany,48.781033,8.089752,2021-03-04 22:16:29,2021-03-04 22:16:29,FKB,"1",FKB,DE,Karlsruhe/Baden-Baden,Germany,Europe/Berlin
+8758,Schaferhaus,,Germany,54.77222,9.383333,2021-03-04 22:16:29,2021-03-04 22:16:29,FLF,"1",FLF,DE,Schaferhaus,Germany,Europe/Berlin
+8759,Peretola,,Italy,43.802128,11.201989,2021-03-04 22:16:29,2021-03-04 22:16:29,FLR,"1",FLR,IT,Peretola,Italy,Europe/Rome
+8760,Memmingen-Allgäu,,Germany,47.98861,10.239444,2021-03-04 22:16:29,2021-03-04 22:16:29,FMM,"1",FMM,DE,Memmingen-Allgäu,Germany,Europe/Berlin
+8761,Münster Osnabrück International,,Germany,52.130054,7.694928,2021-03-04 22:16:29,2021-03-04 22:16:29,FMO,"1",FMO,DE,Münster Osnabrück International,Germany,Europe/Berlin
+8762,Neubrandenburg,,Germany,53.60278,13.307222,2021-03-04 22:16:29,2021-03-04 22:16:29,FNB,"1",FNB,DE,Neubrandenburg,Germany,Europe/Berlin
+8763,Garons,,France,43.75,4.416667,2021-03-04 22:16:29,2021-03-04 22:16:29,FNI,"1",FNI,FR,Garons,France,Europe/Paris
+8764,Gino Lisa,,Italy,41.43399,15.544367,2021-03-04 22:16:29,2021-03-04 22:16:29,FOG,"1",FOG,IT,Gino Lisa,Italy,Europe/Rome
+8765,Frankfurt International Airport,,Germany,50.050735,8.570773,2021-03-04 22:16:29,2021-03-04 22:16:29,FRA,"1",FRA,DE,Frankfurt International Airport,Germany,Europe/Berlin
+8766,Luigi Ridolfi,,Italy,44.19857,12.07076,2021-03-04 22:16:29,2021-03-04 22:16:29,FRL,"1",FRL,IT,Luigi Ridolfi,Italy,Europe/Rome
+8767,Flora,,Norway,61.58643,5.024577,2021-03-04 22:16:29,2021-03-04 22:16:29,FRO,"1",FRO,NO,Flora,Norway,Europe/Oslo
+8768,Fritzlar Airbase,,Germany,51.11667,9.266667,2021-03-04 22:16:29,2021-03-04 22:16:29,FRZ,"1",FRZ,DE,Fritzlar Airbase,Germany,Europe/Berlin
+8769,Sud Corse,,France,41.498634,9.098223,2021-03-04 22:16:29,2021-03-04 22:16:29,FSC,"1",FSC,FR,Sud Corse,France,Europe/Paris
+8770,Kinloss,,United Kingdom,57.65,-3.566667,2021-03-04 22:16:29,2021-03-04 22:16:29,FSS,,FSS,GB,Kinloss,United Kingdom,Europe/London
+8771,Tallard,,France,44.55,6.083333,2021-03-04 22:16:29,2021-03-04 22:16:29,GAT,"1",GAT,FR,Tallard,France,Europe/Paris
+8772,Guernsey,,Guernsey,49.432755,-2.595044,2021-03-04 22:16:29,2021-03-04 22:16:29,GCI,,GCI,GG,Guernsey,Guernsey,Europe/Guernsey
+8773,Lech Walesa,,Poland,54.380978,18.468655,2021-03-04 22:16:29,2021-03-04 22:16:29,GDN,"1",GDN,PL,Lech Walesa,Poland,Europe/Warsaw
+8774,Gallivare,,Sweden,67.134445,20.816668,2021-03-04 22:16:29,2021-03-04 22:16:29,GEV,"1",GEV,SE,Gallivare,Sweden,Europe/Stockholm
+8775,North Front,,Gibraltar,36.153763,-5.349271,2021-03-04 22:16:29,2021-03-04 22:16:29,GIB,"1",GIB,GI,North Front,Gibraltar,Europe/Gibraltar
+8776,Gokceada,,Turkey,40.19955,25.8837,2021-03-04 22:16:30,2021-03-04 22:16:30,GKD,"3",GKD,TR,Gokceada,Turkey,Europe/Istanbul
+8777,Geilenkirchen,,Germany,50.966667,6.133333,2021-03-04 22:16:30,2021-03-04 22:16:30,GKE,"1",GKE,DE,Geilenkirchen,Germany,Europe/Berlin
+8778,Glasgow International,,United Kingdom,55.864212,-4.431782,2021-03-04 22:16:30,2021-03-04 22:16:30,GLA,,GLA,GB,Glasgow International,United Kingdom,Europe/London
+8779,Klanten Airport,,Norway,60.7,8.95,2021-03-04 22:16:30,2021-03-04 22:16:30,GLL,"1",GLL,NO,Klanten Airport,Norway,Europe/Oslo
+8780,Gloucestershire,,United Kingdom,51.88333,-2.233333,2021-03-04 22:16:30,2021-03-04 22:16:30,GLO,,GLO,GB,Gloucestershire,United Kingdom,Europe/London
+8781,Gilze-Rijen,,Netherlands,51.583332,4.75,2021-03-04 22:16:30,2021-03-04 22:16:30,GLZ,"1",GLZ,NL,Gilze-Rijen,Netherlands,Europe/Amsterdam
+8782,Gomel,,Belarus,52.416668,31.0,2021-03-04 22:16:30,2021-03-04 22:16:30,GME,"3",GME,BY,Gomel,Belarus,Europe/Minsk
+8783,Grodna,,Belarus,53.666668,23.8,2021-03-04 22:16:30,2021-03-04 22:16:30,GNA,"3",GNA,BY,Grodna,Belarus,Europe/Minsk
+8784,Grenoble-isere Airport (St Geoirs),,France,45.359833,5.332019,2021-03-04 22:16:30,2021-03-04 22:16:30,GNB,"1",LYS,FR,Grenoble-isere Airport (St Geoirs),France,Europe/Paris
+8785,Guney Anadolu Projesi,,Turkey,37.094166,38.846943,2021-03-04 22:16:30,2021-03-04 22:16:30,GNY,"3",SFQ,TR,Guney Anadolu Projesi,Turkey,Europe/Istanbul
+8786,Cristoforo Colombo,,Italy,44.415066,8.85081,2021-03-04 22:16:30,2021-03-04 22:16:30,GOA,"1",GOA,IT,Cristoforo Colombo,Italy,Europe/Rome
+8787,Nizhniy Novgorod,,Russia,56.218613,43.789764,2021-03-04 22:16:30,2021-03-04 22:16:30,GOJ,"3",GOJ,RU,Nizhniy Novgorod,Russia,Europe/Moscow
+8788,Landvetter,,Sweden,57.66664,12.294878,2021-03-04 22:16:30,2021-03-04 22:16:30,GOT,"1",GOT,SE,Landvetter,Sweden,Europe/Stockholm
+8789,Gorna Oriahovitsa,,Bulgaria,43.11667,25.666668,2021-03-04 22:16:30,2021-03-04 22:16:30,GOZ,"2",GOZ,BG,Gorna Oriahovitsa,Bulgaria,Europe/Sofia
+8790,Araxos Airport,,Greece,38.25,21.733334,2021-03-04 22:16:30,2021-03-04 22:16:30,GPA,"2",GPA,GR,Araxos Airport,Greece,Europe/Athens
+8791,Girona-Costa Brava,,Spain,41.89804,2.766383,2021-03-04 22:16:30,2021-03-04 22:16:30,GRO,"1",GRO,ES,Girona-Costa Brava,Spain,Europe/Madrid
+8792,Eelde,,Netherlands,53.120277,6.575556,2021-03-04 22:16:30,2021-03-04 22:16:30,GRQ,"1",GRQ,NL,Eelde,Netherlands,Europe/Amsterdam
+8793,Baccarini,,Italy,42.761944,11.070556,2021-03-04 22:16:30,2021-03-04 22:16:30,GRS,"1",GRS,IT,Baccarini,Italy,Europe/Rome
+8794,Groznyj,,Russia,43.333332,45.75,2021-03-04 22:16:30,2021-03-04 22:16:30,GRV,"3",GRV,RU,Groznyj,Russia,Europe/Moscow
+8795,Granada,,Spain,37.184727,-3.776954,2021-03-04 22:16:30,2021-03-04 22:16:30,GRX,"1",GRX,ES,Granada,Spain,Europe/Madrid
+8796,Thalerhof,,Austria,46.994125,15.444928,2021-03-04 22:16:30,2021-03-04 22:16:30,GRZ,"1",GRZ,AT,Thalerhof,Austria,Europe/Vienna
+8797,Gothenburg City Airport,,Sweden,57.77775,11.864513,2021-03-04 22:16:30,2021-03-04 22:16:30,GSE,"1",GOT,SE,Gothenburg City Airport,Sweden,Europe/Stockholm
+8798,Guetersloh,,Germany,51.9,8.383333,2021-03-04 22:16:30,2021-03-04 22:16:30,GUT,"1",GUT,DE,Guetersloh,Germany,Europe/Berlin
+8799,Geneve-cointrin,,Switzerland,46.229633,6.105774,2021-03-04 22:16:30,2021-03-04 22:16:30,GVA,"1",GVA,CH,Geneve-cointrin,Switzerland,Europe/Zurich
+8800,Sandviken,,Sweden,60.593887,16.954721,2021-03-04 22:16:30,2021-03-04 22:16:30,GVX,"1",GVX,SE,Sandviken,Sweden,Europe/Stockholm
+8801,Westerland - Sylt,,Germany,54.91528,8.343056,2021-03-04 22:16:30,2021-03-04 22:16:30,GWT,"1",GWT,DE,Westerland - Sylt,Germany,Europe/Berlin
+8802,Carnmore,,Ireland,53.283333,-9.033333,2021-03-04 22:16:30,2021-03-04 22:16:30,GWY,,GWY,IE,Carnmore,Ireland,Europe/Dublin
+8803,Gazipasa Airport,,Turkey,36.2993,32.3014,2021-03-04 22:16:30,2021-03-04 22:16:30,GZP,"3",GZP,TR,Gazipasa Airport,Turkey,Europe/Istanbul
+8804,Gaziantep,,Turkey,36.944935,37.473747,2021-03-04 22:16:30,2021-03-04 22:16:30,GZT,"3",GZT,TR,Gaziantep,Turkey,Europe/Istanbul
+8805,Hasvik,,Norway,70.46667,22.15,2021-03-04 22:16:30,2021-03-04 22:16:30,HAA,"1",HAA,NO,Hasvik,Norway,Europe/Oslo
+8806,Halmstad,,Sweden,56.680935,12.815005,2021-03-04 22:16:30,2021-03-04 22:16:30,HAD,"1",HAD,SE,Halmstad,Sweden,Europe/Stockholm
+8807,Hanover Airport,,Germany,52.459255,9.694766,2021-03-04 22:16:30,2021-03-04 22:16:30,HAJ,"1",HAJ,DE,Hanover Airport,Germany,Europe/Berlin
+8808,Hamburg Airport,,Germany,53.63128,10.006414,2021-03-04 22:16:30,2021-03-04 22:16:30,HAM,"1",HAM,DE,Hamburg Airport,Germany,Europe/Berlin
+8809,Haugesund,,Norway,59.344765,5.215903,2021-03-04 22:16:30,2021-03-04 22:16:30,HAU,"1",HAU,NO,Haugesund,Norway,Europe/Oslo
+8810,Haverfordwest,,United Kingdom,51.8,-4.966667,2021-03-04 22:16:30,2021-03-04 22:16:30,HAW,,HAW,GB,Haverfordwest,United Kingdom,Europe/London
+8811,Heringsdorf,,Germany,53.87825,14.138242,2021-03-04 22:16:30,2021-03-04 22:16:30,HDF,"1",HDF,DE,Heringsdorf,Germany,Europe/Berlin
+8812,Helsinki-vantaa,,Finland,60.31795,24.96645,2021-03-04 22:16:30,2021-03-04 22:16:30,HEL,"2",HEL,FI,Helsinki-vantaa,Finland,Europe/Helsinki
+8813,Helsinki-malmi,,Finland,60.25,25.05,2021-03-04 22:16:30,2021-03-04 22:16:30,HEM,"2",HEL,FI,Helsinki-malmi,Finland,Europe/Helsinki
+8814,Nikos Kazantzakis Airport,,Greece,35.33663,25.174192,2021-03-04 22:16:30,2021-03-04 22:16:30,HER,"2",HER,GR,Nikos Kazantzakis Airport,Greece,Europe/Athens
+8815,Hagfors,,Sweden,60.0175,13.569167,2021-03-04 22:16:30,2021-03-04 22:16:30,HFS,"1",HFS,SE,Hagfors,Sweden,Europe/Stockholm
+8816,Hammerfest,,Norway,70.67999,23.675867,2021-03-04 22:16:30,2021-03-04 22:16:30,HFT,"1",HFT,NO,Hammerfest,Norway,Europe/Oslo
+8817,Helgoland,,Germany,54.186943,7.916667,2021-03-04 22:16:30,2021-03-04 22:16:30,HGL,"1",HGL,DE,Helgoland,Germany,Europe/Berlin
+8818,Frankfurt-Hahn,,Germany,49.948334,7.264167,2021-03-04 22:16:30,2021-03-04 22:16:30,HHN,"1",FRA,DE,Frankfurt-Hahn,Germany,Europe/Berlin
+8819,Haskovo,,Bulgaria,41.933334,25.55,2021-03-04 22:16:30,2021-03-04 22:16:30,HKV,"2",HKV,BG,Haskovo,Bulgaria,Europe/Sofia
+8820,Hultsfred - Vimmerby,,Sweden,57.52639,15.827778,2021-03-04 22:16:30,2021-03-04 22:16:30,HLF,"1",HLF,SE,Hultsfred - Vimmerby,Sweden,Europe/Stockholm
+8821,Khmelnitskiy,,Ukraine,49.416668,27.0,2021-03-04 22:16:31,2021-03-04 22:16:31,HMJ,"2",HMJ,UA,Khmelnitskiy,Ukraine,Europe/Kiev
+8822,Hamar Airport,,Norway,60.8,11.116667,2021-03-04 22:16:31,2021-03-04 22:16:31,HMR,"1",HMR,NO,Hamar Airport,Norway,Europe/Oslo
+8823,Hemavan,,Sweden,65.727776,15.273056,2021-03-04 22:16:31,2021-03-04 22:16:31,HMV,"1",HMV,SE,Hemavan,Sweden,Europe/Stockholm
+8824,Hohenems-Dornbirn,,Austria,47.38333,9.7,2021-03-04 22:16:31,2021-03-04 22:16:31,HOH,"1",HOH,AT,Hohenems-Dornbirn,Austria,Europe/Vienna
+8825,Hof,,Germany,50.289165,11.862222,2021-03-04 22:16:31,2021-03-04 22:16:31,HOQ,"1",HOQ,DE,Hof,Germany,Europe/Berlin
+8826,Hovden,,Norway,62.179787,6.078802,2021-03-04 22:16:31,2021-03-04 22:16:31,HOV,"1",HOV,NO,Hovden,Norway,Europe/Oslo
+8827,Kharkov,,Ukraine,49.92078,36.281185,2021-03-04 22:16:31,2021-03-04 22:16:31,HRK,"2",HRK,UA,Kharkov,Ukraine,Europe/Kiev
+8828,Linton-On-Ouse,,United Kingdom,54.0,-1.55,2021-03-04 22:16:31,2021-03-04 22:16:31,HRT,,HRT,GB,Linton-On-Ouse,United Kingdom,Europe/London
+8829,Huesca-Pirineos,,Spain,42.08093,-0.323469,2021-03-04 22:16:31,2021-03-04 22:16:31,HSK,"1",HSK,ES,Huesca-Pirineos,Spain,Europe/Madrid
+8830,Hatay,,Turkey,36.364544,36.28057,2021-03-04 22:16:31,2021-03-04 22:16:31,HTY,"3",HTY,TR,Hatay,Turkey,Europe/Istanbul
+8831,Humberside International,,United Kingdom,53.583378,-0.34851,2021-03-04 22:16:31,2021-03-04 22:16:31,HUY,,HUY,GB,Humberside International,United Kingdom,Europe/London
+8832,Valan,,Norway,70.98333,25.833332,2021-03-04 22:16:31,2021-03-04 22:16:31,HVG,"1",HVG,NO,Valan,Norway,Europe/Oslo
+8833,Hyvinkaa,,Finland,60.654167,24.884443,2021-03-04 22:16:31,2021-03-04 22:16:31,HYV,"2",HYV,FI,Hyvinkaa,Finland,Europe/Helsinki
+8834,Merville/Calonne,,France,50.61667,2.65,2021-03-04 22:16:31,2021-03-04 22:16:31,HZB,"1",HZB,FR,Merville/Calonne,France,Europe/Paris
+8835,Yaroslavl,,Russia,57.61667,39.88333,2021-03-04 22:16:31,2021-03-04 22:16:31,IAR,"3",IAR,RU,Yaroslavl,Russia,Europe/Moscow
+8836,Iasi,,Romania,47.176987,27.616993,2021-03-04 22:16:31,2021-03-04 22:16:31,IAS,"2",IAS,RO,Iasi,Romania,Europe/Bucharest
+8837,Ibiza,,Spain,38.876595,1.367803,2021-03-04 22:16:31,2021-03-04 22:16:31,IBZ,"1",IBZ,ES,Ibiza,Spain,Europe/Madrid
+8838,Idre,,Sweden,61.86667,12.683333,2021-03-04 22:16:31,2021-03-04 22:16:31,IDB,"1",IDB,SE,Idre,Sweden,Europe/Stockholm
+8839,Ile d'Yeu,,France,46.71787,-2.388694,2021-03-04 22:16:31,2021-03-04 22:16:31,IDY,"1",IDY,FR,Ile d'Yeu,France,Europe/Paris
+8840,Babimost,,Poland,51.933334,15.516667,2021-03-04 22:16:31,2021-03-04 22:16:31,IEG,"1",IEG,PL,Babimost,Poland,Europe/Warsaw
+8841,Zhulyany,,Ukraine,50.401943,30.450832,2021-03-04 22:16:31,2021-03-04 22:16:31,IEV,"2",IEV,UA,Zhulyany,Ukraine,Europe/Kiev
+8842,Ivano-Frankovsk,,Ukraine,48.887535,24.707565,2021-03-04 22:16:31,2021-03-04 22:16:31,IFO,"2",IFO,UA,Ivano-Frankovsk,Ukraine,Europe/Kiev
+8843,Cigli AB,,Turkey,38.31889,27.159445,2021-03-04 22:16:31,2021-03-04 22:16:31,IGL,"3",IZM,TR,Cigli AB,Turkey,Europe/Istanbul
+8844,Ingolstadt-manching,,Germany,48.72325,11.54024,2021-03-04 22:16:31,2021-03-04 22:16:31,IGS,"1",IGS,DE,Ingolstadt-manching,Germany,Europe/Berlin
+8845,Sleptsovskaya,,Russia,43.31778,45.001667,2021-03-04 22:16:31,2021-03-04 22:16:31,IGT,"3",IGT,RU,Sleptsovskaya,Russia,Europe/Moscow
+8846,Izhevsk,,Russia,56.833332,53.466667,2021-03-04 22:16:31,2021-03-04 22:16:31,IJK,"4",IJK,RU,Izhevsk,Russia,Europe/Samara
+8847,Alguaire,,Spain,41.728836,0.543302,2021-03-04 22:16:31,2021-03-04 22:16:31,ILD,"1",ILD,ES,Alguaire,Spain,Europe/Madrid
+8848,Glenegedale,,United Kingdom,55.681946,-6.254167,2021-03-04 22:16:31,2021-03-04 22:16:31,ILY,,ILY,GB,Glenegedale,United Kingdom,Europe/London
+8849,Zilina,,Slovakia,49.233334,18.766666,2021-03-04 22:16:31,2021-03-04 22:16:31,ILZ,"1",ILZ,SK,Zilina,Slovakia,Europe/Bratislava
+8850,Inta,,Russia,66.066666,60.1,2021-03-04 22:16:31,2021-03-04 22:16:31,INA,"3",INA,RU,Inta,Russia,Europe/Moscow
+8851,Constantine The Great International,,Serbia,43.33389,21.851667,2021-03-04 22:16:31,2021-03-04 22:16:31,INI,"1",INI,RS,Constantine The Great International,Serbia,Europe/Belgrade
+8852,Innsbruck-kranebitten,,Austria,47.25745,11.351467,2021-03-04 22:16:31,2021-03-04 22:16:31,INN,"1",INN,AT,Innsbruck-kranebitten,Austria,Europe/Vienna
+8853,Inisheer,,Ireland,53.033333,-9.433333,2021-03-04 22:16:31,2021-03-04 22:16:31,INQ,,INQ,IE,Inisheer,Ireland,Europe/Dublin
+8854,Inverness,,United Kingdom,57.539345,-4.063738,2021-03-04 22:16:31,2021-03-04 22:16:31,INV,,INV,GB,Inverness,United Kingdom,Europe/London
+8855,Ioannina,,Greece,39.696667,20.825832,2021-03-04 22:16:32,2021-03-04 22:16:32,IOA,"2",IOA,GR,Ioannina,Greece,Europe/Athens
+8856,Ronaldsway,,Isle of Man,54.08677,-4.63473,2021-03-04 22:16:32,2021-03-04 22:16:32,IOM,,IOM,IM,Ronaldsway,Isle of Man,Europe/Isle_of_Man
+8857,Kilronan,,Ireland,53.11667,-9.75,2021-03-04 22:16:32,2021-03-04 22:16:32,IOR,,IOR,IE,Kilronan,Ireland,Europe/Dublin
+8858,St Marys,,United Kingdom,49.913334,-6.291667,2021-03-04 22:16:32,2021-03-04 22:16:32,ISC,,ISC,GB,St Marys,United Kingdom,Europe/London
+8859,Isparta,,Turkey,37.86611,30.382221,2021-03-04 22:16:32,2021-03-04 22:16:32,ISE,"3",ISE,TR,Isparta,Turkey,Europe/Istanbul
+8860,Ataturk Airport,,Turkey,40.976665,28.815277,2021-03-04 22:16:32,2021-03-04 22:16:32,IST,"3",IST,TR,Ataturk Airport,Turkey,Europe/Istanbul
+8861,Ivalo,,Finland,68.611115,27.415556,2021-03-04 22:16:32,2021-03-04 22:16:32,IVL,"2",IVL,FI,Ivalo,Finland,Europe/Helsinki
+8862,Ivanova,,Russia,56.942955,40.944546,2021-03-04 22:16:32,2021-03-04 22:16:32,IWA,"3",IWA,RU,Ivanova,Russia,Europe/Moscow
+8863,Jambol,,Bulgaria,42.516666,26.483334,2021-03-04 22:16:32,2021-03-04 22:16:32,JAM,"2",JAM,BG,Jambol,Bulgaria,Europe/Sofia
+8864,Jersey,,Jersey,49.205296,-2.194344,2021-03-04 22:16:32,2021-03-04 22:16:32,JER,,JER,JE,Jersey,Jersey,Europe/Jersey
+8865,Ikaria,,Greece,37.666668,26.333332,2021-03-04 22:16:32,2021-03-04 22:16:32,JIK,"2",JIK,GR,Ikaria,Greece,Europe/Athens
+8866,Axamo,,Sweden,57.7501,14.070497,2021-03-04 22:16:32,2021-03-04 22:16:32,JKG,"1",JKG,SE,Axamo,Sweden,Europe/Stockholm
+8867,Chios,,Greece,38.345795,26.142336,2021-03-04 22:16:32,2021-03-04 22:16:32,JKH,"2",JKH,GR,Chios,Greece,Europe/Athens
+8868,Kalymnos Island,,Greece,36.963333,26.940556,2021-03-04 22:16:32,2021-03-04 22:16:32,JKL,"2",JKL,GR,Kalymnos Island,Greece,Europe/Athens
+8869,Mikonos,,Greece,37.43611,25.344444,2021-03-04 22:16:32,2021-03-04 22:16:32,JMK,"2",JMK,GR,Mikonos,Greece,Europe/Athens
+8870,Naxos Airport,,Greece,37.1,25.383333,2021-03-04 22:16:32,2021-03-04 22:16:32,JNX,"2",JNX,GR,Naxos Airport,Greece,Europe/Athens
+8871,Joensuu,,Finland,62.656788,29.61354,2021-03-04 22:16:32,2021-03-04 22:16:32,JOE,"2",JOE,FI,Joensuu,Finland,Europe/Helsinki
+8872,Yoshkar-Ola,,Russia,56.716667,47.9,2021-03-04 22:16:32,2021-03-04 22:16:32,JOK,"3",JOK,RU,Yoshkar-Ola,Russia,Europe/Moscow
+8873,Sitia,,Greece,35.216667,26.116667,2021-03-04 22:16:32,2021-03-04 22:16:32,JSH,"2",JSH,GR,Sitia,Greece,Europe/Athens
+8874,Skiathos,,Greece,39.180557,23.505556,2021-03-04 22:16:32,2021-03-04 22:16:32,JSI,"2",JSI,GR,Skiathos,Greece,Europe/Athens
+8875,Syros Island,,Greece,37.42361,24.95,2021-03-04 22:16:32,2021-03-04 22:16:32,JSY,"2",JSY,GR,Syros Island,Greece,Europe/Athens
+8876,Santorini (Thira),,Greece,36.4,25.483334,2021-03-04 22:16:32,2021-03-04 22:16:32,JTR,"2",JTR,GR,Santorini (Thira),Greece,Europe/Athens
+8877,Astypalaia,,Greece,36.566666,26.366667,2021-03-04 22:16:32,2021-03-04 22:16:32,JTY,"2",JTY,GR,Astypalaia,Greece,Europe/Athens
+8878,Juist,,Germany,53.683334,7.066667,2021-03-04 22:16:32,2021-03-04 22:16:32,JUI,"1",JUI,DE,Juist,Germany,Europe/Berlin
+8879,Jyvaskyla,,Finland,62.40362,25.68143,2021-03-04 22:16:33,2021-03-04 22:16:33,JYV,"2",JYV,FI,Jyvaskyla,Finland,Europe/Helsinki
+8880,Kajaani,,Finland,64.27778,27.688889,2021-03-04 22:16:33,2021-03-04 22:16:33,KAJ,"2",KAJ,FI,Kajaani,Finland,Europe/Helsinki
+8881,Kuusamo,,Finland,65.99028,29.233889,2021-03-04 22:16:33,2021-03-04 22:16:33,KAO,"2",KAO,FI,Kuusamo,Finland,Europe/Helsinki
+8882,Kauhava,,Finland,63.1,23.083332,2021-03-04 22:16:33,2021-03-04 22:16:33,KAU,"2",KAU,FI,Kauhava,Finland,Europe/Helsinki
+8883,Boryspil (Borispol),,Ukraine,50.341244,30.895206,2021-03-04 22:16:33,2021-03-04 22:16:33,KBP,"2",IEV,UA,Boryspil (Borispol),Ukraine,Europe/Kiev
+8884,Kahramanmaras,,Turkey,37.534443,36.950558,2021-03-04 22:16:33,2021-03-04 22:16:33,KCM,"3",KCM,TR,Kahramanmaras,Turkey,Europe/Istanbul
+8885,Cengiz Topel,,Turkey,40.75,29.833332,2021-03-04 22:16:33,2021-03-04 22:16:33,KCO,"3",KCO,TR,Cengiz Topel,Turkey,Europe/Istanbul
+8886,Kardla,,Estonia,58.983334,22.8,2021-03-04 22:16:33,2021-03-04 22:16:33,KDL,"2",KDL,EE,Kardla,Estonia,Europe/Tallinn
+8887,Kiel-Holtenau,,Germany,54.380833,10.143333,2021-03-04 22:16:33,2021-03-04 22:16:33,KEL,"1",KEL,DE,Kiel-Holtenau,Germany,Europe/Berlin
+8888,Kemi/Tornio,,Finland,65.78006,24.57677,2021-03-04 22:16:33,2021-03-04 22:16:33,KEM,"2",KEM,FI,Kemi/Tornio,Finland,Europe/Helsinki
+8889,Halli,,Finland,61.583332,24.75,2021-03-04 22:16:33,2021-03-04 22:16:33,KEV,"2",KEV,FI,Halli,Finland,Europe/Helsinki
+8890,Khrabrovo,,Russia,54.882656,20.586645,2021-03-04 22:16:33,2021-03-04 22:16:33,KGD,"2",KGD,RU,Khrabrovo,Russia,Europe/Kaliningrad
+8891,Kirovograd,,Ukraine,48.55,32.3,2021-03-04 22:16:33,2021-03-04 22:16:33,KGO,"2",KGO,UA,Kirovograd,Ukraine,Europe/Kiev
+8892,Kos Island International Airport,,Greece,36.793056,27.095278,2021-03-04 22:16:33,2021-03-04 22:16:33,KGS,"2",KGS,GR,Kos Island International Airport,Greece,Europe/Athens
+8893,Kerch,,Ukraine,45.36667,36.45,2021-03-04 22:16:33,2021-03-04 22:16:33,KHC,"3",KHC,UA,Kerch,Ukraine,Europe/Simferopol
+8894,Kherson,,Ukraine,46.675278,32.627777,2021-03-04 22:16:33,2021-03-04 22:16:33,KHE,"2",KHE,UA,Kherson,Ukraine,Europe/Kiev
+8895,Kauhajoki,,Finland,62.463055,22.394722,2021-03-04 22:16:33,2021-03-04 22:16:33,KHJ,"2",KHJ,FI,Kauhajoki,Finland,Europe/Helsinki
+8896,Kristianstad,,Sweden,55.919445,14.088889,2021-03-04 22:16:33,2021-03-04 22:16:33,KID,"1",KID,SE,Kristianstad,Sweden,Europe/Stockholm
+8897,Kerry,,Ireland,52.181477,-9.535666,2021-03-04 22:16:33,2021-03-04 22:16:33,KIR,,KIR,IE,Kerry,Ireland,Europe/Dublin
+8898,Kithira,,Greece,36.291668,23.025,2021-03-04 22:16:33,2021-03-04 22:16:33,KIT,"2",KIT,GR,Kithira,Greece,Europe/Athens
+8899,International Airport Chisinau,,Moldova,46.935444,28.934967,2021-03-04 22:16:33,2021-03-04 22:16:33,KIV,"2",KIV,MD,International Airport Chisinau,Moldova,Europe/Chisinau
+8900,Kortrijk,,Belgium,50.817223,3.201667,2021-03-04 22:16:33,2021-03-04 22:16:33,KJK,"1",KJK,BE,Kortrijk,Belgium,Europe/Brussels
+8901,Hoeybuktmoen,,Norway,69.7235,29.891184,2021-03-04 22:16:33,2021-03-04 22:16:33,KKN,"1",KKN,NO,Hoeybuktmoen,Norway,Europe/Oslo
+8902,Kilkenny,,Ireland,52.65,-7.25,2021-03-04 22:16:33,2021-03-04 22:16:33,KKY,,KKY,IE,Kilkenny,Ireland,Europe/Dublin
+8903,Migalovo,,Russia,56.916668,35.916668,2021-03-04 22:16:33,2021-03-04 22:16:33,KLD,"3",KLD,RU,Migalovo,Russia,Europe/Moscow
+8904,Kaluga,,Russia,54.5,36.266666,2021-03-04 22:16:33,2021-03-04 22:16:33,KLF,"3",KLF,RU,Kaluga,Russia,Europe/Moscow
+8905,Kalmar,,Sweden,56.685,16.287222,2021-03-04 22:16:33,2021-03-04 22:16:33,KLR,"1",KLR,SE,Kalmar,Sweden,Europe/Stockholm
+8906,Alpe Adria,,Austria,46.650124,14.324192,2021-03-04 22:16:33,2021-03-04 22:16:33,KLU,"1",KLU,AT,Alpe Adria,Austria,Europe/Vienna
+8907,Karlovy Vary,,Czech Republic,50.2,12.916667,2021-03-04 22:16:33,2021-03-04 22:16:33,KLV,"1",KLV,CZ,Karlovy Vary,Czech Republic,Europe/Prague
+8908,Kalamata,,Greece,37.069443,22.027779,2021-03-04 22:16:33,2021-03-04 22:16:33,KLX,"2",KLX,GR,Kalamata,Greece,Europe/Athens
+8909,Sokerkino,,Russia,57.75,40.933334,2021-03-04 22:16:33,2021-03-04 22:16:33,KMW,"3",KMW,RU,Sokerkino,Russia,Europe/Moscow
+8910,Marham RAF,,United Kingdom,52.75,0.4,2021-03-04 22:16:33,2021-03-04 22:16:33,KNF,,KNF,GB,Marham RAF,United Kingdom,Europe/London
+8911,Orkney Island,,United Kingdom,58.958057,-2.900556,2021-03-04 22:16:34,2021-03-04 22:16:34,KOI,,KOI,GB,Orkney Island,United Kingdom,Europe/London
+8912,Kruunupyy,,Finland,63.718838,23.133068,2021-03-04 22:16:34,2021-03-04 22:16:34,KOK,"2",KOK,FI,Kruunupyy,Finland,Europe/Helsinki
+8913,Kramfors,,Sweden,63.049442,17.772778,2021-03-04 22:16:34,2021-03-04 22:16:34,KRF,"1",KRF,SE,Kramfors,Sweden,Europe/Stockholm
+8914,John Paul II Balice International,,Poland,50.075493,19.793743,2021-03-04 22:16:34,2021-03-04 22:16:34,KRK,"1",KRK,PL,John Paul II Balice International,Poland,Europe/Warsaw
+8915,Kiruna,,Sweden,67.82222,20.345833,2021-03-04 22:16:34,2021-03-04 22:16:34,KRN,"1",KRN,SE,Kiruna,Sweden,Europe/Stockholm
+8916,Karup,,Denmark,56.3,9.116667,2021-03-04 22:16:34,2021-03-04 22:16:34,KRP,"1",KRP,DK,Karup,Denmark,Europe/Copenhagen
+8917,Kramatorsk,,Ukraine,48.716667,37.61667,2021-03-04 22:16:34,2021-03-04 22:16:34,KRQ,"2",KRQ,UA,Kramatorsk,Ukraine,Europe/Kiev
+8918,Pashkovsky,,Russia,45.034138,39.139004,2021-03-04 22:16:34,2021-03-04 22:16:34,KRR,"3",KRR,RU,Pashkovsky,Russia,Europe/Moscow
+8919,Kjevik,,Norway,58.20255,8.073732,2021-03-04 22:16:34,2021-03-04 22:16:34,KRS,"1",KRS,NO,Kjevik,Norway,Europe/Oslo
+8920,Barca,,Slovakia,48.666668,21.25,2021-03-04 22:16:34,2021-03-04 22:16:34,KSC,"1",KSC,SK,Barca,Slovakia,Europe/Bratislava
+8921,Karlstad,,Sweden,59.360283,13.472059,2021-03-04 22:16:34,2021-03-04 22:16:34,KSD,"1",KSD,SE,Karlstad,Sweden,Europe/Stockholm
+8922,Kassel-Calden,,Germany,51.415855,9.380858,2021-03-04 22:16:34,2021-03-04 22:16:34,KSF,"1",KSF,DE,Kassel-Calden,Germany,Europe/Berlin
+8923,Kasos Island,,Greece,35.42139,26.916668,2021-03-04 22:16:34,2021-03-04 22:16:34,KSJ,"2",KSJ,GR,Kasos Island,Greece,Europe/Athens
+8924,Aristoteles Airport,,Greece,40.450832,21.273333,2021-03-04 22:16:34,2021-03-04 22:16:34,KSO,"2",KSO,GR,Aristoteles Airport,Greece,Europe/Athens
+8925,Kvernberget,,Norway,63.114723,7.844444,2021-03-04 22:16:34,2021-03-04 22:16:34,KSU,"1",KRS,NO,Kvernberget,Norway,Europe/Oslo
+8926,Kars,,Turkey,40.551666,43.085835,2021-03-04 22:16:34,2021-03-04 22:16:34,KSY,"3",KSY,TR,Kars,Turkey,Europe/Istanbul
+8927,Kotlas,,Russia,61.233334,46.7,2021-03-04 22:16:34,2021-03-04 22:16:34,KSZ,"3",KSZ,RU,Kotlas,Russia,Europe/Moscow
+8928,Kitee,,Finland,62.165833,30.076668,2021-03-04 22:16:34,2021-03-04 22:16:34,KTQ,"2",KTQ,FI,Kitee,Finland,Europe/Helsinki
+8929,Kittila,,Finland,67.695946,24.859028,2021-03-04 22:16:34,2021-03-04 22:16:34,KTT,"2",KTT,FI,Kittila,Finland,Europe/Helsinki
+8930,Pyrzowice,,Poland,50.470833,19.07403,2021-03-04 22:16:34,2021-03-04 22:16:34,KTW,"1",KTW,PL,Pyrzowice,Poland,Europe/Warsaw
+8931,Kurumoch,,Russia,53.50782,50.14742,2021-03-04 22:16:34,2021-03-04 22:16:34,KUF,"4",KUF,RU,Kurumoch,Russia,Europe/Samara
+8932,Kaunas,,Lithuania,54.9,23.916668,2021-03-04 22:16:34,2021-03-04 22:16:34,KUN,"2",KUN,LT,Kaunas,Lithuania,Europe/Vilnius
+8933,Kuopio,,Finland,63.008907,27.788696,2021-03-04 22:16:34,2021-03-04 22:16:34,KUO,"2",KUO,FI,Kuopio,Finland,Europe/Helsinki
+8934,Megas Alexandros International,,Greece,40.912994,24.619675,2021-03-04 22:16:34,2021-03-04 22:16:34,KVA,"2",KVA,GR,Megas Alexandros International,Greece,Europe/Athens
+8935,Skovde,,Sweden,58.45,13.966667,2021-03-04 22:16:34,2021-03-04 22:16:34,KVB,"1",KVB,SE,Skovde,Sweden,Europe/Stockholm
+8936,Kirovsk,,Russia,67.583336,33.583332,2021-03-04 22:16:34,2021-03-04 22:16:34,KVK,"3",KVK,RU,Kirovsk,Russia,Europe/Volgograd
+8937,Kirov,,Russia,58.5,49.35,2021-03-04 22:16:34,2021-03-04 22:16:34,KVX,"3",KVX,RU,Kirov,Russia,Europe/Volgograd
+8938,Krivoy Rog,,Ukraine,48.05,33.216667,2021-03-04 22:16:34,2021-03-04 22:16:34,KWG,"2",KWG,UA,Krivoy Rog,Ukraine,Europe/Kiev
+8939,Konya,,Turkey,37.979168,32.56222,2021-03-04 22:16:34,2021-03-04 22:16:34,KYA,"3",KYA,TR,Konya,Turkey,Europe/Istanbul
+8940,Kitzingen,,Germany,49.733334,10.15,2021-03-04 22:16:34,2021-03-04 22:16:34,KZG,"1",KZG,DE,Kitzingen,Germany,Europe/Berlin
+8941,Philippos Airport,,Greece,40.288612,21.841944,2021-03-04 22:16:34,2021-03-04 22:16:34,KZI,"2",KZI,GR,Philippos Airport,Greece,Europe/Athens
+8942,Kazan,,Russia,55.60844,49.29824,2021-03-04 22:16:34,2021-03-04 22:16:34,KZN,"3",KZN,RU,Kazan,Russia,Europe/Moscow
+8943,Kastelorizo,,Greece,36.083332,29.333332,2021-03-04 22:16:34,2021-03-04 22:16:34,KZS,"2",KZS,GR,Kastelorizo,Greece,Europe/Athens
+8944,Servel,,France,48.754166,-3.481944,2021-03-04 22:16:34,2021-03-04 22:16:34,LAI,"1",LAI,FR,Servel,France,Europe/Paris
+8945,Leeds/bradford,,United Kingdom,53.86934,-1.659985,2021-03-04 22:16:34,2021-03-04 22:16:34,LBA,,LBA,GB,Leeds/bradford,United Kingdom,Europe/London
+8946,Lübeck Blankensee,,Germany,53.80527,10.701162,2021-03-04 22:16:34,2021-03-04 22:16:34,LBC,"1",HAM,DE,Lübeck Blankensee,Germany,Europe/Berlin
+8947,Le Bourget,,France,48.971943,2.4425,2021-03-04 22:16:34,2021-03-04 22:16:34,LBG,"1",PAR,FR,Le Bourget,France,Europe/Paris
+8948,Le Sequestre,,France,43.933334,2.15,2021-03-04 22:16:34,2021-03-04 22:16:34,LBI,"1",LBI,FR,Le Sequestre,France,Europe/Paris
+8949,Montoir,,France,47.28889,-2.345833,2021-03-04 22:16:34,2021-03-04 22:16:34,LBY,"1",LBY,FR,Montoir,France,Europe/Paris
+8950,Galatina,,Italy,40.24278,18.133333,2021-03-04 22:16:34,2021-03-04 22:16:34,LCC,"1",LCC,IT,Galatina,Italy,Europe/Rome
+8951,La Coruna,,Spain,43.30236,-8.381923,2021-03-04 22:16:34,2021-03-04 22:16:34,LCG,"1",LCG,ES,La Coruna,Spain,Europe/Madrid
+8952,Lodz Lublinek,,Poland,51.721943,19.398333,2021-03-04 22:16:34,2021-03-04 22:16:34,LCJ,"1",LCJ,PL,Lodz Lublinek,Poland,Europe/Warsaw
+8953,Lucca,,Italy,43.833332,10.583333,2021-03-04 22:16:34,2021-03-04 22:16:34,LCV,"1",LCV,IT,Lucca,Italy,Europe/Rome
+8954,London City Airport,,United Kingdom,51.5,0.05,2021-03-04 22:16:35,2021-03-04 22:16:35,LCY,,LON,GB,London City Airport,United Kingdom,Europe/London
+8955,Tarbes Ossun Lourdes,,France,43.18651,0.003368,2021-03-04 22:16:35,2021-03-04 22:16:35,LDE,"1",LDE,FR,Tarbes Ossun Lourdes,France,Europe/Paris
+8956,Leshukonskoye,,Russia,64.9,45.75,2021-03-04 22:16:35,2021-03-04 22:16:35,LDG,"3",LDG,RU,Leshukonskoye,Russia,Europe/Moscow
+8957,Eglinton (City of Derry),,United Kingdom,55.039566,-7.155835,2021-03-04 22:16:35,2021-03-04 22:16:35,LDY,,LDY,GB,Eglinton (City of Derry),United Kingdom,Europe/London
+8958,Pulkovo,,Russia,59.806084,30.3083,2021-03-04 22:16:35,2021-03-04 22:16:35,LED,"3",LED,RU,Pulkovo,Russia,Europe/Moscow
+8959,Octeville,,France,49.53889,0.088611,2021-03-04 22:16:35,2021-03-04 22:16:35,LEH,"1",LEH,FR,Octeville,France,Europe/Paris
+8960,Almeria,,Spain,36.847984,-2.371873,2021-03-04 22:16:35,2021-03-04 22:16:35,LEI,"1",LEI,ES,Almeria,Spain,Europe/Madrid
+8961,Halle,,Germany,51.42026,12.221202,2021-03-04 22:16:35,2021-03-04 22:16:35,LEJ,"1",LEJ,DE,Halle,Germany,Europe/Berlin
+8962,Leon,,Spain,42.59057,-5.64629,2021-03-04 22:16:35,2021-03-04 22:16:35,LEN,"1",LEN,ES,Leon,Spain,Europe/Madrid
+8963,Lands End,,United Kingdom,50.05,-5.733333,2021-03-04 22:16:35,2021-03-04 22:16:35,LEQ,,LEQ,GB,Lands End,United Kingdom,Europe/London
+8964,Seo de Urgel,,Spain,42.416668,1.466667,2021-03-04 22:16:35,2021-03-04 22:16:35,LEU,"1",LEU,ES,Seo de Urgel,Spain,Europe/Madrid
+8965,Liege Airport,,Belgium,50.643333,5.460149,2021-03-04 22:16:35,2021-03-04 22:16:35,LGG,"1",LGG,BE,Liege Airport,Belgium,Europe/Brussels
+8966,Gatwick,,United Kingdom,51.156807,-0.161863,2021-03-04 22:16:35,2021-03-04 22:16:35,LGW,,LON,GB,Gatwick,United Kingdom,Europe/London
+8967,Black Forest,,Germany,48.333332,7.883333,2021-03-04 22:16:35,2021-03-04 22:16:35,LHA,"1",LHA,DE,Black Forest,Germany,Europe/Berlin
+8968,Heathrow,,United Kingdom,51.469604,-0.453566,2021-03-04 22:16:35,2021-03-04 22:16:35,LHR,,LON,GB,Heathrow,United Kingdom,Europe/London
+8969,Bellegarde,,France,45.86218,1.176245,2021-03-04 22:16:35,2021-03-04 22:16:35,LIG,"1",LIG,FR,Bellegarde,France,Europe/Paris
+8970,Lesquin,,France,50.57205,3.106067,2021-03-04 22:16:35,2021-03-04 22:16:35,LIL,"1",LIL,FR,Lesquin,France,Europe/Paris
+8971,Linate,,Italy,45.460957,9.279157,2021-03-04 22:16:35,2021-03-04 22:16:35,LIN,"1",MIL,IT,Linate,Italy,Europe/Rome
+8972,Lisbon Portela,,Portugal,38.770042,-9.128165,2021-03-04 22:16:35,2021-03-04 22:16:35,LIS,,LIS,PT,Lisbon Portela,Portugal,Europe/Lisbon
+8973,Brnik,,Slovenia,46.23102,14.454972,2021-03-04 22:16:35,2021-03-04 22:16:35,LJU,"1",LJU,SI,Brnik,Slovenia,Europe/Ljubljana
+8974,Banak,,Norway,70.06778,24.973612,2021-03-04 22:16:35,2021-03-04 22:16:35,LKL,"1",LKL,NO,Banak,Norway,Europe/Oslo
+8975,Leknes,,Norway,68.15421,13.614864,2021-03-04 22:16:35,2021-03-04 22:16:35,LKN,"1",LKN,NO,Leknes,Norway,Europe/Oslo
+8976,Kallax,,Sweden,65.54939,22.123587,2021-03-04 22:16:35,2021-03-04 22:16:35,LLA,"1",LLA,SE,Kallax,Sweden,Europe/Stockholm
+8977,Arnage,,France,48.0,1.25,2021-03-04 22:16:35,2021-03-04 22:16:35,LME,"1",LME,FR,Arnage,France,Europe/Paris
+8978,RAF Station,,United Kingdom,57.716667,-3.333333,2021-03-04 22:16:35,2021-03-04 22:16:35,LMO,,LMO,GB,RAF Station,United Kingdom,Europe/London
+8979,Lampedusa,,Italy,35.5,12.616667,2021-03-04 22:16:35,2021-03-04 22:16:35,LMP,"1",LMP,IT,Lampedusa,Italy,Europe/Rome
+8980,Smolensk,,Russia,54.8,32.05,2021-03-04 22:16:35,2021-03-04 22:16:35,LNX,"3",LNX,RU,Smolensk,Russia,Europe/Moscow
+8981,Blue Danube,,Austria,48.23987,14.193345,2021-03-04 22:16:35,2021-03-04 22:16:35,LNZ,"1",LNZ,AT,Blue Danube,Austria,Europe/Vienna
+8982,Linkoping,,Sweden,58.406944,15.656944,2021-03-04 22:16:35,2021-03-04 22:16:35,LPI,"1",LPI,SE,Linkoping,Sweden,Europe/Stockholm
+8983,Lipetsk,,Russia,52.61667,39.6,2021-03-04 22:16:35,2021-03-04 22:16:35,LPK,"3",LPK,RU,Lipetsk,Russia,Europe/Moscow
+8984,Liverpool John Lennon,,United Kingdom,53.337616,-2.854905,2021-03-04 22:16:35,2021-03-04 22:16:35,LPL,,LPL,GB,Liverpool John Lennon,United Kingdom,Europe/London
+8985,Lappeenranta,,Finland,61.046112,28.156668,2021-03-04 22:16:35,2021-03-04 22:16:35,LPP,"2",LPP,FI,Lappeenranta,Finland,Europe/Helsinki
+8986,Liepaja,,Latvia,56.516666,21.1,2021-03-04 22:16:35,2021-03-04 22:16:35,LPX,"2",LPX,LV,Liepaja,Latvia,Europe/Riga
+8987,Loudes,,France,45.083332,3.766667,2021-03-04 22:16:35,2021-03-04 22:16:35,LPY,"1",LPY,FR,Loudes,France,Europe/Paris
+8988,Larisa,,Greece,39.65111,22.463888,2021-03-04 22:16:35,2021-03-04 22:16:35,LRA,"2",LRA,GR,Larisa,Greece,Europe/Athens
+8989,Laleu,,France,46.180557,-1.185833,2021-03-04 22:16:35,2021-03-04 22:16:35,LRH,"1",LRH,FR,Laleu,France,Europe/Paris
+8990,Leros,,Greece,37.516666,26.783333,2021-03-04 22:16:35,2021-03-04 22:16:35,LRS,"2",LRS,GR,Leros,Greece,Europe/Athens
+8991,Lann Bihoue,,France,47.75374,-3.436394,2021-03-04 22:16:35,2021-03-04 22:16:35,LRT,"1",LRT,FR,Lann Bihoue,France,Europe/Paris
+8992,Sumburgh,,United Kingdom,59.877888,-1.287111,2021-03-04 22:16:35,2021-03-04 22:16:35,LSI,,SDZ,GB,Sumburgh,United Kingdom,Europe/London
+8993,Talmont,,France,46.5,-1.783333,2021-03-04 22:16:35,2021-03-04 22:16:35,LSO,"1",LSO,FR,Talmont,France,Europe/Paris
+8994,Losinj Airport,,Croatia,44.566944,14.385833,2021-03-04 22:16:36,2021-03-04 22:16:36,LSZ,"1",LSZ,HR,Losinj Airport,Croatia,Europe/Zagreb
+8995,Luton Airport,,United Kingdom,51.87977,-0.376232,2021-03-04 22:16:36,2021-03-04 22:16:36,LTN,,LON,GB,Luton Airport,United Kingdom,Europe/London
+8996,Le Touquet,,France,50.515,1.628056,2021-03-04 22:16:36,2021-03-04 22:16:36,LTQ,"1",LTQ,FR,Le Touquet,France,Europe/Paris
+8997,Letterkenny,,Ireland,54.95,-7.733333,2021-03-04 22:16:36,2021-03-04 22:16:36,LTR,,LTR,IE,Letterkenny,Ireland,Europe/Dublin
+8998,La Mole,,France,43.283333,6.633333,2021-03-04 22:16:36,2021-03-04 22:16:36,LTT,"1",LTT,FR,La Mole,France,Europe/Paris
+8999,Lugano,,Switzerland,46.016666,8.966667,2021-03-04 22:16:36,2021-03-04 22:16:36,LUG,"1",LUG,CH,Lugano,Switzerland,Europe/Zurich
+9000,Findel,,Luxembourg,49.63111,6.209539,2021-03-04 22:16:36,2021-03-04 22:16:36,LUX,"1",LUX,LU,Findel,Luxembourg,Europe/Luxembourg
+9001,Entrammes,,France,48.066666,-0.766667,2021-03-04 22:16:36,2021-03-04 22:16:36,LVA,"1",LVA,FR,Entrammes,France,Europe/Paris
+9002,Lerwick/Tingwall,,United Kingdom,60.15,-1.15,2021-03-04 22:16:36,2021-03-04 22:16:36,LWK,,SDZ,GB,Lerwick/Tingwall,United Kingdom,Europe/London
+9003,Snilow,,Ukraine,49.816418,23.955318,2021-03-04 22:16:36,2021-03-04 22:16:36,LWO,"2",LWO,UA,Snilow,Ukraine,Europe/Kiev
+9004,Leeuwarden,,Netherlands,53.25,5.8,2021-03-04 22:16:36,2021-03-04 22:16:36,LWR,"1",LWR,NL,Leeuwarden,Netherlands,Europe/Amsterdam
+9005,Limnos,,Greece,39.923904,25.233446,2021-03-04 22:16:36,2021-03-04 22:16:36,LXS,"2",LXS,GR,Limnos,Greece,Europe/Athens
+9006,Lycksele,,Sweden,64.55071,18.70967,2021-03-04 22:16:36,2021-03-04 22:16:36,LYC,"1",LYC,SE,Lycksele,Sweden,Europe/Stockholm
+9007,Bron,,France,45.73083,4.943333,2021-03-04 22:16:36,2021-03-04 22:16:36,LYN,"1",LYS,FR,Bron,France,Europe/Paris
+9008,St-Exupéry,,France,45.721424,5.080334,2021-03-04 22:16:36,2021-03-04 22:16:36,LYS,"1",LYS,FR,St-Exupéry,France,Europe/Paris
+9009,London Ashford International (Ferryfield),,United Kingdom,50.95,0.933333,2021-03-04 22:16:36,2021-03-04 22:16:36,LYX,,LYX,GB,London Ashford International (Ferryfield),United Kingdom,Europe/London
+9010,Barajas,,Spain,40.46515,-3.570209,2021-03-04 22:16:36,2021-03-04 22:16:36,MAD,"1",MAD,ES,Barajas,Spain,Europe/Madrid
+9011,Mahon,,Spain,39.864746,4.226256,2021-03-04 22:16:36,2021-03-04 22:16:36,MAH,"1",MAH,ES,Mahon,Spain,Europe/Madrid
+9012,Manchester Airport,,United Kingdom,53.362907,-2.273354,2021-03-04 22:16:36,2021-03-04 22:16:36,MAN,,MAN,GB,Manchester Airport,United Kingdom,Europe/London
+9013,Maribor International Airport,,Slovenia,46.55,15.65,2021-03-04 22:16:36,2021-03-04 22:16:36,MBX,"1",MBX,SI,Maribor International Airport,Slovenia,Europe/Ljubljana
+9014,Fontvieille Heliport,,Monaco,43.733334,7.416667,2021-03-04 22:16:36,2021-03-04 22:16:36,MCM,"1",MCM,MC,Fontvieille Heliport,Monaco,Europe/Monaco
+9015,Gueret (Lepaud),,France,46.35,2.6,2021-03-04 22:16:36,2021-03-04 22:16:36,MCU,"1",MCU,FR,Gueret (Lepaud),France,Europe/Paris
+9016,Makhachkala,,Russia,42.82095,47.65611,2021-03-04 22:16:36,2021-03-04 22:16:36,MCX,"3",MCX,RU,Makhachkala,Russia,Europe/Moscow
+9017,Mehamn,,Norway,71.03333,27.833332,2021-03-04 22:16:36,2021-03-04 22:16:36,MEH,"1",MEH,NO,Mehamn,Norway,Europe/Oslo
+9018,Brenoux,,France,44.5,3.533333,2021-03-04 22:16:36,2021-03-04 22:16:36,MEN,"1",MEN,FR,Brenoux,France,Europe/Paris
+9019,Moenchen-gl. - Dus Exp,,Germany,51.35278,6.544444,2021-03-04 22:16:36,2021-03-04 22:16:36,MGL,"1",DUS,DE,Moenchen-gl. - Dus Exp,Germany,Europe/Berlin
+9020,Mannheim Airport,,Germany,49.476578,8.521081,2021-03-04 22:16:36,2021-03-04 22:16:36,MHG,"1",MHG,DE,Mannheim Airport,Germany,Europe/Berlin
+9021,Minsk International 1,,Belarus,53.85,27.55,2021-03-04 22:16:37,2021-03-04 22:16:37,MHP,"3",MSQ,BY,Minsk International 1,Belarus,Europe/Minsk
+9022,Mariehamn,,Aland Islands,60.123333,19.896667,2021-03-04 22:16:37,2021-03-04 22:16:37,MHQ,"2",MHQ,AX,Mariehamn,Aland Islands,Europe/Mariehamn
+9023,Mikkeli,,Finland,61.683887,27.213057,2021-03-04 22:16:37,2021-03-04 22:16:37,MIK,"2",MIK,FI,Mikkeli,Finland,Europe/Helsinki
+9024,Kjaerstad,,Norway,65.78439,13.218328,2021-03-04 22:16:37,2021-03-04 22:16:37,MJF,"1",MJF,NO,Kjaerstad,Norway,Europe/Oslo
+9025,Mytilene International Airport,,Greece,39.05611,26.599443,2021-03-04 22:16:37,2021-03-04 22:16:37,MJT,"2",MJT,GR,Mytilene International Airport,Greece,Europe/Athens
+9026,San Javier,,Spain,37.77521,-0.81904,2021-03-04 22:16:37,2021-03-04 22:16:37,MJV,"1",MJV,ES,San Javier,Spain,Europe/Madrid
+9027,Marianske Lazne,,Czech Republic,49.983334,12.716667,2021-03-04 22:16:37,2021-03-04 22:16:37,MKA,"1",MKA,CZ,Marianske Lazne,Czech Republic,Europe/Prague
+9028,Malta International,,Malta,35.849777,14.495401,2021-03-04 22:16:37,2021-03-04 22:16:37,MLA,"1",MLA,MT,Malta International,Malta,Europe/Malta
+9029,Euroairport France,,Switzerland,47.599323,7.532864,2021-03-04 22:16:37,2021-03-04 22:16:37,MLH,"1",EAP,CH,Euroairport France,Switzerland,Europe/Zurich
+9030,Milos,,Greece,36.69611,24.475,2021-03-04 22:16:37,2021-03-04 22:16:37,MLO,"2",MLO,GR,Milos,Greece,Europe/Athens
+9031,Malatya,,Turkey,38.354443,38.253613,2021-03-04 22:16:37,2021-03-04 22:16:37,MLX,"3",MLX,TR,Malatya,Turkey,Europe/Istanbul
+9032,Tees Valley,,United Kingdom,54.512226,-1.434013,2021-03-04 22:16:37,2021-03-04 22:16:37,MME,,MME,GB,Tees Valley,United Kingdom,Europe/London
+9033,Murmansk,,Russia,68.785095,32.759155,2021-03-04 22:16:37,2021-03-04 22:16:37,MMK,"3",MMK,RU,Murmansk,Russia,Europe/Moscow
+9034,Sturup,,Sweden,55.538757,13.363727,2021-03-04 22:16:37,2021-03-04 22:16:37,MMX,"1",MMA,SE,Sturup,Sweden,Europe/Stockholm
+9035,Aro,,Norway,62.747303,7.262118,2021-03-04 22:16:37,2021-03-04 22:16:37,MOL,"1",MOL,NO,Aro,Norway,Europe/Oslo
+9036,Montpellier Méditerranée,,France,43.57843,3.959174,2021-03-04 22:16:37,2021-03-04 22:16:37,MPL,"1",MPL,FR,Montpellier Méditerranée,France,Europe/Paris
+9037,Mariupol,,Ukraine,47.1,37.55,2021-03-04 22:16:37,2021-03-04 22:16:37,MPW,"2",MPW,UA,Mariupol,Ukraine,Europe/Kiev
+9038,Mardin,,Turkey,37.2233,40.6317,2021-03-04 22:16:37,2021-03-04 22:16:37,MQM,"3",MQM,TR,Mardin,Turkey,Europe/Istanbul
+9039,Mo I Rana,,Norway,66.36465,14.302748,2021-03-04 22:16:37,2021-03-04 22:16:37,MQN,"1",MQN,NO,Mo I Rana,Norway,Europe/Oslo
+9040,Marseille Provence Airport,,France,43.44178,5.222137,2021-03-04 22:16:37,2021-03-04 22:16:37,MRS,"1",MRS,FR,Marseille Provence Airport,France,Europe/Paris
+9041,Mineralnye Vodyj,,Russia,44.218105,43.085815,2021-03-04 22:16:37,2021-03-04 22:16:37,MRV,"3",MRV,RU,Mineralnye Vodyj,Russia,Europe/Moscow
+9042,Minsk National 2,,Belarus,53.889725,28.032442,2021-03-04 22:16:37,2021-03-04 22:16:37,MSQ,"3",MSQ,BY,Minsk National 2,Belarus,Europe/Minsk
+9043,Mus,,Turkey,38.725,41.625,2021-03-04 22:16:37,2021-03-04 22:16:37,MSR,"3",MSR,TR,Mus,Turkey,Europe/Istanbul
+9044,Maastricht/aachen,,Netherlands,50.91562,5.768827,2021-03-04 22:16:37,2021-03-04 22:16:37,MST,"1",MST,NL,Maastricht/aachen,Netherlands,Europe/Amsterdam
+9045,Franz Josef Strauss,,Germany,48.353004,11.790143,2021-03-04 22:16:37,2021-03-04 22:16:37,MUC,"1",MUC,DE,Franz Josef Strauss,Germany,Europe/Berlin
+9046,Mogilev,,Belarus,53.95,30.133333,2021-03-04 22:16:37,2021-03-04 22:16:37,MVQ,"3",MVQ,BY,Mogilev,Belarus,Europe/Minsk
+9047,Morlaix,,France,48.6,-3.816667,2021-03-04 22:16:38,2021-03-04 22:16:38,MXN,"1",MXN,FR,Morlaix,France,Europe/Paris
+9048,Milano Malpensa,,Italy,45.627403,8.71237,2021-03-04 22:16:38,2021-03-04 22:16:38,MXP,"1",MIL,IT,Milano Malpensa,Italy,Europe/Rome
+9049,Mora,,Sweden,60.95812,14.504529,2021-03-04 22:16:38,2021-03-04 22:16:38,MXX,"1",MXX,SE,Mora,Sweden,Europe/Stockholm
+9050,Merzifon,,Turkey,40.88333,35.533333,2021-03-04 22:16:38,2021-03-04 22:16:38,MZH,"3",MZH,TR,Merzifon,Turkey,Europe/Istanbul
+9051,Nalchik,,Russia,43.533333,43.7,2021-03-04 22:16:38,2021-03-04 22:16:38,NAL,"3",NAL,RU,Nalchik,Russia,Europe/Moscow
+9052,Capodichino,,Italy,40.886112,14.291667,2021-03-04 22:16:38,2021-03-04 22:16:38,NAP,"1",NAP,IT,Capodichino,Italy,Europe/Rome
+9053,Nevsehir,,Turkey,38.63333,34.716667,2021-03-04 22:16:38,2021-03-04 22:16:38,NAV,"3",NAV,TR,Nevsehir,Turkey,Europe/Istanbul
+9054,Naberevnye Chelny,,Russia,55.564125,52.10341,2021-03-04 22:16:38,2021-03-04 22:16:38,NBC,"3",NBC,RU,Naberevnye Chelny,Russia,Europe/Moscow
+9055,Cote D'azur International Airport,,France,43.66049,7.205232,2021-03-04 22:16:38,2021-03-04 22:16:38,NCE,"1",NCE,FR,Cote D'azur International Airport,France,Europe/Paris
+9056,Newcastle Airport,,United Kingdom,55.037064,-1.710629,2021-03-04 22:16:38,2021-03-04 22:16:38,NCL,,NCL,GB,Newcastle Airport,United Kingdom,Europe/London
+9057,Annecy-Meythe,,France,45.930557,6.100833,2021-03-04 22:16:38,2021-03-04 22:16:38,NCY,"1",NCY,FR,Annecy-Meythe,France,Europe/Paris
+9058,Sanday,,United Kingdom,59.25,-2.583333,2021-03-04 22:16:38,2021-03-04 22:16:38,NDY,,NDY,GB,Sanday,United Kingdom,Europe/London
+9059,Northolt,,United Kingdom,51.533333,-0.366667,2021-03-04 22:16:38,2021-03-04 22:16:38,NHT,,NHT,GB,Northolt,United Kingdom,Europe/London
+9060,Niort,,France,46.316666,-0.45,2021-03-04 22:16:38,2021-03-04 22:16:38,NIT,"1",NIT,FR,Niort,France,Europe/Paris
+9061,Nikolaev (Mykolaiv),,Ukraine,47.05,31.916668,2021-03-04 22:16:38,2021-03-04 22:16:38,NLV,"2",NLV,UA,Nikolaev (Mykolaiv),Ukraine,Europe/Kiev
+9062,Naryan-Mar,,Russia,67.61667,53.15,2021-03-04 22:16:38,2021-03-04 22:16:38,NNM,"3",NNM,RU,Naryan-Mar,Russia,Europe/Moscow
+9063,Connemara,,Ireland,53.216667,-9.466667,2021-03-04 22:16:38,2021-03-04 22:16:38,NNR,,NNR,IE,Connemara,Ireland,Europe/Dublin
+9064,Ireland West Airport Knock,,Ireland,53.914,-8.810468,2021-03-04 22:16:38,2021-03-04 22:16:38,NOC,,NOC,IE,Ireland West Airport Knock,Ireland,Europe/Dublin
+9065,Nottingham Airport,,United Kingdom,52.966667,-1.166667,2021-03-04 22:16:38,2021-03-04 22:16:38,NQT,,NQT,GB,Nottingham Airport,United Kingdom,Europe/London
+9066,Newquay Cornwall Airport,,United Kingdom,50.43745,-4.997922,2021-03-04 22:16:38,2021-03-04 22:16:38,NQY,,NQY,GB,Newquay Cornwall Airport,United Kingdom,Europe/London
+9067,Kungsangen,,Sweden,58.583298,16.232393,2021-03-04 22:16:38,2021-03-04 22:16:38,NRK,"1",NRK,SE,Kungsangen,Sweden,Europe/Stockholm
+9068,North Ronaldsay,,United Kingdom,59.370277,-2.433333,2021-03-04 22:16:38,2021-03-04 22:16:38,NRL,,NRL,GB,North Ronaldsay,United Kingdom,Europe/London
+9069,Weeze,,Germany,51.599285,6.150168,2021-03-04 22:16:39,2021-03-04 22:16:39,NRN,"1",DUS,DE,Weeze,Germany,Europe/Berlin
+9070,NAS Sigonella,,Italy,37.4,14.933333,2021-03-04 22:16:39,2021-03-04 22:16:39,NSY,"1",NSY,IT,NAS Sigonella,Italy,Europe/Rome
+9071,Notodden,,Norway,59.583332,9.283333,2021-03-04 22:16:39,2021-03-04 22:16:39,NTB,"1",NTB,NO,Notodden,Norway,Europe/Oslo
+9072,Nantes Atlantique,,France,47.157623,-1.601402,2021-03-04 22:16:39,2021-03-04 22:16:39,NTE,"1",NTE,FR,Nantes Atlantique,France,Europe/Paris
+9073,Nürnberg,,Germany,49.494167,11.077062,2021-03-04 22:16:39,2021-03-04 22:16:39,NUE,"1",NUE,DE,Nürnberg,Germany,Europe/Berlin
+9074,Framnes,,Norway,68.425,17.425,2021-03-04 22:16:39,2021-03-04 22:16:39,NVK,"1",NVK,NO,Framnes,Norway,Europe/Oslo
+9075,Nevers,,France,47.0,3.15,2021-03-04 22:16:39,2021-03-04 22:16:39,NVS,"1",NVS,FR,Nevers,France,Europe/Paris
+9076,Norwich International Airport,,United Kingdom,52.669533,1.276782,2021-03-04 22:16:39,2021-03-04 22:16:39,NWI,,NWI,GB,Norwich International Airport,United Kingdom,Europe/London
+9077,Skavsta,,Sweden,58.78425,16.922867,2021-03-04 22:16:39,2021-03-04 22:16:39,NYO,"1",STO,SE,Skavsta,Sweden,Europe/Stockholm
+9078,Oberpfaffenhofen,,Germany,48.083332,11.283333,2021-03-04 22:16:39,2021-03-04 22:16:39,OBF,"1",OBF,DE,Oberpfaffenhofen,Germany,Europe/Berlin
+9079,Zoersel,,Belgium,51.266666,4.75,2021-03-04 22:16:39,2021-03-04 22:16:39,OBL,"1",OBL,BE,Zoersel,Belgium,Europe/Brussels
+9080,Oban Airport,,United Kingdom,56.465275,-5.396494,2021-03-04 22:16:39,2021-03-04 22:16:39,OBN,,OBN,GB,Oban Airport,United Kingdom,Europe/London
+9081,Vals-Lanas,,France,44.666668,4.7,2021-03-04 22:16:39,2021-03-04 22:16:39,OBS,"1",OBS,FR,Vals-Lanas,France,Europe/Paris
+9082,Cordoba,,Spain,37.84111,-4.847222,2021-03-04 22:16:39,2021-03-04 22:16:39,ODB,"1",ODB,ES,Cordoba,Spain,Europe/Madrid
+9083,Beldringe,,Denmark,55.47639,10.328611,2021-03-04 22:16:39,2021-03-04 22:16:39,ODE,"1",ODE,DK,Beldringe,Denmark,Europe/Copenhagen
+9084,Odessa International,,Ukraine,46.44101,30.676718,2021-03-04 22:16:39,2021-03-04 22:16:39,ODS,"2",ODS,UA,Odessa International,Ukraine,Europe/Kiev
+9085,Orel,,Russia,52.983334,36.1,2021-03-04 22:16:39,2021-03-04 22:16:39,OEL,"3",OEL,RU,Orel,Russia,Europe/Moscow
+9086,Ornskoldsvik,,Sweden,63.412582,18.992073,2021-03-04 22:16:39,2021-03-04 22:16:39,OER,"1",OER,SE,Ornskoldsvik,Sweden,Europe/Stockholm
+9087,Vladikavkaz,,Russia,43.2,44.6,2021-03-04 22:16:39,2021-03-04 22:16:39,OGZ,"3",OGZ,RU,Vladikavkaz,Russia,Europe/Moscow
+9088,Ohrid,,Macedonia,41.185,20.743055,2021-03-04 22:16:39,2021-03-04 22:16:39,OHD,"1",OHD,MK,Ohrid,Macedonia,Europe/Skopje
+9089,Cottesmor RAF,,United Kingdom,52.666668,-0.716667,2021-03-04 22:16:39,2021-03-04 22:16:39,OKH,,OKH,GB,Cottesmor RAF,United Kingdom,Europe/London
+9090,Orland,,Norway,63.7,9.616667,2021-03-04 22:16:39,2021-03-04 22:16:39,OLA,"1",OLA,NO,Orland,Norway,Europe/Oslo
+9091,Costa Smeralda,,Italy,40.903145,9.514823,2021-03-04 22:16:39,2021-03-04 22:16:39,OLB,"1",OLB,IT,Costa Smeralda,Italy,Europe/Rome
+9092,Olomouc,,Czech Republic,49.63333,17.2,2021-03-04 22:16:39,2021-03-04 22:16:39,OLO,"1",OLO,CZ,Olomouc,Czech Republic,Europe/Prague
+9093,Mostar,,Bosnia and Herzegovina,43.285557,17.846666,2021-03-04 22:16:39,2021-03-04 22:16:39,OMO,"1",OMO,BA,Mostar,Bosnia and Herzegovina,Europe/Sarajevo
+9094,Oradea,,Romania,47.0275,21.903055,2021-03-04 22:16:39,2021-03-04 22:16:39,OMR,"2",OMR,RO,Oradea,Romania,Europe/Bucharest
+9095,Zonguldak,,Turkey,41.516666,32.1,2021-03-04 22:16:39,2021-03-04 22:16:39,ONQ,"3",ONQ,TR,Zonguldak,Turkey,Europe/Istanbul
+9096,Francisco Sá Carneiro,,Portugal,41.237774,-8.670272,2021-03-04 22:16:39,2021-03-04 22:16:39,OPO,,OPO,PT,Francisco Sá Carneiro,Portugal,Europe/Lisbon
+9097,Orebro-bofors,,Sweden,59.225758,15.047543,2021-03-04 22:16:39,2021-03-04 22:16:39,ORB,"1",ORB,SE,Orebro-bofors,Sweden,Europe/Stockholm
+9098,Cork,,Ireland,51.846645,-8.48914,2021-03-04 22:16:39,2021-03-04 22:16:39,ORK,,ORK,IE,Cork,Ireland,Europe/Dublin
+9099,Northampton,,United Kingdom,52.233334,-0.9,2021-03-04 22:16:39,2021-03-04 22:16:39,ORM,,ORM,GB,Northampton,United Kingdom,Europe/London
+9100,Orly,,France,48.728283,2.3597,2021-03-04 22:16:39,2021-03-04 22:16:39,ORY,"1",PAR,FR,Orly,France,Europe/Paris
+9101,Åre Östersund Airport,,Sweden,63.198612,14.494444,2021-03-04 22:16:39,2021-03-04 22:16:39,OSD,"1",OSD,SE,Åre Östersund Airport,Sweden,Europe/Stockholm
+9102,Osijek,,Croatia,45.55,18.683332,2021-03-04 22:16:39,2021-03-04 22:16:39,OSI,"1",OSI,HR,Osijek,Croatia,Europe/Zagreb
+9103,Oskarshamn,,Sweden,57.266666,16.433332,2021-03-04 22:16:39,2021-03-04 22:16:39,OSK,"1",OSK,SE,Oskarshamn,Sweden,Europe/Stockholm
+9104,Gardermoen,,Norway,60.19419,11.100411,2021-03-04 22:16:39,2021-03-04 22:16:39,OSL,"1",OSL,NO,Gardermoen,Norway,Europe/Oslo
+9105,Mosnov,,Czech Republic,49.69552,18.121284,2021-03-04 22:16:39,2021-03-04 22:16:39,OSR,"1",OSR,CZ,Mosnov,Czech Republic,Europe/Prague
+9106,Ostend/Bruges International Airport,,Belgium,51.199722,2.863611,2021-03-04 22:16:39,2021-03-04 22:16:39,OST,"1",OST,BE,Ostend/Bruges International Airport,Belgium,Europe/Brussels
+9107,Namsos,,Norway,64.47273,11.570002,2021-03-04 22:16:39,2021-03-04 22:16:39,OSY,"1",OSY,NO,Namsos,Norway,Europe/Oslo
+9108,Koszalin,,Poland,54.042778,16.264444,2021-03-04 22:16:40,2021-03-04 22:16:40,OSZ,"1",OSZ,PL,Koszalin,Poland,Europe/Warsaw
+9109,Henri Coanda International,,Romania,44.571156,26.077063,2021-03-04 22:16:40,2021-03-04 22:16:40,OTP,"2",BUH,RO,Henri Coanda International,Romania,Europe/Bucharest
+9110,Oulu,,Finland,64.93012,25.375425,2021-03-04 22:16:40,2021-03-04 22:16:40,OUL,"2",OUL,FI,Oulu,Finland,Europe/Helsinki
+9111,Asturias,,Spain,43.55891,-6.032094,2021-03-04 22:16:40,2021-03-04 22:16:40,OVD,"1",OVD,ES,Asturias,Spain,Europe/Madrid
+9112,Oxford (Kidlington),,United Kingdom,51.766666,-1.25,2021-03-04 22:16:40,2021-03-04 22:16:40,OXF,,OXF,GB,Oxford (Kidlington),United Kingdom,Europe/London
+9113,Zaporozhye,,Ukraine,47.8675,35.315834,2021-03-04 22:16:40,2021-03-04 22:16:40,OZH,"2",OZH,UA,Zaporozhye,Ukraine,Europe/Zaporozhye
+9114,Moron,,Spain,37.24917,-5.759444,2021-03-04 22:16:40,2021-03-04 22:16:40,OZP,"1",OZP,ES,Moron,Spain,Europe/Madrid
+9115,Paderborn/lippstadt,,Germany,51.610332,8.619832,2021-03-04 22:16:40,2021-03-04 22:16:40,PAD,"1",PAD,DE,Paderborn/lippstadt,Germany,Europe/Berlin
+9116,Paros,,Greece,37.066666,25.1,2021-03-04 22:16:40,2021-03-04 22:16:40,PAS,"2",PAS,GR,Paros,Greece,Europe/Athens
+9117,Plovdiv,,Bulgaria,42.3,24.716667,2021-03-04 22:16:40,2021-03-04 22:16:40,PDV,"2",PDV,BG,Plovdiv,Bulgaria,Europe/Sofia
+9118,Pardubice,,Czech Republic,50.013332,15.738611,2021-03-04 22:16:40,2021-03-04 22:16:40,PED,"1",PED,CZ,Pardubice,Czech Republic,Europe/Prague
+9119,Sant Egidio,,Italy,43.13333,12.366667,2021-03-04 22:16:40,2021-03-04 22:16:40,PEG,"1",PEG,IT,Sant Egidio,Italy,Europe/Rome
+9120,Petrozavodsk,,Russia,61.683334,34.333332,2021-03-04 22:16:40,2021-03-04 22:16:40,PES,"3",PES,RU,Petrozavodsk,Russia,Europe/Moscow
+9121,Pecs Pogany,,Hungary,69.78333,170.6,2021-03-04 22:16:40,2021-03-04 22:16:40,PEV,"1",PEV,HU,Pecs Pogany,Hungary,Europe/Budapest
+9122,Penza,,Russia,53.11852,45.02305,2021-03-04 22:16:40,2021-03-04 22:16:40,PEZ,"3",PEZ,RU,Penza,Russia,Europe/Moscow
+9123,Llabanere,,France,42.741016,2.868183,2021-03-04 22:16:40,2021-03-04 22:16:40,PGF,"1",PGF,FR,Llabanere,France,Europe/Paris
+9124,Bassillac,,France,45.183334,0.716667,2021-03-04 22:16:40,2021-03-04 22:16:40,PGX,"1",PGX,FR,Bassillac,France,Europe/Paris
+9125,Prestwick,,United Kingdom,55.50843,-4.611286,2021-03-04 22:16:40,2021-03-04 22:16:40,PIK,,GLA,GB,Prestwick,United Kingdom,Europe/London
+9126,Biard,,France,46.58611,0.306389,2021-03-04 22:16:40,2021-03-04 22:16:40,PIS,"1",PIS,FR,Biard,France,Europe/Paris
+9127,Pajala,,Sweden,67.246666,23.075,2021-03-04 22:16:40,2021-03-04 22:16:40,PJA,"1",PJA,SE,Pajala,Sweden,Europe/Stockholm
+9128,Alexion,,Greece,37.301388,23.147223,2021-03-04 22:16:40,2021-03-04 22:16:40,PKH,"2",PKH,GR,Alexion,Greece,Europe/Athens
+9129,Pskov,,Russia,57.816666,28.3,2021-03-04 22:16:40,2021-03-04 22:16:40,PKV,"3",PKV,RU,Pskov,Russia,Europe/Moscow
+9130,Palanga International,,Lithuania,55.95,21.083332,2021-03-04 22:16:40,2021-03-04 22:16:40,PLQ,"2",PLQ,LT,Palanga International,Lithuania,Europe/Vilnius
+9131,Poltava,,Ukraine,49.583332,34.533333,2021-03-04 22:16:40,2021-03-04 22:16:40,PLV,"2",PLV,UA,Poltava,Ukraine,Europe/Kiev
+9132,Giuseppe Verdi,,Italy,44.8,10.333333,2021-03-04 22:16:40,2021-03-04 22:16:40,PMF,"1",MIL,IT,Giuseppe Verdi,Italy,Europe/Rome
+9133,Son Sant Joan Airport,,Spain,39.547653,2.730388,2021-03-04 22:16:40,2021-03-04 22:16:40,PMI,"1",PMI,ES,Son Sant Joan Airport,Spain,Europe/Madrid
+9134,Punta Raisi,,Italy,38.186523,13.104779,2021-03-04 22:16:40,2021-03-04 22:16:40,PMO,"1",PMO,IT,Punta Raisi,Italy,Europe/Rome
+9135,Pamplona,,Spain,42.767498,-1.639347,2021-03-04 22:16:40,2021-03-04 22:16:40,PNA,"1",PNA,ES,Pamplona,Spain,Europe/Madrid
+9136,Pantelleria,,Italy,36.81361,11.966111,2021-03-04 22:16:40,2021-03-04 22:16:40,PNL,"1",PNL,IT,Pantelleria,Italy,Europe/Rome
+9137,Panevezys,,Lithuania,55.733334,24.383333,2021-03-04 22:16:40,2021-03-04 22:16:40,PNV,"2",PNV,LT,Panevezys,Lithuania,Europe/Vilnius
+9138,Pori,,Finland,61.46866,21.791382,2021-03-04 22:16:40,2021-03-04 22:16:40,POR,"2",POR,FI,Pori,Finland,Europe/Helsinki
+9139,Presov,,Slovakia,49.0,21.25,2021-03-04 22:16:40,2021-03-04 22:16:40,POV,"1",POV,SK,Presov,Slovakia,Europe/Bratislava
+9140,Portoroz,,Slovenia,45.516666,13.583333,2021-03-04 22:16:40,2021-03-04 22:16:40,POW,"1",POW,SI,Portoroz,Slovenia,Europe/Ljubljana
+9141,Paris Cergy Pontoise,,France,49.05,2.1,2021-03-04 22:16:40,2021-03-04 22:16:40,POX,"1",PAR,FR,Paris Cergy Pontoise,France,Europe/Paris
+9142,Lawica,,Poland,52.414326,16.828844,2021-03-04 22:16:40,2021-03-04 22:16:40,POZ,"1",POZ,PL,Lawica,Poland,Europe/Warsaw
+9143,Prague Vaclav Havel Airport,,Czech Republic,50.10619,14.266638,2021-03-04 22:16:41,2021-03-04 22:16:41,PRG,"1",PRG,CZ,Prague Vaclav Havel Airport,Czech Republic,Europe/Prague
+9144,Portimao,,Portugal,37.13333,-8.533333,2021-03-04 22:16:41,2021-03-04 22:16:41,PRM,,PRM,PT,Portimao,Portugal,Europe/Lisbon
+9145,Pristina International,,Serbia,42.573612,21.035557,2021-03-04 22:16:41,2021-03-04 22:16:41,PRN,"1",PRN,RS,Pristina International,Serbia,Europe/Belgrade
+9146,Prerov,,Czech Republic,49.59028,17.208332,2021-03-04 22:16:41,2021-03-04 22:16:41,PRV,"1",PRV,CZ,Prerov,Czech Republic,Europe/Prague
+9147,Galileo Galilei,,Italy,43.69871,10.399915,2021-03-04 22:16:41,2021-03-04 22:16:41,PSA,"1",PSA,IT,Galileo Galilei,Italy,Europe/Rome
+9148,Perth,,United Kingdom,56.233334,-3.566667,2021-03-04 22:16:41,2021-03-04 22:16:41,PSL,,PSL,GB,Perth,United Kingdom,Europe/London
+9149,Liberi,,Italy,42.43722,14.187222,2021-03-04 22:16:41,2021-03-04 22:16:41,PSR,"1",PSR,IT,Liberi,Italy,Europe/Rome
+9150,Pau-Pyrénées,,France,43.382347,-0.413573,2021-03-04 22:16:41,2021-03-04 22:16:41,PUF,"1",PUF,FR,Pau-Pyrénées,France,Europe/Paris
+9151,Pula,,Croatia,44.891666,13.923611,2021-03-04 22:16:41,2021-03-04 22:16:41,PUY,"1",PUY,HR,Pula,Croatia,Europe/Zagreb
+9152,Aktion,,Greece,38.926388,20.765833,2021-03-04 22:16:41,2021-03-04 22:16:41,PVK,"2",PVK,GR,Aktion,Greece,Europe/Athens
+9153,Andravida,,Greece,37.683334,21.466667,2021-03-04 22:16:41,2021-03-04 22:16:41,PYR,"2",PYR,GR,Andravida,Greece,Europe/Athens
+9154,Gyor-Per,,Hungary,47.62514,17.81227,2021-03-04 22:16:41,2021-03-04 22:16:41,QGY,"1",QGY,HU,Gyor-Per,Hungary,Europe/Budapest
+9155,Lausanne,,Switzerland,46.5436,6.61669,2021-03-04 22:16:41,2021-03-04 22:16:41,QLS,"1",QLS,CH,Lausanne,Switzerland,Europe/Zurich
+9156,Pontecagnano,,Italy,40.620148,14.92084,2021-03-04 22:16:41,2021-03-04 22:16:41,QSR,"1",QSR,IT,Pontecagnano,Italy,Europe/Rome
+9157,Goodwood,,United Kingdom,50.941666,-0.842248,2021-03-04 22:16:41,2021-03-04 22:16:41,QUG,,QUG,GB,Goodwood,United Kingdom,Europe/London
+9158,Wallmuhle,,Germany,48.901943,12.519722,2021-03-04 22:16:41,2021-03-04 22:16:41,RBM,"1",RBM,DE,Wallmuhle,Germany,Europe/Berlin
+9159,Saint Agnant,,France,45.890556,-0.980556,2021-03-04 22:16:41,2021-03-04 22:16:41,RCO,"1",RCO,FR,Saint Agnant,France,Europe/Paris
+9160,Rochester,,United Kingdom,51.35,0.5,2021-03-04 22:16:41,2021-03-04 22:16:41,RCS,,RCS,GB,Rochester,United Kingdom,Europe/London
+9161,Marcillac,,France,44.410595,2.483866,2021-03-04 22:16:41,2021-03-04 22:16:41,RDZ,"1",RDZ,FR,Marcillac,France,Europe/Paris
+9162,Rechlin,,Germany,53.35,12.716667,2021-03-04 22:16:41,2021-03-04 22:16:41,REB,"1",REB,DE,Rechlin,Germany,Europe/Berlin
+9163,Tito Menniti,,Italy,38.07528,15.650833,2021-03-04 22:16:41,2021-03-04 22:16:41,REG,"1",REG,IT,Tito Menniti,Italy,Europe/Rome
+9164,Stolport,,Norway,67.48333,12.083333,2021-03-04 22:16:41,2021-03-04 22:16:41,RET,"1",RET,NO,Stolport,Norway,Europe/Oslo
+9165,Reus,,Spain,41.146103,1.153319,2021-03-04 22:16:41,2021-03-04 22:16:41,REU,"1",REU,ES,Reus,Spain,Europe/Madrid
+9166,Burgos,,Spain,42.35494,-3.62295,2021-03-04 22:16:42,2021-03-04 22:16:42,RGS,"1",RGS,ES,Burgos,Spain,Europe/Madrid
+9167,Reims,,France,49.310833,4.050556,2021-03-04 22:16:42,2021-03-04 22:16:42,RHE,"1",RHE,FR,Reims,France,Europe/Paris
+9168,Diagoras,,Greece,36.401867,28.090677,2021-03-04 22:16:42,2021-03-04 22:16:42,RHO,"2",RHO,GR,Diagoras,Greece,Europe/Athens
+9169,Riga International,,Latvia,56.92208,23.979807,2021-03-04 22:16:42,2021-03-04 22:16:42,RIX,"2",RIX,LV,Riga International,Latvia,Europe/Riga
+9170,Rijeka,,Croatia,45.21583,14.568333,2021-03-04 22:16:42,2021-03-04 22:16:42,RJK,"1",RJK,HR,Rijeka,Croatia,Europe/Zagreb
+9171,Agoncillo,,Spain,42.456944,-2.323611,2021-03-04 22:16:42,2021-03-04 22:16:42,RJL,"1",RJL,ES,Agoncillo,Spain,Europe/Madrid
+9172,Roskilde Airport,,Denmark,55.583332,12.133333,2021-03-04 22:16:42,2021-03-04 22:16:42,RKE,"1",CPH,DK,Roskilde Airport,Denmark,Europe/Copenhagen
+9173,Laage,,Germany,53.92,12.266667,2021-03-04 22:16:42,2021-03-04 22:16:42,RLG,"1",RLG,DE,Laage,Germany,Europe/Berlin
+9174,Miramare,,Italy,44.022953,12.619594,2021-03-04 22:16:42,2021-03-04 22:16:42,RMI,"1",RMI,IT,Miramare,Italy,Europe/Rome
+9175,Ramstein,,Germany,49.45,7.55,2021-03-04 22:16:42,2021-03-04 22:16:42,RMS,"1",RMS,DE,Ramstein,Germany,Europe/Berlin
+9176,Corvera International,,Spain,37.7933,-1.14028,2021-03-04 22:16:42,2021-03-04 22:16:42,RMU,"1",RMU,ES,Corvera International,Spain,Europe/Madrid
+9177,Kallinge,,Sweden,56.25833,15.261111,2021-03-04 22:16:42,2021-03-04 22:16:42,RNB,"1",RNB,SE,Kallinge,Sweden,Europe/Stockholm
+9178,Renaison,,France,46.053333,4.000833,2021-03-04 22:16:42,2021-03-04 22:16:42,RNE,"1",RNE,FR,Renaison,France,Europe/Paris
+9179,Bornholm,,Denmark,55.065556,14.757778,2021-03-04 22:16:42,2021-03-04 22:16:42,RNN,"1",RNN,DK,Bornholm,Denmark,Europe/Copenhagen
+9180,St Jacques,,France,48.068066,-1.726249,2021-03-04 22:16:42,2021-03-04 22:16:42,RNS,"1",RNS,FR,St Jacques,France,Europe/Paris
+9181,Rostov,,Russia,47.25,39.75,2021-03-04 22:16:42,2021-03-04 22:16:42,ROV,"3",ROV,RU,Rostov,Russia,Europe/Moscow
+9182,Roros,,Norway,62.579166,11.345556,2021-03-04 22:16:42,2021-03-04 22:16:42,RRS,"1",RRS,NO,Roros,Norway,Europe/Oslo
+9183,Rotterdam Zestienhoven,,Netherlands,51.948948,4.433606,2021-03-04 22:16:42,2021-03-04 22:16:42,RTM,"1",RTM,NL,Rotterdam Zestienhoven,Netherlands,Europe/Amsterdam
+9184,Saratov,,Russia,51.566666,46.066666,2021-03-04 22:16:42,2021-03-04 22:16:42,RTW,"3",RTW,RU,Saratov,Russia,Europe/Volgograd
+9185,Ryumsjoen,,Norway,64.88333,11.233333,2021-03-04 22:16:42,2021-03-04 22:16:42,RVK,"1",RVK,NO,Ryumsjoen,Norway,Europe/Oslo
+9186,Rovaniemi,,Finland,66.559044,25.829609,2021-03-04 22:16:42,2021-03-04 22:16:42,RVN,"2",RVN,FI,Rovaniemi,Finland,Europe/Helsinki
+9187,Rovno,,Ukraine,50.6,26.15,2021-03-04 22:16:42,2021-03-04 22:16:42,RWN,"2",RWN,UA,Rovno,Ukraine,Europe/Kiev
+9188,Rybinsk,,Russia,58.13333,38.86667,2021-03-04 22:16:42,2021-03-04 22:16:42,RYB,"3",RYB,RU,Rybinsk,Russia,Europe/Moscow
+9189,Moss Airport,,Norway,59.37903,10.800161,2021-03-04 22:16:42,2021-03-04 22:16:42,RYG,"1",OSL,NO,Moss Airport,Norway,Europe/Oslo
+9190,Medis,,France,45.61667,-1.016667,2021-03-04 22:16:42,2021-03-04 22:16:42,RYN,"1",RYN,FR,Medis,France,Europe/Paris
+9191,Jasionka,,Poland,50.11525,22.03133,2021-03-04 22:16:42,2021-03-04 22:16:42,RZE,"1",RZE,PL,Jasionka,Poland,Europe/Warsaw
+9192,Ryazan,,Russia,54.63333,39.583332,2021-03-04 22:16:42,2021-03-04 22:16:42,RZN,"3",RZN,RU,Ryazan,Russia,Europe/Moscow
+9193,Sabiha Gokcen,,Turkey,40.904675,29.309189,2021-03-04 22:16:42,2021-03-04 22:16:42,SAW,"3",IST,TR,Sabiha Gokcen,Turkey,Europe/Istanbul
+9194,Siena,,Italy,43.25,11.25,2021-03-04 22:16:42,2021-03-04 22:16:42,SAY,"1",SAY,IT,Siena,Italy,Europe/Rome
+9195,Saint Brieuc-Armor,,France,48.513058,-2.808889,2021-03-04 22:16:42,2021-03-04 22:16:42,SBK,"1",SBK,FR,Saint Brieuc-Armor,France,Europe/Paris
+9196,Sibiu,,Romania,45.789757,24.093529,2021-03-04 22:16:42,2021-03-04 22:16:42,SBZ,"2",SBZ,RO,Sibiu,Romania,Europe/Bucharest
+9197,Ensheim,,Germany,49.22009,7.112705,2021-03-04 22:16:42,2021-03-04 22:16:42,SCN,"1",SCN,DE,Ensheim,Germany,Europe/Berlin
+9198,Santiago De Compostela,,Spain,42.897316,-8.420327,2021-03-04 22:16:42,2021-03-04 22:16:42,SCQ,"1",SCQ,ES,Santiago De Compostela,Spain,Europe/Madrid
+9199,Scatsta,,United Kingdom,60.436825,-1.294972,2021-03-04 22:16:43,2021-03-04 22:16:43,SCS,,SDZ,GB,Scatsta,United Kingdom,Europe/London
+9200,Salcea,,Romania,47.689445,26.356112,2021-03-04 22:16:43,2021-03-04 22:16:43,SCV,"2",SCV,RO,Salcea,Romania,Europe/Bucharest
+9201,Syktyvkar,,Russia,61.666668,50.766666,2021-03-04 22:16:43,2021-03-04 22:16:43,SCW,"3",SCW,RU,Syktyvkar,Russia,Europe/Moscow
+9202,Sundsvall/harnosand,,Sweden,62.52165,17.438147,2021-03-04 22:16:43,2021-03-04 22:16:43,SDL,"1",SDL,SE,Sundsvall/harnosand,Sweden,Europe/Stockholm
+9203,Sandane,,Norway,61.766666,6.216667,2021-03-04 22:16:43,2021-03-04 22:16:43,SDN,"1",SDN,NO,Sandane,Norway,Europe/Oslo
+9204,Santander,,Spain,43.423084,-3.824453,2021-03-04 22:16:43,2021-03-04 22:16:43,SDR,"1",SDR,ES,Santander,Spain,Europe/Madrid
+9205,Southend,,United Kingdom,51.572777,0.701389,2021-03-04 22:16:43,2021-03-04 22:16:43,SEN,,LON,GB,Southend,United Kingdom,Europe/London
+9206,Severodoneck,,Ukraine,48.9,38.55,2021-03-04 22:16:43,2021-03-04 22:16:43,SEV,"2",SEV,UA,Severodoneck,Ukraine,Europe/Kiev
+9207,Sanliurfa,,Turkey,37.085278,38.85,2021-03-04 22:16:43,2021-03-04 22:16:43,SFQ,"3",SFQ,TR,Sanliurfa,Turkey,Europe/Istanbul
+9208,Skelleftea,,Sweden,64.62251,21.068548,2021-03-04 22:16:43,2021-03-04 22:16:43,SFT,"1",SFT,SE,Skelleftea,Sweden,Europe/Stockholm
+9209,Sonderborg,,Denmark,54.93028,9.794722,2021-03-04 22:16:43,2021-03-04 22:16:43,SGD,"1",SGD,DK,Sonderborg,Denmark,Europe/Copenhagen
+9210,Sines,,Portugal,37.933334,-8.85,2021-03-04 22:16:43,2021-03-04 22:16:43,SIE,,SIE,PT,Sines,Portugal,Europe/Lisbon
+9211,Simferopol,,Ukraine,45.020657,33.99819,2021-03-04 22:16:43,2021-03-04 22:16:43,SIP,"3",SIP,UA,Simferopol,Ukraine,Europe/Simferopol
+9212,Sion,,Switzerland,46.25,7.333333,2021-03-04 22:16:43,2021-03-04 22:16:43,SIR,"1",SIR,CH,Sion,Switzerland,Europe/Zurich
+9213,Sarajevo,,Bosnia and Herzegovina,43.826687,18.336065,2021-03-04 22:16:43,2021-03-04 22:16:43,SJJ,"1",SJJ,BA,Sarajevo,Bosnia and Herzegovina,Europe/Sarajevo
+9214,Ilmajoki,,Finland,62.6932,22.835285,2021-03-04 22:16:43,2021-03-04 22:16:43,SJY,"2",SJY,FI,Ilmajoki,Finland,Europe/Helsinki
+9215,Skien,,Norway,59.182777,9.5625,2021-03-04 22:16:43,2021-03-04 22:16:43,SKE,"1",SKE,NO,Skien,Norway,Europe/Oslo
+9216,Macedonia International,,Greece,40.520832,22.972221,2021-03-04 22:16:43,2021-03-04 22:16:43,SKG,"2",SKG,GR,Macedonia International,Greece,Europe/Athens
+9217,Broadford,,United Kingdom,57.333332,-6.25,2021-03-04 22:16:43,2021-03-04 22:16:43,SKL,,SKL,GB,Broadford,United Kingdom,Europe/London
+9218,Skagen,,Norway,68.57915,15.032921,2021-03-04 22:16:43,2021-03-04 22:16:43,SKN,"1",SKN,NO,Skagen,Norway,Europe/Oslo
+9219,Alexander The Great Airport,,Macedonia,41.95649,21.62872,2021-03-04 22:16:43,2021-03-04 22:16:43,SKP,"1",SKP,MK,Alexander The Great Airport,Macedonia,Europe/Skopje
+9220,Vojens,,Denmark,55.221943,9.264722,2021-03-04 22:16:43,2021-03-04 22:16:43,SKS,"1",SKS,DK,Vojens,Denmark,Europe/Copenhagen
+9221,Skiros,,Greece,38.916668,24.566668,2021-03-04 22:16:43,2021-03-04 22:16:43,SKU,"2",SKU,GR,Skiros,Greece,Europe/Athens
+9222,Saransk,,Russia,54.166668,45.166668,2021-03-04 22:16:43,2021-03-04 22:16:43,SKX,"3",SKX,RU,Saransk,Russia,Europe/Moscow
+9223,Sliac,,Slovakia,48.63333,19.133333,2021-03-04 22:16:43,2021-03-04 22:16:43,SLD,"1",SLD,SK,Sliac,Slovakia,Europe/Bratislava
+9224,Matacan,,Spain,40.966667,-5.65,2021-03-04 22:16:43,2021-03-04 22:16:43,SLM,"1",SLM,ES,Matacan,Spain,Europe/Madrid
+9225,Silistra,,Bulgaria,44.05639,27.180555,2021-03-04 22:16:43,2021-03-04 22:16:43,SLS,"2",SLS,BG,Silistra,Bulgaria,Europe/Sofia
+9226,Samos,,Greece,37.69145,26.914417,2021-03-04 22:16:43,2021-03-04 22:16:43,SMI,"2",SMI,GR,Samos,Greece,Europe/Athens
+9227,Samedan,,Switzerland,46.53472,9.885556,2021-03-04 22:16:43,2021-03-04 22:16:43,SMV,"1",SMV,CH,Samedan,Switzerland,Europe/Zurich
+9228,Shannon,,Ireland,52.69248,-8.92039,2021-03-04 22:16:43,2021-03-04 22:16:43,SNN,,SNN,IE,Shannon,Ireland,Europe/Dublin
+9229,Sármellék/Balaton,,Hungary,46.71347,17.240444,2021-03-04 22:16:43,2021-03-04 22:16:43,SOB,"1",SOB,HU,Sármellék/Balaton,Hungary,Europe/Budapest
+9230,Sofia,,Bulgaria,42.688343,23.41443,2021-03-04 22:16:43,2021-03-04 22:16:43,SOF,"2",SOF,BG,Sofia,Bulgaria,Europe/Sofia
+9231,Haukasen,,Norway,61.158127,7.136988,2021-03-04 22:16:43,2021-03-04 22:16:43,SOG,"1",SOG,NO,Haukasen,Norway,Europe/Oslo
+9232,Sorkjosen,,Norway,69.78333,20.933332,2021-03-04 22:16:43,2021-03-04 22:16:43,SOJ,"1",SOJ,NO,Sorkjosen,Norway,Europe/Oslo
+9233,Soderhamn,,Sweden,61.3,17.05,2021-03-04 22:16:43,2021-03-04 22:16:43,SOO,"1",SOO,SE,Soderhamn,Sweden,Europe/Stockholm
+9234,Sodankyla,,Finland,67.38333,26.616667,2021-03-04 22:16:43,2021-03-04 22:16:43,SOT,"2",SOT,FI,Sodankyla,Finland,Europe/Helsinki
+9235,Southampton Airport,,United Kingdom,50.950726,-1.361318,2021-03-04 22:16:43,2021-03-04 22:16:43,SOU,,SOU,GB,Southampton Airport,United Kingdom,Europe/London
+9236,Stronsay,,United Kingdom,59.154053,-2.640495,2021-03-04 22:16:43,2021-03-04 22:16:43,SOY,,SOY,GB,Stronsay,United Kingdom,Europe/London
+9237,Eleftherios Venizelos,,Greece,36.983334,22.533333,2021-03-04 22:16:43,2021-03-04 22:16:43,SPJ,"2",SPJ,GR,Eleftherios Venizelos,Greece,Europe/Athens
+9238,Spangdahlem,,Germany,50.06547,6.835917,2021-03-04 22:16:43,2021-03-04 22:16:43,SPM,"1",SPM,DE,Spangdahlem,Germany,Europe/Berlin
+9239,Split,,Croatia,43.536526,16.29946,2021-03-04 22:16:43,2021-03-04 22:16:43,SPU,"1",SPU,HR,Split,Croatia,Europe/Zagreb
+9240,Gunnarn,,Sweden,64.96222,17.8,2021-03-04 22:16:43,2021-03-04 22:16:43,SQO,"1",SQO,SE,Gunnarn,Sweden,Europe/Stockholm
+9241,Siauliai International,,Lithuania,55.933334,23.316668,2021-03-04 22:16:43,2021-03-04 22:16:43,SQQ,"2",SQQ,LT,Siauliai International,Lithuania,Europe/Vilnius
+9242,Skive Airport,,Denmark,56.566666,9.033333,2021-03-04 22:16:43,2021-03-04 22:16:43,SQW,"1",SQW,DK,Skive Airport,Denmark,Europe/Copenhagen
+9243,Stord Airport,,Norway,59.833332,5.416667,2021-03-04 22:16:43,2021-03-04 22:16:43,SRP,"1",SRP,NO,Stord Airport,Norway,Europe/Oslo
+9244,Stokka,,Norway,65.959946,12.476518,2021-03-04 22:16:43,2021-03-04 22:16:43,SSJ,"1",SSJ,NO,Stokka,Norway,Europe/Oslo
+9245,Stauning Vestjyllands Airport,,Denmark,55.990276,8.355,2021-03-04 22:16:43,2021-03-04 22:16:43,STA,"1",STA,DK,Stauning Vestjyllands Airport,Denmark,Europe/Copenhagen
+9246,Stansted,,United Kingdom,51.889267,0.262703,2021-03-04 22:16:44,2021-03-04 22:16:44,STN,,LON,GB,Stansted,United Kingdom,Europe/London
+9247,Stuttgart Echterdingen,,Germany,48.69073,9.193624,2021-03-04 22:16:44,2021-03-04 22:16:44,STR,"1",STR,DE,Stuttgart Echterdingen,Germany,Europe/Berlin
+9248,Stavropol,,Russia,45.333332,42.00833,2021-03-04 22:16:44,2021-03-04 22:16:44,STW,"3",STW,RU,Stavropol,Russia,Europe/Moscow
+9249,Lamezia Terme,,Italy,38.910015,16.244972,2021-03-04 22:16:44,2021-03-04 22:16:44,SUF,"1",SUF,IT,Lamezia Terme,Italy,Europe/Rome
+9250,Satu Mare,,Romania,47.7,22.883333,2021-03-04 22:16:44,2021-03-04 22:16:44,SUJ,"2",SUJ,RO,Satu Mare,Romania,Europe/Bucharest
+9251,Sola,,Norway,58.88215,5.629197,2021-03-04 22:16:44,2021-03-04 22:16:44,SVG,"1",SVG,NO,Sola,Norway,Europe/Oslo
+9252,Helle,,Norway,68.24498,14.667774,2021-03-04 22:16:44,2021-03-04 22:16:44,SVJ,"1",SVJ,NO,Helle,Norway,Europe/Oslo
+9253,Savonlinna,,Finland,61.95,28.95,2021-03-04 22:16:44,2021-03-04 22:16:44,SVL,"2",SVL,FI,Savonlinna,Finland,Europe/Helsinki
+9254,Sheremetyevo International,,Russia,55.966324,37.416573,2021-03-04 22:16:44,2021-03-04 22:16:44,SVO,"3",MOW,RU,Sheremetyevo International,Russia,Europe/Moscow
+9255,San Pablo,,Spain,37.423477,-5.900136,2021-03-04 22:16:44,2021-03-04 22:16:44,SVQ,"1",SVQ,ES,San Pablo,Spain,Europe/Madrid
+9256,Fairwood Comm,,United Kingdom,51.63333,-3.95,2021-03-04 22:16:44,2021-03-04 22:16:44,SWS,,SWS,GB,Fairwood Comm,United Kingdom,Europe/London
+9257,Entzheim,,France,48.544876,7.627674,2021-03-04 22:16:44,2021-03-04 22:16:44,SXB,"1",SXB,FR,Entzheim,France,Europe/Paris
+9258,Berlin-Schoenefeld,,Germany,52.370277,13.521388,2021-03-04 22:16:44,2021-03-04 22:16:44,SXF,"1",BER,DE,Berlin-Schoenefeld,Germany,Europe/Berlin
+9259,Sligo,,Ireland,54.283333,-8.466667,2021-03-04 22:16:44,2021-03-04 22:16:44,SXL,,SXL,IE,Sligo,Ireland,Europe/Dublin
+9260,Siirt,,Turkey,37.98,41.84,2021-03-04 22:16:44,2021-03-04 22:16:44,SXZ,"3",SXZ,TR,Siirt,Turkey,Europe/Istanbul
+9261,Charolais Bourgogne S.,,France,46.4,4.033333,2021-03-04 22:16:44,2021-03-04 22:16:44,SYT,"1",SYT,FR,Charolais Bourgogne S.,France,Europe/Paris
+9262,Stornoway,,United Kingdom,58.213627,-6.321995,2021-03-04 22:16:44,2021-03-04 22:16:44,SYY,,SYY,GB,Stornoway,United Kingdom,Europe/London
+9263,Carsamba,,Turkey,41.25738,36.555058,2021-03-04 22:16:44,2021-03-04 22:16:44,SZF,"3",SZF,TR,Carsamba,Turkey,Europe/Istanbul
+9264,W. A. Mozart,,Austria,47.791225,12.997331,2021-03-04 22:16:44,2021-03-04 22:16:44,SZG,"1",SZG,AT,W. A. Mozart,Austria,Europe/Vienna
+9265,Mazury,,Poland,52.43611,20.938334,2021-03-04 22:16:44,2021-03-04 22:16:44,SZY,"1",SZY,PL,Mazury,Poland,Europe/Warsaw
+9266,Goleniow,,Poland,53.593525,14.894611,2021-03-04 22:16:44,2021-03-04 22:16:44,SZZ,"1",SZZ,PL,Goleniow,Poland,Europe/Warsaw
+9267,M. A. Grottag,,Italy,40.517776,17.401943,2021-03-04 22:16:44,2021-03-04 22:16:44,TAR,"1",TAR,IT,M. A. Grottag,Italy,Europe/Rome
+9268,Poprad/Tatry,,Slovakia,49.071945,20.240278,2021-03-04 22:16:44,2021-03-04 22:16:44,TAT,"1",TAT,SK,Poprad/Tatry,Slovakia,Europe/Bratislava
+9269,Tartu,,Estonia,58.333332,26.733334,2021-03-04 22:16:44,2021-03-04 22:16:44,TAY,"2",TAY,EE,Tartu,Estonia,Europe/Tallinn
+9270,Tambov,,Russia,52.716667,41.433334,2021-03-04 22:16:44,2021-03-04 22:16:44,TBW,"3",TBW,RU,Tambov,Russia,Europe/Moscow
+9271,Tulcea,,Romania,45.183334,28.816668,2021-03-04 22:16:44,2021-03-04 22:16:44,TCE,"2",TCE,RO,Tulcea,Romania,Europe/Bucharest
+9272,Thisted,,Denmark,57.072224,8.703333,2021-03-04 22:16:44,2021-03-04 22:16:44,TED,"1",TED,DK,Thisted,Denmark,Europe/Copenhagen
+9273,Corlu,,Turkey,40.966667,27.5,2021-03-04 22:16:44,2021-03-04 22:16:44,TEQ,"3",TEQ,TR,Corlu,Turkey,Europe/Istanbul
+9274,Golubovci,,Montenegro,42.368023,19.246023,2021-03-04 22:16:44,2021-03-04 22:16:44,TGD,"1",TGD,ME,Golubovci,Montenegro,Europe/Podgorica
+9275,Taganrog,,Russia,47.243378,38.864017,2021-03-04 22:16:44,2021-03-04 22:16:44,TGK,"3",TGK,RU,Taganrog,Russia,Europe/Moscow
+9276,Transilvania,,Romania,46.533333,24.533333,2021-03-04 22:16:45,2021-03-04 22:16:45,TGM,"2",TGM,RO,Transilvania,Romania,Europe/Bucharest
+9277,Trollhattan,,Sweden,58.266666,12.3,2021-03-04 22:16:45,2021-03-04 22:16:45,THN,"1",THN,SE,Trollhattan,Sweden,Europe/Stockholm
+9278,Rinas Mother Teresa,,Albania,41.419132,19.71328,2021-03-04 22:16:45,2021-03-04 22:16:45,TIA,"1",TIA,AL,Rinas Mother Teresa,Albania,Europe/Tirane
+9279,Tivat,,Montenegro,42.40361,18.725555,2021-03-04 22:16:45,2021-03-04 22:16:45,TIV,"1",TIV,ME,Tivat,Montenegro,Europe/Podgorica
+9280,Tokat,,Turkey,40.302223,36.36778,2021-03-04 22:16:45,2021-03-04 22:16:45,TJK,"3",TJK,TR,Tokat,Turkey,Europe/Istanbul
+9281,Turku,,Finland,60.512794,22.28098,2021-03-04 22:16:45,2021-03-04 22:16:45,TKU,"2",TKU,FI,Turku,Finland,Europe/Helsinki
+9282,Ulemiste,,Estonia,59.416622,24.798702,2021-03-04 22:16:45,2021-03-04 22:16:45,TLL,"2",TLL,EE,Ulemiste,Estonia,Europe/Tallinn
+9283,Le Palyvestre,,France,43.09349,6.159303,2021-03-04 22:16:45,2021-03-04 22:16:45,TLN,"1",TLN,FR,Le Palyvestre,France,Europe/Paris
+9284,Blagnac,,France,43.63007,1.374321,2021-03-04 22:16:45,2021-03-04 22:16:45,TLS,"1",TLS,FR,Blagnac,France,Europe/Paris
+9285,Tampere-pirkkala,,Finland,61.42045,23.617563,2021-03-04 22:16:45,2021-03-04 22:16:45,TMP,"2",TMP,FI,Tampere-pirkkala,Finland,Europe/Helsinki
+9286,Toussus-le-noble,,France,48.75083,2.113056,2021-03-04 22:16:45,2021-03-04 22:16:45,TNF,"1",TNF,FR,Toussus-le-noble,France,Europe/Paris
+9287,Ternopol,,Ukraine,49.566666,25.6,2021-03-04 22:16:45,2021-03-04 22:16:45,TNL,"2",TNL,UA,Ternopol,Ukraine,Europe/Kiev
+9288,Torrejon AFB,,Spain,40.455555,-3.546667,2021-03-04 22:16:45,2021-03-04 22:16:45,TOJ,"1",MAD,ES,Torrejon AFB,Spain,Europe/Madrid
+9289,Tromso/langnes,,Norway,69.67983,18.907343,2021-03-04 22:16:45,2021-03-04 22:16:45,TOS,"1",TOS,NO,Tromso/langnes,Norway,Europe/Oslo
+9290,Birgi,,Italy,37.901386,12.495865,2021-03-04 22:16:45,2021-03-04 22:16:45,TPS,"1",TPS,IT,Birgi,Italy,Europe/Rome
+9291,Værnes,,Norway,63.454285,10.917863,2021-03-04 22:16:45,2021-03-04 22:16:45,TRD,"1",TRD,NO,Værnes,Norway,Europe/Oslo
+9292,Tiree,,United Kingdom,56.500557,-6.871389,2021-03-04 22:16:45,2021-03-04 22:16:45,TRE,,TRE,GB,Tiree,United Kingdom,Europe/London
+9293,Sandefjord,,Norway,59.178085,10.251807,2021-03-04 22:16:45,2021-03-04 22:16:45,TRF,"1",OSL,NO,Sandefjord,Norway,Europe/Oslo
+9294,Sandro Pertini (caselle),,Italy,45.191456,7.643049,2021-03-04 22:16:45,2021-03-04 22:16:45,TRN,"1",TRN,IT,Sandro Pertini (caselle),Italy,Europe/Rome
+9295,Ronchi Dei Legionari,,Italy,45.82078,13.485678,2021-03-04 22:16:45,2021-03-04 22:16:45,TRS,"1",TRS,IT,Ronchi Dei Legionari,Italy,Europe/Rome
+9296,S. Angelo,,Italy,45.655113,12.204444,2021-03-04 22:16:45,2021-03-04 22:16:45,TSF,"1",VCE,IT,S. Angelo,Italy,Europe/Rome
+9297,Tresco,,United Kingdom,49.945557,-6.331389,2021-03-04 22:16:45,2021-03-04 22:16:45,TSO,,ISC,GB,Tresco,United Kingdom,Europe/London
+9298,Timisoara (traian Vuia) International,,Romania,45.809925,21.32012,2021-03-04 22:16:46,2021-03-04 22:16:46,TSR,"2",TSR,RO,Timisoara (traian Vuia) International,Romania,Europe/Bucharest
+9299,Arbatax,,Italy,39.916668,9.683333,2021-03-04 22:16:46,2021-03-04 22:16:46,TTB,"1",TTB,IT,Arbatax,Italy,Europe/Rome
+9300,St Symphorien,,France,47.428333,0.7275,2021-03-04 22:16:46,2021-03-04 22:16:46,TUF,"1",TUF,FR,St Symphorien,France,Europe/Paris
+9301,Berlin-tegel / Otto Lilienthal,,Germany,52.553944,13.291722,2021-03-04 22:16:46,2021-03-04 22:16:46,TXL,"1",BER,DE,Berlin-tegel / Otto Lilienthal,Germany,Europe/Berlin
+9302,Torsby Airport,,Sweden,60.154484,12.99661,2021-03-04 22:16:46,2021-03-04 22:16:46,TYF,"1",TYF,SE,Torsby Airport,Sweden,Europe/Stockholm
+9303,Tuzla International,,Bosnia and Herzegovina,44.40972,18.709167,2021-03-04 22:16:46,2021-03-04 22:16:46,TZL,"1",TZL,BA,Tuzla International,Bosnia and Herzegovina,Europe/Sarajevo
+9304,Trabzon,,Turkey,40.99419,39.78168,2021-03-04 22:16:46,2021-03-04 22:16:46,TZX,"3",TZX,TR,Trabzon,Turkey,Europe/Istanbul
+9305,Lutsk,,Ukraine,50.75,25.333332,2021-03-04 22:16:46,2021-03-04 22:16:46,UCK,"2",UCK,UA,Lutsk,Ukraine,Europe/Kiev
+9306,Ukhta,,Russia,63.566666,53.8,2021-03-04 22:16:46,2021-03-04 22:16:46,UCT,"3",UCT,RU,Ukhta,Russia,Europe/Moscow
+9307,Uzhgorod,,Ukraine,48.63762,22.273214,2021-03-04 22:16:46,2021-03-04 22:16:46,UDJ,"2",UDJ,UA,Uzhgorod,Ukraine,Europe/Uzhgorod
+9308,Airfield,,Italy,46.033333,13.183333,2021-03-04 22:16:46,2021-03-04 22:16:46,UDN,"1",UDN,IT,Airfield,Italy,Europe/Rome
+9309,Kunovice,,Czech Republic,49.066666,17.45,2021-03-04 22:16:46,2021-03-04 22:16:46,UHE,"1",UHE,CZ,Kunovice,Czech Republic,Europe/Prague
+9310,Pluguffan,,France,47.974445,-4.170833,2021-03-04 22:16:46,2021-03-04 22:16:46,UIP,"1",UIP,FR,Pluguffan,France,Europe/Paris
+9311,Baratayevka,,Russia,54.268333,48.226665,2021-03-04 22:16:46,2021-03-04 22:16:46,ULV,"3",ULY,RU,Baratayevka,Russia,Europe/Moscow
+9312,Vostochny,,Russia,54.266666,48.216667,2021-03-04 22:16:46,2021-03-04 22:16:46,ULY,"3",ULY,RU,Vostochny,Russia,Europe/Moscow
+9313,Umea,,Sweden,63.79333,20.28954,2021-03-04 22:16:46,2021-03-04 22:16:46,UME,"1",UME,SE,Umea,Sweden,Europe/Stockholm
+9314,Sumy,,Ukraine,50.933334,34.783333,2021-03-04 22:16:46,2021-03-04 22:16:46,UMY,"2",UMY,UA,Sumy,Ukraine,Europe/Kiev
+9315,Upavon,,United Kingdom,51.3,-1.816667,2021-03-04 22:16:46,2021-03-04 22:16:46,UPV,,UPV,GB,Upavon,United Kingdom,Europe/London
+9316,Kuressaare,,Estonia,58.216667,22.5,2021-03-04 22:16:46,2021-03-04 22:16:46,URE,"2",URE,EE,Kuressaare,Estonia,Europe/Tallinn
+9317,Boos,,France,49.38861,1.1875,2021-03-04 22:16:46,2021-03-04 22:16:46,URO,"1",URO,FR,Boos,France,Europe/Paris
+9318,Kursk,,Russia,51.75,36.266666,2021-03-04 22:16:46,2021-03-04 22:16:46,URS,"3",URS,RU,Kursk,Russia,Europe/Moscow
+9319,Usinsk,,Russia,65.95,57.4,2021-03-04 22:16:46,2021-03-04 22:16:46,USK,"3",USK,RU,Usinsk,Russia,Europe/Moscow
+9320,Usak,,Turkey,38.68222,29.471945,2021-03-04 22:16:46,2021-03-04 22:16:46,USQ,"3",USQ,TR,Usak,Turkey,Europe/Istanbul
+9321,Utti,,Finland,60.9,26.933332,2021-03-04 22:16:46,2021-03-04 22:16:46,UTI,"2",UTI,FI,Utti,Finland,Europe/Helsinki
+9322,Ust-Tsilma,,Russia,65.433334,52.2,2021-03-04 22:16:46,2021-03-04 22:16:46,UTS,"3",UTS,RU,Ust-Tsilma,Russia,Europe/Moscow
+9323,Bugulma,,Russia,54.61667,52.816666,2021-03-04 22:16:46,2021-03-04 22:16:46,UUA,"3",UUA,RU,Bugulma,Russia,Europe/Moscow
+9324,Uzice-Ponikve,,Serbia,43.898834,19.697403,2021-03-04 22:16:46,2021-03-04 22:16:46,UZC,"1",UZC,RS,Uzice-Ponikve,Serbia,Europe/Belgrade
+9325,Vaasa,,Finland,63.04355,21.760122,2021-03-04 22:16:46,2021-03-04 22:16:46,VAA,"2",VAA,FI,Vaasa,Finland,Europe/Helsinki
+9326,Varrelbusch,,Germany,52.916668,8.05,2021-03-04 22:16:46,2021-03-04 22:16:46,VAC,"1",VAC,DE,Varrelbusch,Germany,Europe/Berlin
+9327,Chabeuil,,France,44.920277,4.970278,2021-03-04 22:16:46,2021-03-04 22:16:46,VAF,"1",VAF,FR,Chabeuil,France,Europe/Paris
+9328,Ferit Melen Airport,,Turkey,38.45861,43.332222,2021-03-04 22:16:47,2021-03-04 22:16:47,VAN,"3",VAN,TR,Ferit Melen Airport,Turkey,Europe/Istanbul
+9329,Varna,,Bulgaria,43.23726,27.829096,2021-03-04 22:16:47,2021-03-04 22:16:47,VAR,"2",VAR,BG,Varna,Bulgaria,Europe/Sofia
+9330,Sivas,,Turkey,39.81389,36.904167,2021-03-04 22:16:47,2021-03-04 22:16:47,VAS,"3",VAS,TR,Sivas,Turkey,Europe/Istanbul
+9331,Vardoe,,Norway,70.35472,31.045555,2021-03-04 22:16:47,2021-03-04 22:16:47,VAW,"1",VAW,NO,Vardoe,Norway,Europe/Oslo
+9332,Brescia Montichiari,,Italy,45.425446,10.326545,2021-03-04 22:16:47,2021-03-04 22:16:47,VBS,"1",VRN,IT,Brescia Montichiari,Italy,Europe/Rome
+9333,Visby,,Sweden,57.660446,18.338154,2021-03-04 22:16:47,2021-03-04 22:16:47,VBY,"1",VBY,SE,Visby,Sweden,Europe/Stockholm
+9334,Marco Polo,,Italy,45.502285,12.337947,2021-03-04 22:16:47,2021-03-04 22:16:47,VCE,"1",VCE,IT,Marco Polo,Italy,Europe/Rome
+9335,Valdres Lufthavn Leirin,,Norway,61.083332,9.333333,2021-03-04 22:16:47,2021-03-04 22:16:47,VDB,"1",VDB,NO,Valdres Lufthavn Leirin,Norway,Europe/Oslo
+9336,Vadso,,Norway,70.065,29.845278,2021-03-04 22:16:47,2021-03-04 22:16:47,VDS,"1",VDS,NO,Vadso,Norway,Europe/Oslo
+9337,Vologda,,Russia,59.283333,39.95,2021-03-04 22:16:47,2021-03-04 22:16:47,VGD,"3",VGD,RU,Vologda,Russia,Europe/Moscow
+9338,Vigo,,Spain,42.224552,-8.634025,2021-03-04 22:16:47,2021-03-04 22:16:47,VGO,"1",VGO,ES,Vigo,Spain,Europe/Madrid
+9339,Vilhelmina,,Sweden,64.61667,16.65,2021-03-04 22:16:47,2021-03-04 22:16:47,VHM,"1",VHM,SE,Vilhelmina,Sweden,Europe/Stockholm
+9340,Charmeil,,France,46.165558,3.409722,2021-03-04 22:16:47,2021-03-04 22:16:47,VHY,"1",VHY,FR,Charmeil,France,Europe/Paris
+9341,Trissino,,Italy,45.55,11.55,2021-03-04 22:16:47,2021-03-04 22:16:47,VIC,"1",VIC,IT,Trissino,Italy,Europe/Rome
+9342,Vienna International,,Austria,48.11972,16.563583,2021-03-04 22:16:47,2021-03-04 22:16:47,VIE,"1",VIE,AT,Vienna International,Austria,Europe/Vienna
+9343,Vinnica,,Ukraine,49.233334,28.483334,2021-03-04 22:16:47,2021-03-04 22:16:47,VIN,"2",VIN,UA,Vinnica,Ukraine,Europe/Kiev
+9344,Vitoria,,Spain,42.833332,-2.5,2021-03-04 22:16:47,2021-03-04 22:16:47,VIT,"1",VIT,ES,Vitoria,Spain,Europe/Madrid
+9345,Vnukovo,,Russia,55.60315,37.2921,2021-03-04 22:16:47,2021-03-04 22:16:47,VKO,"3",MOW,RU,Vnukovo,Russia,Europe/Moscow
+9346,Vorkuta,,Russia,67.48333,63.983334,2021-03-04 22:16:47,2021-03-04 22:16:47,VKT,"3",VKT,RU,Vorkuta,Russia,Europe/Moscow
+9347,Valencia,,Spain,39.49179,-0.473475,2021-03-04 22:16:47,2021-03-04 22:16:47,VLC,"1",VLC,ES,Valencia,Spain,Europe/Madrid
+9348,Valladolid,,Spain,41.70581,-4.844626,2021-03-04 22:16:47,2021-03-04 22:16:47,VLL,"1",VLL,ES,Valladolid,Spain,Europe/Madrid
+9349,Velikiye Luki,,Russia,56.38333,30.616667,2021-03-04 22:16:47,2021-03-04 22:16:47,VLU,"3",VLU,RU,Velikiye Luki,Russia,Europe/Moscow
+9350,Valley,,United Kingdom,53.25036,-4.529017,2021-03-04 22:16:47,2021-03-04 22:16:47,VLY,,VLY,GB,Valley,United Kingdom,Europe/London
+9351,Meucon,,France,47.65,-2.766667,2021-03-04 22:16:47,2021-03-04 22:16:47,VNE,"1",VNE,FR,Meucon,France,Europe/Paris
+9352,Vilnius,,Lithuania,54.643078,25.279606,2021-03-04 22:16:47,2021-03-04 22:16:47,VNO,"2",VNO,LT,Vilnius,Lithuania,Europe/Vilnius
+9353,Ventspils,,Latvia,27.3,87.2,2021-03-04 22:16:47,2021-03-04 22:16:47,VNT,"2",VNT,LV,Ventspils,Latvia,Europe/Riga
+9354,Volgograd,,Russia,48.792,44.354805,2021-03-04 22:16:47,2021-03-04 22:16:47,VOG,"3",VOG,RU,Volgograd,Russia,Europe/Volgograd
+9355,Nea Anchialos,,Greece,39.38333,22.93111,2021-03-04 22:16:47,2021-03-04 22:16:47,VOL,"2",VOL,GR,Nea Anchialos,Greece,Europe/Athens
+9356,Chertovitskoye,,Russia,51.812355,39.226997,2021-03-04 22:16:47,2021-03-04 22:16:47,VOZ,"3",VOZ,RU,Chertovitskoye,Russia,Europe/Moscow
+9357,Varkaus,,Finland,62.3,27.933332,2021-03-04 22:16:47,2021-03-04 22:16:47,VRK,"2",VRK,FI,Varkaus,Finland,Europe/Helsinki
+9358,Vila Real,,Portugal,41.3,-7.75,2021-03-04 22:16:47,2021-03-04 22:16:47,VRL,,VRL,PT,Vila Real,Portugal,Europe/Lisbon
+9359,Valerio Catullo,,Italy,45.40233,10.906796,2021-03-04 22:16:47,2021-03-04 22:16:47,VRN,"1",VRN,IT,Valerio Catullo,Italy,Europe/Rome
+9360,Viseu,,Portugal,40.65,-7.916667,2021-03-04 22:16:47,2021-03-04 22:16:47,VSE,,VSE,PT,Viseu,Portugal,Europe/Lisbon
+9361,Lugansk,,Ukraine,48.566666,39.333332,2021-03-04 22:16:47,2021-03-04 22:16:47,VSG,"2",VSG,UA,Lugansk,Ukraine,Europe/Kiev
+9362,Vasteras/Hasslo,,Sweden,59.58917,16.630556,2021-03-04 22:16:47,2021-03-04 22:16:47,VST,"1",STO,SE,Vasteras/Hasslo,Sweden,Europe/Stockholm
+9363,Vitebsk,,Belarus,55.13333,30.366667,2021-03-04 22:16:47,2021-03-04 22:16:47,VTB,"3",VTB,BY,Vitebsk,Belarus,Europe/Minsk
+9364,Vittel,,France,48.2,5.95,2021-03-04 22:16:47,2021-03-04 22:16:47,VTL,"1",VTL,FR,Vittel,France,Europe/Paris
+9365,Velikij Ustyug,,Russia,60.766666,46.316666,2021-03-04 22:16:47,2021-03-04 22:16:47,VUS,"3",VUS,RU,Velikij Ustyug,Russia,Europe/Moscow
+9366,Smaland Airport,,Sweden,56.925095,14.732046,2021-03-04 22:16:47,2021-03-04 22:16:47,VXO,"1",VXO,SE,Smaland Airport,Sweden,Europe/Stockholm
+9367,Waterford,,Ireland,52.188866,-7.080082,2021-03-04 22:16:47,2021-03-04 22:16:47,WAT,,WAT,IE,Waterford,Ireland,Europe/Dublin
+9368,Frederic Chopin,,Poland,52.170906,20.97329,2021-03-04 22:16:47,2021-03-04 22:16:47,WAW,"1",WAW,PL,Frederic Chopin,Poland,Europe/Warsaw
+9369,Schleswig-jagel,,Germany,54.45,9.516667,2021-03-04 22:16:47,2021-03-04 22:16:47,WBG,"1",WBG,DE,Schleswig-jagel,Germany,Europe/Berlin
+9370,Whalsay,,United Kingdom,60.36667,-0.983333,2021-03-04 22:16:47,2021-03-04 22:16:47,WHS,,WHS,GB,Whalsay,United Kingdom,Europe/London
+9371,Wick,,United Kingdom,58.456944,-3.086667,2021-03-04 22:16:47,2021-03-04 22:16:47,WIC,,WIC,GB,Wick,United Kingdom,Europe/London
+9372,Air Base,,Germany,50.083332,8.233333,2021-03-04 22:16:47,2021-03-04 22:16:47,WIE,"1",WIE,DE,Air Base,Germany,Europe/Berlin
+9373,Modlin,,Poland,52.45111,20.651667,2021-03-04 22:16:48,2021-03-04 22:16:48,WMI,"1",WMI,PL,Modlin,Poland,Europe/Warsaw
+9374,Woensdrecht,,Netherlands,51.435833,4.335,2021-03-04 22:16:48,2021-03-04 22:16:48,WOE,"1",WOE,NL,Woensdrecht,Netherlands,Europe/Amsterdam
+9375,Copernicus Airport,,Poland,51.10482,16.899403,2021-03-04 22:16:48,2021-03-04 22:16:48,WRO,"1",WRO,PL,Copernicus Airport,Poland,Europe/Warsaw
+9376,Westray,,United Kingdom,59.35,-2.95,2021-03-04 22:16:48,2021-03-04 22:16:48,WRY,,WRY,GB,Westray,United Kingdom,Europe/London
+9377,Vatry International,,France,48.767776,4.201111,2021-03-04 22:16:48,2021-03-04 22:16:48,XCR,"1",PAR,FR,Vatry International,France,Europe/Paris
+9378,Finkenwerder,,Germany,52.535835,9.836945,2021-03-04 22:16:48,2021-03-04 22:16:48,XFW,"1",HAM,DE,Finkenwerder,Germany,Europe/Berlin
+9379,Jerez De La Frontera,,Spain,36.750614,-6.064535,2021-03-04 22:16:48,2021-03-04 22:16:48,XRY,"1",XRY,ES,Jerez De La Frontera,Spain,Europe/Madrid
+9380,Yenisehir,,Turkey,40.233334,29.55,2021-03-04 22:16:48,2021-03-04 22:16:48,YEI,"3",YEI,TR,Yenisehir,Turkey,Europe/Istanbul
+9381,Yeovilton,,United Kingdom,51.016666,-2.55,2021-03-04 22:16:48,2021-03-04 22:16:48,YEO,,YEO,GB,Yeovilton,United Kingdom,Europe/London
+9382,Ylivieska,,Finland,64.05444,24.72889,2021-03-04 22:16:48,2021-03-04 22:16:48,YLI,"2",YLI,FI,Ylivieska,Finland,Europe/Helsinki
+9383,Zadar,,Croatia,44.09778,15.356667,2021-03-04 22:16:49,2021-03-04 22:16:49,ZAD,"1",ZAD,HR,Zadar,Croatia,Europe/Zagreb
+9384,Pleso,,Croatia,45.733242,16.06152,2021-03-04 22:16:49,2021-03-04 22:16:49,ZAG,"1",ZAG,HR,Pleso,Croatia,Europe/Zagreb
+9385,Laberandie,,France,44.45,1.45,2021-03-04 22:16:49,2021-03-04 22:16:49,ZAO,"1",ZAO,FR,Laberandie,France,Europe/Paris
+9386,Zaragoza,,Spain,41.66386,-1.007466,2021-03-04 22:16:49,2021-03-04 22:16:49,ZAZ,"1",ZAZ,ES,Zaragoza,Spain,Europe/Madrid
+9387,Dolni Benesov,,Czech Republic,49.88333,16.866667,2021-03-04 22:16:49,2021-03-04 22:16:49,ZBE,"1",ZBE,CZ,Dolni Benesov,Czech Republic,Europe/Prague
+9388,Zurich,,Switzerland,47.450603,8.561746,2021-03-04 22:16:49,2021-03-04 22:16:49,ZRH,"1",ZRH,CH,Zurich,Switzerland,Europe/Zurich
+9389,Zakinthos International Airport,,Greece,37.755833,20.888332,2021-03-04 22:16:49,2021-03-04 22:16:49,ZTH,"2",ZTH,GR,Zakinthos International Airport,Greece,Europe/Athens
+9390,Zhitomir Airport,,Ukraine,50.25,28.65,2021-03-04 22:16:49,2021-03-04 22:16:49,ZTR,"2",ZTR,UA,Zhitomir Airport,Ukraine,Europe/Kiev

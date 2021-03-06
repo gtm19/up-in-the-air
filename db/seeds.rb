@@ -191,18 +191,58 @@ def seed_potential_destinations
   end
 end
 
+def attach_random_photos
+  puts "Adding random photos to cities ..."
+  cloudinary_urls = [
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012739/p2_london_yk2ew1.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012739/p1_beach_gnuuma.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012712/p10_street_barcelona_z2lyve.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012711/p11_tropical_brk2oc.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012711/p9_square_c8bptu.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012710/p4_gate_berlin_v6bcvn.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012710/p6_countryside_lwpc9k.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012710/p7_coast_lnw0qg.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012710/p8_city_bm286f.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012710/p5_dessert_trngk9.jpg",
+    "https://res.cloudinary.com/dr4pzn94d/image/upload/v1615012710/p3_houses_dutch_edtg7m.jpg"
+  ]
+  i = 0
+  cities = City.all
+  cities.each do |c|
+    if !c.photo.attached?
+      i += 1
+      url = cloudinary_urls.sample
+      file = URI.open(url)
+      filename = url.match(/[\w-]+\.jpg$/)
+      c.photo.attach(io: file, filename: filename)
+      puts "#{i}. #{c.name} got #{filename} photo"
+    end
+  end
+end
 
-PotentialDestination.delete_all
-TripEstimate.delete_all
-TripParticipant.delete_all
-Trip.delete_all
-User.delete_all
-City.delete_all
+def delete_photos
+  cities = City.all
+  cities.each do |c|
+    if c.photo.attached?
+      c.photo.purge
+      puts "Deleted photo for #{c.name}"
+    end
+  end
+end
 
-load_city_airports
-create_users
-create_trip_estimates
+# PotentialDestination.delete_all
+# TripEstimate.delete_all
+# TripParticipant.delete_all
+# Trip.delete_all
+# User.delete_all
+# City.delete_all
 
-seed_trip("Away with friends")
-seed_potential_destinations
+# load_city_airports
+# create_users
+# create_trip_estimates
 
+# seed_trip("Away with friends")
+# seed_potential_destinations
+
+# delete_photos
+attach_random_photos
