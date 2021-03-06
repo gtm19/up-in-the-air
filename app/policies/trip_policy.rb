@@ -12,4 +12,8 @@ class TripPolicy < ApplicationPolicy
   def show?
     record.users.include? user
   end
+
+  def update?
+    record.lead_user == user
+  end
 end

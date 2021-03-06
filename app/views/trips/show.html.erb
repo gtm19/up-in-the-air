@@ -1,4 +1,26 @@
 <%= render "shared/container" do %>
   <h1>Trip to <%= @trip.name %></h1>
-  <p>Find me in app/views/trips/show.html.erb</p>
+  <p>Attendees:</p>
+  <ul>
+    <% @trip.users.each do |user| %>
+      <li>
+        <%= user.name %>
+        <% if user == @trip.lead_user %>
+          <span> (lead)</span>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+  <% if @trip.lead_user == current_user %>
+    <h2>Add your friends</h2>
+    <%= simple_form_for @trip do |f| %>
+      <%= f.association :users,
+          collection: User.order(:first_name).where.not(id: current_user.id),
+          label: false,
+          label_method: :name,
+          input_html: { class: "select2", multiple: "multiple" }
+      %>
+      <%= f.submit %>
+    <% end %>
+  <% end %>
 <% end %>
