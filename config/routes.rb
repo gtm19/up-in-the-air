@@ -3,8 +3,15 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
+
+  resources :trip_participants do
+    resources :participant_scores, only: [:index, :update]
+  end
+
   resources :cities, only: [ :index, :show ]
-  resources :trips
+  resources :trips do
+    resources :trip_participants, only: [ :show ]
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   authenticate :user, ->(user) { user.admin? } do
     mount Sidekiq::Web => '/sidekiq'
