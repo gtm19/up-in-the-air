@@ -24,6 +24,18 @@ class TripsController < ApplicationController
     authorize @trip
   end
 
+  def update
+    users = params[:trip][:user_ids] << current_user.id.to_s
+    users.reject!(&:empty?)
+
+    @trip = Trip.find(params[:id])
+    @trip.user_ids = users
+
+    redirect_to trips_path
+
+    authorize @trip
+  end
+
   private
 
   def trip_params
