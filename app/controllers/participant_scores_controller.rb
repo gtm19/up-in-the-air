@@ -4,9 +4,7 @@ class ParticipantScoresController < ApplicationController
     # Find trip
     # Find all participant
     # For each participant get their scores
-    card = Hash.new
     @cards = []
-    i = 0
     @trip_participant = TripParticipant.find(params[:trip_participant_id])
     create_remaining_scoring_records(@trip_participant)
     @participant_scores = ParticipantScore.where(trip_participant: @trip_participant)
@@ -15,9 +13,6 @@ class ParticipantScoresController < ApplicationController
       card[:ps] = ps
       card[:te] = trip_estimate(ps)
       @cards.push(card)
-      puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-      p card
-      p @cards
     end
     @participant_scores = policy_scope(ParticipantScore)
   end
@@ -29,6 +24,7 @@ class ParticipantScoresController < ApplicationController
   end
 
   def create_remaining_scoring_records(trip_participant)
+    # Checking that any potential destinations are converted to participant scores
     @trip = trip_participant.trip
     trip_participants = TripParticipant.where(trip: @trip)
     potential_destinations = []
@@ -51,9 +47,10 @@ class ParticipantScoresController < ApplicationController
   end
 
   def trip_estimate(participant_score)
+    # TODO - Fixed the search to search by date range.
     start_city = participant_score.trip_participant.user.city
-    outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
     dest_city = participant_score.potential_destination.city
+    # outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
     # TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= #{outbound_date} AND valid_until >= #{outbound_date}")[0]
     TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id}")[0]
   end
