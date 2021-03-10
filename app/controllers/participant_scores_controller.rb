@@ -17,14 +17,16 @@ class ParticipantScoresController < ApplicationController
       card[:time] = 3.5
       card[:loved] = 4.1
       card[:calender] = 5
+      card[:trip_id] = @trip.id
+      card[:tp_id] = @trip_participant.id
+      card[:position] = ps.position
       @cards.push(card)
     end
     @participant_scores = policy_scope(ParticipantScore)
   end
 
-
-  def update
-
+  def move
+    raise
   end
 
   private

@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   resources :cities, only: [ :index, :show ]
   resources :trips do
     resources :trip_participants do
-      resources :participant_scores, only: [:index, :update]
+      resources :participant_scores, only: [:index, :update] do
+        member do
+          patch :move
+        end
+      end
     end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
