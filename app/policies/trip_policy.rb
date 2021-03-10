@@ -10,6 +10,10 @@ class TripPolicy < ApplicationPolicy
   end
 
   def show?
-    true
+    record.users.include? user
+  end
+
+  def update?
+    record.lead_user == user
   end
 end
