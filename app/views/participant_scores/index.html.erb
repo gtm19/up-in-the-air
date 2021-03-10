@@ -1,8 +1,15 @@
 <%= render "shared/container" do %>
   <h1>Time to rank your options</h1>
-  <p>Time to rank your trip preferences in order</p>
-  <p>Just drag and drop all your options in preference order. Watch the scoring automatically change!</p>
+  <p>Time to rank your trip preferences in order. Just drag and drop all your options in preference order. Watch the scoring automatically change!</p>
 
+  <div class="mb-4">
+  <button type="button" class="btn btn-outline-primary">
+    <%= link_to "Save for later", trip_path(@trip) %>
+  </button>
+  <button type="button" class="btn btn-outline-success">
+    <%= link_to "Submit!", trip_path(@trip) %>
+  </button>
+  </div>
 
     <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id/move">
       <% @cards.each do |card| %>
