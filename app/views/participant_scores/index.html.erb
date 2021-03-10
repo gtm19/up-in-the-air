@@ -1,16 +1,20 @@
 <%= render "shared/container" do %>
-  <h1>Rank It!</h1>
+  <h1>Time to rank your options</h1>
+  <p>Time to rank your trip preferences in order</p>
+  <p>Just drag and drop all your options in preference order. Watch the scoring automatically change!</p>
 
 
     <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id/move">
       <% @cards.each do |card| %>
-        <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" data-id="<%= card[:ps].id %>" class="card card-body mb-4">
-          <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div>
-          <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>
-            Time: <%= card[:te].flight_mins %><br/>
-            Cost: £<%= (card[:te].low_cost + card[:te].high_cost)/2 %><br/>
-            Position: <%= card[:ps].position %><br/>
-            Score: <%= card[:ps].score %>
+        <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" data-id="<%= card[:ps].id %>" class="card card-body score mb-4">
+          <div class="trip-details">
+            <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div>
+            <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>
+              Time: <%= card[:te].flight_mins %><br/>
+              Cost: £<%= (card[:te].low_cost + card[:te].high_cost)/2 %><br/>
+              Position: <%= card[:ps].position %><br/>
+              Score: <%= card[:ps].score %>
+            </div>
           </div>
           <div style="margin: 10px">
             COMPATABILITY<br/>
