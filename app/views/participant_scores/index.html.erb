@@ -17,7 +17,19 @@
     <% @cards.each do |card| %>
       <div style="display: flex">
         <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div>
-        <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>Time: <%= card[:te].flight_mins %><br/>Cost: £<%= (card[:te].low_cost + card[:te].high_cost)/2 %><br/>Position: <%= card[:ps].position %><br/>Score: <%= card[:ps].score %><br/></div>
+        <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>
+          Time: <%= card[:te].flight_mins %><br/>
+          Cost: £<%= (card[:te].low_cost + card[:te].high_cost)/2 %><br/>
+          Position: <%= card[:ps].position %><br/>
+          Score: <%= card[:ps].score %>
+        </div>
+        <div style="margin: 10px">
+          COMPATABILITY<br/>
+          Loved: <%= card[:loved] %><br/>
+          Timed: <%= card[:time] %><br/>
+          Calender: <%= card[:calender] %><br/>
+          Budget: <%= card[:budget] %>
+        </div>
       </div>
     <% end %>
 

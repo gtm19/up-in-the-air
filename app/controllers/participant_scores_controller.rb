@@ -8,19 +8,29 @@ class ParticipantScoresController < ApplicationController
     @trip_participant = TripParticipant.find(params[:trip_participant_id])
     create_remaining_scoring_records(@trip_participant)
     @participant_scores = ParticipantScore.where(trip_participant: @trip_participant)
+    pre_position
     @participant_scores.each do |ps|
       card = Hash.new
       card[:ps] = ps
       card[:te] = trip_estimate(ps)
+      card[:budget] = 3.0
+      card[:time] = 3.5
+      card[:loved] = 4.1
+      card[:calender] = 5
       @cards.push(card)
     end
     @participant_scores = policy_scope(ParticipantScore)
   end
 
+
+  def update
+
+  end
+
   private
 
-  def trip_params
-    params.require(:trip_participants).permit(:trip_participant_id)
+  def params_scoring
+    params.require(:participant_score).permit(:position)
   end
 
   def create_remaining_scoring_records(trip_participant)
@@ -50,8 +60,42 @@ class ParticipantScoresController < ApplicationController
     # TODO - Fixed the search to search by date range.
     start_city = participant_score.trip_participant.user.city
     dest_city = participant_score.potential_destination.city
-    # outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
-    # TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= #{outbound_date} AND valid_until >= #{outbound_date}")[0]
-    TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id}")[0]
+    outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
+    TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= '#{outbound_date}' AND valid_until >= '#{outbound_date}'")[0]
+    # TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id}")[0]
+  end
+
+  def budget_rating(participant_score)
+      # Get each participant
+      # Get their budget
+      # Determine their start city
+      # Get destination city of score
+      # Meet budget = 1, No means 0
+  end
+
+  SCORES = {
+    1 => 10,
+    2 => 8,
+    3 => 6,
+    4 => 4,
+    5 => 2,
+    6 => 1
+  }
+
+  def pre_position
+    exist = 0
+    @participant_scores.each do |ps|
+      exist += ps.position
+    end
+
+    if exist.zero?
+      position = 1
+      @participant_scores.each do |ps|
+        ps.position = position
+        ps.score = SCORES[position] || 2
+        position += 1
+        ps.save
+      end
+    end
   end
 end
