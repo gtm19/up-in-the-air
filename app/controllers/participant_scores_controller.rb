@@ -54,7 +54,7 @@ class ParticipantScoresController < ApplicationController
 
     # pss = ParticipantScore.where(trip_participant: @trip_participant)
     # position = pss.max_by { |ps| ps.position }.position
-
+    position = 0
     potential_destinations = []
     trip_participants.each do |tp|
       potential_destinations += PotentialDestination.where(trip_participant: tp, status: "submitted")
