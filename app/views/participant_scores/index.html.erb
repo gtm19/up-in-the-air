@@ -16,7 +16,11 @@
         <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" data-id="<%= card[:ps].id %>" class="card card-body score mb-4">
           <div class="trip-details">
             <div><h2 style="margin: 10px"><%= card[:ps].position %></h2></div>
-            <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div>
+            <%
+=begin%>
+ <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div> 
+<%
+=end%>
             <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>
               Time: <%= card[:te].flight_mins %><br/>
               Cost: £<%= (card[:te].low_cost + card[:te].high_cost)/2 %><br/>
