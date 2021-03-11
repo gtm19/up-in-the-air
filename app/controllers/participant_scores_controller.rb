@@ -35,10 +35,10 @@ class ParticipantScoresController < ApplicationController
       card = Hash.new
       card[:ps] = ps
       card[:te] = trip_estimate(ps)
-      card[:budget] = 3.0
-      card[:time] = 3.5
-      card[:loved] = 4.1
-      card[:calender] = 5
+      card[:budget] = rand(1.0..5.0)
+      card[:time] = rand(1.0..5.0)
+      card[:loved] = rand(1.0..5.0)
+      card[:calender] = rand(1.0..5.0)
       card[:trip_id] = @trip.id
       card[:tp_id] = @trip_participant.id
       card[:position] = ps.position
