@@ -4,10 +4,12 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :cities, only: [ :index, :show ]
-    resources :potential_destinations, only: [ :create, :destroy, :update ]
+  resources :potential_destinations, only: [ :index, :new, :create ]
+  resources :trips do
+   resources :trip_participants do
+    resources :participant_scores, only: [:index, :update]
+   end
   end
-  resources :trips
-  # resources :potential_destinations
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   authenticate :user, ->(user) { user.admin? } do
     mount Sidekiq::Web => '/sidekiq'
