@@ -23,4 +23,5 @@
       <%= f.submit %>
     <% end %>
   <% end %>
+  <%= link_to "Scoring", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %>
 <% end %>
