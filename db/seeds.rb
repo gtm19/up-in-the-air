@@ -241,19 +241,20 @@ end
 
 ParticipantScore.delete_all
 PotentialDestination.delete_all
+DatePreference.delete_all
 TripParticipant.delete_all
 Trip.delete_all
-TripEstimate.delete_all
-User.delete_all
-City.delete_all
+# TripEstimate.delete_all
+# User.delete_all
+# City.delete_all
 
-load_city_airports
-create_users
-create_trip_estimates
+# load_city_airports
+# create_users
+# create_trip_estimates
 
 seed_trip("Away with friends")
 seed_potential_destinations
 
 # There is now a batch (sidekiq) job that adds photos called AddPhotosJob. So we don't need to do the following.
-# delete_photos
-# attach_random_photos
+delete_photos
+attach_random_photos
