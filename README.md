@@ -22,7 +22,7 @@ This project uses Pundit to authorise user actions. The lecture slides on this c
 
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
 
-## SEED
+## Seed
 The seed file will delete all data and add:
 
 **Cities**
@@ -53,11 +53,10 @@ bundle binstub sidekiq
 sidekiq
 ```
 
-In a new terminal run:
+Ensure that your `CLOUDINARY_URL=cloudinary://412271...` is set in your `.env` file, and then run (in a new terminal):
 
 ```
-Rails c
-AddPhotosJob.perform_later
+rails runner AddPhotosJob.perform_later
 ```
 
 This will take 10 mins to run. There may be some timeouts warnings, but it seems to resolve itself eventually.
