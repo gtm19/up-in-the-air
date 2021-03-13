@@ -23,6 +23,21 @@ This project uses Pundit to authorise user actions. The lecture slides on this c
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
 
 ## Seed
+
+There are two options for running the seed file:
+
+```
+rails db:seed
+```
+
+This will run the seed file, populating the `cities` table with information from the Aviationstack API.
+
+If you want a simpler seed, which just populates the `cities` table with 5 sort of random cities, run:
+
+```
+rails db:seed basic=yes
+```
+
 The seed file will delete all data and add:
 
 **Cities**
