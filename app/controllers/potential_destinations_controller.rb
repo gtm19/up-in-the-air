@@ -1,19 +1,33 @@
 class PotentialDestinationsController < ApplicationController
   def index
+    skip_authorization
     @trip = Trip.find(params[:trip_id])
     @trip_participant = TripParticipant.find(params[:trip_participant_id])
 
-    if params[:budget].present?
-      @trip_estimates = TripEstimate.where("high_cost < #{params[:budget]}").limit(20)
-    else
-      @trip_estimates = TripEstimate.limit(20)
-    end
+    budget = params["budget"] || 999_999
+    time = params["time"] || 999_999
+
+    puts params
+    puts budget
+    puts time
+
+    @trip_estimates = TripEstimate.where("high_cost < '#{budget.to_str}'").limit(20)
+    p @trip_estimates
+
+    # @trip_estimates = TripEstimate.where("high_cost < #{budget} AND flight_mins < #{time} AND valid_from <= '#{odate}' AND valid_until >= '#{odate}'").limit(20)
+
+    # if params[:budget].present?
+    #   @trip_estimates = TripEstimate.where("high_cost < #{params["budget"]}").limit(20)
+    # else
+    #   @trip_estimates = TripEstimate.limit(20)
+    # end
 
     @cards = cards_with_love
 
+    p @cards
+
     @potential_destination = policy_scope(PotentialDestination)
   end
-
 
   def create
     skip_authorization

@@ -3,12 +3,12 @@
 
 <div class="mb-4">
   <button type="button" class="btn btn-outline-primary">
-    <%= link_to "Save for later", trip_path(@trip) %>
+    <%= link_to "Come back later", trip_path(@trip) %>
   </button>
-  <button type="button" class="btn btn-outline-secondary">
+  <button type="button" class="btn btn-outline-primary">
     <%= link_to "Submit the loved ones!",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch %>
   </button>
-  <button type="button" class="btn btn-outline-secondary">
+  <button type="button" class="btn btn-outline-primary">
     <%= link_to "Go & rank",  trip_trip_participant_participant_scores_path(@trip, @trip_participant) %>
   </button>
 </div>
@@ -18,12 +18,12 @@
     <%= text_field_tag :budget,
       params[:budget],
       class: "form-control",
-      placeholder: "Budget"
+      placeholder: "Your maximum budget"
     %>
-    <%= text_field_tag :time,
+    <%= number_field_tag :time,
       params[:time],
       class: "form-control",
-      placeholder: "Flying time"
+      placeholder: "Maximum flying time"
     %>
     <%= text_field_tag :out_date,
       params[:out_date],
@@ -38,6 +38,22 @@
     <%= submit_tag "Search", class: "btn btn-primary" %>
   <% end %>
 </div>
+
+
+<!-- DONT KNOW WHY THE FOLLOWING DOES NOT WORK! -->
+<!-- <div>
+  <%= form_with url: trip_trip_participant_potential_destinations_path(@trip, @trip_participant), method: :get do |form| %>
+    <%= form.label :budget, "Max budget:" %>
+    <%= form.number_field :budget %>
+    <%= form.label :time, "Max flying time:" %>
+    <%= form.number_field :time %>
+    <%= form.label :date, "Outbound:" %>
+    <%= form.date_field :born_on %>
+    <%= form.submit "Thiss" %>
+  <% end %>
+</div> -->
+
+
 
 <div data-controller="love" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
   <% @cards.each do |c| %>
