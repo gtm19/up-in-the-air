@@ -4,23 +4,17 @@ class PotentialDestinationsController < ApplicationController
     @trip = Trip.find(params[:trip_id])
     @trip_participant = TripParticipant.find(params[:trip_participant_id])
 
-    budget = params["budget"] || 999_999
-    time = params["time"] || 999_999
+    # budget = params["budget"] || 999_999
+    params["budget"].present? ? budget = params["budget"].to_i : budget = 999999
+    params["time"].present? ? time = params["time"].to_i : time = 999999
 
     puts params
     puts budget
     puts time
 
-    @trip_estimates = TripEstimate.where("high_cost < '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}'").limit(20)
-    p @trip_estimates
+    @trip_estimates = TripEstimate.where("high_cost < '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins < '#{time}' ").limit(20)
 
     # @trip_estimates = TripEstimate.where("high_cost < #{budget} AND flight_mins < #{time} AND valid_from <= '#{odate}' AND valid_until >= '#{odate}'").limit(20)
-
-    # if params[:budget].present?
-    #   @trip_estimates = TripEstimate.where("high_cost < #{params["budget"]}").limit(20)
-    # else
-    #   @trip_estimates = TripEstimate.limit(20)
-    # end
 
     @cards = cards_with_love
 
