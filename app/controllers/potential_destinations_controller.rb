@@ -11,7 +11,7 @@ class PotentialDestinationsController < ApplicationController
     puts budget
     puts time
 
-    @trip_estimates = TripEstimate.where("high_cost < '#{budget}'").limit(20)
+    @trip_estimates = TripEstimate.where("high_cost < '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}'").limit(20)
     p @trip_estimates
 
     # @trip_estimates = TripEstimate.where("high_cost < #{budget} AND flight_mins < #{time} AND valid_from <= '#{odate}' AND valid_until >= '#{odate}'").limit(20)
