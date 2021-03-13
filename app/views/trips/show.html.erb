@@ -2,21 +2,21 @@
   <h1>Trip to <%= @trip.name %></h1>
   <p>Attendees:</p>
   <ul>
-    <% @trip.users.each do |user| %>
+    <% @trip_participants.each do |tp| %>
       <li>
-        <%= user.name %>
-        <% if user == @trip.lead_user %>
+        <%= tp.user.name %>
+        <% if tp.user == @trip.lead_user %>
           <span> (lead)</span>
         <% else%>
-          <% if @trip.lead_user == current_user %>
+          <% if policy(tp).destroy? %>
             <%= link_to icon("fas", "trash"),
-                trip_trip_participant_path(@trip, @trip.trip_participants.find_by(user: user)), method: :delete %>
+                trip_trip_participant_path(@trip, tp), method: :delete %>
           <% end %>
         <% end %>
       </li>
     <% end %>
   </ul>
-  <% if @trip.lead_user == current_user %>
+  <% if policy(@trip).update? %>
     <h2>Add your friends</h2>
     <%= simple_form_for @trip do |f| %>
       <%= f.association :users,
