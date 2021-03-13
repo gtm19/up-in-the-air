@@ -23,5 +23,9 @@
       <%= f.submit %>
     <% end %>
   <% end %>
-  <%= link_to "Scoring", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %>
+  <%= link_to "Add destinations to trip", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %><br/>
+  <%= link_to "Score Trip", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %>
+
+
+
 <% end %>
