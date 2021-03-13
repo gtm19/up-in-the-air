@@ -7,6 +7,11 @@
         <%= user.name %>
         <% if user == @trip.lead_user %>
           <span> (lead)</span>
+        <% else%>
+          <% if @trip.lead_user == current_user %>
+            <%= link_to icon("fas", "trash"),
+                trip_trip_participant_path(@trip, @trip.trip_participants.find_by(user: user)), method: :delete %>
+          <% end %>
         <% end %>
       </li>
     <% end %>
