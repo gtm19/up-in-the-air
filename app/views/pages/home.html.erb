@@ -1,10 +1,19 @@
 <%= render "shared/container" do %>
-  <h1>Plan your group trip now!</h1>
-  <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
-    <div class="min-height">
+ <div class="splash">
+    <h1>Plan your group trip now!</h1>
+    <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
+      <div>
+        <%= image_tag("rocket.png", size: "864x864", :alt => "Ladu with Laptop on Rocket!") %>
+      </div>
       <div>
         <%= link_to "Get Started!", trips_path, class: 'btn btn-primary' %>
-        <%= image_tag("rocket.png", :alt => "rocket lady") %>
       </div>
-    </div>
+  </div>
+  <div class="testimonial">
+  </div>
+  <div class="howitworks">
+  </div>
+  <div class="subscribe">
+    <%= image_tag("subscribe.png", size: "432x432", :alt => "Subscription Image of Fun 3D Phone") %>
+  </div>
 <% end %>
