@@ -6,12 +6,12 @@
         <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc.</p>
         <p>
           <%= link_to "Create trip", new_trip_path, class: "btn btn-primary my-2" %>
-          <%= link_to "View Preferences", potential_destinations_path, class: "btn btn-secondary my-2" %>
+          <%= link_to "View Preferences", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)), class: "btn btn-secondary my-2" %>
         </p>
       </div>
     </div>
   </section>
-  
+
   <section>
     <div class="album py-5">
       <div class="container">
