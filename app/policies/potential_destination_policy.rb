@@ -9,6 +9,14 @@ class PotentialDestinationPolicy < ApplicationPolicy
     true
   end
 
+  def update?
+    true
+  end
+
+  def destroy?
+    true
+  end
+
   def show?
     true
   end

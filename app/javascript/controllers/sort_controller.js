@@ -25,10 +25,10 @@ end(event) {
   let data = new FormData()
   data.append('position', event.newIndex + 1)
 
-  // Rails.ajax({
-  // url: this.data.get("url").replace(":id", id).replace(":trip_id", tid).replace("trip_participant_id", tpid),
-  // type: 'PATCH',
-  // data: data
-  // })
+  Rails.ajax({
+  url: this.data.get("url").replace(":id", id).replace(":trip_id", tid).replace(":trip_participant_id", tpid),
+  type: 'PUT',
+  data: data
+  })
   }
 }
