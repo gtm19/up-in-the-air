@@ -29,6 +29,75 @@ def aviationstack_data(offset)
   JSON.parse(response.body)
 end
 
+def basic_cities
+  cities = [
+    {
+      name: "Paris",
+      country: "France",
+      latitude: 48.864716,
+      longitude:	2.349014,
+      airport_code: "CDG",
+      gmt: "0",
+      city_iata_code: "001",
+      country_iso2: "FR",
+      airport_name: "Charles De Gaulle",
+      timezone: "Europe"
+    },
+    {
+      name: "London",
+      country: "United Kingdom",
+      latitude:	51.5,
+      longitude: -0.11,
+      airport_code: "LHR",
+      gmt: "0",
+      city_iata_code: "LHR",
+      country_iso2: "GB",
+      airport_name: "Berlin Airport",
+      timezone: "Europe"
+    },
+    {
+      name: "Berlin",
+      country: "Germany",
+      latitude:	52.520008,
+      longitude: 13.404954,
+      airport_code: "SXF",
+      gmt: "0",
+      city_iata_code: "SXF",
+      country_iso2: "DE",
+      airport_name: "Berlin Airport",
+      timezone: "Europe"
+    },
+    {
+      name: "Florence",
+      country: "Italy",
+      latitude:	43.76,
+      longitude: 11.25,
+      airport_code: "FLR",
+      gmt: "0",
+      city_iata_code: "FLR",
+      country_iso2: "IT",
+      airport_name: "Florence Airport",
+      timezone: "Europe"
+    },
+    {
+      name: "Madrid",
+      country: "Spain",
+      latitude: 40.41,
+      longitude:	-3.73,
+      airport_code: "MAD",
+      gmt: "0",
+      city_iata_code: "MAD",
+      country_iso2: "ES",
+      airport_name: "Madrid Airport",
+      timezone: "Europe"
+    }
+  ]
+
+  cities.each do |city|
+    City.create(city)
+  end
+end
+
 def load_city_airports
 # Create city_airports
   aviation = aviationstack_data(0)
@@ -243,13 +312,18 @@ ParticipantScore.delete_all
 PotentialDestination.delete_all
 TripParticipant.delete_all
 Trip.delete_all
-# TripEstimate.delete_all
-# User.delete_all
-# City.delete_all
+TripEstimate.delete_all
+User.delete_all
+City.delete_all
 
-# load_city_airports
-# create_users
-# create_trip_estimates
+if ENV["basic"]
+  basic_cities
+else
+  load_city_airports
+end
+
+create_users
+create_trip_estimates
 
 seed_trip("Away with friends")
 seed_potential_destinations

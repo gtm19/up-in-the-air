@@ -7,8 +7,14 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "select2/dist/css/select2.css";
+// @import "select2/dist/css/select2.css";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Application-level CSS
+.container{
+  // The minus 166 represents the combined height of both Navbar(66px) and footer(100px)
+  min-height: calc(100vh - 240.5px);
+}

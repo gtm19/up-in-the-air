@@ -1,24 +1,40 @@
 <%= render "shared/container" do %>
-  <h1>Rank It!</h1>
-<!--   <ul>
-    <% @participant_scores.each do |ps| %>
-      <li>(Position: <%= ps.position %>) (Score: <%= ps.score %>) <%= ps.potential_destination.city.name %> suggested by <%= ps.potential_destination.trip_participant.user.first_name %></li>
-    <% end %>
-  </ul> -->
+  <h1>Time to rank your options</h1>
+  <p>Time to rank your trip preferences in order. Just drag and drop all your options in preference order. Watch the scoring automatically change!</p>
 
-<!--   <ul>
-    <% @cards.each do |card| %>
-      <li><%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %> <br/> <%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>Time: <%= card[:te].flight_mins %><br/>Cost: £<%= (card[:te].low_cost + card[:te].high_cost)/2 %><br/>Position: <%= card[:ps].position %><br/>Score: <%= card[:ps].score %><br/></li>
-      <br/>
-    <% end %>
-  </ul> -->
+  <div class="mb-4">
+  <button type="button" class="btn btn-outline-primary">
+    <%= link_to "Save for later", trip_path(@trip) %>
+  </button>
+  <button type="button" class="btn btn-outline-success">
+    <%= link_to "Submit!", trip_path(@trip) %>
+  </button>
+  </div>
 
+    <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id/move">
+      <% @cards.each do |card| %>
+        <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" data-id="<%= card[:ps].id %>" class="card card-body score mb-4">
+          <div class="trip-details">
+            <div><h2 style="margin: 10px"><%= card[:ps].position %></h2></div>
 
-    <% @cards.each do |card| %>
-      <div style="display: flex">
-        <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div>
-        <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>Time: <%= card[:te].flight_mins %><br/>Cost: £<%= (card[:te].low_cost + card[:te].high_cost)/2 %><br/>Position: <%= card[:ps].position %><br/>Score: <%= card[:ps].score %><br/></div>
-      </div>
-    <% end %>
+            <!--TODO: add cloudinary image back in to card below-->
+            <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div>
+
+            <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>
+              Time: <%= card[:te].flight_mins %><br/>
+              Cost: £<%= (card[:te].low_cost + card[:te].high_cost)/2 %><br/>
+              Score: <%= card[:ps].score %>
+            </div>
+          </div>
+          <div style="margin: 10px">
+            COMPATABILITY<br/>
+            Loved: <%= card[:loved] %><br/>
+            Timed: <%= card[:time] %><br/>
+            Calender: <%= card[:calender] %><br/>
+            Budget: <%= card[:budget] %>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
 <% end %>

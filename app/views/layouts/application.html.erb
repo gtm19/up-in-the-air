@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= favicon_link_tag %>
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
 
@@ -29,10 +30,11 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body class="min-height">
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-
+    
     <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>
