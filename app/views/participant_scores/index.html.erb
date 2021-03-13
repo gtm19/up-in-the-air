@@ -11,9 +11,9 @@
   </button>
   </div>
 
-    <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id/move">
+    <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id">
       <% @cards.each do |card| %>
-        <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" data-id="<%= card[:ps].id %>" class="card card-body score mb-4">
+        <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card card-body score mb-4">
           <div class="trip-details">
             <div><h2 style="margin: 10px"><%= card[:ps].position %></h2></div>
 
