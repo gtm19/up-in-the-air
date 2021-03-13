@@ -1,4 +1,5 @@
 <%= render "shared/container" do %>
+<div class="min-height">
   <h1>Trips</h1>
   <ul>
     <% @trips.each do |trip| %>
@@ -8,4 +9,5 @@
       <%= link_to "Create trip", new_trip_path %>
     </li>
   </ul>
+  </div>
 <% end %>
