@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :cities, only: [ :index, :show ]
+  resources :potential_destinations, only: [ :index, :new, :create ]
   resources :trips do
     resources :trip_participants do
       resources :participant_scores, only: [:index, :update] do

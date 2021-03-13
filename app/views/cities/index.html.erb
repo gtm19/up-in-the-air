@@ -1,14 +1,23 @@
 <%= render "shared/container" do %>
 <h1>Cities</h1>
-  <ul>
-    <% @cities.each do |city| %>
-      <li>
-        <% if policy(city).show? %>
-          <%= link_to city.name, city_path(city) %>
-        <% else %>
-          <%= city.name %>
-        <% end %>
-      </li>
+      <a class="btn btn-flat" href="#">Book now</a>
+      <% @cities.each do |city| %>
+          <ul>
+      <div class="card-product">
+    <div class="card-product-infos">
+         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+        <li>
+          <% if policy(city).show? %>
+            <%= link_to city.name, city_path(city) %>
+          <% else %>
+            <%= city.name %>
+          <% end %>
+        </li>
+      <div class="heart-icon">
+      <%= link_to icon("far", "heart"), potential_destinations_path, method: :new  %>
+    </div>
+  </div>
+  </div>
+  </ul>
     <% end %>
-</ul>
 <% end %>
