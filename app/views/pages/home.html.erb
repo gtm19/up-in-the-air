@@ -1,23 +1,24 @@
 <%= render "shared/container" do %>
  
- <section>
+ <section name ="splash">
     <h1>Plan your group trip now!</h1>
     <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
       <div>
-        <%= image_tag("rocket.png", size: "864x864", :alt => "Ladu with Laptop on Rocket!") %>
+        <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
+        <a href="#subscribe" class = 'btn btn-lg btn-secondary'>Subscribe</a>
       </div>
       <div>
-        <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
+        <%= image_tag("rocket.png", size: "864x864", :alt => "Ladu with Laptop on Rocket!") %>
       </div>
   </section>
 
-  <section class="testimonial">
+  <section id= "testimonials">
   </section>
 
-  <section class="howitworks">
+  <section id= "howitworks">
   </section>
 
-  <section class= "subscribe">
+  <section id= "subscribe">
     <%= image_tag("subscribe.png", size: "432x432", :alt => "Subscription Image of Fun 3D Phone") %>
     <form>
     <h1 class="h3 mb-3 fw-normal">Subscribe now!</h1>
@@ -28,5 +29,5 @@
     <button class="btn btn-lg btn-primary" type="submit">Subscribe</button>
   </form>
   </section>
-  
+
 <% end %>
