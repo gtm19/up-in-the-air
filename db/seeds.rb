@@ -310,6 +310,7 @@ end
 
 ParticipantScore.delete_all
 PotentialDestination.delete_all
+DatePreference.delete_all
 TripParticipant.delete_all
 Trip.delete_all
 TripEstimate.delete_all
