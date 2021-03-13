@@ -1,10 +1,10 @@
 class TripParticipantsController < ApplicationController
   def destroy
-    @trip = params[:trip_id]
+    @trip = Trip.find(params[:trip_id])
     @trip_participant = TripParticipant.find(params[:id])
-    @trip_participant.destroy
+    authorize @trip_participant
 
-    authorize @trip
+    @trip_participant.destroy
 
     redirect_to trip_path(@trip)
   end
