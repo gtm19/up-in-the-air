@@ -4,11 +4,15 @@
 
   <div class="mb-4">
   <button type="button" class="btn btn-outline-primary">
-    <%= link_to "Save for later", trip_path(@trip) %>
+    <%= link_to "Come back later", trip_path(@trip) %>
   </button>
-  <button type="button" class="btn btn-outline-success">
+  <button type="button" class="btn btn-outline-primary">
+    <%= link_to "Add destinations", trip_trip_participant_potential_destinations_path(@trip, @trip_participant) %>
+  </button>
+  <button type="button" class="btn btn-outline-primary">
     <%= link_to "Submit!", trip_path(@trip) %>
   </button>
+
   </div>
 
     <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id">
