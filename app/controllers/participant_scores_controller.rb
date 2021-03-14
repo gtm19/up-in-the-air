@@ -22,7 +22,10 @@ class ParticipantScoresController < ApplicationController
   end
 
   def update
-  skip_authorization
+    skip_authorization
+    @participant_score = ParticipantScore.find(params[:id])
+    @participant_score.insert_at(params[:position].to_i)
+    head :ok
     puts "Working"
   end
 
@@ -47,6 +50,7 @@ class ParticipantScoresController < ApplicationController
       card[:position] = ps.position
       @cards.push(card)
     end
+    @cards = @cards.sort_by { |card| card[:ps].position }
   end
 
 
