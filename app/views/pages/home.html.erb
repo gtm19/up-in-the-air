@@ -1,27 +1,33 @@
 <%= render "shared/container" do %>
- <div class="splash">
+ 
+ <section name ="splash">
     <h1>Plan your group trip now!</h1>
     <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
       <div>
-        <%= image_tag("rocket.png", size: "864x864", :alt => "Ladu with Laptop on Rocket!") %>
+        <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
+        <a href="#subscribe" class = 'btn btn-lg btn-secondary'>Subscribe</a>
       </div>
       <div>
-        <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
+        <%= image_tag("rocket.png", size: "864x864", :alt => "Ladu with Laptop on Rocket!") %>
       </div>
-  </div>
-  <div class="testimonial">
-  </div>
-  <div class="howitworks">
-  </div>
-  <div class="subscribe">
+  </section>
+
+  <section id= "testimonials">
+  </section>
+
+  <section id= "howitworks">
+  </section>
+
+  <section id= "subscribe">
     <%= image_tag("subscribe.png", size: "432x432", :alt => "Subscription Image of Fun 3D Phone") %>
     <form>
     <h1 class="h3 mb-3 fw-normal">Subscribe now!</h1>
     <h5>Join thousands of others organising trips with their friends the easy way - want to wait, and find out more? Simples, just pop your email in below, click subscribe,  and we’ll keep you updated on all our new features and updates!</h5>
     <label for="inputEmail" class="visually-hidden">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address">
     <br>
     <button class="btn btn-lg btn-primary" type="submit">Subscribe</button>
   </form>
-  </div>
+  </section>
+
 <% end %>
