@@ -22,9 +22,19 @@ class ParticipantScoresController < ApplicationController
 
   def update
     skip_authorization
-    @participant_score = ParticipantScore.find(params[:id])
-    @participant_score.insert_at(params[:position].to_i)
-    head :ok
+
+    if params[:sub_action] == 'submit'
+      @trip_participant = TripParticipant.find(params[:trip_participant_id])
+      score_records
+      @trip_participant.scoring_complete = true
+      @trip_participant.save
+      redirect_to trip_trip_participant_participant_scores_path(@trip_participant.trip, @trip_participant)
+    else
+    # AJAX Call
+      @participant_score = ParticipantScore.find(params[:id])
+      @participant_score.insert_at(params[:position].to_i)
+      head :ok
+    end
   end
 
   private
@@ -50,10 +60,8 @@ class ParticipantScoresController < ApplicationController
     @cards = @cards.sort_by { |card| card[:ps].position }
   end
 
-
   def create_remaining_scoring_records
     # Checking that any potential destinations are converted to participant scores
-
     trip_participants = TripParticipant.where(trip: @trip)
     position = 0
     potential_destinations = []
@@ -81,6 +89,14 @@ class ParticipantScoresController < ApplicationController
     TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= '#{outbound_date}' AND valid_until >= '#{outbound_date}'")[0]
   end
 
+  def score_records
+    pss = ParticipantScore.where(trip_participant: @trip_participant)
+    pss.each do |ps|
+      ps.score = SCORES[ps.position] || 1
+      puts "#{ps.score} for position #{ps.position}"
+      ps.save
+    end
+  end
 
   def budget_rating(participant_score)
       # Get each participant
