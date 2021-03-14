@@ -25,14 +25,21 @@
       <% @cards.each do |card| %>
         <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card card-body score mb-4">
           <div class="trip-details">
-            <!--TODO: add cloudinary image back in to card below-->
-            <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div>
+
+            <div><h2 style="margin: 10px"><%= card[:ps].position %></h2></div>
+            
+            <% if card[:ps].potential_destination.city.photo.attached? %>
+              <div style="margin: 10px"> 
+                <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %>
+              </div>
+            <% end %>
 
             <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>
               Time: <%= card[:te].flight_mins %> mins<br/>
               Cost: £<%=  sprintf("%.2f", ((card[:te].low_cost + card[:te].high_cost)/2).to_f)  %><br/>
             </div>
           </div>
+
           <div style="margin: 10px">
             <p> Compatability with your travel buddies</p>
             <p id="stars">Budget: <% card[:budget].times do  %><i class="far fa-star" id="star_guide"></i> <% end %> </p>
@@ -44,6 +51,7 @@
             <button data-action="sort#updateVeto" type="button" class="btn btn-primary" data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
               <i class="fas fa-ban ml-1" ></i>
             </button>
+
           </div>
         </div>
       <% end %>
