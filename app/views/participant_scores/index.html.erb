@@ -40,6 +40,11 @@
             <p id="stars">Calender: <% card[:calender].times do  %><i class="far fa-star" id="star_guide"></i> <% end %> </p>
             <p id="stars">Travel Time: <% card[:time].times do  %><i class="far fa-star" id="star_guide"></i> <% end %> </p>
           </div>
+          <div>
+            <button data-action="sort#updateVeto" type="button" class="btn btn-primary" data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
+              <i class="fas fa-ban ml-1" ></i>
+            </button>
+          </div>
         </div>
       <% end %>
     </div>
