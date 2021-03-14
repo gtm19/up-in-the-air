@@ -1,5 +1,6 @@
 <%= render "shared/container" do %>
   <h1>Create trip</h1>
+  <div class="input-group mb-3">
   <%= simple_form_for(@trip) do |f| %>
       <%= f.input :name, label: "Trip Name" %>
       <%= f.input :description %>
@@ -12,7 +13,14 @@
             input_html: { class: "select2" },
             collection: City.all.order(:name) %>
       -->
+      <div class="input-group mb-3 py-3">
+      <input type="file" class="form-control" id="inputGroupFile02">
+      <label class="input-group-text" for="inputGroupFile02">Upload</label>
+      </div>
+      
       <%= f.submit %>
   <% end %>
+</div>
+
     
 <% end %>
