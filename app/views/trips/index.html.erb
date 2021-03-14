@@ -1,7 +1,7 @@
 <%= render "shared/container" do %>
   <section>
     <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
+      <div class="col-lg-9 col-md-8 mx-auto">
         <h1 class="fw-light">Welcome to your Trips!</h1>
         <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc.</p>
         <p>
@@ -14,9 +14,9 @@
   </section>
 
   <section>
-    <div class="album py-5">
+    <div class="album py-2">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 pb-4">
           <% @trips.each do |trip| %>
             <div class="col">
               <div class="card shadow-sm mb-4">
