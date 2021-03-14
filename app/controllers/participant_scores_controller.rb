@@ -1,6 +1,8 @@
 class ParticipantScoresController < ApplicationController
   # skip_after_action :verify_authorized
 
+  include StarRatingHelper
+
   SCORES = {
     1 => 10,
     2 => 8,
