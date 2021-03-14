@@ -176,7 +176,7 @@ def create_trip_estimates
   # Assuming it costs roughly a £1/mile to fly with a little random adjustment
   users.each do |user|
     cities.each do |city|
-      if city != user.city
+      # if city != user.city
         i += 1
         t = TripEstimate.new
         t.flight_mins = time_between(user.city, city)
@@ -188,7 +188,7 @@ def create_trip_estimates
         t.destination_city = city
         t.save!
         puts "#{i}. #{t.start_city.name} (#{t.start_city.country_name}) to #{t.destination_city.name} (#{t.destination_city.country_name}) at best £#{t.low_cost} in #{t.flight_mins} mins"
-      end
+      # end
     end
   end
 end
@@ -310,6 +310,7 @@ end
 
 ParticipantScore.delete_all
 PotentialDestination.delete_all
+DatePreference.delete_all
 TripParticipant.delete_all
 Trip.delete_all
 TripEstimate.delete_all

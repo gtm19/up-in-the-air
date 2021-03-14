@@ -1,5 +1,7 @@
 class ParticipantScoresController < ApplicationController
 
+# skip_after_action :verify_authorized
+
   SCORES = {
     1 => 10,
     2 => 8,
@@ -19,8 +21,9 @@ class ParticipantScoresController < ApplicationController
     @participant_scores = policy_scope(ParticipantScore)
   end
 
-  def move
-    raise
+  def update
+  skip_authorization
+    puts "Working"
   end
 
   private
@@ -80,7 +83,6 @@ class ParticipantScoresController < ApplicationController
     outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
     TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= '#{outbound_date}' AND valid_until >= '#{outbound_date}'")[0]
   end
-
 
 
   def pre_position

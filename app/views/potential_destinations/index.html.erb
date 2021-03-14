@@ -1,0 +1,65 @@
+<%= render "shared/container" do %>
+<h1>Find your ideal destination</h1>
+
+<div class="mb-4">
+<button type="button" class="btn btn-outline-primary">
+  <%= link_to "Save for later", trip_path(@trip) %>
+</button>
+<button type="button" class="btn btn-outline-success">
+<%= link_to "Ready to rate!",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch %>
+</button>
+</div>
+
+<div>
+  <%= form_tag trip_trip_participant_potential_destinations_path, method: :get do %>
+    <%= text_field_tag :budget,
+      params[:budget],
+      class: "form-control",
+      placeholder: "Budget"
+    %>
+    <%= text_field_tag :time,
+      params[:time],
+      class: "form-control",
+      placeholder: "Flying time"
+    %>
+    <%= text_field_tag :out_date,
+      params[:out_date],
+      class: "form-control",
+      placeholder: "Outbound date"
+    %>
+    <%= text_field_tag :in_date,
+      params[:in_date],
+      class: "form-control",
+      placeholder: "Inbound date"
+    %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+<div data-controller="love" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
+  <% @trip_estimates[0..20].each do |te| %>
+    <div class="card card-body score mb-4" data-trip-estimate=te.id >
+      <div>
+        <% if te.destination_city.photo.attached? %>
+          <%= cl_image_tag te.destination_city.photo.key, height: 150, width: 200, crop: :fill %><br/>
+        <% end  %>
+      </div>
+      <div>
+        <%= te.destination_city.name %><br/>
+        From £<%= te.low_cost %> To £<%= te.high_cost %><br/>
+        <%= (te.flight_mins) %>mins<br/>
+        <%= link_to "City Details" , city_path(te.destination_city)  %><br/>
+        <%= link_to "Add", trip_trip_participant_potential_destinations_path(@trip, @trip_participant, est: te), method: :post %><br/>
+        <%= link_to "Delete", trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, est: te), method: :delete %>
+      </div>
+      <div>
+        <button data-action="love#updateName" type="button" class="btn btn-primary" data-love-target="foo"><i class="fas fa-heart ml-1"></i></button>
+      </div>
+    </div>
+  <% end  %>
+
+</div>
+
+<% end %>
+
+
