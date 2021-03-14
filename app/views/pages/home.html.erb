@@ -1,15 +1,21 @@
 <%= render "shared/container" do %>
  
- <section name ="splash">
-    <h1>Plan your group trip now!</h1>
-    <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
-      <div>
-        <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
-        <a href="#subscribe" class = 'btn btn-lg btn-secondary'>Subscribe</a>
+ <section id ="home">
+    <div class="row align-items-center">
+      <div class="col">
+        <h1>Plan your group trip now!</h1>
+        <h5 class ="py-3" >Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
+          <div>
+            <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
+            <a href="#subscribe" class = 'btn btn-lg btn-secondary'>Subscribe</a>
+          </div>
       </div>
-      <div>
-        <%= image_tag("rocket.png", size: "864x864", :alt => "Ladu with Laptop on Rocket!") %>
+      <div class="col">
+        <div>
+          <%= image_tag("rocket.png", size: "864x864", class: "img-fluid", :alt => "Ladu with Laptop on Rocket!") %>
+        </div>
       </div>
+    </div>
   </section>
 
   <section id= "testimonials">
@@ -19,15 +25,22 @@
   </section>
 
   <section id= "subscribe">
-    <%= image_tag("subscribe.png", size: "432x432", :alt => "Subscription Image of Fun 3D Phone") %>
-    <form>
-    <h1 class="h3 mb-3 fw-normal">Subscribe now!</h1>
-    <h5>Join thousands of others organising trips with their friends the easy way - want to wait, and find out more? Simples, just pop your email in below, click subscribe,  and we’ll keep you updated on all our new features and updates!</h5>
-    <label for="inputEmail" class="visually-hidden">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address">
-    <br>
-    <button class="btn btn-lg btn-primary" type="submit">Subscribe</button>
-  </form>
+    <div class="row align-items-center">
+        <div class="col">
+          <%= image_tag("subscribe.png", size: "432x432", class: "img-fluid", :alt => "Subscription Image of Fun 3D Phone") %>
+        </div>
+      <div class="col">
+        <form>
+          <h1 class="h3 mb-3 fw-normal">Subscribe now!</h1>
+          <h5 class ="py-3" >Wwant to find out more? Simples, just pop your email in below, click subscribe,  and we’ll keep you updated on all our new features and updates!</h5>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="hello@upintheair.io" aria-label="Email" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="submit" id="button-addon2">Subscribe</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
   </section>
 
 <% end %>
