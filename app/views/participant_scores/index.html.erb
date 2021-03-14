@@ -20,9 +20,12 @@
         <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card card-body score mb-4">
           <div class="trip-details">
             <div><h2 style="margin: 10px"><%= card[:ps].position %></h2></div>
-
-            <!--TODO: add cloudinary image back in to card below-->
-            <div style="margin: 10px"> <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %></div>
+            
+            <% if card[:ps].potential_destination.city.photo.attached? %>
+              <div style="margin: 10px"> 
+                <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %>
+              </div>
+            <% end %>
 
             <div style="margin: 10px"><%= card[:ps].potential_destination.city.name %> suggested by <%= card[:ps].potential_destination.trip_participant.user.first_name %><br/>
               Time: <%= card[:te].flight_mins %><br/>
@@ -30,12 +33,12 @@
               Score: <%= card[:ps].score %>
             </div>
           </div>
-          <div style="margin: 10px">
-            COMPATABILITY<br/>
-            Loved: <%= card[:loved] %><br/>
-            Timed: <%= card[:time] %><br/>
-            Calender: <%= card[:calender] %><br/>
-            Budget: <%= card[:budget] %>
+          <div class="compatibility" style="margin: 10px">
+            COMPATIBILITY<br/>
+            Loved: <%= stars(card[:loved]) %><br/>
+            Timed: <%= stars(card[:time]) %><br/>
+            Calender: <%= stars(card[:calender]) %><br/>
+            Budget: <%= stars(card[:budget]) %>
           </div>
         </div>
       <% end %>
