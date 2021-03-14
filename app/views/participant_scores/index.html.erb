@@ -25,8 +25,6 @@
       <% @cards.each do |card| %>
         <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card card-body score mb-4">
           <div class="trip-details">
-
-            <div><h2 style="margin: 10px"><%= card[:ps].position %></h2></div>
             
             <% if card[:ps].potential_destination.city.photo.attached? %>
               <div style="margin: 10px"> 
@@ -41,11 +39,11 @@
           </div>
 
           <div style="margin: 10px">
-            <p> Compatability with your travel buddies</p>
-            <p id="stars">Budget: <% card[:budget].times do  %><i class="far fa-star" id="star_guide"></i> <% end %> </p>
-            <p id="stars">Loved: <% card[:loved].times do  %><i class="far fa-star" id="star_guide"></i> <% end %> </p>
-            <p id="stars">Calender: <% card[:calender].times do  %><i class="far fa-star" id="star_guide"></i> <% end %> </p>
-            <p id="stars">Travel Time: <% card[:time].times do  %><i class="far fa-star" id="star_guide"></i> <% end %> </p>
+            <p> Compatibility with your travel buddies</p>
+            <p id="stars">Budget: <%= stars(card[:budget]) %> </p>
+            <p id="stars">Loved: <%= stars(card[:loved]) %> </p>
+            <p id="stars">Calender: <%= stars(card[:calender]) %> </p>
+            <p id="stars">Travel Time: <%= stars(card[:time]) %> </p>
           </div>
           <div>
             <button data-action="sort#updateVeto" type="button" class="btn btn-primary" data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
