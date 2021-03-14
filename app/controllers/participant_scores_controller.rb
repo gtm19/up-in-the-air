@@ -16,7 +16,6 @@ class ParticipantScoresController < ApplicationController
     @trip = @trip_participant.trip
     create_remaining_scoring_records
     @participant_scores = ParticipantScore.where(trip_participant: @trip_participant)
-    pre_position
     create_cards
     @participant_scores = policy_scope(ParticipantScore)
   end
@@ -26,7 +25,6 @@ class ParticipantScoresController < ApplicationController
     @participant_score = ParticipantScore.find(params[:id])
     @participant_score.insert_at(params[:position].to_i)
     head :ok
-    puts "Working"
   end
 
   private
@@ -41,13 +39,12 @@ class ParticipantScoresController < ApplicationController
       card = Hash.new
       card[:ps] = ps
       card[:te] = trip_estimate(ps)
-      card[:budget] = rand(1.0..5.0)
-      card[:time] = rand(1.0..5.0)
-      card[:loved] = rand(1.0..5.0)
-      card[:calender] = rand(1.0..5.0)
+      card[:budget] = rand(1..5)
+      card[:time] = rand(1..5)
+      card[:loved] = rand(1..5)
+      card[:calender] = rand(1..5)
       card[:trip_id] = @trip.id
       card[:tp_id] = @trip_participant.id
-      card[:position] = ps.position
       @cards.push(card)
     end
     @cards = @cards.sort_by { |card| card[:ps].position }
@@ -58,9 +55,6 @@ class ParticipantScoresController < ApplicationController
     # Checking that any potential destinations are converted to participant scores
 
     trip_participants = TripParticipant.where(trip: @trip)
-
-    # pss = ParticipantScore.where(trip_participant: @trip_participant)
-    # position = pss.max_by { |ps| ps.position }.position
     position = 0
     potential_destinations = []
     trip_participants.each do |tp|
@@ -74,8 +68,7 @@ class ParticipantScoresController < ApplicationController
       ps = ParticipantScore.new(
         potential_destination: pd,
         trip_participant: @trip_participant,
-        position: position,
-        score: SCORES[position] || 1
+        position: position
         )
       ps.save
     end
@@ -88,23 +81,6 @@ class ParticipantScoresController < ApplicationController
     TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= '#{outbound_date}' AND valid_until >= '#{outbound_date}'")[0]
   end
 
-
-  def pre_position
-    exist = 0
-    @participant_scores.each do |ps|
-      exist += ps.position
-    end
-
-    if exist.zero?
-      position = 1
-      @participant_scores.each do |ps|
-        ps.position = position
-        ps.score = SCORES[position] || 2
-        position += 1
-        ps.save
-      end
-    end
-  end
 
   def budget_rating(participant_score)
       # Get each participant
