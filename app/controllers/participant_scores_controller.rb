@@ -17,14 +17,30 @@ class ParticipantScoresController < ApplicationController
     @trip = @trip_participant.trip
     create_remaining_scoring_records
     @participant_scores = ParticipantScore.where(trip_participant: @trip_participant)
-    pre_position
     create_cards
     @participant_scores = policy_scope(ParticipantScore)
   end
 
   def update
     skip_authorization
-    puts "Working"
+    
+    if params[:sub_action] == 'submit'
+      @trip_participant = TripParticipant.find(params[:trip_participant_id])
+      score_records
+      @trip_participant.scoring_complete = true
+      @trip_participant.save
+      redirect_to trip_trip_participant_participant_scores_path(@trip_participant.trip, @trip_participant)
+    elsif
+      params[:sub_action] == 'veto'
+      puts "cool"
+      puts params
+      head :ok
+    else
+    # AJAX Call
+      @participant_score = ParticipantScore.find(params[:id])
+      @participant_score.insert_at(params[:position].to_i)
+      head :ok
+    end
   end
 
   private
@@ -39,25 +55,20 @@ class ParticipantScoresController < ApplicationController
       card = Hash.new
       card[:ps] = ps
       card[:te] = trip_estimate(ps)
-      card[:budget] = rand(1.0..5.0)
-      card[:time] = rand(1.0..5.0)
-      card[:loved] = rand(1.0..5.0)
-      card[:calender] = rand(1.0..5.0)
+      card[:budget] = rand(1..5)
+      card[:time] = rand(1..5)
+      card[:loved] = rand(1..5)
+      card[:calender] = rand(1..5)
       card[:trip_id] = @trip.id
       card[:tp_id] = @trip_participant.id
-      card[:position] = ps.position
       @cards.push(card)
     end
+    @cards = @cards.sort_by { |card| card[:ps].position }
   end
-
 
   def create_remaining_scoring_records
     # Checking that any potential destinations are converted to participant scores
-
     trip_participants = TripParticipant.where(trip: @trip)
-
-    # pss = ParticipantScore.where(trip_participant: @trip_participant)
-    # position = pss.max_by { |ps| ps.position }.position
     position = 0
     potential_destinations = []
     trip_participants.each do |tp|
@@ -71,8 +82,7 @@ class ParticipantScoresController < ApplicationController
       ps = ParticipantScore.new(
         potential_destination: pd,
         trip_participant: @trip_participant,
-        position: position,
-        score: SCORES[position] || 1
+        position: position
         )
       ps.save
     end
@@ -85,20 +95,13 @@ class ParticipantScoresController < ApplicationController
     TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= '#{outbound_date}' AND valid_until >= '#{outbound_date}'")[0]
   end
 
-  def pre_position
-    exist = 0
-    @participant_scores.each do |ps|
-      exist += ps.position
-    end
 
-    if exist.zero?
-      position = 1
-      @participant_scores.each do |ps|
-        ps.position = position
-        ps.score = SCORES[position] || 2
-        position += 1
-        ps.save
-      end
+  def score_records
+    pss = ParticipantScore.where(trip_participant: @trip_participant)
+    pss.each do |ps|
+      ps.score = SCORES[ps.position] || 1
+      puts "#{ps.score} for position #{ps.position}"
+      ps.save
     end
   end
 
