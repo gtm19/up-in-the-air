@@ -1,6 +1,7 @@
 class ParticipantScoresController < ApplicationController
+  # skip_after_action :verify_authorized
 
-# skip_after_action :verify_authorized
+  include StarRatingHelper
 
   SCORES = {
     1 => 10,
@@ -22,7 +23,7 @@ class ParticipantScoresController < ApplicationController
 
   def update
     skip_authorization
-
+    
     if params[:sub_action] == 'submit'
       @trip_participant = TripParticipant.find(params[:trip_participant_id])
       score_records
@@ -96,6 +97,7 @@ class ParticipantScoresController < ApplicationController
     # outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
     TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= '#{outbound_date}' AND valid_until >= '#{outbound_date}'")[0]
   end
+
 
   def score_records
     pss = ParticipantScore.where(trip_participant: @trip_participant)

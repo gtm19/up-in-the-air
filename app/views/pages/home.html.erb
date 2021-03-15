@@ -1,33 +1,205 @@
-<%= render "shared/container" do %>
- 
- <section name ="splash">
-    <h1>Plan your group trip now!</h1>
-    <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
-      <div>
-        <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
-        <a href="#subscribe" class = 'btn btn-lg btn-secondary'>Subscribe</a>
-      </div>
-      <div>
+<div class="alert warning alert-dismissible fade show text-white" role="alert">
+  <strong>COVID-19 Travel Guidance : </strong> Click <a href="#" class="text-white"><u>here</u></a> to get up to date with our COVID-19 Travel Policy!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<section id ="home" class="p-5 m-5">
+  <div class="row h-100">
+    <div class="col m-auto">
+      <h1 class="display-3">Plan your group trip now!</h1>
+      <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
+      <br>
+        <div>
+          <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
+          <a href="#subscribe" class = 'btn btn-lg btn-secondary'>Subscribe</a>
+        </div>
+    </div>
+    <div class="col">
+      <div class="col-md-6 col-xl-5 mt-5">
         <%= image_tag("rocket.png", size: "864x864", :alt => "Ladu with Laptop on Rocket!") %>
       </div>
-  </section>
+    </div>
+  </div>
+</section>
 
-  <section id= "testimonials">
-  </section>
+<section id= "testimonials" class = "bg-white p-5 m-5">
+  <div class="container team-section text-center my-5">
+  <!-- Section heading -->
+  <h2 class="h1-responsive my-5">Stay friends with your friends...</h2>
+  <!-- Section description -->
+  <p class="dark-grey-text w-responsive mx-auto mb-5">We have been working with people around the world.</p>
 
-  <section id= "howitworks">
-  </section>
+  <!--Grid row-->
+  <div class="row text-center">
 
-  <section id= "subscribe">
-    <%= image_tag("subscribe.png", size: "432x432", :alt => "Subscription Image of Fun 3D Phone") %>
-    <form>
-    <h1 class="h3 mb-3 fw-normal">Subscribe now!</h1>
-    <h5>Join thousands of others organising trips with their friends the easy way - want to wait, and find out more? Simples, just pop your email in below, click subscribe,  and we’ll keep you updated on all our new features and updates!</h5>
-    <label for="inputEmail" class="visually-hidden">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address">
-    <br>
-    <button class="btn btn-lg btn-primary" type="submit">Subscribe</button>
-  </form>
-  </section>
+    <!--Grid column-->
+    <div class="col-md-4 mb-md-0 mb-5">
 
-<% end %>
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
+        </div>
+        <!--Content-->
+        <h4 class="font-weight-bold dark-grey-text mt-4">Anna</h4>
+        <h6 class="font-weight-bold blue-text my-3">London</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+          eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star-half-alt"> </i>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4 mb-md-0 mb-5">
+
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
+        </div>
+        <!--Content-->
+        <h4 class="font-weight-bold dark-grey-text mt-4">John</h4>
+        <h6 class="font-weight-bold blue-text my-3">Zurich</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
+          corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4">
+
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
+        </div>
+        <!--Content-->
+        <h4 class="font-weight-bold dark-grey-text mt-4">Kate</h4>
+        <h6 class="font-weight-bold blue-text my-3">New York</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="far fa-star"> </i>
+        </div>
+      </div>
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+  </div>
+</section>
+
+<section id= "subscribe">
+  <div class="container">
+    <div class="row align-items-center">
+        <div class="col">
+          <%= image_tag("subscribe.png", size: "432x432", class: "img-fluid", :alt => "Subscription Image of Fun 3D Phone") %>
+        </div>
+      <div class="col">
+        <form>
+          <h1 class="h3 mb-3 fw-normal">Subscribe now!</h1>
+          <h5 class ="py-3" >Want to find out more? Simples, just pop your email in below, click subscribe, and we’ll keep you updated on all our new features and updates!</h5>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="hello@upintheair.io" aria-label="Email" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="submit" id="button-addon2">Subscribe</button>
+          </div>
+        </form>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+<section id= "pricing" class = "bg-white p-5 m-5">
+  <div class="container">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1>Pricing</h1>
+      <p>Whether planning a weekend getaway, or an enterprise-level junket - we've got the pricing structure to suit your needs!</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Free</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">£0 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>10 friends included</li>
+            <li>Anywhere in the world</li>
+            <li>1 Trip</li>
+            <li>Chatbot support</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Pro</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">£15 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>20 friends included</li>
+            <li>Anywhere in the world</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Enterprise</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">£29 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Infinite collegues</li>
+            <li>Infinite Trips</li>
+            <li>Priority Support</li>
+            <li>Custom Features</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
