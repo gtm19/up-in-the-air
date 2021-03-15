@@ -23,7 +23,7 @@ class ParticipantScoresController < ApplicationController
 
   def update
     skip_authorization
-    
+
     if params[:sub_action] == 'submit'
       @trip_participant = TripParticipant.find(params[:trip_participant_id])
       score_records
@@ -91,7 +91,10 @@ class ParticipantScoresController < ApplicationController
   def trip_estimate(participant_score)
     start_city = participant_score.trip_participant.user.city
     dest_city = participant_score.potential_destination.city
-    outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
+    preferences = DatePreference.find_by(trip_participant: participant_score.trip_participant)
+    preferences ? outbound_date = preferences.start_date.to_datetime : outbound_date = Date.parse('01-05-2021').to_datetime
+
+    # outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
     TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= '#{outbound_date}' AND valid_until >= '#{outbound_date}'")[0]
   end
 
