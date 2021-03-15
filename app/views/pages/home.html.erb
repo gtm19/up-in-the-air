@@ -5,25 +5,26 @@
   </button>
 </div>
 
-<section id ="home">
-  <div class="row">
-    <div class="col">
-      <h1>Plan your group trip now!</h1>
+<section id ="home" class="p-5 m-5">
+  <div class="row h-100">
+    <div class="col m-auto">
+      <h1 class="display-3">Plan your group trip now!</h1>
       <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
+      <br>
         <div>
           <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
           <a href="#subscribe" class = 'btn btn-lg btn-secondary'>Subscribe</a>
         </div>
     </div>
     <div class="col">
-      <div>
-        <%= image_tag("rocket.png", size: "864x864", class: "img-fluid", :alt => "Ladu with Laptop on Rocket!") %>
+      <div class="col-md-6 col-xl-5 mt-xl-5">
+        <%= image_tag("rocket.png", size: "864x864", :alt => "Ladu with Laptop on Rocket!") %>
       </div>
     </div>
   </div>
 </section>
 
-<section id= "testimonials">
+<section id= "testimonials" class = "bg-white p-5 m-5">
   <div class="container team-section text-center my-5">
   <!-- Section heading -->
   <h2 class="h1-responsive my-5">Stay friends with your friends...</h2>
@@ -139,7 +140,7 @@
     </div>
 </section>
 
-<section id= "pricing">
+<section id= "pricing" class = "bg-white p-5 m-5">
   <div class="container">
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1>Pricing</h1>
