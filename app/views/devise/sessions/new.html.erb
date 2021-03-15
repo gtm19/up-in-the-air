@@ -1,6 +1,4 @@
-<%= render "shared/container" do %>
-
-  <%= image_tag("icon.png", size: "39x49", :alt => "Icon") %>
+<div class ="container text-center"> 
   <h2>Keep planning that next adventure...</h2>
 
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -21,6 +19,5 @@
   <% end %>
 
   <%= render "devise/shared/links" %>
-  <%= image_tag("login.png", size: "998x519", :alt => "Person popping their head out from the bushes!") %>
-
-<% end %>
+  <%= image_tag("login.png", size: "741x317", :alt => "Person popping their head out from the bushes!") %>
+</div>
