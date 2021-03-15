@@ -23,7 +23,7 @@ class ParticipantScoresController < ApplicationController
 
   def update
     skip_authorization
-    
+
     if params[:sub_action] == 'submit'
       @trip_participant = TripParticipant.find(params[:trip_participant_id])
       score_records
