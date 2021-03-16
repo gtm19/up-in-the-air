@@ -1,4 +1,4 @@
-<%= render "shared/container" do %>
+
   <section>
     <div class="row py-lg-5">
       <div class="col-lg-9 col-md-8 mx-auto">
@@ -6,8 +6,6 @@
         <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc.</p>
         <p>
           <%= link_to "Create trip", new_trip_path, class: "btn btn-primary my-2" %>
-          <!-- TODO : Update this to working link. --> 
-          <%= link_to "View Preferences", new_trip_path, class: "btn btn-secondary my-2" %>
         </p>
       </div>
     </div>
@@ -15,7 +13,7 @@
 
   <section>
     <div class="album py-2">
-      <div class="container">
+      <div class="container-sm">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 pb-4">
           <% @trips.each do |trip| %>
             <div class="col">
@@ -23,13 +21,7 @@
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
                 <div class="card-body">
                 <%= link_to trip.name, trip_path(trip), class: "card-text" %>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-primary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-primary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
                   </div>
                 </div>
               </div>
@@ -40,4 +32,4 @@
     </div>
   </section>
 
-<% end %>
+<%= render 'shared/footer-medium' %>
