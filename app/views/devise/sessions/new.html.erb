@@ -1,5 +1,5 @@
-<div class ="container text-center"> 
-  <h2>Keep planning that next adventure...</h2>
+<div class ="container"> 
+  <h2 class= "text-center">Keep planning that next adventure...</h2>
 
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-inputs">
@@ -21,3 +21,5 @@
   <%= render "devise/shared/links" %>
   <%= image_tag("login.png", size: "741x317", :alt => "Person popping their head out from the bushes!") %>
 </div>
+
+<%= render 'shared/footer-small' %>
