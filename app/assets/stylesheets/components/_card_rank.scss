@@ -1,0 +1,28 @@
+
+.veto-off {
+  color: $body-color;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+
+.veto-on {
+  color: $primary;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+.score {
+  cursor: grab;
+}
+
+.score:active {
+  cursor: grabbing;
+}
+
+.score.ghost {
+  filter: grayscale(1);
+  opacity: 0.5;
+}

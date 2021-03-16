@@ -20,31 +20,34 @@ export default class extends Controller {
     })
   }
 
-end(event) {
-  console.log(event)
-  let id = event.item.dataset.id
-  let tid = event.item.dataset.tid
-  let tpid = event.item.dataset.tpid
-  let data = new FormData()
-  data.append('position', event.newIndex + 1)
+  end(event) {
+    console.log(event)
+    let id = event.item.dataset.id
+    let tid = event.item.dataset.tid
+    let tpid = event.item.dataset.tpid
+    let data = new FormData()
+    data.append('position', event.newIndex + 1)
 
-  Rails.ajax({
-  url: this.data.get("url").replace(":id", id).replace(":trip_id", tid).replace(":trip_participant_id", tpid),
-  type: 'PUT',
-  data: data
-  })
+    Rails.ajax({
+    url: this.data.get("url").replace(":id", id).replace(":trip_id", tid).replace(":trip_participant_id", tpid),
+    type: 'PUT',
+    data: data
+    })
   }
 
-updateVeto(event) {
-    this.banTarget.innerHTML = "Veto'd"
-    console.log("Clicked!")
-    console.log(event)
-    console.log(event.path[0].dataset.id)
-    console.log(this.data.get("url"))
+  updateVeto(event) {
 
-    let id = event.path[0].dataset.id
-    let tid = event.path[0].dataset.tid
-    let tpid = event.path[0].dataset.tpid
+    // event.currentTarget.innerHTML = "XXX"
+    console.log("Clicked!")
+    console.log(event.currentTarget)
+    console.log(event.currentTarget.dataset.id)
+    console.log(this.data.get("url"))
+    event.currentTarget.classList.toggle('veto-off')
+    event.currentTarget.classList.toggle('veto-on')
+
+    let id = event.currentTarget.dataset.id
+    let tid = event.currentTarget.dataset.tid
+    let tpid = event.currentTarget.dataset.tpid
     let data = new FormData()
     data.append('sub_action', 'veto')
 
