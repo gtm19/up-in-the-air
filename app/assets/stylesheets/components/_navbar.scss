@@ -1,5 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
+  align-items: center;
   background: white;
 }
 
@@ -10,4 +11,13 @@
 .navbar-lewagon .navbar-brand img {
   width: 20px;
   margin:0 auto;
+}
+
+#navbarDropdown {
+  background: $primary;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  color: white;
+  text-align: center;
 }
