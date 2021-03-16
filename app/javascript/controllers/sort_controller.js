@@ -15,9 +15,15 @@ export default class extends Controller {
   static targets = ["ban"];
 
   connect() {
+    const list = document.querySelector("#sortable-list")
+    if (list.dataset.status == 'disabled') {
+      return
+    }
+
     this.sortable = Sortable.create(this.element, {
     onEnd: this.end.bind(this)
     })
+    console.log(this)
   }
 
   end(event) {
@@ -37,13 +43,16 @@ export default class extends Controller {
 
   updateVeto(event) {
 
-    // event.currentTarget.innerHTML = "XXX"
-    console.log("Clicked!")
+    // const veto_buttons = document.querySelectorAll("#veto-button")
+    // veto_buttons
+
     console.log(event.currentTarget)
     console.log(event.currentTarget.dataset.id)
     console.log(this.data.get("url"))
+
     event.currentTarget.classList.toggle('veto-off')
     event.currentTarget.classList.toggle('veto-on')
+
 
     let id = event.currentTarget.dataset.id
     let tid = event.currentTarget.dataset.tid

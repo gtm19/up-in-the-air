@@ -1,5 +1,6 @@
 
 .veto-off {
+  visibility: visible;
   color: $body-color;
   font-size: 2em;
   border: none;
@@ -8,6 +9,15 @@
 
 
 .veto-on {
+  visibility: visible;
+  color: $primary;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+.veto-hidden {
+  visibility: hidden;
   color: $primary;
   font-size: 2em;
   border: none;
