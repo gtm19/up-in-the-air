@@ -1,15 +1,14 @@
 <%= render "shared/container" do %>
 <h1>Find your ideal destination</h1>
 
+
 <div class="mb-4">
-  <button type="button" class="btn btn-outline-primary">
-    <%= link_to "Come back later", trip_path(@trip) %>
+    <%= link_to "Come back later", trip_path(@trip), class: 'btn btn-lg btn-secondary purple' %>
   </button>
-  <button type="button" class="btn btn-outline-primary">
-    <%= link_to "Submit the loved ones!",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch %>
+
+    <%= link_to "Submit the loved ones!",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-lg btn-primary' %>
   </button>
-  <button type="button" class="btn btn-outline-primary">
-    <%= link_to "Go & rank",  trip_trip_participant_participant_scores_path(@trip, @trip_participant) %>
+    <%= link_to "Go & rank",  trip_trip_participant_participant_scores_path(@trip, @trip_participant), class: 'btn btn-lg btn-primary' %>
   </button>
 </div>
 
