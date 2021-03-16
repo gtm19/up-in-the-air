@@ -52,7 +52,7 @@ def basic_cities
       gmt: "0",
       city_iata_code: "LHR",
       country_iso2: "GB",
-      airport_name: "Berlin Airport",
+      airport_name: "London Airport",
       timezone: "Europe"
     },
     {
@@ -241,29 +241,52 @@ def seed_trip(trip_name)
   trip
 end
 
-def seed_potential_destinations
-  trip = Trip.last
-  tps = TripParticipant.where(trip: trip)
-  #For each trip participant, create potential destinations that meet their preferences
-  tps.each do |tp|
-    trip_estimate = TripEstimate.where("low_cost < #{tp.budget_preference} AND flight_mins < #{tp.time_preference} AND start_city_id = #{tp.user.city_id}")
-    puts "Creating PD for #{tp.user.first_name} with budget #{tp.budget_preference} and time limt #{tp.time_preference} :"
-    # Only create 3 potential destinations for each
-    trip_estimate[0..2].each do |te|
-      pd = PotentialDestination.new
-      pd.city = te.destination_city
-      pd.trip_participant = tp
-      pd.status = 'submitted'
-      pd.save!
-      puts "Created PD for #{tp.user.first_name} to #{pd.city.name} / #{pd.city.country_name}"
-    end
+def seed_potential_destinations(trip)
+  # get all the trip participants
+  trip_participants = trip.trip_participants
+  # get the cities of the participants and shift by 1 
+  # (so no-one chooses their city as a potential destination)
+  cities = trip_participants.map { |tp| tp.user.city }.rotate
+
+  #For each trip participant, create a potential destination
+  trip_participants.each do |trip_participant|
+    city = cities.shift
+    puts "Creating PD for #{trip_participant.user.name}: #{city.name}, #{city.country}"
+    pd = PotentialDestination.new
+    pd.city = city
+    pd.status = 'submitted'
+    trip_participant.potential_destinations << pd
 
     date_pref = DatePreference.new(
       start_date: Date.parse('01-05-2021'),
-      end_date: Date.parse('04-05-2021'),
-      trip_participant: tp)
-    date_pref.save
+      end_date: Date.parse('04-05-2021')
+    )
+
+    trip_participant.date_preferences << date_pref
   end
+  
+  trip_participants
+end
+
+def seed_participant_scores(trip)
+  trip_participants = trip.trip_participants
+  potential_destinations = trip.potential_destinations
+
+  trip_participants.each do |trip_participant|
+    potential_destinations.shuffle.each_with_index do |potential_destination, i|
+      score = ParticipantScore.new(
+        position: i + 1,
+        score: 20 / (i + 1),
+        veto: false,
+        trip_participant: trip_participant,
+        potential_destination: potential_destination
+      )
+      score.save!
+      p "#{trip_participant.user.name} rates #{potential_destination.city.name} position: #{i + 1}"
+    end
+  end
+
+  ParticipantScore.last.veto = true
 end
 
 CLOUDINARY_URLS = [
@@ -317,7 +340,7 @@ TripEstimate.delete_all
 User.delete_all
 City.delete_all
 
-if ENV["basic"]
+if ENV["basic"] || ENV["simple"]
   basic_cities
 else
   load_city_airports
@@ -326,8 +349,9 @@ end
 create_users
 create_trip_estimates
 
-seed_trip("Away with friends")
-seed_potential_destinations
+trip = seed_trip("Away with friends")
+seed_potential_destinations(trip)
+seed_participant_scores(trip)
 
 # There is now a batch (sidekiq) job that adds photos called AddPhotosJob. So we don't need to do the following.
 # delete_photos

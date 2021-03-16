@@ -1,5 +1,40 @@
 <%= render "shared/container" do %>
-<h1><%= @city.name %></h1>
-<h2><%= @city.country %></h2>
-<% end %>
 
+<div id="block-container">
+  <h1><%= @city.name %></h1>
+  <h2><%= @city.country %></h2>
+  <%= cl_image_tag @trip_estimate.destination_city.photo.key, height: 150, width: 200, crop: :fill %>
+</div>
+
+<div id="card-container">
+
+  <div id="card-product">
+    <i class="far fa-money-bill-alt icon"></i>
+    <p>£<%= @trip_estimate.low_cost %></p>
+    <p>£<%= @trip_estimate.high_cost %></p>
+   </div>
+
+  <div id="card-product">
+  <i class="fas fa-plane icon"></i> <p><%= @trip_estimate.flight_mins %>minutes</p>
+  <p><%= @trip_estimate.start_city.name%></p>
+  <p><%= @trip_estimate.destination_city.name%></p>
+  </div>
+</div>
+
+<% end %>
+<!--
+
+
+
+<div class="card-trip">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+  <div class="card-trip-infos">
+    <div>
+      <h2>Title here</h2>
+      <p>Short description here!</p>
+    </div>
+    <h2 class="card-trip-pricing">£99.99</h2>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+  </div>
+</div>
+ -->

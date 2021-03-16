@@ -5,6 +5,7 @@ class CitiesController < ApplicationController
 
   def show
     @city = City.find(params[:id])
+    @trip_estimate = TripEstimate.find(params[:id])
     authorize @city
   end
 end
