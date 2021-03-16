@@ -5,6 +5,7 @@ class TripsController < ApplicationController
 
   def show
     @trip = Trip.find(params[:id])
+    @trip_participants = @trip.trip_participants
     authorize @trip
   end
 
@@ -15,13 +16,13 @@ class TripsController < ApplicationController
 
   def create
     @trip = Trip.new(trip_params)
+    authorize @trip
     @trip.lead_user = current_user
     if @trip.save && @trip.users << current_user
       redirect_to trip_path(@trip)
     else
       render "new"
     end
-    authorize @trip
   end
 
   def update
@@ -29,11 +30,10 @@ class TripsController < ApplicationController
     users.reject!(&:empty?)
 
     @trip = Trip.find(params[:id])
+    authorize @trip
     @trip.user_ids = users
 
-    redirect_to trips_path
-
-    authorize @trip
+    redirect_to trip_path(@trip)
   end
 
   private
