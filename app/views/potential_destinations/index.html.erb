@@ -54,39 +54,83 @@
 </div> -->
 
 
-
 <div data-controller="love" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
-  <% @cards.each do |c| %>
-    <div class="card card-body score mb-4" data-trip-estimate=c[:te].id >
-      <div>
-        <% if c[:te].destination_city.photo.attached? %>
-          <%= cl_image_tag c[:te].destination_city.photo.key, height: 150, width: 200, crop: :fill %><br/>
-        <% end  %>
-      </div>
-      <div>
-        <%= c[:te].destination_city.name %><br/>
-        From £<%= c[:te].low_cost %> To £<%= c[:te].high_cost %><br/>
-        <%= c[:te].flight_mins %>mins<br/>
-        <%= link_to "City Details" , city_path(c[:te].destination_city)  %><br/>
-        <br/>
-        <% if c[:pd] %>
-          <% if c[:pd].status == 'submitted' %>
-            Submitted!
-          <% else  %>
-            <%= link_to "Unlove", trip_trip_participant_potential_destination_path(@trip, @trip_participant, c[:pd], est: c[:te]), method: :delete %>
-          <% end %>
-        <% else  %>
-        <%= link_to "Love", trip_trip_participant_potential_destinations_path(@trip, @trip_participant, est: c[:te]), method: :post %><br/>
-        <% end %>
-      </div>
-      <div>
-        <button data-action="love#updateName" type="button" class="btn btn-primary" data-love-target="foo"><i class="fas fa-heart ml-1"></i></button>
-      </div>
+  <div class="container">
+    <div class="row">
+      <% @cards.each do |c| %>
+        <div class="col-4">
+          <div class="card-destination card card-body score mb-4" data-trip-estimate=c[:te].id >
+            <div>
+              <% if c[:te].destination_city.photo.attached? %>
+                <img><%= cl_image_tag c[:te].destination_city.photo.key,height: 150, width: 200, crop: :fill %></img><br/>
+              <% end  %>
+              <div class="card-destination-infos">
+                <div>
+                  <h2><%= c[:te].destination_city.name %><h2><br/>
+                        <i class="fas fa-coins"></i><p>From £<%= c[:te].low_cost %> to £<%= c[:te].high_cost %></p><br/>
+                      <i class="fas fa-plane"></i><p><%= c[:te].flight_mins %>mins<br/>
+                  <%= link_to "City Details" , city_path(c[:te].destination_city)  %></p><br/>
+                  <br/>
+                  <% if c[:pd] %>
+                    <% if c[:pd].status == 'submitted' %>
+                      Submitted!
+                    <% else  %>
+                      <%= link_to "Unlove", trip_trip_participant_potential_destination_path(@trip, @trip_participant, c[:pd], est: c[:te]), method: :delete %>
+                    <% end %>
+                  <% else  %>
+                    <%= link_to "Love", trip_trip_participant_potential_destinations_path(@trip, @trip_participant, est: c[:te]), method: :post %><br/>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button data-action="love#updateName" type="button" class="btn btn-primary" data-love-target="foo"><i class="fas fa-heart ml-1"></i></button>
+            </div>
+          </div>
+        </div>
+      <% end  %>
     </div>
-  <% end  %>
+  </div>
 </div>
 
 
+<!-- OLD CODE
+
+
+<div data-controller="love" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
+<div class="card-destination">
+    <% @cards.each do |c| %>
+      <div class="card card-body score mb-4" data-trip-estimate=c[:te].id >
+        <div>
+          <% if c[:te].destination_city.photo.attached? %>
+            <%= cl_image_tag c[:te].destination_city.photo.key,height: 150, width: 200, crop: :fill %><br/>
+          <% end  %>
+        </div>
+        <div>
+          <%= c[:te].destination_city.name %><br/>
+          From £<%= c[:te].low_cost %> To £<%= c[:te].high_cost %><br/>
+          <%= c[:te].flight_mins %>mins<br/>
+          <%= link_to "City Details" , city_path(c[:te].destination_city)  %><br/>
+          <br/>
+          <% if c[:pd] %>
+            <% if c[:pd].status == 'submitted' %>
+              Submitted!
+            <% else  %>
+              <%= link_to "Unlove", trip_trip_participant_potential_destination_path(@trip, @trip_participant, c[:pd], est: c[:te]), method: :delete %>
+            <% end %>
+          <% else  %>
+          <%= link_to "Love", trip_trip_participant_potential_destinations_path(@trip, @trip_participant, est: c[:te]), method: :post %><br/>
+          <% end %>
+        </div>
+        <div>
+          <button data-action="love#updateName" type="button" class="btn btn-primary" data-love-target="foo"><i class="fas fa-heart ml-1"></i></button>
+        </div>
+      </div>
+    <% end  %>
+  </div>
+</div>
+
+ -->
 <!-- <div data-controller="love" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
   <% @trip_estimates.each do |te| %>
     <div class="card card-body score mb-4" data-trip-estimate=te.id >
