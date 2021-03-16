@@ -31,11 +31,10 @@
     <%= stylesheet_pack_tag 'application' %>
   </head>
 
-  <body class="min-height">
+  <body class="d-flex flex-column h-100">
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     
     <%= yield %>
-    <%= render 'shared/footer' %>
   </body>
 </html>
