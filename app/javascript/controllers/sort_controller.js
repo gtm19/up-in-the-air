@@ -15,36 +15,48 @@ export default class extends Controller {
   static targets = ["ban"];
 
   connect() {
+    const list = document.querySelector("#sortable-list")
+    if (list.dataset.status == 'disabled') {
+      return
+    }
+
     this.sortable = Sortable.create(this.element, {
     onEnd: this.end.bind(this)
     })
+    console.log(this)
   }
 
-end(event) {
-  console.log(event)
-  let id = event.item.dataset.id
-  let tid = event.item.dataset.tid
-  let tpid = event.item.dataset.tpid
-  let data = new FormData()
-  data.append('position', event.newIndex + 1)
-
-  Rails.ajax({
-  url: this.data.get("url").replace(":id", id).replace(":trip_id", tid).replace(":trip_participant_id", tpid),
-  type: 'PUT',
-  data: data
-  })
-  }
-
-updateVeto(event) {
-    this.banTarget.innerHTML = "Veto'd"
-    console.log("Clicked!")
+  end(event) {
     console.log(event)
-    console.log(event.path[0].dataset.id)
+    let id = event.item.dataset.id
+    let tid = event.item.dataset.tid
+    let tpid = event.item.dataset.tpid
+    let data = new FormData()
+    data.append('position', event.newIndex + 1)
+
+    Rails.ajax({
+    url: this.data.get("url").replace(":id", id).replace(":trip_id", tid).replace(":trip_participant_id", tpid),
+    type: 'PUT',
+    data: data
+    })
+  }
+
+  updateVeto(event) {
+
+    // const veto_buttons = document.querySelectorAll("#veto-button")
+    // veto_buttons
+
+    console.log(event.currentTarget)
+    console.log(event.currentTarget.dataset.id)
     console.log(this.data.get("url"))
 
-    let id = event.path[0].dataset.id
-    let tid = event.path[0].dataset.tid
-    let tpid = event.path[0].dataset.tpid
+    event.currentTarget.classList.toggle('veto-off')
+    event.currentTarget.classList.toggle('veto-on')
+
+
+    let id = event.currentTarget.dataset.id
+    let tid = event.currentTarget.dataset.tid
+    let tpid = event.currentTarget.dataset.tpid
     let data = new FormData()
     data.append('sub_action', 'veto')
 
