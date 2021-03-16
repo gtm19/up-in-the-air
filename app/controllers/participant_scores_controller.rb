@@ -30,10 +30,10 @@ class ParticipantScoresController < ApplicationController
       @trip_participant.scoring_complete = true
       @trip_participant.save
       redirect_to trip_trip_participant_participant_scores_path(@trip_participant.trip, @trip_participant)
-    elsif
-      params[:sub_action] == 'veto'
-      puts "cool"
-      puts params
+    elsif params[:sub_action] == 'veto'
+      @participant_score = ParticipantScore.find(params[:id])
+      @participant_score.veto = !@participant_score.veto
+      @participant_score.save
       head :ok
     else
     # AJAX Call
