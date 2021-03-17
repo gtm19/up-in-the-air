@@ -64,27 +64,28 @@
                 <img><%= cl_image_tag c[:te].destination_city.photo.key,height: 150, width: 200, crop: :fill %></img><br/>
               <% end  %>
               <div class="card-destination-infos">
-                <div>
-                  <h2><%= c[:te].destination_city.name %><h2><br/>
-                        <i class="fas fa-coins"></i><p>From £<%= c[:te].low_cost %> to £<%= c[:te].high_cost %></p><br/>
-                      <i class="fas fa-plane"></i><p><%= c[:te].flight_mins %>mins<br/>
-                  <%= link_to "City Details" , city_path(c[:te].destination_city)  %></p><br/>
-                  <br/>
-                  <% if c[:pd] %>
-                    <% if c[:pd].status == 'submitted' %>
-                      Submitted!
+                  <div>
+                    <h2><%= c[:te].destination_city.name %><h2><br/>
+                          <i class="fas fa-coins"></i><p>From £<%= c[:te].low_cost %> to £<%= c[:te].high_cost %></p><br/>
+                        <i class="fas fa-plane"></i><p><%= c[:te].flight_mins %>mins<br/>
+                    <%= link_to "City Details" , city_path(c[:te].destination_city)  %></p><br/>
+                    <br/>
+                    <% if c[:pd] %>
+                      <% if c[:pd].status == 'submitted' %>
+                        Submitted!
+                      <% else  %>
+                        <%= link_to "Unlove", trip_trip_participant_potential_destination_path(@trip, @trip_participant, c[:pd], est: c[:te]), method: :delete %>
+                      <% end %>
                     <% else  %>
-                      <%= link_to "Unlove", trip_trip_participant_potential_destination_path(@trip, @trip_participant, c[:pd], est: c[:te]), method: :delete %>
+                      <%= link_to "Love", trip_trip_participant_potential_destinations_path(@trip, @trip_participant, est: c[:te]), method: :post %><br/>
                     <% end %>
-                  <% else  %>
-                    <%= link_to "Love", trip_trip_participant_potential_destinations_path(@trip, @trip_participant, est: c[:te]), method: :post %><br/>
-                  <% end %>
-                </div>
+                  </div>
+                     <button data-action="love#updateName" type="button" class="btn btn-primary " data-love-target="foo"><i class="fas fa-heart ml-1 "></i></button>
               </div>
             </div>
-            <div>
-              <button data-action="love#updateName" type="button" class="btn btn-primary" data-love-target="foo"><i class="fas fa-heart ml-1"></i></button>
-            </div>
+          <!--   <div> -->
+             <!--  <button data-action="love#updateName" type="button" class="btn btn-primary " data-love-target="foo"><i class="fas fa-heart ml-1 "></i></button> -->
+         <!--    </div> -->
           </div>
         </div>
       <% end  %>
