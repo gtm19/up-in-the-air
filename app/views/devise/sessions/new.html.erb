@@ -1,35 +1,31 @@
-<main class="flex-shrink-0">
-  <div class ="container"> 
-    <h2 class= "text-center">Keep planning that next adventure...</h2>
+<div class ="container"> 
+  <h2 class= "text-center mt-5">Keep planning that next adventure...</h2>
 
-    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="form-inputs">
-        <%= f.input :email,
-                    required: false,
-                    autofocus: true,
-                    input_html: { autocomplete: "email" } %>
-        <%= f.input :password,
-                    required: false,
-                    input_html: { autocomplete: "current-password" } %>
-        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-      </div>
-
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div>
+      <%= f.input :email,
+                  required: false,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" } %>
+      <%= f.input :password,
+                  required: false,
+                  input_html: { autocomplete: "current-password" } %>
+      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    </div>
+    <div class= "text-center mb-3">
       <div class="btn btn-primary">
-        <%= f.button :submit, "Log in" %>
+        <%= f.button :submit, "Login", class: "btn btn-primary" %>
       </div>
-    <% end %>
+    </div>
+    <div class= "text-center">
+      <%= render "devise/shared/links" %>
+    </div>
+  <% end %>
+  
+</div>
 
-    <%= render "devise/shared/links" %>
-    <%= image_tag("login.png", size: "741x317", :alt => "Person popping their head out from the bushes!") %>
-  </div>
+<div class= "text-center fixed-bottom">
+  <%= image_tag("login.png", size: "741x317", :alt => "Person popping their head out from the bushes!") %>
+</div>
 
-</main>
-
-<footer class="footer text-center py-3 mt-auto">
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a href="https://upintheair.io/">Up in the Air</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+<%= render 'shared/footer-small' %>

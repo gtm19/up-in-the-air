@@ -1,5 +1,5 @@
 <div class="alert warning alert-dismissible fade show text-white" role="alert">
-  <strong>COVID-19 Travel Guidance : </strong> Click <a href="#" class="text-white"><u>here</u></a> to get up to date with our COVID-19 Travel Policy!
+  <strong>COVID-19</strong> <i class="fas fa-shield-virus"></i> Click <a href="#" class="text-white"><u>here</u></a> to get up to date with our COVID-19 Travel Policy!
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -8,8 +8,8 @@
 <section id ="home" class="p-5 m-5">
   <div class="row h-100">
     <div class="col m-auto">
-      <h1 class="display-3">Plan your group trip now!</h1>
-      <h5>Have you ever been lumped with organising a group trip for all your friends? Now its super easy with Up in the Air 👏🏻</h5>
+      <h1 class="display-3">Plan your <span class="highlight">group</span> trip now!</h1>
+      <h5>Have you ever been lumped with organising a group adventure for all your friends? Now its super easy with <i>Up in the Air</i> 👏🏻</h5>
       <br>
         <div>
           <%= link_to "Get Started!", trips_path, class: 'btn btn-lg btn-primary' %>
@@ -27,7 +27,7 @@
 <section id= "testimonials" class = "bg-white p-5 m-5">
   <div class="container team-section text-center my-5">
   <!-- Section heading -->
-  <h2 class="h1-responsive my-5">Stay friends with your friends...</h2>
+  <h1 class="display-6 my-3s">Stay friends with your friends...</h1>
   <!-- Section description -->
   <p class="dark-grey-text w-responsive mx-auto mb-5">We have been working with people around the world.</p>
 
@@ -46,15 +46,15 @@
         <h4 class="font-weight-bold dark-grey-text mt-4">Anna</h4>
         <h6 class="font-weight-bold blue-text my-3">London</h6>
         <p class="font-weight-normal dark-grey-text">
-          <i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+          <i class="fas fa-quote-left pr-2 purple"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
           eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
         <!--Review-->
         <div class="orange-text">
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star-half-alt"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star-half-alt purple"> </i>
         </div>
       </div>
 
@@ -73,15 +73,15 @@
         <h4 class="font-weight-bold dark-grey-text mt-4">John</h4>
         <h6 class="font-weight-bold blue-text my-3">Zurich</h6>
         <p class="font-weight-normal dark-grey-text">
-          <i class="fas fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
+          <i class="fas fa-quote-left pr-2 purple"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
           corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
         <!--Review-->
         <div class="orange-text">
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
         </div>
       </div>
 
@@ -100,15 +100,15 @@
         <h4 class="font-weight-bold dark-grey-text mt-4">Kate</h4>
         <h6 class="font-weight-bold blue-text my-3">New York</h6>
         <p class="font-weight-normal dark-grey-text">
-          <i class="fas fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          <i class="fas fa-quote-left pr-2 purple"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium voluptatum deleniti atque corrupti.</p>
         <!--Review-->
         <div class="orange-text">
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="far fa-star"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="fas fa-star purple"> </i>
+          <i class="far fa-star purple"> </i>
         </div>
       </div>
     </div>
@@ -120,15 +120,15 @@
 </section>
 
 <section id= "subscribe">
-  <div class="container">
+  <div class="container-sm text-center">
     <div class="row align-items-center">
         <div class="col">
           <%= image_tag("subscribe.png", size: "432x432", class: "img-fluid", :alt => "Subscription Image of Fun 3D Phone") %>
         </div>
-      <div class="col">
+      <div class="col center-text">
         <form>
-          <h1 class="h3 mb-3 fw-normal">Subscribe now!</h1>
-          <h5 class ="py-3" >Want to find out more? Simples, just pop your email in below, click subscribe, and we’ll keep you updated on all our new features and updates!</h5>
+          <h1 class="display-6 mb-3">Subscribe now!</h1>
+          <h6 class ="py-3" >Want to find out more? Simples, just pop your email in below, click subscribe, and we’ll keep you updated on all our new features and updates!</h6>
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="hello@upintheair.io" aria-label="Email" aria-describedby="button-addon2">
             <button class="btn btn-primary" type="submit" id="button-addon2">Subscribe</button>
@@ -143,8 +143,8 @@
 <section id= "pricing" class = "bg-white p-5 m-5">
   <div class="container">
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1>Pricing</h1>
-      <p>Whether planning a weekend getaway, or an enterprise-level junket - we've got the pricing structure to suit your needs!</p>
+      <h1 class="display-6">Pricing</h1>
+      <h6>Whether planning a weekend getaway, or an enterprise-level junket - we've got the pricing structure to suit your needs!</h6>
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
