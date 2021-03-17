@@ -50,6 +50,7 @@ class ParticipantScoresController < ApplicationController
   end
 
   def create_cards
+    @veto = false
     @cards = []
     @participant_scores.each do |ps|
       card = Hash.new
@@ -62,6 +63,7 @@ class ParticipantScoresController < ApplicationController
       card[:trip_id] = @trip.id
       card[:tp_id] = @trip_participant.id
       @cards.push(card)
+      @veto = true if ps.veto
     end
     @cards = @cards.sort_by { |card| card[:ps].position }
   end
