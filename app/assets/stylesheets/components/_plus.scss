@@ -1,6 +1,12 @@
 
 /* Grow for plus icon*/
-.hvr-grow {
+
+.plus {
+  position: relative;
+  top: 50px;
+}
+
+.plus .hvr-grow {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -16,3 +22,4 @@
 .hvr-grow:active {
     transform: scale(1.1);
 }
+
