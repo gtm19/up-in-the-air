@@ -36,3 +36,28 @@
   top: -20px;
   width: 40px;
 }
+
+.love-off {
+  visibility: visible;
+  color: $light-gray;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+
+.love-on {
+  visibility: visible;
+  color: $primary;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+.love-hidden {
+  visibility: hidden;
+  color: $primary;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}

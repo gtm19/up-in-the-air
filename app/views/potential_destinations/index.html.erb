@@ -39,21 +39,7 @@
 </div>
 
 
-<!-- DONT KNOW WHY THE FOLLOWING DOES NOT WORK! -->
-<!-- <div>
-  <%= form_with url: trip_trip_participant_potential_destinations_path(@trip, @trip_participant), method: :get do |form| %>
-    <%= form.label :budget, "Max budget:" %>
-    <%= form.number_field :budget %>
-    <%= form.label :time, "Max flying time:" %>
-    <%= form.number_field :time %>
-    <%= form.label :date, "Outbound:" %>
-    <%= form.date_field :born_on %>
-    <%= form.submit "Thiss" %>
-  <% end %>
-</div> -->
-
-
-<div data-controller="love" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
+<div data-controller="love" data-love-curl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations" data-love-durl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
   <div class="container">
     <div class="row">
       <% @cards.each do |c| %>
@@ -64,12 +50,15 @@
                 <img><%= cl_image_tag c[:te].destination_city.photo.key,height: 150, width: 200, crop: :fill %></img><br/>
               <% end  %>
               <div class="card-destination-infos">
-                  <div>
-                    <h2><%= c[:te].destination_city.name %><h2><br/>
-                          <i class="fas fa-coins"></i><p>From £<%= c[:te].low_cost %> to £<%= c[:te].high_cost %></p><br/>
+                <div>
+                  <h2><%= c[:te].destination_city.name %><h2><br/>
+                        <i class="fas fa-coins"></i><p>From £<%= c[:te].low_cost %> to £<%= c[:te].high_cost %></p><br/>
                         <i class="fas fa-plane"></i><p><%= c[:te].flight_mins %>mins<br/>
                     <%= link_to "City Details" , city_path(c[:te].destination_city)  %></p><br/>
                     <br/>
+                    <button data-action="love#updateLove" type="button" class="<%= c[:pd] ? (c[:pd].status == 'submitted' ? 'love-on love-hidden' : 'love-on') : 'love-off'  %>" data-love-target="love" id="<%= c[:te].id %>" data-id="<%= c[:te].id %>" data-tid="<%= @trip.id %>" data-pdid="<%= c[:pd].id if c[:pd] %>" data-tpid="<%= @trip_participant.id %>">
+                      <i class="fas fa-heart ml-1 "></i>
+                    </button>
                     <% if c[:pd] %>
                       <% if c[:pd].status == 'submitted' %>
                         Submitted!
@@ -80,7 +69,6 @@
                       <%= link_to "Love", trip_trip_participant_potential_destinations_path(@trip, @trip_participant, est: c[:te]), method: :post %><br/>
                     <% end %>
                   </div>
-                     <button data-action="love#updateName" type="button" class="btn btn-primary " data-love-target="foo"><i class="fas fa-heart ml-1 "></i></button>
               </div>
             </div>
           <!--   <div> -->

@@ -23,19 +23,29 @@ class PotentialDestinationsController < ApplicationController
   end
 
   def create
+    puts params
     skip_authorization
     pd = PotentialDestination.new
     pd.city = TripEstimate.find(params[:est]).destination_city
     pd.trip_participant = TripParticipant.find(params[:trip_participant_id])
     pd.status = 'selected'
     pd.save
-    redirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+    if params[:sub_action] == 'icon_click'
+      # head :ok
+      render json: { pd: pd.id, est: params[:est] } and return
+    else
+      xredirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+    end
   end
 
   def destroy
     skip_authorization
     PotentialDestination.find(params[:id]).destroy
-    redirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+    if params[:sub_action] == 'icon_click'
+      head :ok
+    else
+      redirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+    end
   end
 
   def update
