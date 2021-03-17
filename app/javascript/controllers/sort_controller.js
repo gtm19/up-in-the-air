@@ -44,6 +44,7 @@ export default class extends Controller {
 
   updateVeto(event) {
 
+    const list = document.querySelector("#sortable-list")
     if (list.dataset.status == 'disabled') {
       return
     }
