@@ -16,6 +16,7 @@ export default class extends Controller {
 
   connect() {
     const list = document.querySelector("#sortable-list")
+
     if (list.dataset.status == 'disabled') {
       return
     }
@@ -43,12 +44,9 @@ export default class extends Controller {
 
   updateVeto(event) {
 
-    // const veto_buttons = document.querySelectorAll("#veto-button")
-    // veto_buttons
-
-    console.log(event.currentTarget)
-    console.log(event.currentTarget.dataset.id)
-    console.log(this.data.get("url"))
+    if (list.dataset.status == 'disabled') {
+      return
+    }
 
     event.currentTarget.classList.toggle('veto-off')
     event.currentTarget.classList.toggle('veto-on')
@@ -65,5 +63,17 @@ export default class extends Controller {
     type: 'PUT',
     data: data
     })
+
+    const veto_buttons = document.querySelectorAll("#veto-button")
+    if ( event.currentTarget.classList.contains('veto-on')) {
+      veto_buttons.forEach((button) => {
+        button.classList.add('veto-hidden')
+      });
+      event.currentTarget.classList.toggle('veto-hidden')
+    } else {
+      veto_buttons.forEach((button) => {
+        button.classList.remove('veto-hidden')
+      });
+    }
   }
 }

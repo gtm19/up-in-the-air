@@ -46,7 +46,7 @@
             <p id="stars">Travel Time: <%= stars(card[:time]) %> </p>
           </div>
           <div>
-            <button data-action="sort#updateVeto" type="button" id="veto-button" class=" <%= card[:ps].veto ? 'veto-on' : 'veto-off' %>" data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
+            <button data-action="sort#updateVeto" type="button" id="veto-button" class=" <%= card[:ps].veto ? 'veto-on' : (@veto ? 'veto-off veto-hidden' : 'veto-off') %> " data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
               <i class="fas fa-ban ml-1" ></i>
             </button>
 
