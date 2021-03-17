@@ -110,6 +110,12 @@
     <hr>
     <h3 class="h3-responsive text-center py-sm-4">Your planned trips:</h3>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 pb-4">
+<!--         Plus symbol -->
+          <div class="col text-center">
+            <%= link_to new_trip_path do %>
+             <i class="fas fa-plus fa-8x color: purple"></i>
+           <% end %>
+          </div>
         <% @trips.each do |trip| %>
           <div class="col">
             <div class="card shadow-sm mb-4">
@@ -121,7 +127,7 @@
               </div>
             </div>
           </div>
-        <% end %>
+          <% end %>
       </div>
     </div>
   </div>
