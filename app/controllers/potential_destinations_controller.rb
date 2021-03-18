@@ -16,9 +16,9 @@ class PotentialDestinationsController < ApplicationController
     if params[:search_city].present?
       puts "Searching city"
       search = "%#{params[:search_city]}%"
-      @trip_estimates = TripEstimate.joins(:destination_city).where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' AND cities.name ILIKE '#{search}' ").limit(20)
+      @trip_estimates = TripEstimate.joins(:destination_city).where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' AND cities.name ILIKE '#{search}' ").limit(30)
     else
-      @trip_estimates = TripEstimate.where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' ").limit(20)
+      @trip_estimates = TripEstimate.where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' ").limit(30)
     end
     @cards = cards_with_love
 
