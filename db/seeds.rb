@@ -284,9 +284,13 @@ def seed_participant_scores(trip)
       score.save!
       p "#{trip_participant.user.name} rates #{potential_destination.city.name} position: #{i + 1}"
     end
+    trip_participant.scoring_complete = true
+    trip_participant.save
   end
 
-  ParticipantScore.last.veto = true
+  participant_score = ParticipantScore.last
+  participant_score.veto = true
+  participant_score.save
 end
 
 CLOUDINARY_URLS = [
