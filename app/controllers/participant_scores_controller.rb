@@ -78,8 +78,10 @@ class ParticipantScoresController < ApplicationController
     end
 
     potential_destinations.each do |pd|
-      next unless ParticipantScore.find_by(potential_destination: pd).nil?
 
+      next unless ParticipantScore.find_by(potential_destination: pd, trip_participant: @trip_participant).nil?
+      # Check for duplicates!!!
+      # pds = PotentialDestination.where("potential_destinations.city_id = #{pd.city_id} AND potential_destination.trip_participant.trip_id = #{@trip.id}")
       position += 1
       ps = ParticipantScore.new(
         potential_destination: pd,

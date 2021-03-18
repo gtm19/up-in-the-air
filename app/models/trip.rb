@@ -5,6 +5,7 @@ class Trip < ApplicationRecord
   has_many :trip_participants, dependent: :destroy
   has_many :users, through: :trip_participants
   has_many :potential_destinations, through: :trip_participants
+  has_many :participant_scores, through: :trip_participants
 
   validates :name, presence: true
 end

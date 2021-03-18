@@ -13,8 +13,6 @@ class PotentialDestinationsController < ApplicationController
     puts time
 
     @trip_estimates = TripEstimate.where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' ").limit(20)
-
-
     @cards = cards_with_love
 
     p @cards
@@ -67,6 +65,8 @@ class PotentialDestinationsController < ApplicationController
       card = {}
       card[:te] = te
       card[:pd] = PotentialDestination.find_by(city: te.destination_city, trip_participant: @trip_participant)
+      card[:already] = @trip.potential_destinations.find_all {|i| i.trip_participant_id != @trip_participant && i.status == "submitted" && i.city_id == te.destination_city }.count
+      # puts card[:already]
       cards << card
     end
     cards

@@ -54,6 +54,7 @@
                   <h2><%= c[:te].destination_city.name %><h2><br/>
                         <i class="fas fa-coins"></i><p>From £<%= c[:te].low_cost %> to £<%= c[:te].high_cost %></p><br/>
                         <i class="fas fa-plane"></i><p><%= c[:te].flight_mins %>mins<br/>
+                          <p><%= c[:already] %> </p>
                     <%= link_to "City Details" , city_path(c[:te].destination_city)  %></p><br/>
                     <br/>
                     <button data-action="love#updateLove" type="button" class="<%= c[:pd] ? (c[:pd].status == 'submitted' ? 'love-on love-hidden' : 'love-on') : 'love-off'  %>" data-love-target="love" id="<%= c[:te].id %>" data-id="<%= c[:te].id %>" data-tid="<%= @trip.id %>" data-pdid="<%= c[:pd].id if c[:pd] %>" data-tpid="<%= @trip_participant.id %>">
