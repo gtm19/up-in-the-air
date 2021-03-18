@@ -27,7 +27,15 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+
+  ul  {
+    list-style: none;
+    padding: 0px;
+  }
+
 }
+
+
 
 // TO USE AS BASIS FOR HEART ICON
 .card-destination-infos .card-trip-heart {
@@ -60,4 +68,9 @@
   font-size: 2em;
   border: none;
   background-color: white;
+}
+
+.submitted {
+  color: $primary;
+  font-size: 2em;
 }

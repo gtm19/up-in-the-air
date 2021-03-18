@@ -11,8 +11,15 @@ class PotentialDestinationsController < ApplicationController
     puts params
     puts budget
     puts time
+    puts params["search_city"]
 
-    @trip_estimates = TripEstimate.where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' ").limit(20)
+    if params[:search_city].present?
+      puts "Searching city"
+      search = "%#{params[:search_city]}%"
+      @trip_estimates = TripEstimate.joins(:destination_city).where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' AND cities.name ILIKE '#{search}' ").limit(20)
+    else
+      @trip_estimates = TripEstimate.where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' ").limit(20)
+    end
     @cards = cards_with_love
 
     p @cards
@@ -65,7 +72,7 @@ class PotentialDestinationsController < ApplicationController
       card = {}
       card[:te] = te
       card[:pd] = PotentialDestination.find_by(city: te.destination_city, trip_participant: @trip_participant)
-      card[:already] = @trip.potential_destinations.find_all {|i| i.trip_participant_id != @trip_participant && i.status == "submitted" && i.city_id == te.destination_city }.count
+      card[:already] = @trip.potential_destinations.find_all {|i| i.trip_participant_id != @trip_participant.id && i.status == "submitted" && i.city_id == te.destination_city.id }.count
       # puts card[:already]
       cards << card
     end
