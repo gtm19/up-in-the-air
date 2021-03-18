@@ -1,26 +1,26 @@
 <%= render "shared/container" do %>
-  <h1>Rank your preferences for <%= @trip.name %></h1>
+  <h2>Rank your selections for</h2>
+  <h1><%= @trip.name %></h1>
   <p>Just drag and drop the options in preference order.</p>
 
-  <div class="mb-4">
-  <button type="button" class="btn btn-outline-primary">
-    <%= link_to "Return to trip", trip_path(@trip) %>
-  </button>
-  <% if !@trip_participant.scoring_complete %>
+  <div class="rank-header mb-4">
     <button type="button" class="btn btn-outline-primary">
-      <%= link_to "Add destinations", trip_trip_participant_potential_destinations_path(@trip, @trip_participant) %>
+      <%= link_to "Return to trip", trip_path(@trip) %>
     </button>
-    <button type="button" class="btn btn-outline-primary">
-      <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch %>
-    </button>
-  <% end %>
-
+    <% if !@trip_participant.scoring_complete %>
+      <button type="button" class="btn btn-outline-primary">
+        <%= link_to "Destination selector", trip_trip_participant_potential_destinations_path(@trip, @trip_participant) %>
+      </button>
+      <button type="button" class="btn btn-outline-primary">
+        <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch %>
+      </button>
+    <% end %>
+    <% if @trip_participant.scoring_complete %>
+      <div class = "locked">
+        <i class="fas fa-lock"></i> Submitted
+      </div>
+    <% end %>
   </div>
-    <div>
-      <% if @trip_participant.scoring_complete %>
-      <p>** You've submitted your raking already. **</p>
-      <% end %>
-    </div>
     <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id" id="sortable-list" data-status="<%= @trip_participant.scoring_complete ? 'disabled' : 'enabled' %>">
       <% @cards.each do |card| %>
         <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card card-body grab">
