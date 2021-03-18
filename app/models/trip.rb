@@ -8,4 +8,8 @@ class Trip < ApplicationRecord
   has_many :participant_scores, through: :trip_participants
 
   validates :name, presence: true
+
+  def scoring_complete?
+    trip_participants.all?(&:scoring_complete?)
+  end
 end
