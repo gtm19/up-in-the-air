@@ -1,28 +1,22 @@
 <section>
   <div class="row py-sm-4 mt-3">
     <div class="col-lg-9 col-md-8 mx-auto text-center">
-      <h1 class="fw-light">Plan your next Adventure!</h1>
+<!--       <h1 class="fw-light">Plan your next Adventure!</h1>
       <p>“A road trip is a way for the whole family to spend time together, and annoy each other in interesting new places” – Tom Lichtenheld</p>
-      <p>
-        <%= link_to "Create Trip", new_trip_path, class: "btn btn-primary my-2" %>
-        <a href="#trips" class = 'btn btn-secondary purple'>Your Trips</a>
-      </p>
-      <hr>
-    </div>
-  </div>
-</section>
-<!-- video carousel partial -->
-<%= render "video_carousel" %>
+      <p> -->
+<!--        REPLACED WITH THE PLUS SYMBOL <%= link_to "Create Trip", new_trip_path, class: "btn btn-primary my-2" %>
+        <a href="#trips" class = 'btn btn-secondary purple'>Your Trips</a> -->
+<!--       </p> -->
 <section id="trips" class="mt-3">
   <div class="album py-2">
     <div class="container-sm">
     <hr>
-    <h3 class="h3-responsive text-center py-sm-4">Your planned trips:</h3>
+    <h3 class="h3-responsive text-left py-sm-4">Manage my trips:</h3>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 pb-4">
 <!-- Plus symbol -->
           <div class="col text-center">
             <%= link_to new_trip_path do %>
-             <i class="fas fa-plus fa-8x color: purple hvr-grow"></i>
+             <i class="fas fa-plus fa-8x color: purple plus hvr-grow"></i>
            <% end %>
           </div>
         <% @trips.each do |trip| %>
@@ -41,5 +35,22 @@
     </div>
   </div>
 </section>
+      <hr>
+        <h3 class="h3-responsive text-left py-sm-4">Up in the air suggestions:</h3>
+    </div>
+  </div>
+</section>
+<section id="trips" class="mt-3">
+  <div class="album py-2">
+    <div class="container-sm">
+<!-- video carousel partial -->
+<%= render "video_carousel" %>
+<blockquote class="blockquote">
+  <p class="mb-0 mt-3 text-center">A road trip is a way for the whole family to spend time together, and annoy each other in interesting new places</p>
+  <footer class="blockquote-footer text-center"> <cite title="Source Title">Tom Lichtenheld</cite></footer>
+</blockquote>
+  <hr>
+</section>
+
 
 <%= render 'shared/footer-medium' %>

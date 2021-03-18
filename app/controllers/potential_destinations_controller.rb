@@ -11,10 +11,15 @@ class PotentialDestinationsController < ApplicationController
     puts params
     puts budget
     puts time
+    puts params["search_city"]
 
-    @trip_estimates = TripEstimate.where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' ").limit(20)
-
-
+    if params[:search_city].present?
+      puts "Searching city"
+      search = "%#{params[:search_city]}%"
+      @trip_estimates = TripEstimate.joins(:destination_city).where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' AND cities.name ILIKE '#{search}' ").limit(30)
+    else
+      @trip_estimates = TripEstimate.where("high_cost <= '#{budget}' AND start_city_id = '#{@trip_participant.user.city_id}' AND flight_mins <= '#{time}' ").limit(30)
+    end
     @cards = cards_with_love
 
     p @cards
@@ -23,19 +28,29 @@ class PotentialDestinationsController < ApplicationController
   end
 
   def create
+    puts params
     skip_authorization
     pd = PotentialDestination.new
     pd.city = TripEstimate.find(params[:est]).destination_city
     pd.trip_participant = TripParticipant.find(params[:trip_participant_id])
     pd.status = 'selected'
     pd.save
-    redirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+    if params[:sub_action] == 'icon_click'
+      # head :ok
+      render json: { pd: pd.id, est: params[:est] } and return
+    else
+      xredirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+    end
   end
 
   def destroy
     skip_authorization
     PotentialDestination.find(params[:id]).destroy
-    redirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+    if params[:sub_action] == 'icon_click'
+      head :ok
+    else
+      redirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+    end
   end
 
   def update
@@ -57,6 +72,8 @@ class PotentialDestinationsController < ApplicationController
       card = {}
       card[:te] = te
       card[:pd] = PotentialDestination.find_by(city: te.destination_city, trip_participant: @trip_participant)
+      card[:already] = @trip.potential_destinations.find_all {|i| i.trip_participant_id != @trip_participant.id && i.status == "submitted" && i.city_id == te.destination_city.id }.count
+      # puts card[:already]
       cards << card
     end
     cards
