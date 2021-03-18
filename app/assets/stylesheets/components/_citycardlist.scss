@@ -1,18 +1,20 @@
 .card-destination {
   overflow: hidden;
   padding: 0px;
+  position: relative;
 }
 
 .card-destination > img {
-  height: 200px;
+  // height: 200px;
   width: 100%;
   // object-fit: cover;
 }
 
 .card-destination h2 {
-  font-size: 16px;
+  font-size: 2em;
   font-weight: bold;
   margin: 0;
+  padding-bottom: 4px;
 }
 
 .card-destination p {
@@ -23,16 +25,59 @@
 
 .card-destination .card-destination-infos {
   padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  // position: relative;
+
+  ul  {
+    list-style: none;
+    padding: 0px;
+  }
+
 }
+
+
 
 // TO USE AS BASIS FOR HEART ICON
 .card-destination-infos .card-trip-heart {
   position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+  right: 34px;
+  bottom: 20px;
+  // width: 40px;
+}
+
+// critical for love and checkbox for AJAX data state
+
+.love-off {
+  visibility: visible;
+  color: $light-gray;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+
+.love-on {
+  visibility: visible;
+  color: $primary;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+.love-hidden {
+  visibility: hidden;
+  color: $primary;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+.submitted {
+  position: absolute;
+  right: 34px;
+  bottom: 20px;
+  color: $primary;
+  font-size: 2em;
 }
