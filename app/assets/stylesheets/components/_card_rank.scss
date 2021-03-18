@@ -1,3 +1,22 @@
+.trip-details {
+  ul {
+    list-style: none;
+  }
+}
+
+.detail-container {
+  width: 400px
+}
+
+.guide-container {
+  width: 400px
+}
+
+.veto-container {
+  width: 100px
+}
+
+
 
 .veto-off {
   visibility: visible;
@@ -24,15 +43,15 @@
   background-color: white;
 }
 
-.score {
+.grab {
   cursor: grab;
 }
 
-.score:active {
+.grab:active {
   cursor: grabbing;
 }
 
-.score.ghost {
+.grab.ghost {
   filter: grayscale(1);
   opacity: 0.5;
 }

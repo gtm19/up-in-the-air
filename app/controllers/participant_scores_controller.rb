@@ -80,11 +80,7 @@ class ParticipantScoresController < ApplicationController
     potential_destinations.each do |pd|
 
       next unless ParticipantScore.find_by(potential_destination: pd, trip_participant: @trip_participant).nil?
-      # Check for duplicates!!!
-      # pds = PotentialDestination.where("potential_destinations.city_id = #{pd.city_id} AND potential_destination.trip_participant.trip_id = #{@trip.id}")
-      # PotentialDestination.joins(:trip_participant).where("trip_participant.trip_id = 11 AND city_id = ")
-      # ParticipantScore.joins(:potential_destination).joins(:trip_participant).where("potential_destination.city_id = pd.city_id AND potential_destination.status = 'submitted' AND trip_participant.trip_id = #{@trip.id}")
-      # next if ParticipantScore.joins(:potential_destination).joins(:trip_participant).where("potential_destinations.city_id = #{pd.city_id} AND trip_participants.trip_id = #{@trip.id}").count > 0
+      # Check for duplicate cities!
       next if ParticipantScore.joins(:potential_destination).where("potential_destinations.city_id = #{pd.city_id} AND participant_scores.trip_participant_id = #{@trip_participant.id}").count > 0
 
       position += 1
