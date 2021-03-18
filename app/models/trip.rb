@@ -12,4 +12,8 @@ class Trip < ApplicationRecord
   def scoring_complete?
     trip_participants.all?(&:scoring_complete?)
   end
+
+  def finalised?
+    [city, start_date, end_date].all?(&:present?)
+  end
 end
