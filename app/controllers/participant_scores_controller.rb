@@ -53,13 +53,21 @@ class ParticipantScoresController < ApplicationController
     @veto = false
     @cards = []
     @participant_scores.each do |ps|
+
+      budget = budget_rating(ps)
+      time = time_rating(ps)
+      loved = how_loved(ps)
+      calender = 4
+      hot = (budget + time + loved + calender)/4
+
       card = Hash.new
       card[:ps] = ps
       card[:te] = trip_estimate(ps)
-      card[:budget] = budget_rating(ps)
-      card[:time] = time_rating(ps)
-      card[:loved] = rand(1..5)
-      card[:calender] = rand(1..5)
+      card[:budget] = budget
+      card[:time] = time
+      card[:loved] = loved
+      card[:calender] = calender
+      card[:hot] = hot
       card[:trip_id] = @trip.id
       card[:tp_id] = @trip_participant.id
       @cards.push(card)
@@ -142,5 +150,16 @@ class ParticipantScoresController < ApplicationController
     (te_count.to_f / tps.count) * 5
   end
 
+  def how_loved(participant_score)
+    # Calculate the budget rating for the destination
+
+    city_rate = participant_score.potential_destination.city
+    tps = TripParticipant.where(trip_id: @trip.id)
+    city_count = 0
+    tps.each do |tp|
+      city_count += PotentialDestination.where("trip_participant_id = #{tp.id} AND city_id = #{city_rate.id}").count
+    end
+    (city_count.to_f / tps.count) * 5
+  end
 
 end
