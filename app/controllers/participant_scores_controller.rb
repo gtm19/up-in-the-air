@@ -56,8 +56,8 @@ class ParticipantScoresController < ApplicationController
       card = Hash.new
       card[:ps] = ps
       card[:te] = trip_estimate(ps)
-      card[:budget] = rand(1..5)
-      card[:time] = rand(1..5)
+      card[:budget] = budget_rating(ps)
+      card[:time] = time_rating(ps)
       card[:loved] = rand(1..5)
       card[:calender] = rand(1..5)
       card[:trip_id] = @trip.id
@@ -71,14 +71,13 @@ class ParticipantScoresController < ApplicationController
   def create_remaining_scoring_records
     # Checking that any potential destinations are converted to participant scores
     trip_participants = TripParticipant.where(trip: @trip)
-    position = 0
     potential_destinations = []
     trip_participants.each do |tp|
       potential_destinations += PotentialDestination.where(trip_participant: tp, status: "submitted")
     end
 
+    position = 0
     potential_destinations.each do |pd|
-
       next unless ParticipantScore.find_by(potential_destination: pd, trip_participant: @trip_participant).nil?
       # Check for duplicate cities!
       next if ParticipantScore.joins(:potential_destination).where("potential_destinations.city_id = #{pd.city_id} AND participant_scores.trip_participant_id = #{@trip_participant.id}").count > 0
@@ -88,7 +87,7 @@ class ParticipantScoresController < ApplicationController
         potential_destination: pd,
         trip_participant: @trip_participant,
         position: position
-        )
+      )
       ps.save
     end
   end
@@ -98,11 +97,8 @@ class ParticipantScoresController < ApplicationController
     dest_city = participant_score.potential_destination.city
     preferences = DatePreference.find_by(trip_participant: participant_score.trip_participant)
     preferences ? outbound_date = preferences.start_date.to_datetime : outbound_date = Date.parse('01-05-2021').to_datetime
-
-    # outbound_date = DatePreference.find_by(trip_participant: participant_score.trip_participant).start_date.to_datetime || Date.parse('01-05-2021').to_datetime
     TripEstimate.where("start_city_id = #{start_city.id} AND destination_city_id = #{dest_city.id} AND valid_from <= '#{outbound_date}' AND valid_until >= '#{outbound_date}'")[0]
   end
-
 
   def score_records
     pss = ParticipantScore.where(trip_participant: @trip_participant)
@@ -114,10 +110,37 @@ class ParticipantScoresController < ApplicationController
   end
 
   def budget_rating(participant_score)
-      # Get each participant
-      # Get their budget
-      # Determine their start city
-      # Get destination city of score
-      # Meet budget = 1, No means 0
+    # Calculate the budget rating for the destination
+
+    te_count = 0
+    pd = participant_score.potential_destination
+    tps = TripParticipant.where(trip_id: @trip.id)
+
+    tps.each do |tp|
+      start_city_id = tp.user.city.id
+      dest_city_id = pd.city.id
+      budget = tp.budget_preference || 999_999
+      te_count += TripEstimate.where("start_city_id = #{start_city_id} AND destination_city_id = #{dest_city_id} AND low_cost <= #{budget}").count
+    end
+
+    (te_count.to_f / tps.count) * 5
   end
+
+  def time_rating(participant_score)
+    # Calculate the budget rating for the destination
+
+    te_count = 0
+    pd = participant_score.potential_destination
+    tps = TripParticipant.where(trip_id: @trip.id)
+
+    tps.each do |tp|
+      start_city_id = tp.user.city.id
+      dest_city_id = pd.city.id
+      time_limit = tp.time_preference || 999_999
+      te_count += TripEstimate.where("start_city_id = #{start_city_id} AND destination_city_id = #{dest_city_id} AND flight_mins <= #{time_limit}").count
+    end
+    (te_count.to_f / tps.count) * 5
+  end
+
+
 end
