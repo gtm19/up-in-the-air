@@ -5,9 +5,10 @@ class TripsController < ApplicationController
 
   def show
     @trip = Trip.find(params[:id])
+    authorize @trip
     @trip_participants = @trip.trip_participants
     @participant_scores = @trip.participant_scores.where(veto: false)
-    authorize @trip
+    @possible_dates = @trip.possible_dates
   end
 
   def new
