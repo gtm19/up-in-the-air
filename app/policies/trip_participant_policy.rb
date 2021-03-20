@@ -5,6 +5,8 @@ class TripParticipantPolicy < ApplicationPolicy
   #   end
   # end
   def destroy?
-    record.lead_user == user
+    # only lead user can destroy a participant, if the trip
+    # is not yet finalised
+    record.trip_lead_user == user && !record.trip.finalised?
   end
 end

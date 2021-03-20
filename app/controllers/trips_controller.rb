@@ -35,12 +35,20 @@ class TripsController < ApplicationController
     authorize @trip
     @trip.user_ids = users
 
+    @trip.update(trip_params)
+
     redirect_to trip_path(@trip)
   end
 
   private
 
   def trip_params
-    params.require(:trip).permit(:name, :description)
+    params.require(:trip).permit(
+      :name,
+      :description,
+      :city_id,
+      :start_date,
+      :end_date
+    )
   end
 end

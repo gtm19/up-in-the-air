@@ -1,5 +1,13 @@
 <%= render "shared/container" do %>
   <h1>Trip to <%= @trip.name %></h1>
+  
+  <% if !policy(@trip).update? %>
+    <p>Destination:</p>
+    <%= @trip.city.name %>
+    <p>Dates:</p>
+    <%= @trip.start_date %> to <%= @trip.end_date %>
+  <% end %>
+  
   <p>Attendees:</p>
   <ul>
     <% @trip_participants.each do |tp| %>
@@ -26,9 +34,9 @@
           input_html: { class: "select2", multiple: "multiple" }
       %>
       
-      <% if @trip.scoring_complete? && !@trip.finalised? %>
+      <% if @trip.scoring_complete? %>
         <h2>Complete the Trip</h2>
-        <%= f.input :city,
+        <%= f.input :city_id,
             as: :select,
             input_html: { class: "select2" },
             collection: @participant_scores.map(&:city) %> <!-- TODO remove duplicates from this list of cities, and also feed in scores -->
@@ -50,8 +58,8 @@
     <% end %>
   <% end %>
 
-  <li><%= link_to "Add destinations to trip", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
-  <li><%= link_to "Score Trip", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
-  <li><%= link_to "View Preferences", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
-
+  <% if policy(@trip).update? %>
+    <li><%= link_to "Add destinations to trip", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
+    <li><%= link_to "Score Trip", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
+  <% end %>
 <% end %>

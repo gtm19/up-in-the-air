@@ -14,6 +14,6 @@ class TripPolicy < ApplicationPolicy
   end
 
   def update?
-    record.lead_user == user
+    record.lead_user == user && !record.finalised?
   end
 end
