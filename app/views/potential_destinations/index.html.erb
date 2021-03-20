@@ -1,5 +1,4 @@
 <%= render "shared/container" do %>
-<h2>Find your ideal destination for</h2>
 <h1><%= @trip.name %></h1>
 
 
@@ -7,24 +6,37 @@
     <%= link_to "Come back later", trip_path(@trip), class: 'btn btn-lg btn-secondary purple' %>
   </button>
 
-    <%= link_to "Submit the loved ones!",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-lg btn-primary' %>
+    <%= link_to "Submit preferences",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-lg btn-primary' %>
   </button>
-    <%= link_to "Go & rank",  trip_trip_participant_participant_scores_path(@trip, @trip_participant), class: 'btn btn-lg btn-primary' %>
+    <%= link_to "Rank preferences",  trip_trip_participant_participant_scores_path(@trip, @trip_participant), class: 'btn btn-lg btn-primary' %>
   </button>
 </div>
 
 <div>
-  <%= form_tag trip_trip_participant_potential_destinations_path, method: :get do %>
-    <%= text_field_tag :budget,
-      params[:budget],
-      class: "form-control",
-      placeholder: "Your maximum budget"
-    %>
+  <h4>What are your preferences for this trip?</h4>
+</div>
+
+<div>
+  <h6>How would you like to travel?</h6>
+<!-- ICONS FOR TRAVEL -->
+    <i class="fas fa-car color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
+    <i class="fas fa-train color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
+    <i class="fas fa-plane color: purple"></i> <i class="fas fa-toggle-on color: purple"></i> &nbsp;
+    <i class="fas fa-anchor color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
+  <h6>What is your ideal journey time?</h6>
     <%= number_field_tag :time,
       params[:time],
       class: "form-control",
-      placeholder: "Maximum flying time"
+      placeholder: "Maximum travel time"
     %>
+    <h6>What is your travel budget?</h6>
+      <%= form_tag trip_trip_participant_potential_destinations_path, method: :get do %>
+      <%= text_field_tag :budget,
+        params[:budget],
+        class: "form-control",
+        placeholder: "Maximum budget"
+      %>
+    <h6>When would you like to travel?</h6>
     <%= date_field_tag :out_date,
       params[:out_date],
       class: "form-control",
@@ -35,6 +47,7 @@
       class: "form-control",
       placeholder: "Inbound date"
     %>
+    <h4>Searh for places you'd like to visit, and add them as your preferences</h4>
     <%= text_field_tag :search_city,
       params[:search_city],
       class: "form-control",
