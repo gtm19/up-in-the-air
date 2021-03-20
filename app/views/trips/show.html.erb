@@ -1,5 +1,15 @@
 <%= render "shared/container" do %>
   <h1>Trip to <%= @trip.name %></h1>
+  
+  <% if @trip.finalised? %>
+    <p>Destination:</p>
+    <%= @trip.city.name %>
+    <hr>
+    <p>Dates:</p>
+    <%= @trip.start_date.strftime("%d %B %Y") %> to <%= @trip.end_date.strftime("%d %B %Y") %>
+    <hr>
+  <% end %>
+  
   <p>Attendees:</p>
   <ul>
     <% @trip_participants.each do |tp| %>
@@ -25,12 +35,33 @@
           label_method: :name,
           input_html: { class: "select2", multiple: "multiple" }
       %>
+      
+      <% if @trip.scoring_complete? %>
+        <h2>Complete the Trip</h2>
+        <%= f.input :city_id,
+            as: :select,
+            input_html: { class: "select2" },
+            collection: @participant_scores.map(&:city) %> <!-- TODO remove duplicates from this list of cities, and also feed in scores -->
+        <div class="form-row">
+          <%= f.input :start_date,
+              wrapper_html: { class: "form-group col-md-6" },
+              input_html: { value: @possible_dates.min, min: @possible_dates.min, max: @possible_dates.max },
+              as: :date,
+              html5: true %>
+          <%= f.input :end_date,
+              wrapper_html: { class: "form-group col-md-6" },
+              input_html: { value: @possible_dates.max, min: @possible_dates.min, max: @possible_dates.max },
+              as: :date,
+              html5: true %>
+        </div>
+      <% end %>
+      
       <%= f.submit %>
     <% end %>
   <% end %>
 
-  <li><%= link_to "Add destinations to trip", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
-  <li><%= link_to "Score Trip", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
-  <li><%= link_to "View Preferences", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
-
+  <% if !@trip.finalised? %>
+    <li><%= link_to "Add destinations to trip", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
+    <li><%= link_to "Score Trip", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
+  <% end %>
 <% end %>

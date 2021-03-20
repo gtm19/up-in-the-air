@@ -249,6 +249,7 @@ def seed_potential_destinations(trip)
   cities = trip_participants.map { |tp| tp.user.city }.rotate
 
   #For each trip participant, create a potential destination
+  date_offset = 0
   trip_participants.each do |trip_participant|
     city = cities.shift
     puts "Creating PD for #{trip_participant.user.name}: #{city.name}, #{city.country}"
@@ -258,10 +259,11 @@ def seed_potential_destinations(trip)
     trip_participant.potential_destinations << pd
 
     date_pref = DatePreference.new(
-      start_date: Date.parse('01-05-2021'),
-      end_date: Date.parse('04-05-2021')
+      start_date: Date.parse('01-05-2021') + date_offset,
+      end_date: Date.parse('08-05-2021') + date_offset
     )
 
+    date_offset += 1
     trip_participant.date_preferences << date_pref
   end
   
