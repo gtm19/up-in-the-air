@@ -1,3 +1,10 @@
+.forward-back {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 .search-container {
   margin-bottom: 24px;
 
@@ -61,6 +68,7 @@
 .budget-field {
   width: 120px;
   padding-right: 16px;
+  // visibility: hidden;
 }
 
 .slider-container {

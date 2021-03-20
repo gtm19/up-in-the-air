@@ -13,15 +13,22 @@ export default class extends Controller {
     console.log("I am connected!")
 
     let slider = document.getElementById('slider');
-    let test = wNumb({decimals: 0})
-    this.budgetTarget.value = 300
+
+    let bgt = document.getElementById('budget').value;
+    if (bgt == 0 || bgt == null) {
+      let bgt = parseInt(document.getElementById('budget-field').dataset.budget);
+    }
+    console.log(bgt);
+    // console.log(input);
+    let test = wNumb({decimals: 0});
+    // this.budgetTarget.value = 300
 
 
     noUiSlider.create(slider, {
       connect: true,
       behaviour: 'tap',
       tooltips: [test],
-      start: 300,
+      start: bgt,
       range: {
           // Starting at 500, step the value by 500,
           // until 4000 is reached. From there, step by 1000.

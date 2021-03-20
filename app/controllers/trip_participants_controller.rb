@@ -32,8 +32,8 @@ class TripParticipantsController < ApplicationController
     dp = @trip_participant.date_preferences.all.first
     dp = DatePreference.new unless dp
     dp.trip_participant_id = @trip_participant.id
-    dp.start_date = Date.parse(params[:out_date]) unless params[:out_date].nil?
-    dp.end_date = Date.parse(params[:in_date]) unless params[:in_date].nil?
+    dp.start_date = Date.parse(params[:out_date]) unless params[:out_date].empty?
+    dp.end_date = Date.parse(params[:in_date]) unless params[:in_date].empty?
     dp.start_date = Date.parse('01-05-2021') if dp.start_date.nil?
     dp.end_date = Date.parse('01-05-2022') if dp.end_date.nil?
     dp.save
