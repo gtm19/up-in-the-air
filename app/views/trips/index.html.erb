@@ -1,9 +1,9 @@
 <section>
   <div class="row py-sm-4 mt-3">
     <div class="col-lg-9 col-md-8 mx-auto text-center">
-      <h1 class="fw-light">Plan your next Adventure!</h1>
-      <p class ="mb-5">“A road trip is a way for the whole family to spend time together, and annoy each other in interesting new places” – Tom Lichtenheld</p>
-      <hr>
+      <h1 class="fw-light">Plan your next Adventure 🎉</h1>
+    <!--   <p class ="mb-5">“A road trip is a way for the whole family to spend time together, and annoy each other in interesting new places” – Tom Lichtenheld</p> -->
+<!--       <hr> -->
     </div>
   </div>
 </section>
@@ -21,7 +21,10 @@
         <% @trips.each do |trip| %>
           <div class="col">
             <div class="card shadow-sm mb-4">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+              <div class="tripcardimage">
+              <!-- <image src='https://images.unsplash.com/photo-1534534573898-db5148bc8b0c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80'> -->
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg> -->
+              </div>
               <div class="card-body">
               <%= link_to trip.name, trip_path(trip), class: "card-text" %>
                 <div class="d-flex justify-content-between align-items-center">
@@ -39,10 +42,102 @@
 <section id="trips" class="mt-3">
   <div class="album py-2">
     <div class="container-sm">
+      <div class="col-lg-9 col-md-8 mx-auto text-center">
+      <h1 class="fw-light">Explore up in the air suggestions</h1>
+<!--       <hr> -->
+    </div>
+
+
+<!-- BANNER ONE-->
+<div class="jumbotron jumbotron-fluid banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1608&q=80')">
+  <div class="container">
+    <h1 class="display-4">Roadtrip</h1>
+    <p class="lead">“A way for the whole family to spend time together, and annoy each other in interesting new places” – Tom Lichtenheld</p>
+  </div>
+</div>
+
+
+<!-- BANNER 1 TRIP SUGGESTIONS -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/um.svg"/>
+      <h2>California</h2>
+    </div>
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/mn.svg"/>
+      <h2>Mongolia</h2>
+    </div>
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ie.svg"/>
+      <h2>Ireland</h2>
+    </div>
+  </div>
+</div>
+
+
+<!-- BANNER TWO-->
+<div class="jumbotron jumbotron-fluid banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1596473537038-44039a055ded?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=r')">
+  <div class="container">
+    <h1 class="display-4">Skiing</h1>
+    <p class="lead">“A pair of skis is the ultimate transportation to freedom"</p>
+  </div>
+</div>
+
+<!-- BANNER TWO SUGGESTIONS -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"/>
+      <h2>Verbier</h2>
+    </div>
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/fr.svg"/>
+      <h2>Alpe d'Huez</h2>
+    </div>
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/at.svg"/>
+      <h2>St Anton</h2>
+    </div>
+  </div>
+</div>
+
+<!-- BANNER THREE-->
+<div class="jumbotron jumbotron-fluid banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80')">
+  <div class="container">
+    <h1 class="display-4">City-break</h1>
+    <p class="lead">“And let's take the city, and make it our song"</p>
+  </div>
+</div>
+
+<!-- BANNER 3 TRIP SUGGESTIONS -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg"/>
+      <h2>London</h2>
+    </div>
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/um.svg"/>
+      <h2>New York</h2>
+    </div>
+    <div class="col-sm inspiration">
+      <img src="https://lipis.github.io/flag-icon-css/flags/4x3/in.svg"/>
+      <h2>Mumbai</h2>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
 <!-- video carousel partial -->
-<%= render "video_carousel" %>
+
 
 </section>
 
 
 <%= render 'shared/footer-medium' %>
+
