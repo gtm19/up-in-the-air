@@ -1,27 +1,35 @@
 .inspiration {
   background-size: cover;
-  background-position: center;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   // align-items: center;
   color: purple;
   font-size: 24px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px #F1E4FF;
   margin: 20px;
   display: flex;
+  margin-bottom: 80px;
 }
+
+.inspiration:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
 
 .inspiration img {
   height: 100%;
   width: 100px;
   object-fit: cover;
+  border-radius: 5px;
+  margin-left: -20px;
 }
 
 .inspiration h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  padding: 20px;
+  text-shadow: 0px;
 }
