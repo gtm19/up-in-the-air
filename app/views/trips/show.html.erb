@@ -31,7 +31,7 @@
         <%= f.input :city,
             as: :select,
             input_html: { class: "select2" },
-            collection: City.all.order(:name) %>
+            collection: @participant_scores.map(&:city) %> <!-- TODO remove duplicates from this list of cities, and also feed in scores -->
       <% end %>
       
       <%= f.submit %>
