@@ -25,6 +25,15 @@
           label_method: :name,
           input_html: { class: "select2", multiple: "multiple" }
       %>
+      
+      <% if @trip.scoring_complete? %>
+        <h2>Complete the Trip</h2>
+        <%= f.input :city,
+            as: :select,
+            input_html: { class: "select2" },
+            collection: City.all.order(:name) %>
+      <% end %>
+      
       <%= f.submit %>
     <% end %>
   <% end %>
