@@ -1,11 +1,13 @@
 <%= render "shared/container" do %>
   <h1>Trip to <%= @trip.name %></h1>
   
-  <% if !policy(@trip).update? %>
+  <% if @trip.finalised? %>
     <p>Destination:</p>
     <%= @trip.city.name %>
+    <hr>
     <p>Dates:</p>
-    <%= @trip.start_date %> to <%= @trip.end_date %>
+    <%= @trip.start_date.strftime("%d %B %Y") %> to <%= @trip.end_date.strftime("%d %B %Y") %>
+    <hr>
   <% end %>
   
   <p>Attendees:</p>
@@ -58,7 +60,7 @@
     <% end %>
   <% end %>
 
-  <% if policy(@trip).update? %>
+  <% if !@trip.finalised? %>
     <li><%= link_to "Add destinations to trip", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
     <li><%= link_to "Score Trip", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
   <% end %>
