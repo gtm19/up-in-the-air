@@ -1,0 +1,27 @@
+.inspiration {
+  background-size: cover;
+  background-position: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  color: purple;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 20px;
+  display: flex;
+}
+
+.inspiration img {
+  height: 100%;
+  width: 100px;
+  object-fit: cover;
+}
+
+.inspiration h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
