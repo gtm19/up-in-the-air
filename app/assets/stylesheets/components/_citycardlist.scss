@@ -1,3 +1,123 @@
+.search-container {
+  margin-bottom: 24px;
+
+    h6 {
+    margin-bottom: 6px;
+  }
+}
+
+.search-top {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.search-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.travel-options-container {
+  padding-right: 32px;
+}
+
+.options-container {
+  width: 120px;
+}
+
+.row-travel-options {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.pref-option-container {
+  width: 100%;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.pref-save-container {
+  width: 50px;
+}
+
+.dates-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 24px;
+}
+
+
+.budget-container {
+  display: flex;
+}
+
+.budget-field {
+  width: 120px;
+  padding-right: 16px;
+}
+
+.slider-container {
+  height: 64px;
+  width: 100%;
+}
+
+.pref-save-container {
+  width: 50px;
+  margin-left: 16px;
+  padding-top: 24px;
+}
+
+.search-buttons {
+    display: flex;
+    width: 320px;
+}
+
+.search-button {
+  margin-right: 10px;
+}
+
+.city-search {
+    width: 100%;
+}
+
+
+.noUi-pips-horizontal {
+    padding: 0px 0 !important;
+    height: 40px !important;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.noUi-value-horizontal {
+  font: $body-font !important;
+  color: $body-color !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card-destination {
   overflow: hidden;
   padding: 0px;

@@ -2,7 +2,8 @@
 
 import { Controller } from "stimulus"
 import noUiSlider from "nouislider"
-import 'nouislider/distribute/nouislider.css';
+import 'nouislider/distribute/nouislider.css'
+import wNumb from "wnumb"
 
 export default class extends Controller {
 
@@ -12,36 +13,38 @@ export default class extends Controller {
     console.log("I am connected!")
 
     let slider = document.getElementById('slider');
+    let test = wNumb({decimals: 0})
+    this.budgetTarget.value = 300
 
-  noUiSlider.create(slider, {
-    connect: true,
-    behaviour: 'tap',
-    tooltips: [false, wNumb({decimals: 0}), true],
-    start: 300,
-    range: {
-        // Starting at 500, step the value by 500,
-        // until 4000 is reached. From there, step by 1000.
-        min: 0,
-        // '10%': [100, 100],
-        // '50%': [400, 600],
-        max: 1000
-    },
-        pips: {
-        mode: 'values',
-        values: [200, 800],
-        density: 50,
-        format: wNumb({
-            decimals: 0,
-            prefix: '£'
-        })
-    }
-});
 
-slider.noUiSlider.on('change', (values) => {
-  this.budgetTarget.value = values[0]
+    noUiSlider.create(slider, {
+      connect: true,
+      behaviour: 'tap',
+      tooltips: [test],
+      start: 300,
+      range: {
+          // Starting at 500, step the value by 500,
+          // until 4000 is reached. From there, step by 1000.
+          min: 0,
+          // '10%': [100, 100],
+          // '50%': [400, 600],
+          max: 1000
+      },
+          pips: {
+          mode: 'values',
+          values: [0, 200, 400, 600, 800, 1000],
+          density: 50,
+          format: wNumb({
+              decimals: 0,
+              prefix: '£'
+          })
+      }
     });
 
-
+    slider.noUiSlider.on('change', (values) => {
+      console.log(values)
+      this.budgetTarget.value = Math.round(values[0])
+        });
   }
 }
 

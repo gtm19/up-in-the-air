@@ -3,74 +3,106 @@
 
 
 <div class="mb-4">
-    <%= link_to "Come back later", trip_path(@trip), class: 'btn btn-lg btn-secondary purple' %>
-  </button>
 
-    <%= link_to "Submit preferences",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-lg btn-primary' %>
-  </button>
+    <%= link_to "Come back later", trip_path(@trip), class: 'btn btn-lg btn-secondary purple' %>
+
+
+
+
+
     <%= link_to "Rank preferences",  trip_trip_participant_participant_scores_path(@trip, @trip_participant), class: 'btn btn-lg btn-primary' %>
-  </button>
+
 </div>
 
 <div>
   <h4>What are your preferences for this trip?</h4>
 </div>
 
-<div data-controller="search">
 
-  <h6>How would you like to travel?</h6>
-<!-- ICONS FOR TRAVEL -->
-    <i class="fas fa-car color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
-    <i class="fas fa-train color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
-    <i class="fas fa-plane color: purple"></i> <i class="fas fa-toggle-on color: purple"></i> &nbsp;
-    <i class="fas fa-anchor color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
-
+<div class='search-container'>
   <%= form_tag trip_trip_participant_potential_destinations_path, method: :get do %>
-    <h6>What is your travel budget?</h6>
-    <div>
-    <div id="slider"></div></div>
-    <%= number_field_tag :budget,
-        params[:budget],
+  <div class="search-top">
+    <div class="travel-options-container">
+      <p>Travel options?</p>
+      <div class="options-container">
+        <div class="row-travel-options">
+          <div><i class="fas fa-car color: purple"></i> <i class="fas fa-toggle-off color: purple"></i></div>
+          <div><i class="fas fa-train color: purple"></i> <i class="fas fa-toggle-off color: purple"></i></div>
+        </div>
+        <div class="row-travel-options">
+          <div><i class="fas fa-plane color: purple"></i> <i class="fas fa-toggle-on color: purple"></i></div>
+          <div><i class="fas fa-anchor color: purple"></i> <i class="fas fa-toggle-off color: purple"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="pref-option-container">
+      <div data-controller="search">
+        <p>What is your travel budget?</p>
+        <div class="budget-container">
+          <div class="budget-field">
+          <%= number_field_tag :budget,
+              params[:budget],
+              class: "form-control",
+              label_tag: "£",
+              placeholder: "Maximum budget",
+              'data-search-target': 'budget'
+            %>
+          </div>
+          <div class="slider-container">
+            <div id="slider"></div>
+          </div>
+        </div>
+
+        <div class="dates-container">
+          <div>
+            <h6>Max journey time?</h6>
+            <%= number_field_tag :time,
+              params[:time],
+              class: "form-control",
+              placeholder: "Maximum travel time"
+            %>
+          </div>
+          <div>
+            <h6>Ideal travel dates?</h6>
+            <%= date_field_tag :out_date,
+              params[:out_date],
+              class: "form-control",
+              placeholder: "Outbound date"
+            %>
+          </div>
+          <div>
+            <%= date_field_tag :in_date,
+              params[:in_date],
+              class: "form-control",
+              placeholder: "Inbound date"
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-controller="pref" data-pref-url="/trips/:trip_id/trip_participants/:id" class="pref-save-container">
+      <button data-action="pref#savePref" type="button" class="btn btn-primary" data-pref-target="savePref" id="<%= @trip_participant.id %>" data-id="<%= @trip_participant.id %>" data-tid="<%= @trip.id %>" data-tpid="<%= @trip_participant.id %>">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+  </div>
+  <div class="search-bottom">
+    <div class="city-search">
+      <h6>Search for places and add them as your preferences</h6>
+      <%= text_field_tag :search_city,
+        params[:search_city],
         class: "form-control",
-        placeholder: "Maximum budget",
-        'data-search-target': 'budget'
+        placeholder: "City search"
       %>
-
-
-    <h6>What is your ideal journey time?</h6>
-    <%= number_field_tag :time,
-      params[:time],
-      class: "form-control",
-      placeholder: "Maximum travel time"
-    %>
-
-
-    <h6>When would you like to travel?</h6>
-    <%= date_field_tag :out_date,
-      params[:out_date],
-      class: "form-control",
-      placeholder: "Outbound date"
-    %>
-    <%= date_field_tag :in_date,
-      params[:in_date],
-      class: "form-control",
-      placeholder: "Inbound date"
-    %>
-    <h4>Searh for places you'd like to visit, and add them as your preferences</h4>
-    <%= text_field_tag :search_city,
-      params[:search_city],
-      class: "form-control",
-      placeholder: "City search"
-    %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
-  <% end %>
+    </div>
+    <div class="search-buttons">
+      <div class="search-button"><%= submit_tag "Search", class: "btn btn-primary" %></div>
+      <div><%= link_to "Add for ranking",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-primary' %></div>
+    </div>
+    <% end %>
+  </div>
 </div>
 
-<div data-controller="pref" data-pref-url="/trips/:trip_id/trip_participants/:id">
-<button data-action="pref#savePref" type="button" class="btn btn-primary" data-pref-target="savePref" id="<%= @trip_participant.id %>" data-id="<%= @trip_participant.id %>" data-tid="<%= @trip.id %>" data-tpid="<%= @trip_participant.id %>">
-  <i class="fas fa-save"></i>
-</button>
-</div>
 
 
 <div data-controller="love" data-love-curl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations" data-love-durl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
