@@ -1,21 +1,8 @@
-.trip-details {
+.list {
   ul {
     list-style: none;
   }
 }
-
-.detail-container {
-  width: 400px
-}
-
-.guide-container {
-  width: 400px
-}
-
-.veto-container {
-  width: 100px
-}
-
 
 .veto-off {
   visibility: visible;
@@ -42,28 +29,28 @@
   background-color: white;
 }
 
-.grab {
-  cursor: grab;
-}
+// .grab {
+//   cursor: grab;
+// }
 
-.grab:active {
-  cursor: grabbing;
-}
+// .grab:active {
+//   cursor: grabbing;
+// }
 
-.grab.ghost {
-  filter: grayscale(1);
-  opacity: 0.5;
-}
+// .grab.ghost {
+//   filter: grayscale(1);
+//   opacity: 0.5;
+// }
 
-.locked {
-  font-size: 1.5em;
-  text-align: right;
-  padding-right: 30px;
-  position: absolute;
-  right: 16px;
-  bottom: 0px;
-}
+// .locked {
+//   font-size: 1.5em;
+//   text-align: right;
+//   padding-right: 30px;
+//   position: absolute;
+//   right: 16px;
+//   bottom: 0px;
+// }
 
-.rank-header {
-  position: relative;
-}
+// .rank-header {
+//   position: relative;
+// }

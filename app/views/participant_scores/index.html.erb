@@ -1,7 +1,7 @@
-<%= render "shared/container" do %>
-  <h2>Rank your selections for</h2>
-  <h1><%= @trip.name %></h1>
-  <p>Just drag and drop the options in preference order.</p>
+<section class="text-center mt-4">
+  <p>Rank your selections for <i>"<%= @trip.name %>" </i></p>
+  <h2>Just drag and drop the options order of your preference!</h2>
+  
 
   <div class="rank-header mb-4">
     <button type="button" class="btn btn-outline-primary">
@@ -11,52 +11,77 @@
       <button type="button" class="btn btn-outline-primary">
         <%= link_to "Destination selector", trip_trip_participant_potential_destinations_path(@trip, @trip_participant) %>
       </button>
-      <button type="button" class="btn btn-outline-primary">
+      <button type="button" class="btn btn-primary text-white">
         <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch %>
       </button>
     <% end %>
+
+    <!--TODO Make sure to move this back into the if statement, Wayne! -->
+    <div class = "locked">
+        <i class="fas fa-lock"></i> Submitted
+    </div>
     <% if @trip_participant.scoring_complete %>
       <div class = "locked">
         <i class="fas fa-lock"></i> Submitted
       </div>
     <% end %>
-  </div>
+</section>
+
+<section class="container-sm">
     <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id" id="sortable-list" data-status="<%= @trip_participant.scoring_complete ? 'disabled' : 'enabled' %>">
       <% @cards.each do |card| %>
-        <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card card-body grab">
-          <div class="trip-details">
-            <div>
+        <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card grab mt-2">
+          <div class="row no-gutter">
+
+            <div class="col-auto">
+              <img src="//placehold.it/200" class="img-fluid" alt="">
+              <!--TODO Make sure to move this back
               <% if card[:ps].potential_destination.city.photo.attached? %>
-                <%= cl_image_tag card[:ps].potential_destination.city.photo.key, height: 150, width: 200, crop: :fill %>
-              <% end %>
+                  <%= cl_image_tag card[:ps].potential_destination.city.photo.key %>
+              <% end %>-->
             </div>
 
-            <div class="detail-container">
-              <ul>
-                <li><h3><%= card[:ps].potential_destination.city.name %></h3></li>
-                <li><i class="fas fa-coins"></i> £<%=  sprintf("%.2f", ((card[:te].low_cost + card[:te].high_cost)/2).to_f)  %></li>
-                <li><i class="fas fa-plane"></i> <%= card[:te].flight_mins %> mins </li>
-                <li><i class="fas fa-heart"></i> <%= card[:ps].potential_destination.trip_participant.user.first_name %> first</li>
-              </ul>
-            </div>
-            <div class="guide-container">
-              <ul>
-                <li id="stars" style="color: red;">PERFECTION: <%= chilli(card[:hot]) %></li>
-                <li id="stars">Budget: <%= stars(card[:budget]) %></li>
-                <li id="stars">Travel Time: <%= stars(card[:time]) %></li>
-                <li id="stars">Loved: <%= stars(card[:loved]) %></li>
-                <li id="stars">Calender: <%= stars(card[:calender])%></li>
-              </ul>
-            </div>
-          <div class="veto-container">
-            <button data-action="sort#updateVeto" type="button" id="veto-button" class=" <%= card[:ps].veto ? 'veto-on' : (@veto ? 'veto-off veto-hidden' : 'veto-off') %> " data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
-              <i class="fas fa-ban ml-1" ></i>
-            </button>
-          </div>
-          </div>
 
+              <div class="col list">
+                <h4 class="mt-4"><%= card[:ps].potential_destination.city.name %></h4>
+                <p id="stars" class="purple"><%= stars(card[:hot]) %></p>
+
+                <ul>
+                  <li id="stars"><%= stars(card[:budget]) %> Budget</li>
+                  <li id="stars"><%= stars(card[:time]) %> Travel Time</li>
+                  <li id="stars"><%= stars(card[:loved]) %>Favourted</li> 
+                  <li id="stars"><%= stars(card[:calender])%> Calender</li>
+                </ul>
+              </div>
+
+
+            <div class="col">
+              <button data-action="sort#updateVeto" type="button" id="veto-button" class=" <%= card[:ps].veto ? 'veto-on' : (@veto ? 'veto-off veto-hidden' : 'veto-off') %> " data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
+                <i class="fas fa-ban ml-1" ></i>
+              </button>
+            </div>
+
+          </div>
+          <div class="card-footer bg-white">
+            <div class="d-flex">
+
+              <div class="p-2 flex-grow-1">
+                <i class="fas fa-heart purple"></i> <%= card[:ps].potential_destination.trip_participant.user.first_name %> has favourited this destination
+              </div>
+
+              <div class="p-2">
+                <i class="fas fa-plane"></i> <%= card[:te].flight_mins %> mins
+              </div>
+
+              <div class="p-2">
+                <i class="fas fa-coins"></i> £<%=  sprintf("%.2f", ((card[:te].low_cost + card[:te].high_cost)/2).to_f)  %>
+              </div>
+
+
+            </div>
+          </div>
         </div>
       <% end %>
     </div>
+</section>
 
-<% end %>
