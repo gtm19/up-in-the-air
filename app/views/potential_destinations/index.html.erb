@@ -16,26 +16,35 @@
   <h4>What are your preferences for this trip?</h4>
 </div>
 
-<div>
+<div data-controller="search">
+
   <h6>How would you like to travel?</h6>
 <!-- ICONS FOR TRAVEL -->
     <i class="fas fa-car color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
     <i class="fas fa-train color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
     <i class="fas fa-plane color: purple"></i> <i class="fas fa-toggle-on color: purple"></i> &nbsp;
     <i class="fas fa-anchor color: purple"></i> <i class="fas fa-toggle-off color: purple"></i> &nbsp;
-  <h6>What is your ideal journey time?</h6>
+
+  <%= form_tag trip_trip_participant_potential_destinations_path, method: :get do %>
+    <h6>What is your travel budget?</h6>
+    <div>
+    <div id="slider"></div></div>
+    <%= number_field_tag :budget,
+        params[:budget],
+        class: "form-control",
+        placeholder: "Maximum budget",
+        'data-search-target': 'budget'
+      %>
+
+
+    <h6>What is your ideal journey time?</h6>
     <%= number_field_tag :time,
       params[:time],
       class: "form-control",
       placeholder: "Maximum travel time"
     %>
-    <h6>What is your travel budget?</h6>
-      <%= form_tag trip_trip_participant_potential_destinations_path, method: :get do %>
-      <%= text_field_tag :budget,
-        params[:budget],
-        class: "form-control",
-        placeholder: "Maximum budget"
-      %>
+
+
     <h6>When would you like to travel?</h6>
     <%= date_field_tag :out_date,
       params[:out_date],
@@ -56,6 +65,13 @@
     <%= submit_tag "Search", class: "btn btn-primary" %>
   <% end %>
 </div>
+
+<div data-controller="pref" data-pref-url="/trips/:trip_id/trip_participants/:id">
+<button data-action="pref#savePref" type="button" class="btn btn-primary" data-pref-target="savePref" id="<%= @trip_participant.id %>" data-id="<%= @trip_participant.id %>" data-tid="<%= @trip.id %>" data-tpid="<%= @trip_participant.id %>">
+  <i class="fas fa-save"></i>
+</button>
+</div>
+
 
 <div data-controller="love" data-love-curl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations" data-love-durl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
   <div class="container">

@@ -39,7 +39,7 @@ class PotentialDestinationsController < ApplicationController
       # head :ok
       render json: { pd: pd.id, est: params[:est] } and return
     else
-      xredirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+      redirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
     end
   end
 

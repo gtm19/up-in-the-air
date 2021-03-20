@@ -7,4 +7,8 @@ class TripParticipantPolicy < ApplicationPolicy
   def destroy?
     record.lead_user == user
   end
+
+  def update?
+    true
+  end
 end
