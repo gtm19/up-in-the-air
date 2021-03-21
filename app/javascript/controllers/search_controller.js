@@ -29,7 +29,7 @@ export default class extends Controller {
     noUiSlider.create(slider, {
       connect: true,
       behaviour: 'tap',
-      tooltips: [num],
+      // tooltips: [num],
       start: bgt,
       range: {
           min: 0,
