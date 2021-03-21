@@ -22,21 +22,17 @@ export default class extends Controller {
     }
     console.log(bgt);
     // console.log(input);
-    let test = wNumb({decimals: 0});
+    let num = wNumb({decimals: 0, prefix: '£'});
     // this.budgetTarget.value = 300
 
 
     noUiSlider.create(slider, {
       connect: true,
       behaviour: 'tap',
-      tooltips: [test],
+      tooltips: [num],
       start: bgt,
       range: {
-          // Starting at 500, step the value by 500,
-          // until 4000 is reached. From there, step by 1000.
           min: 0,
-          // '10%': [100, 100],
-          // '50%': [400, 600],
           max: 1000
       },
           pips: {
@@ -50,7 +46,7 @@ export default class extends Controller {
       }
     });
 
-    slider.noUiSlider.on('change', (values) => {
+    slider.noUiSlider.on('slide', (values) => {
       console.log(values)
       this.budgetTarget.value = Math.round(values[0])
         });
