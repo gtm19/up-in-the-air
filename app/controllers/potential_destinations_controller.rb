@@ -4,14 +4,23 @@ class PotentialDestinationsController < ApplicationController
     @trip = Trip.find(params[:trip_id])
     @trip_participant = TripParticipant.find(params[:trip_participant_id])
 
-    # budget = params["budget"] || 999_999
-    params["budget"].present? ? budget = params["budget"].to_i : budget = 999999
-    params["time"].present? ? time = params["time"].to_i : time = 999999
+    @trip_participant.budget_preference.to_i.positive? ? default_budget = @trip_participant.budget_preference.to_i : default_budget = 1000
+    @trip_participant.time_preference.to_i.positive? ? default_time = @trip_participant.time_preference.to_i : default_time = 800
+
+    params["budget"].present? ? budget = params["budget"].to_i : budget = default_budget
+    params["time"].present? ? time = params["time"].to_i : time = default_time
+
+    @budget = budget
+    @time = time
+    default_dates
+
 
     puts params
-    puts budget
-    puts time
+    puts "Budget #{budget}"
+    puts "Time #{time}"
     puts params["search_city"]
+    puts "@budget #{@budget}"
+    puts "@time #{@time}"
 
     if params[:search_city].present?
       puts "Searching city"
@@ -39,7 +48,7 @@ class PotentialDestinationsController < ApplicationController
       # head :ok
       render json: { pd: pd.id, est: params[:est] } and return
     else
-      xredirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
+      redirect_to trip_trip_participant_potential_destinations_path(params[:trip_id], params[:trip_participant_id])
     end
   end
 
@@ -77,5 +86,19 @@ class PotentialDestinationsController < ApplicationController
       cards << card
     end
     cards
+  end
+
+  def default_dates
+    if params["out_date"].present?
+      @o_date = params["out_date"]
+    else
+      @o_date = @trip_participant.date_preferences.first.start_date unless @trip_participant.date_preferences.first.nil?
+    end
+
+    if params["in_date"].present?
+      @i_date = params["in_date"]
+    else
+      @i_date = @trip_participant.date_preferences.first.end_date unless @trip_participant.date_preferences.first.nil?
+    end
   end
 end

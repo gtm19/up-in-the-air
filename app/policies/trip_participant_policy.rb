@@ -9,4 +9,8 @@ class TripParticipantPolicy < ApplicationPolicy
     # is not yet finalised
     record.trip_lead_user == user && !record.trip.finalised?
   end
+
+  def update?
+    true
+  end
 end
