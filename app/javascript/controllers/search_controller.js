@@ -13,17 +13,17 @@ export default class extends Controller {
     console.log("I am connected!")
 
     let slider = document.getElementById('slider');
-    console.log(document.getElementById('budget'));
+    // console.log(document.getElementById('budget'));
     let bgt = document.getElementById('budget').value;
     console.log(bgt);
-    if (bgt == 0 || bgt == null) {
-      // let bgt = parseInt(document.getElementById('budget-field').dataset.budget);
-      let bgt = 1000;
-    }
-    console.log(bgt);
-    // console.log(input);
+    // if (bgt == 0 || bgt == null) {
+    //   // let bgt = parseInt(document.getElementById('budget-field').dataset.budget);
+    //   let bgt = 1000;
+    // }
+    // console.log(bgt);
+
     let num = wNumb({decimals: 0, prefix: '£'});
-    // this.budgetTarget.value = 300
+
 
 
     noUiSlider.create(slider, {

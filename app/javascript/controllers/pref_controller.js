@@ -23,7 +23,6 @@ export default class extends Controller {
     data.append('budget_preference', budget)
     data.append('out_date', out_date)
     data.append('in_date', in_date)
-    console.log(data)
     console.log(time)
     console.log(budget)
 

@@ -35,15 +35,18 @@
           <div class="slider-container">
             <div id="slider"></div>
           </div>
-          <div class="budget-field"  data-budget='<%= @budget %>' id="budget-field">
-          <%= number_field_tag :budget,
-              params[:budget],
-              class: "form-control",
-              label_tag: :budget,
-              placeholder: @budget,
-              value: @budget,
-              'data-search-target': 'budget'
-            %>
+          <div class="budget-field">
+            <div class =" budget-currency-position">£</div>
+            <div class ="budget-value-position">
+              <%= number_field_tag :budget,
+                  params[:budget],
+                  class: "form-control",
+                  label_tag: :budget,
+                  placeholder: @budget,
+                  value: @budget,
+                  'data-search-target': 'budget'
+                %>
+            </div>
           </div>
         </div>
 
