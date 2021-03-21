@@ -12,6 +12,8 @@ class PotentialDestinationsController < ApplicationController
 
     @budget = budget
     @time = time
+    default_dates
+
 
     puts params
     puts "Budget #{budget}"
@@ -84,5 +86,19 @@ class PotentialDestinationsController < ApplicationController
       cards << card
     end
     cards
+  end
+
+  def default_dates
+    if params["out_date"].present?
+      @o_date = params["out_date"]
+    else
+      @o_date = @trip_participant.date_preferences.first.start_date unless @trip_participant.date_preferences.first.nil?
+    end
+
+    if params["in_date"].present?
+      @i_date = params["in_date"]
+    else
+      @i_date = @trip_participant.date_preferences.first.end_date unless @trip_participant.date_preferences.first.nil?
+    end
   end
 end
