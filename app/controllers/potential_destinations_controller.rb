@@ -4,19 +4,21 @@ class PotentialDestinationsController < ApplicationController
     @trip = Trip.find(params[:trip_id])
     @trip_participant = TripParticipant.find(params[:trip_participant_id])
 
-    @budget = 999
-    @time = 999
-    @budget = @trip_participant.budget_preference.to_i if @trip_participant.budget_preference.to_i > 0
-    @time = @trip_participant.time_preference.to_i if @trip_participant.time_preference.to_i > 0
+    @trip_participant.budget_preference.to_i.positive? ? default_budget = @trip_participant.budget_preference.to_i : default_budget = 1000
+    @trip_participant.time_preference.to_i.positive? ? default_time = @trip_participant.time_preference.to_i : default_time = 800
 
-    params["budget"].present? ? budget = params["budget"].to_i : budget = @budget
-    params["time"].present? ? time = params["time"].to_i : time = @time
+    params["budget"].present? ? budget = params["budget"].to_i : budget = default_budget
+    params["time"].present? ? time = params["time"].to_i : time = default_time
+
+    @budget = budget
+    @time = time
 
     puts params
-    puts budget
-    puts time
+    puts "Budget #{budget}"
+    puts "Time #{time}"
     puts params["search_city"]
-    puts @budget
+    puts "@budget #{@budget}"
+    puts "@time #{@time}"
 
     if params[:search_city].present?
       puts "Searching city"

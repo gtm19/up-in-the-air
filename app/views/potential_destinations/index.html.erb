@@ -32,17 +32,18 @@
       <div data-controller="search">
         <p>What is your travel budget?</p>
         <div class="budget-container">
+          <div class="slider-container">
+            <div id="slider"></div>
+          </div>
           <div class="budget-field"  data-budget='<%= @budget %>' id="budget-field">
           <%= number_field_tag :budget,
               params[:budget],
               class: "form-control",
-              label_tag: "£",
+              label_tag: :budget,
               placeholder: @budget,
+              value: @budget,
               'data-search-target': 'budget'
             %>
-          </div>
-          <div class="slider-container">
-            <div id="slider"></div>
           </div>
         </div>
 
@@ -52,7 +53,8 @@
             <%= number_field_tag :time,
               params[:time],
               class: "form-control",
-              placeholder: @time
+              placeholder: @time,
+              value: @time
             %>
           </div>
           <div>
@@ -82,7 +84,7 @@
   </div>
   <div class="search-bottom">
     <div class="city-search">
-      <h6>Search and 💜 places. Save to share.</h6>
+      <h6>Search, 💜 and share.</h6>
       <%= text_field_tag :search_city,
         params[:search_city],
         class: "form-control",
@@ -91,25 +93,23 @@
     </div>
     <div class="search-buttons">
       <div class="search-button"><%= submit_tag "Search", class: "btn btn-primary" %></div>
-      <div><%= link_to "Save the love",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-primary' %></div>
+      <div><%= link_to "Share the 💜",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-primary' %></div>
     </div>
     <% end %>
   </div>
 </div>
 
-
-
 <div data-controller="love" data-love-curl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations" data-love-durl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
-  <div class="container">
+  <div class="container" id="search-results-container">
 
-  <div><h3>Travelling from <%= @trip_participant.user.city.name %> to:</h3></div>
+  <div><p>Travelling from <%= @trip_participant.user.city.name %> to:</p></div>
     <div class="row">
       <% @cards.each do |c| %>
         <div class="col-4">
           <div class="card-destination card card-body score mb-4" data-trip-estimate=c[:te].id >
             <div>
               <% if c[:te].destination_city.photo.attached? %>
-                <img><%= cl_image_tag c[:te].destination_city.photo.key,height: 200, width: 280, crop: :fill %></img><br/>
+                <img><%= cl_image_tag c[:te].destination_city.photo.key,height: 200, width: 290, crop: :fill %></img><br/>
               <% end  %>
               <div class="card-destination-infos">
                   <ul>

@@ -24,6 +24,8 @@ export default class extends Controller {
     data.append('out_date', out_date)
     data.append('in_date', in_date)
     console.log(data)
+    console.log(time)
+    console.log(budget)
 
     Rails.ajax({
         url: this.data.get("url").replace(":trip_id", tid).replace(":id", tpid),
