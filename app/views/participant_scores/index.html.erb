@@ -54,7 +54,7 @@
 
 
             <div class="col">
-              <button data-action="sort#updateVeto" type="button" id="veto-button" class=" float-right m-3 <%= card[:ps].veto ? 'veto-on' : (@veto ? 'veto-off veto-hidden' : 'veto-off') %> " data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
+              <button data-toggle="popover" title="Veto" data-content="You can veto one destination by clicking this icon..choose carefully!" data-trigger="hover" data-offset="4" data-action="sort#updateVeto" type="button" id="veto-button" class=" float-right m-3 <%= card[:ps].veto ? 'veto-on' : (@veto ? 'veto-off veto-hidden' : 'veto-off') %> " data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
                 <i class="fas fa-ban ml-1" ></i>
               </button>
             </div>
