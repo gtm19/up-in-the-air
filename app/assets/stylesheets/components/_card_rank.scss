@@ -6,8 +6,8 @@
 
 .veto-off {
   visibility: visible;
-  color: $light-gray;
-  font-size: 2em;
+  color: #dbdada;
+  font-size: 1.5em;
   border: none;
   background-color: white;
 }
@@ -16,7 +16,7 @@
 .veto-on {
   visibility: visible;
   color: $primary;
-  font-size: 2em;
+  font-size: 1.5em;
   border: none;
   background-color: white;
 }
@@ -24,18 +24,18 @@
 .veto-hidden {
   visibility: hidden;
   color: $primary;
-  font-size: 2em;
+  font-size:1.5em;
   border: none;
   background-color: white;
 }
 
-// .grab {
-//   cursor: grab;
-// }
+.grab {
+  cursor: grab;
+}
 
-// .grab:active {
-//   cursor: grabbing;
-// }
+.grab:active {
+  cursor: grabbing;
+}
 
 // .grab.ghost {
 //   filter: grayscale(1);
