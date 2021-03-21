@@ -132,6 +132,11 @@
   position: relative;
 }
 
+.card-destination:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+
 .card-destination > img {
   // height: 200px;
   width: 100%;
@@ -181,7 +186,15 @@
 
 .love-off {
   visibility: visible;
-  color: $light-gray;
+  color: #F1E4FF;
+  font-size: 2em;
+  border: none;
+  background-color: white;
+}
+
+.love-off:hover {
+  visibility: visible;
+  color: $purple;
   font-size: 2em;
   border: none;
   background-color: white;
