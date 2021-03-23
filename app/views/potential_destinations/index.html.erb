@@ -118,7 +118,7 @@
               <% end  %>
               <div class="card-destination-infos">
                   <ul>
-                    <li><h4><%= c[:te].destination_city.name[0..18] %></h4></li>
+                    <li><h4><%= truncate(c[:te].destination_city.name, length: 21)%></h4></li>
                     <li><i class="fas fa-coins"></i>  From £<%= sprintf("%.0f", c[:te].low_cost) %> to £<%= sprintf("%.0f", c[:te].high_cost) %></li>
                     <li><i class="fas fa-plane"></i>  <%= c[:te].flight_mins %>mins</li>
                     <li><i class="fas fa-heart"></i>  <%= c[:already] %> <%= 'friend'.pluralize(c[:already]) %> </li>
