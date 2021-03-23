@@ -1,7 +1,7 @@
 <section class="text-center mt-4">
   <p>Rank your selections for <i>"<%= @trip.name %>" </i></p>
   <h2>Just drag and drop the options order of your preference!</h2>
-  
+
 
   <div class="rank-header mb-4">
     <button type="button" class="btn btn-outline-primary">
@@ -31,12 +31,10 @@
           <div class="row no-gutter">
 
             <div class="col-auto">
-              <img src="//placehold.it/200" class="img-fluid" alt="">
-              <!--TODO Make sure to move this back
+              <!-- <img src="//placehold.it/200" class="img-fluid" alt=""> -->
               <% if card[:ps].potential_destination.city.photo.attached? %>
-                  <%= cl_image_tag card[:ps].potential_destination.city.photo.key %>
+                  <%= cl_image_tag card[:ps].potential_destination.city.photo.key,height: 200, width: 200, crop: :fill %>
               <% end %>
-              -->
             </div>
 
 
@@ -45,7 +43,7 @@
                 <ul>
                   <li id="stars"><%= stars(card[:budget]) %> Budget</li>
                   <li id="stars"><%= stars(card[:time]) %> Travel Time</li>
-                  <li id="stars"><%= stars(card[:loved]) %> Favourted</li> 
+                  <li id="stars"><%= stars(card[:loved]) %> Favourted</li>
                   <li id="stars"><%= stars(card[:calender])%> Calender</li>
                 </ul>
               </div>
