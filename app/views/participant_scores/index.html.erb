@@ -11,7 +11,7 @@
       <button type="button" class="btn btn-outline-primary">
         <%= link_to "Destination selector", trip_trip_participant_potential_destinations_path(@trip, @trip_participant) %>
       </button>
-      <button type="button" class="btn btn-primary text-white">
+      <button type="button" class="btn btn-primary text-primary">
         <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch %>
       </button>
     <% end %>
