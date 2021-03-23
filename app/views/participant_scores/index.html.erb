@@ -1,20 +1,21 @@
 <section class="text-center mt-4">
-  <p>Rank your selections for <i>"<%= @trip.name %>" </i></p>
-  <h2>Just drag and drop the options order of your preference!</h2>
+  <p>Rank your selections for <%= @trip.name %></p>
+  <h2>Just drag and drop the options in order of your preference!</h2>
 
 
-  <div class="rank-header mb-4">
-    <button type="button" class="btn btn-outline-primary">
+  <div class="mb-4">
+    <!--<button type="button" class="btn btn-outline-primary">
       <%= link_to "Return to trip", trip_path(@trip) %>
-    </button>
+    </button>-->
     <% if !@trip_participant.scoring_complete %>
-      <button type="button" class="btn btn-outline-primary">
-        <%= link_to "Destination selector", trip_trip_participant_potential_destinations_path(@trip, @trip_participant) %>
-      </button>
-      <button type="button" class="btn btn-primary text-white">
-        <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch %>
-      </button>
+    <div>
+      <div>
+        <%= link_to "Preferences", trip_trip_participant_potential_destinations_path(@trip, @trip_participant), class: 'btn btn-secondary purple' %>
+        <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch, class: 'btn btn-primary'%>
+      </div>
+    <div>
     <% end %>
+
 
     <!--TODO Make sure to move this back into the if statement, Wayne! -->
     <% if @trip_participant.scoring_complete %>
@@ -25,13 +26,14 @@
 </section>
 
 <section class="container-sm">
+    <hr>
+    <br>
     <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id" id="sortable-list" data-status="<%= @trip_participant.scoring_complete ? 'disabled' : 'enabled' %>">
       <% @cards.each do |card| %>
         <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card grab mt-2">
           <div class="row no-gutter">
 
             <div class="col-auto">
-              <!-- <img src="//placehold.it/200" class="img-fluid" alt=""> -->
               <% if card[:ps].potential_destination.city.photo.attached? %>
                   <%= cl_image_tag card[:ps].potential_destination.city.photo.key,height: 200, width: 200, crop: :fill %>
               <% end %>
@@ -40,7 +42,7 @@
 
               <div class="col list">
                 <h4 class="mt-4 mb-3"><%= card[:ps].potential_destination.city.name %></h4>
-                <ul>
+                <ul class="text-light-grey">
                   <li id="stars"><%= stars(card[:budget]) %> Budget</li>
                   <li id="stars"><%= stars(card[:time]) %> Travel Time</li>
                   <li id="stars"><%= stars(card[:loved]) %> Favoured</li>
@@ -59,7 +61,7 @@
           <div class="card-footer bg-white">
             <div class="d-flex">
 
-              <div class="p-2 flex-grow-1">
+              <div class="p-2 flex-grow-1 text-light-grey">
                 <i class="fas fa-heart purple"></i> <%= card[:ps].potential_destination.trip_participant.user.first_name %> has favourited this destination
               </div>
 
@@ -84,3 +86,8 @@
     </div>
 </section>
 
+<br>
+<br>
+<br>
+
+<%= render 'shared/footer-medium' %>
