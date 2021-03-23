@@ -4,14 +4,9 @@ module StarRatingHelper
   def stars(num)
     num = num.round(1)
     whole_stars = num.floor
-    half_stars = ((num - whole_stars) * 2).to_i
-    icon("fas", "star", class: "fill-primary") * whole_stars + icon("fas", "star-half") * half_stars
-  end
-
-  def chilli(num)
-    num = num.round(1)
-    whole_stars = num.floor
-    half_stars = ((num - whole_stars) * 2).to_i
-    icon("fas", "pepper-hot", class: "fill-warning") * whole_stars + icon("fas", "leaf") * half_stars
+    half_star = ((num - whole_stars) * 2).to_i
+    empty_stars = ( 5 - (whole_stars + half_star)).to_i
+    # TODO Fix the stars padding
+    icon("fa", "star") * whole_stars + icon("fa", "star-half-alt") * half_star + icon("far", "star") * empty_stars
   end
 end

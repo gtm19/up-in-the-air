@@ -1,4 +1,4 @@
-.trip-details {
+.list {
   ul {
     list-style: none;
   }
@@ -16,11 +16,10 @@
   width: 100px
 }
 
-
 .veto-off {
   visibility: visible;
-  color: $light-gray;
-  font-size: 2em;
+  color: #dbdada;
+  font-size: 1.5em;
   border: none;
   background-color: white;
 }
@@ -29,7 +28,7 @@
 .veto-on {
   visibility: visible;
   color: $primary;
-  font-size: 2em;
+  font-size: 1.5em;
   border: none;
   background-color: white;
 }
@@ -37,7 +36,7 @@
 .veto-hidden {
   visibility: hidden;
   color: $primary;
-  font-size: 2em;
+  font-size:1.5em;
   border: none;
   background-color: white;
 }
@@ -50,20 +49,20 @@
   cursor: grabbing;
 }
 
-.grab.ghost {
-  filter: grayscale(1);
-  opacity: 0.5;
-}
+// .grab.ghost {
+//   filter: grayscale(1);
+//   opacity: 0.5;
+// }
 
-.locked {
-  font-size: 1.5em;
-  text-align: right;
-  padding-right: 30px;
-  position: absolute;
-  right: 16px;
-  bottom: 0px;
-}
+// .locked {
+//   font-size: 1.5em;
+//   text-align: right;
+//   padding-right: 30px;
+//   position: absolute;
+//   right: 16px;
+//   bottom: 0px;
+// }
 
-.rank-header {
-  position: relative;
-}
+// .rank-header {
+//   position: relative;
+// }
