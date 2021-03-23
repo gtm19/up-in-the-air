@@ -7,7 +7,12 @@ class TripsController < ApplicationController
     @trip = Trip.find(params[:id])
     authorize @trip
     @trip_participants = @trip.trip_participants
-    @participant_scores = @trip.participant_scores.where(veto: false)
+    @participant_scores = @trip.participant_scores
+      .select("potential_destination_id, sum(score) as score")
+      .where(veto: false)
+      .group(:potential_destination_id)
+      .order("score DESC")
+      .limit(3)
     @possible_dates = @trip.possible_dates
   end
 
