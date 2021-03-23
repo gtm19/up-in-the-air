@@ -38,13 +38,14 @@
 
       <% if @trip.scoring_complete? %>
         <h2>Complete the Trip</h2>
-        <%= f.input :city_id,
+        <%= f.input :city_id, 
+            label: "Choose your city",
             as: :radio_buttons,
             collection_wrapper_tag: 'div',
             collection_wrapper_class: 'category-wrapper',
             item_wrapper_class: 'category-item',
             input_html: {class: 'category-selector'},
-            collection: @participant_scores.map(&:city) %> <!-- TODO remove duplicates from this list of cities, and also feed in scores -->
+            collection: @participant_scores.map(&:city) %>
         <div class="form-row">
           <%= f.input :start_date,
               wrapper_html: { class: "form-group col-md-6" },
