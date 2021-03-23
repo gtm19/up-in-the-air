@@ -17,9 +17,6 @@
     <% end %>
 
     <!--TODO Make sure to move this back into the if statement, Wayne! -->
-    <div class = "locked">
-        <i class="fas fa-lock"></i> Submitted
-    </div>
     <% if @trip_participant.scoring_complete %>
       <div class = "locked">
         <i class="fas fa-lock"></i> Submitted
@@ -38,7 +35,8 @@
               <!--TODO Make sure to move this back
               <% if card[:ps].potential_destination.city.photo.attached? %>
                   <%= cl_image_tag card[:ps].potential_destination.city.photo.key %>
-              <% end %>-->
+              <% end %>
+              -->
             </div>
 
 
