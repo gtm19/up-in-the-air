@@ -34,3 +34,10 @@ document.addEventListener('turbolinks:load', () => {
 });
 
 import "controllers"
+
+// Bootstrap Popovers: 
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    container: 'body'
+  })
+})
