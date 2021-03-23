@@ -23,8 +23,10 @@ class Trip < ApplicationRecord
       date_preference.start_date..date_preference.end_date
     end
 
-    date_ranges.reduce do |running, new|
+    dates = date_ranges.reduce do |running, new|
       running.to_a & new.to_a
     end
+
+    dates.nil? ? [] : dates
   end
 end
