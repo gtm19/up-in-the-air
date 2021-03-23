@@ -6,6 +6,10 @@
 
 .category-item {
   flex: 0 0 30%;
+  
+  label {
+    font-size: 1.2em !important;
+  }
 }
 
 .category-selector {
@@ -27,5 +31,6 @@
 }
 
 .category-selector:checked + label {
-  background: rgba($color: #000000, $alpha: 0.05) !important;
+  background: $primary !important;
+  color: white;
 }
