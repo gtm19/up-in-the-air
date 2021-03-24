@@ -4,6 +4,7 @@
 .plus {
   position: relative;
   top: 50px;
+  color: #8C30F5;
 }
 
 .plus .hvr-grow {
@@ -23,3 +24,8 @@
     transform: scale(1.1);
 }
 
+.plus-box {
+  background-color: #F1E4FF;
+  border-radius: 8px;
+  border:1px solid rgba(0, 0, 0, 0.125);
+}
