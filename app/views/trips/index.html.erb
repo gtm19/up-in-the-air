@@ -1,9 +1,7 @@
 <section>
   <div class="row py-sm-4 mt-3">
     <div class="col-lg-9 col-md-8 mx-auto text-center">
-      <h1 class="fw-light">Plan your next Adventure 🎉</h1>
-    <!--   <p class ="mb-5">“A road trip is a way for the whole family to spend time together, and annoy each other in interesting new places” – Tom Lichtenheld</p> -->
-<!--       <hr> -->
+      <h1>Plan your next Adventure!</h1>
     </div>
   </div>
 </section>
@@ -12,26 +10,28 @@
   <div class="album py-2">
     <div class="container-sm">
       <div class="row row-cols-4 g-3 pb-4">
-        <% @trips.each do |trip| %>
-          <div class="col mb-4">
-            <div class="card shadow-sm">
-              <div class="tripcardimage">
-              <!-- <image src='https://images.unsplash.com/photo-1534534573898-db5148bc8b0c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80'> -->
-              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg> -->
-              </div>
-              <div class="card-body">
-              <%= link_to trip.name, trip_path(trip), class: "card-text" %>
-                <div class="d-flex justify-content-between align-items-center">
+          <% @trips.each do |trip| %>
+
+            <div class="col mb-4">
+              <div class="card shadow-sm">
+                <div class="tripcardimage">
+                </div>
+                  <div class="card-body">
+                    <%= link_to trip.name, trip_path(trip), class: "card-text" %>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+
           <% end %>
-          <!-- Plus symbol -->
-          <div class="col text-center plus-box mb-4 card shadow-sm">
-            <%= link_to new_trip_path do %>
-              <i class="fas fa-plus fa-7x plus hvr-grow"></i>
-            <% end %>
+          <div class="col mb-4 container-fixy">
+            <div class="card shadow-sm text-center link-spanner">
+              <%= link_to new_trip_path do %>
+                <i class="fas fa-plus fa-7x plus hvr-grow"></i>
+              <% end %>
+            </div>
+          </div>
       </div>
     </div>
   </div>

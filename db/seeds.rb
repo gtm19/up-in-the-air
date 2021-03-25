@@ -244,7 +244,7 @@ end
 def seed_potential_destinations(trip)
   # get all the trip participants
   trip_participants = trip.trip_participants
-  # get the cities of the participants and shift by 1 
+  # get the cities of the participants and shift by 1
   # (so no-one chooses their city as a potential destination)
   cities = trip_participants.map { |tp| tp.user.city }.rotate
 
@@ -266,7 +266,7 @@ def seed_potential_destinations(trip)
     date_offset += 1
     trip_participant.date_preferences << date_pref
   end
-  
+
   trip_participants
 end
 
@@ -342,20 +342,20 @@ PotentialDestination.delete_all
 DatePreference.delete_all
 TripParticipant.delete_all
 Trip.delete_all
-TripEstimate.delete_all
-User.delete_all
-City.delete_all
+# TripEstimate.delete_all
+# User.delete_all
+# City.delete_all
 
-if ENV["basic"] || ENV["simple"]
-  basic_cities
-else
-  load_city_airports
-end
+# if ENV["basic"] || ENV["simple"]
+#   basic_cities
+# else
+#   load_city_airports
+# end
 
-create_users
-create_trip_estimates
+# create_users
+# create_trip_estimates
 
-trip = seed_trip("Away with friends")
+trip = seed_trip("School reunion")
 seed_potential_destinations(trip)
 seed_participant_scores(trip)
 
