@@ -1,6 +1,6 @@
 <%= render "shared/container" do %>
-  <h1>Trip to <%= @trip.name %></h1>
-  
+  <%= content_tag(:h1, @trip.name, class: "text-center") %>
+
   <% if @trip.finalised? %>
     <p>Destination:</p>
     <%= @trip.city.name %>
