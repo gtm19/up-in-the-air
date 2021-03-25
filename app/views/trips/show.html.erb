@@ -60,13 +60,26 @@
         </div>
       <% end %>
       
-      <%= f.submit %>
+      <%= f.submit @trip.scoring_complete? ? "Finalise trip" : "Update trip", class: "w-100 btn btn-primary" %>
     <% end %>
   <% end %>
 
-  <% if !@trip.finalised? %>
-    <li><%= link_to "Add destinations to trip", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
-    <li><%= link_to "Score Trip", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
+  <% if !@trip.scoring_complete? %>
+    <li>
+      <%= link_to "Add destinations to trip",
+            trip_trip_participant_potential_destinations_path(
+              @trip,
+              @trip.trip_participants.find_by(user: current_user)
+            ) 
+      %>
+    </li>
+    <li>
+      <%= link_to "Score Trip",
+          trip_trip_participant_participant_scores_path(
+            @trip, @trip.trip_participants.find_by(user: current_user)
+            )
+      %>
+    </li>
   <% end %>
 <% end %>
 
