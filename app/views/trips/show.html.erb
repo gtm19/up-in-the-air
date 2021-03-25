@@ -26,47 +26,74 @@
       </li>
     <% end %>
   </ul>
+
   <% if policy(@trip).update? %>
-    <h2>Add your friends</h2>
-    <%= simple_form_for @trip do |f| %>
-      <%= f.association :users,
-          collection: User.order(:first_name).where.not(id: current_user.id),
-          label: false,
-          label_method: :name,
-          input_html: { class: "select2", multiple: "multiple" }
-      %>
 
       <% if @trip.scoring_complete? %>
-        <h2>Complete the Trip</h2>
-        <%= f.input :city_id, 
-            label: "Choose your city",
-            as: :radio_buttons,
-            collection_wrapper_tag: 'div',
-            collection_wrapper_class: 'category-wrapper',
-            item_wrapper_class: 'category-item',
-            input_html: {class: 'category-selector'},
-            collection: @participant_scores.map(&:city) %>
+        <%= simple_form_for @trip do |f| %>
+          <h2>Complete the Trip</h2>
+          <%= f.input :city_id, 
+              label: "Choose your city",
+              as: :radio_buttons,
+              required: true,
+              collection_wrapper_tag: 'div',
+              collection_wrapper_class: 'category-wrapper',
+              item_wrapper_class: 'category-item',
+              input_html: {class: 'category-selector'},
+              collection: @participant_scores.map(&:city) %>
+          <div class="form-row">
+            <%= f.input :start_date,
+                wrapper_html: { class: "form-group col-md-6" },
+                input_html: { value: @possible_dates.min, min: @possible_dates.min, max: @possible_dates.max },
+                as: :date,
+                html5: true %>
+            <%= f.input :end_date,
+                wrapper_html: { class: "form-group col-md-6" },
+                input_html: { value: @possible_dates.max, min: @possible_dates.min, max: @possible_dates.max },
+                as: :date,
+                html5: true %>
+          </div>
+          <%= f.submit "Finalise trip", class: "w-100 btn btn-primary" %>
+        <% end %>
+      <% else %>
+        <h2>Add your friends</h2>
+        <%= simple_form_for @trip do |f| %>
         <div class="form-row">
-          <%= f.input :start_date,
-              wrapper_html: { class: "form-group col-md-6" },
-              input_html: { value: @possible_dates.min, min: @possible_dates.min, max: @possible_dates.max },
-              as: :date,
-              html5: true %>
-          <%= f.input :end_date,
-              wrapper_html: { class: "form-group col-md-6" },
-              input_html: { value: @possible_dates.max, min: @possible_dates.min, max: @possible_dates.max },
-              as: :date,
-              html5: true %>
+          <%= f.association :users,
+              collection: User.order(:first_name).where.not(id: current_user.id),
+              label: false,
+              label_method: :name,
+              wrapper_html: { class: "form-group col-md-10" },
+              input_html: { class: "select2", multiple: "multiple" }
+          %>
+          <%= f.submit "Update trip",
+              class: "btn btn-secondary purple btn-sm form-group col-md-2" %>
         </div>
       <% end %>
-      
-      <%= f.submit %>
     <% end %>
   <% end %>
 
-  <% if !@trip.finalised? %>
-    <li><%= link_to "Add destinations to trip", trip_trip_participant_potential_destinations_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
-    <li><%= link_to "Score Trip", trip_trip_participant_participant_scores_path(@trip, @trip.trip_participants.find_by(user: current_user)) %></li>
+  <% if !@trip.scoring_complete? %>
+  <hr>
+  <ul class="text-right list-inline">
+    <li>
+      <%= link_to icon("fas", "globe-americas", "Add destinations"),
+            trip_trip_participant_potential_destinations_path(
+              @trip,
+              @trip.trip_participants.find_by(user: current_user)
+            ), 
+          class: "btn btn-primary"
+      %>
+    </li>
+    <li>
+      <%= link_to icon("fas", "sort-amount-down", "Score trip"),
+          trip_trip_participant_participant_scores_path(
+            @trip, @trip.trip_participants.find_by(user: current_user)
+            ),
+          class: "btn btn-primary"
+      %>
+    </li>
+  </ul>
   <% end %>
 <% end %>
 

@@ -33,12 +33,14 @@ class TripsController < ApplicationController
   end
 
   def update
-    users = params[:trip][:user_ids] << current_user.id.to_s
-    users.reject!(&:empty?)
-
     @trip = Trip.find(params[:id])
     authorize @trip
-    @trip.user_ids = users
+
+    if params[:trip][:user_ids]
+      users = params[:trip][:user_ids] << current_user.id.to_s
+      users.reject!(&:empty?)
+      @trip.user_ids = users
+    end
 
     @trip.update(trip_params)
 
