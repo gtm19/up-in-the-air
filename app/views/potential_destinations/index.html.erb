@@ -4,7 +4,7 @@
 
 <div class="mb-4 forward-back">
     <%= link_to "Back", trip_path(@trip), class: 'btn btn-secondary' %>
-    <%= link_to "Rank",  trip_trip_participant_participant_scores_path(@trip, @trip_participant), class: 'btn btn-primary' %>
+    <%= link_to icon("fas", "sort-amount-down", "Rank trip"),  trip_trip_participant_participant_scores_path(@trip, @trip_participant), class: 'btn btn-primary' %>
 </div>
 
 <!-- <div>
@@ -91,7 +91,7 @@
   <br>
   <div class="search-bottom">
     <div class="city-search">
-      <h6>Search, 💜 and share.</h6>
+      <h6>Search, 💜 and submit.</h6>
       <%= text_field_tag :search_city,
         params[:search_city],
         class: "form-control",
@@ -100,7 +100,7 @@
     </div>
     <div class="search-buttons">
       <div class="search-button"><%= submit_tag "Search", class: "btn btn-primary" %></div>
-      <div><%= link_to "Submit 💜",  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-primary' %></div>
+      <div><%= link_to icon("fas", "heart", "Submit"),  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-primary' %></div>
     </div>
     <% end %>
   </div>

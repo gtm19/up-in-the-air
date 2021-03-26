@@ -11,7 +11,7 @@
       <% if !@trip_participant.scoring_complete %>
       <div>
         <div>
-          <%= link_to "Preferences", trip_trip_participant_potential_destinations_path(@trip, @trip_participant), class: 'btn btn-secondary purple' %>
+          <%= link_to icon("fas", "globe-americas", "Preferences"), trip_trip_participant_potential_destinations_path(@trip, @trip_participant), class: 'btn btn-secondary purple' %>
           <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch, class: 'btn btn-primary'%>
         </div>
       <div>
