@@ -11,7 +11,7 @@
       <% if !@trip_participant.scoring_complete %>
       <div>
         <div>
-          <%= link_to "Preferences", trip_trip_participant_potential_destinations_path(@trip, @trip_participant), class: 'btn btn-secondary purple' %>
+          <%= link_to icon("fas", "globe-americas", "Preferences"), trip_trip_participant_potential_destinations_path(@trip, @trip_participant), class: 'btn btn-secondary purple' %>
           <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch, class: 'btn btn-primary'%>
         </div>
       <div>
@@ -36,18 +36,18 @@
 
               <div class="col-auto">
                 <% if card[:ps].potential_destination.city.photo.attached? %>
-                    <%= cl_image_tag card[:ps].potential_destination.city.photo.key,height: 200, width: 200, crop: :fill %>
+                    <%= cl_image_tag card[:ps].potential_destination.city.photo.key,height: 180, width: 250, crop: :fill %>
                 <% end %>
               </div>
 
 
                 <div class="col list">
-                  <h4 class="mt-4 mb-3"><%= card[:ps].potential_destination.city.name %></h4>
+                  <h4 class="mt-3 mb-3"><%= card[:ps].potential_destination.city.name %></h4>
                   <ul class="text-light-grey">
                     <li id="stars"><%= stars(card[:budget]) %> Budget</li>
                     <li id="stars"><%= stars(card[:time]) %> Travel Time</li>
                     <li id="stars"><%= stars(card[:loved]) %> Favoured</li>
-                    <li id="stars"><%= stars(card[:calender])%> Calender</li>
+                    <li id="stars"><%= stars(card[:calender])%> Calendar</li>
                   </ul>
                 </div>
 
@@ -68,11 +68,11 @@
                 </div>
 
                 <div class="p-2">
-                  <i class="fas fa-plane"></i> <%= card[:te].flight_mins %> mins
+                  <i class="fas fa-plane"></i> <%= min_convert(card[:te].flight_mins) if card[:te] %>
                 </div>
 
                 <div class="p-2">
-                  <i class="fas fa-coins"></i> £<%=  sprintf("%.2f", ((card[:te].low_cost + card[:te].high_cost)/2).to_f)  %>
+                  <i class="fas fa-coins"></i> £<%=  sprintf("%.2f", ((card[:te].low_cost + card[:te].high_cost)/2).to_f) if card[:te]  %>
                 </div>
 
                 <div class="p-2">

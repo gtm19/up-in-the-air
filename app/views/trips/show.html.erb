@@ -9,7 +9,7 @@
     <%= @trip.start_date.strftime("%d %B %Y") %> to <%= @trip.end_date.strftime("%d %B %Y") %>
     <hr>
   <% end %>
-  
+
   <p>Attendees:</p>
   <ul>
     <% @trip_participants.each do |trip_participant| %>
@@ -32,7 +32,7 @@
       <% if @trip.scoring_complete? %>
         <%= simple_form_for @trip do |f| %>
           <h2>Complete the Trip</h2>
-          <%= f.input :city_id, 
+          <%= f.input :city_id,
               label: "Choose your city",
               as: :radio_buttons,
               required: true,
@@ -81,12 +81,12 @@
             trip_trip_participant_potential_destinations_path(
               @trip,
               @trip.trip_participants.find_by(user: current_user)
-            ), 
+            ),
           class: "btn btn-primary"
       %>
     </li>
     <li>
-      <%= link_to icon("fas", "sort-amount-down", "Score trip"),
+      <%= link_to icon("fas", "sort-amount-down", "Rank trip"),
           trip_trip_participant_participant_scores_path(
             @trip, @trip.trip_participants.find_by(user: current_user)
             ),
