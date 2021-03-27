@@ -73,28 +73,38 @@
     <% end %>
   <% end %>
 
-  <% if !@trip.scoring_complete? %>
   <hr>
-  <ul class="text-right list-inline">
+  <div class="d-flex justify-content-between">
+  <ul class="list-inline">
     <li>
-      <%= link_to icon("fas", "globe-americas", "Add destinations"),
-            trip_trip_participant_potential_destinations_path(
-              @trip,
-              @trip.trip_participants.find_by(user: current_user)
-            ),
-          class: "btn btn-primary"
-      %>
-    </li>
-    <li>
-      <%= link_to icon("fas", "sort-amount-down", "Rank trip"),
-          trip_trip_participant_participant_scores_path(
-            @trip, @trip.trip_participants.find_by(user: current_user)
-            ),
+      <%= link_to icon("fas", "chevron-left", "Back to Trips"),
+          trips_path,
           class: "btn btn-primary"
       %>
     </li>
   </ul>
+  <% if !@trip.scoring_complete? %>
+    <ul class="list-inline">
+        <li>
+        <%= link_to icon("fas", "globe-americas", "Add destinations"),
+              trip_trip_participant_potential_destinations_path(
+                @trip,
+                @trip.trip_participants.find_by(user: current_user)
+              ),
+            class: "btn btn-primary"
+        %>
+      </li>
+      <li>
+        <%= link_to icon("fas", "sort-amount-down", "Rank trip"),
+            trip_trip_participant_participant_scores_path(
+              @trip, @trip.trip_participants.find_by(user: current_user)
+              ),
+            class: "btn btn-primary"
+        %>
+      </li>
+    </ul>
   <% end %>
+  </div>
 <% end %>
 
 <%= render 'shared/footer-medium' %>
