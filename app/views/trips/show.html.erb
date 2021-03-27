@@ -2,12 +2,7 @@
   <%= content_tag(:h1, @trip.name, class: "text-center") %>
 
   <% if @trip.finalised? %>
-    <p>Destination:</p>
-    <%= @trip.city.name %>
-    <hr>
-    <p>Dates:</p>
-    <%= @trip.start_date.strftime("%d %B %Y") %> to <%= @trip.end_date.strftime("%d %B %Y") %>
-    <hr>
+    <%= render "finalised_trip", trip: @trip %>
   <% end %>
 
   <h2>Your travel crew</h2>
