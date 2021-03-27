@@ -2,30 +2,26 @@
   <%= content_tag(:h1, @trip.name, class: "text-center") %>
 
   <% if @trip.finalised? %>
-    <p>Destination:</p>
-    <%= @trip.city.name %>
-    <hr>
-    <p>Dates:</p>
-    <%= @trip.start_date.strftime("%d %B %Y") %> to <%= @trip.end_date.strftime("%d %B %Y") %>
-    <hr>
+    <%= render "finalised_trip", trip: @trip %>
+  <% else %>
+  <h2>Your travel crew</h2>
+    <ul>
+      <% @trip_participants.each do |trip_participant| %>
+        <li>
+          <%= trip_participant.user.name %>
+          <% if trip_participant.user == @trip.lead_user %>
+            <span> (lead)</span>
+          <% else%>
+            <% if policy(trip_participant).destroy? %>
+              <%= link_to icon("fas", "trash"),
+                  trip_trip_participant_path(@trip, trip_participant), method: :delete %>
+            <% end %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
   <% end %>
 
-  <h2>Your travel crew</h2>
-  <ul>
-    <% @trip_participants.each do |trip_participant| %>
-      <li>
-        <%= trip_participant.user.name %>
-        <% if trip_participant.user == @trip.lead_user %>
-          <span> (lead)</span>
-        <% else%>
-          <% if policy(trip_participant).destroy? %>
-            <%= link_to icon("fas", "trash"),
-                trip_trip_participant_path(@trip, trip_participant), method: :delete %>
-          <% end %>
-        <% end %>
-      </li>
-    <% end %>
-  </ul>
 
   <% if policy(@trip).update? %>
 

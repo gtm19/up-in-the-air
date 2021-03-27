@@ -1,0 +1,39 @@
+<div class="card trip-show-card">
+    <% if trip.city.photo.attached? %>
+      <%= cl_image_tag card[:ps].potential_destination.city.photo.key,height: 200, width: 200, crop: :fill %>
+    <% else %>
+      <img src="https://source.unsplash.com/random/200x200" alt="A random image">
+  <% end %>
+  <div class="trip-show-info">
+  <div class="trip-show-info-l">
+    <div class="trip-show-city">
+      <label>You're going to</label>
+      <%= content_tag(:h3, @trip.city.name) %>
+    </div>
+    <div class="trip-show-participants">
+      <label>with</label>
+      <div class="participants-container">
+      
+      <% @trip.users.each do |user| %>
+        <%= content_tag(:div, class: "participant-avatar", title: user.name) do %>
+          <%= user.initials %>
+        <% end %>
+      <% end %>
+      
+      </div>
+    </div>
+  </div>
+  <div class="trip-show-info-r">
+    <div class="trip-show-dates">
+      <label><%= icon("fas", "plane-departure") %></label> <%= @trip.start_date.strftime("%d %B %Y") %>
+      <br>
+      <label><%= icon("fas", "plane-arrival") %></label> <%= @trip.end_date.strftime("%d %B %Y") %>
+    </div>
+    <div class="trip-show-links">
+      <%= link_to "Book flights", "https://google.com", class: "btn btn-primary btn-sm"%>
+      <%= link_to "Book hotels", "https://google.com", class: "btn btn-primary btn-sm"%>
+      <%= link_to "Book fun stuff", "https://google.com", class: "btn btn-primary btn-sm"%>
+    </div>
+  </div>
+  </div>
+</div>
