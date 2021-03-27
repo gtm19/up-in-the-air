@@ -1,6 +1,6 @@
 <div class="card trip-show-card">
     <% if trip.city.photo.attached? %>
-      <%= cl_image_tag trip.photo.key,height: 200, width: 200, crop: :fill %>
+      <%= cl_image_tag trip.city.photo.key,height: 200, width: 200, crop: :fill %>
     <% else %>
       <img src="https://source.unsplash.com/random/200x200" alt="A random image">
   <% end %>
