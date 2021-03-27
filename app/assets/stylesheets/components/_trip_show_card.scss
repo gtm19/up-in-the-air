@@ -17,7 +17,18 @@
     width: 100%;
     padding: 16px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
+    
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  .trip-show-info-r {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: space-between;
   }
 }
