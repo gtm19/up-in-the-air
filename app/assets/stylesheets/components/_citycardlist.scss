@@ -158,7 +158,7 @@
 
 .card-destination .card-destination-infos {
   padding: 16px;
-  // display: flex;
+  color: #424244;
   // justify-content: space-between;
   // align-items: flex-end;
   // position: relative;
@@ -177,7 +177,7 @@
 // TO USE AS BASIS FOR HEART ICON
 .card-destination-infos .card-trip-heart {
   position: absolute;
-  right: 34px;
+  right: 25px;
   bottom: 20px;
   // width: 40px;
 }
@@ -187,7 +187,7 @@
 .love-off {
   visibility: visible;
   color: #F1E4FF;
-  font-size: 2em;
+  font-size: 1.25em;
   border: none;
   background-color: white;
 }
@@ -195,7 +195,7 @@
 .love-off:hover {
   visibility: visible;
   color: $purple;
-  font-size: 2em;
+  font-size: 1.25em;
   border: none;
   background-color: white;
 }
@@ -204,7 +204,7 @@
 .love-on {
   visibility: visible;
   color: $primary;
-  font-size: 2em;
+  font-size: 1.25em;
   border: none;
   background-color: white;
 }
@@ -212,7 +212,7 @@
 .love-hidden {
   visibility: hidden;
   color: $primary;
-  font-size: 2em;
+  font-size: 1.25em;
   border: none;
   background-color: white;
 }
@@ -222,5 +222,5 @@
   right: 34px;
   bottom: 20px;
   color: $primary;
-  font-size: 2em;
+  font-size: 1.25em;
 }

@@ -100,8 +100,6 @@
           placeholder: "Search for your favourite destinations here..."
         %>
       </div>
-      
-      
       <div class="search-buttons">
         <div class="search-button" style="width:0;"><%= submit_tag "Search", class: "btn btn-primary", style: "visibility:hidden" %></div>
         <div><%= link_to icon("fas", "heart", ""),  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-outline-primary' %></div>
@@ -126,7 +124,7 @@
                 <% end  %>
                 <div class="card-destination-infos">
                     <ul>
-                      <li><h4><%= truncate(c[:te].destination_city.name, length: 21)%></h4></li>
+                      <li><h4 class="mb-4"><%= truncate(c[:te].destination_city.name, length: 21)%></h4></li>
                       <li><i class="fas fa-coins"></i>  From £<%= sprintf("%.0f", c[:te].low_cost) %> to £<%= sprintf("%.0f", c[:te].high_cost) %></li>
                       <li><i class="fas fa-plane"></i>  <%= min_convert(c[:te].flight_mins) %></li>
                       <li><i class="fas fa-heart"></i>  <%= c[:already] %> <%= 'friend'.pluralize(c[:already]) %> </li>
@@ -134,7 +132,7 @@
                     </ul>
                   <div class = "card-trip-heart">
                     <button data-action="love#updateLove" type="button" class="<%= c[:pd] ? (c[:pd].status == 'submitted' ? 'love-on love-hidden' : 'love-on') : 'love-off'  %>" data-love-target="love" id="<%= c[:te].id %>" data-id="<%= c[:te].id %>" data-tid="<%= @trip.id %>" data-pdid="<%= c[:pd].id if c[:pd] %>" data-tpid="<%= @trip_participant.id %>">
-                      <i class="fas fa-heart ml-1 "></i>
+                      <i class="fas fa-heart"></i>
                     </button>
                   </div>
                   <div class = "submitted">
