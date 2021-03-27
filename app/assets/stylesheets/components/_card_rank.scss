@@ -1,3 +1,23 @@
+.rank-flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-stars {
+  justify-content: space-between;
+  margin-right: 200px;
+  align-items: flex-end;
+}
+
+.veto-position {
+  position: absolute;
+  right: 25px;
+}
+
+.popover .arrow{
+display: none;
+}
+
 .list {
   ul {
     list-style: none;
