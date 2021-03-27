@@ -11,8 +11,16 @@
       <%= content_tag(:h3, @trip.city.name) %>
     </div>
     <div class="trip-show-participants">
-      <label>With</label>
-      <%= content_tag(:h3, "Some people") %>
+      <label>with</label>
+      <div class="participants-container">
+      
+      <% @trip.users.each do |user| %>
+        <%= content_tag(:div, class: "participant-avatar", title: user.name) do %>
+          <%= user.initials %>
+        <% end %>
+      <% end %>
+      
+      </div>
     </div>
   </div>
   <div class="trip-show-info-r">
