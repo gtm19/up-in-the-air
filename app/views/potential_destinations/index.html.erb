@@ -1,151 +1,156 @@
 <%= render "shared/container" do %>
-<div class="text-center"><h1><%= @trip.name %></h1></div>
 
+<section>
+  <div class="text-center mt-4">
+    <h1><%= @trip.name %></h1>
+  </div>
+  <div class="mb-4 forward-back">
+      <%= link_to "Back", trip_path(@trip), class: 'btn btn-secondary purple' %>
+      <%= link_to icon("fas", "sort-amount-down", "Rank trip"),  trip_trip_participant_participant_scores_path(@trip, @trip_participant), class: 'btn btn-primary' %>
+  </div>
+</section>
 
-<div class="mb-4 forward-back">
-    <%= link_to "Back", trip_path(@trip), class: 'btn btn-secondary' %>
-    <%= link_to icon("fas", "sort-amount-down", "Rank trip"),  trip_trip_participant_participant_scores_path(@trip, @trip_participant), class: 'btn btn-primary' %>
-</div>
-
-<!-- <div>
-  <h4>What are your preferences for this trip?</h4>
-</div> -->
-
-
-<div class='search-container'>
-  <%= form_tag trip_trip_participant_potential_destinations_path, method: :get do %>
-  <div class="search-top">
-    <div class="travel-options-container">
-      <p>Travel options?</p>
-      <div class="options-container">
-        <div class="row-travel-options">
-          <div class="nonclicked"><i class="fas fa-car fa-lg"></i> <i class="fas fa-toggle-off nonclicked"></i></div>  &nbsp &nbsp
-          <div class="nonclicked"><i class="fas fa-train fa-lg"></i> <i class="fas fa-toggle-off nonclicked"></i></div>
-        </div>
-        <div class="row-travel-options">
-          <div class="nonclicked"><i class="fas fa-plane fa-lg"></i> <i class="fas fa-toggle-on clicked"></i></div>  &nbsp &nbsp
-          <div class="nonclicked"><i class="fas fa-anchor fa-lg"></i> <i class="fas fa-toggle-off nonclicked"></i></div>
+<section>
+  <div class='search-container'>
+  <hr>
+    <%= form_tag trip_trip_participant_potential_destinations_path, method: :get do %>
+    <div class="search-top">
+      <div class="travel-options-container">
+        <p>Travel options?</p>
+        <div class="options-container">
+          <div class="row-travel-options">
+            <div class="nonclicked"><i class="fas fa-car fa-lg"></i> <i class="fas fa-toggle-off nonclicked"></i></div>  &nbsp &nbsp
+            <div class="nonclicked"><i class="fas fa-train fa-lg"></i> <i class="fas fa-toggle-off nonclicked"></i></div>
+          </div>
+          <div class="row-travel-options">
+            <div class="nonclicked"><i class="fas fa-plane fa-lg"></i> <i class="fas fa-toggle-on clicked"></i></div>  &nbsp &nbsp
+            <div class="nonclicked"><i class="fas fa-anchor fa-lg"></i> <i class="fas fa-toggle-off nonclicked"></i></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="pref-option-container">
-      <div data-controller="search">
-        <h6>What is your travel budget?</h6>
-        <div class="budget-container">
-          <div class="slider-container">
-            <div id="slider"></div>
+
+      <div class="pref-option-container">
+        <div data-controller="search">
+          <h6>What is your travel budget?</h6>
+          <div class="budget-container">
+            <div class="slider-container">
+              <div id="slider"></div>
+            </div>
+            <div class="budget-field">
+              <div class =" budget-currency-position">£</div>
+              <div class ="budget-value-position">
+                <%= number_field_tag :budget,
+                    params[:budget],
+                    class: "form-control",
+                    label_tag: :budget,
+                    placeholder: @budget,
+                    value: @budget,
+                    'data-search-target': 'budget'
+                  %>
+              </div>
+            </div>
           </div>
-          <div class="budget-field">
-            <div class =" budget-currency-position">£</div>
-            <div class ="budget-value-position">
-              <%= number_field_tag :budget,
-                  params[:budget],
-                  class: "form-control",
-                  label_tag: :budget,
-                  placeholder: @budget,
-                  value: @budget,
-                  'data-search-target': 'budget'
-                %>
+
+          <div class="dates-container">
+            <div>
+              <h6>Max journey time (mins):</h6>
+              <%= number_field_tag :time,
+                params[:time],
+                class: "form-control",
+                placeholder: @time,
+                value: @time
+              %>
+            </div>
+            <div>
+              <h6>Travel from:</h6>
+              <%= date_field_tag :out_date,
+                params[:out_date],
+                class: "form-control",
+                placeholder: @o_date,
+                value: @o_date
+              %>
+            </div>
+            <div>
+              <h6>To:</h6>
+              <%= date_field_tag :in_date,
+                params[:in_date],
+                class: "form-control",
+                placeholder: @i_date,
+                value: @i_date
+              %>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="dates-container">
-          <div>
-            <h6>Max journey time (mins):</h6>
-            <%= number_field_tag :time,
-              params[:time],
-              class: "form-control",
-              placeholder: @time,
-              value: @time
-            %>
-          </div>
-          <div>
-            <h6>Travel from:</h6>
-            <%= date_field_tag :out_date,
-              params[:out_date],
-              class: "form-control",
-              placeholder: @o_date,
-              value: @o_date
-            %>
-          </div>
-          <div>
-            <h6>To:</h6>
-            <%= date_field_tag :in_date,
-              params[:in_date],
-              class: "form-control",
-              placeholder: @i_date,
-              value: @i_date
-            %>
-          </div>
-        </div>
+      <div data-controller="pref" data-pref-url="/trips/:trip_id/trip_participants/:id" class="pref-save-container">
+        <button data-action="pref#savePref" type="button" class="btn btn-outline-primary" data-pref-target="savePref" id="<%= @trip_participant.id %>" data-id="<%= @trip_participant.id %>" data-tid="<%= @trip.id %>" data-tpid="<%= @trip_participant.id %>">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
     </div>
-    <div data-controller="pref" data-pref-url="/trips/:trip_id/trip_participants/:id" class="pref-save-container">
-      <button data-action="pref#savePref" type="button" class="btn btn-primary" data-pref-target="savePref" id="<%= @trip_participant.id %>" data-id="<%= @trip_participant.id %>" data-tid="<%= @trip.id %>" data-tpid="<%= @trip_participant.id %>">
-        <i class="fas fa-save"></i>
-      </button>
+  <!--   <br> -->
+    <br>
+    <div class="search-bottom">
+      <div class="city-search mr-3">
+        <%# <h6>Search, 💜 and submit.</h6> %>
+        <%= text_field_tag :search_city,
+          params[:search_city],
+          class: "form-control",
+          placeholder: "Search for your favourite destinations here..."
+        %>
+      </div>
+      
+      
+      <div class="search-buttons">
+        <!-- <div class="search-button"><%= submit_tag "Search", class: "btn btn-primary" %></div> -->
+        <div><%= link_to icon("fas", "heart", ""),  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-outline-primary' %></div>
+      </div>
+      <% end %>
     </div>
   </div>
-<!--   <br> -->
-  <br>
-  <div class="search-bottom">
-    <div class="city-search">
-      <h6>Search, 💜 and submit.</h6>
-      <%= text_field_tag :search_city,
-        params[:search_city],
-        class: "form-control",
-        placeholder: "City search"
-      %>
-    </div>
-    <div class="search-buttons">
-      <div class="search-button"><%= submit_tag "Search", class: "btn btn-primary" %></div>
-      <div><%= link_to icon("fas", "heart", "Submit"),  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-primary' %></div>
-    </div>
-    <% end %>
-  </div>
-</div>
+  <hr>
+</section>
 
-<div data-controller="love" data-love-curl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations" data-love-durl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
-  <div class="container" id="search-results-container">
-
-  <div><p>Travelling from <%= @trip_participant.user.city.name %> to:</p></div>
-    <div class="row">
-      <% @cards.each do |c| %>
-        <div class="col-4">
-          <div class="card-destination card card-body score mb-4" data-trip-estimate=c[:te].id >
-            <div>
-              <% if c[:te].destination_city.photo.attached? %>
-                <img><%= cl_image_tag c[:te].destination_city.photo.key,height: 200, width: 290, crop: :fill %></img><br/>
-              <% end  %>
-              <div class="card-destination-infos">
-                  <ul>
-                    <li><h4><%= truncate(c[:te].destination_city.name, length: 21)%></h4></li>
-                    <li><i class="fas fa-coins"></i>  From £<%= sprintf("%.0f", c[:te].low_cost) %> to £<%= sprintf("%.0f", c[:te].high_cost) %></li>
-                    <li><i class="fas fa-plane"></i>  <%= min_convert(c[:te].flight_mins) %></li>
-                    <li><i class="fas fa-heart"></i>  <%= c[:already] %> <%= 'friend'.pluralize(c[:already]) %> </li>
-                    <!-- <li><i class="fas fa-info-circle"></i> <%= link_to "Information" , city_path(c[:te].destination_city)  %></li> -->
-                  </ul>
-                <div class = "card-trip-heart">
-                  <button data-action="love#updateLove" type="button" class="<%= c[:pd] ? (c[:pd].status == 'submitted' ? 'love-on love-hidden' : 'love-on') : 'love-off'  %>" data-love-target="love" id="<%= c[:te].id %>" data-id="<%= c[:te].id %>" data-tid="<%= @trip.id %>" data-pdid="<%= c[:pd].id if c[:pd] %>" data-tpid="<%= @trip_participant.id %>">
-                    <i class="fas fa-heart ml-1 "></i>
-                  </button>
-                </div>
-                <div class = "submitted">
-                  <% if c[:pd] %>
-                    <% if c[:pd].status == 'submitted' %><i class="fas fa-clipboard-check"></i><% end %>
-                  <% end %>
+<section>
+  <div data-controller="love" data-love-curl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations" data-love-durl="/trips/:trip_id/trip_participants/:trip_participant_id/potential_destinations/:id">
+    <div class="container" id="search-results-container">
+    <div class="text-center mb-5 mt-5""><p>Pop a <i class="fas fa-heart purple"></i> on the destinations you want to travel to from <%= @trip_participant.user.city.name %>:</p></div>
+      <div class="row">
+        <% @cards.each do |c| %>
+          <div class="col-4">
+            <div class="card-destination card card-body score mb-4" data-trip-estimate=c[:te].id >
+              <div>
+                <% if c[:te].destination_city.photo.attached? %>
+                  <img><%= cl_image_tag c[:te].destination_city.photo.key,height: 200, width: 290, crop: :fill %></img><br/>
+                <% end  %>
+                <div class="card-destination-infos">
+                    <ul>
+                      <li><h4><%= truncate(c[:te].destination_city.name, length: 21)%></h4></li>
+                      <li><i class="fas fa-coins"></i>  From £<%= sprintf("%.0f", c[:te].low_cost) %> to £<%= sprintf("%.0f", c[:te].high_cost) %></li>
+                      <li><i class="fas fa-plane"></i>  <%= min_convert(c[:te].flight_mins) %></li>
+                      <li><i class="fas fa-heart"></i>  <%= c[:already] %> <%= 'friend'.pluralize(c[:already]) %> </li>
+                      <!-- <li><i class="fas fa-info-circle"></i> <%= link_to "Information" , city_path(c[:te].destination_city)  %></li> -->
+                    </ul>
+                  <div class = "card-trip-heart">
+                    <button data-action="love#updateLove" type="button" class="<%= c[:pd] ? (c[:pd].status == 'submitted' ? 'love-on love-hidden' : 'love-on') : 'love-off'  %>" data-love-target="love" id="<%= c[:te].id %>" data-id="<%= c[:te].id %>" data-tid="<%= @trip.id %>" data-pdid="<%= c[:pd].id if c[:pd] %>" data-tpid="<%= @trip_participant.id %>">
+                      <i class="fas fa-heart ml-1 "></i>
+                    </button>
+                  </div>
+                  <div class = "submitted">
+                    <% if c[:pd] %>
+                      <% if c[:pd].status == 'submitted' %><i class="fas fa-clipboard-check"></i><% end %>
+                    <% end %>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      <% end  %>
+        <% end  %>
+      </div>
     </div>
   </div>
-</div>
-
-
+</section>
 <% end %>
 
 <%= render 'shared/footer-medium' %>
