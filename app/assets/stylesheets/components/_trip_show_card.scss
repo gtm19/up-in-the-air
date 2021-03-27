@@ -1,0 +1,23 @@
+.trip-show-card {
+  // height: 200px;
+  display: flex;
+  flex-direction: row;
+
+  label {
+    color: $gray-600;
+    line-height: 0.5em;
+  }
+
+  img {
+    border-radius: $border-radius 0 0 $border-radius;
+    // width: 200px;
+  }
+
+  .trip-show-info {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
