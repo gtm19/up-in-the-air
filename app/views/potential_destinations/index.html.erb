@@ -103,7 +103,7 @@
       
       
       <div class="search-buttons">
-        <!-- <div class="search-button"><%= submit_tag "Search", class: "btn btn-primary" %></div> -->
+        <div class="search-button" style="width:0;"><%= submit_tag "Search", class: "btn btn-primary", style: "visibility:hidden" %></div>
         <div><%= link_to icon("fas", "heart", ""),  trip_trip_participant_potential_destination_path(@trip, @trip_participant, 0, submit: "Submit"), method: :patch, class: 'btn btn-outline-primary' %></div>
       </div>
       <% end %>
