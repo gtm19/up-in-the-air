@@ -37,9 +37,10 @@ class TripsController < ApplicationController
     authorize @trip
 
     if params[:trip][:user_ids]
-      users = params[:trip][:user_ids] << current_user.id.to_s
-      users.reject!(&:empty?)
-      @trip.user_ids = users
+      new_users = params[:trip][:user_ids]
+      new_users.reject!(&:empty?)
+
+      @trip.users << User.where(id: new_users)
     end
 
     @trip.update(trip_params)
