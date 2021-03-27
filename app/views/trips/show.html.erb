@@ -10,7 +10,7 @@
     <hr>
   <% end %>
 
-  <p>Attendees:</p>
+  <h2>Your travel crew</h2>
   <ul>
     <% @trip_participants.each do |trip_participant| %>
       <li>
@@ -53,14 +53,16 @@
                 as: :date,
                 html5: true %>
           </div>
-          <%= f.submit "Finalise trip", class: "w-100 btn btn-primary" %>
+          <%= button_tag(type: 'submit', class: "w-100 btn btn-primary") do %>
+            Finalise Trip <%= icon("fas", "check") %>
+          <% end %>
         <% end %>
       <% else %>
-        <h2>Add your friends</h2>
+        <h2>Add more friends</h2>
         <%= simple_form_for @trip do |f| %>
         <div class="form-row">
           <%= f.association :users,
-              collection: User.order(:first_name).where.not(id: current_user.id),
+              collection: User.order(:first_name).where.not(id: @trip.users.pluck(:id)),
               label: false,
               label_method: :name,
               wrapper_html: { class: "form-group col-md-10" },
@@ -73,28 +75,38 @@
     <% end %>
   <% end %>
 
-  <% if !@trip.scoring_complete? %>
   <hr>
-  <ul class="text-right list-inline">
+  <div class="d-flex justify-content-between">
+  <ul class="list-inline">
     <li>
-      <%= link_to icon("fas", "globe-americas", "Add destinations"),
-            trip_trip_participant_potential_destinations_path(
-              @trip,
-              @trip.trip_participants.find_by(user: current_user)
-            ),
-          class: "btn btn-primary"
-      %>
-    </li>
-    <li>
-      <%= link_to icon("fas", "sort-amount-down", "Rank trip"),
-          trip_trip_participant_participant_scores_path(
-            @trip, @trip.trip_participants.find_by(user: current_user)
-            ),
+      <%= link_to icon("fas", "chevron-left", "Back to Trips"),
+          trips_path,
           class: "btn btn-primary"
       %>
     </li>
   </ul>
+  <% if !@trip.scoring_complete? %>
+    <ul class="list-inline">
+        <li>
+        <%= link_to icon("fas", "globe-americas", "Add destinations"),
+              trip_trip_participant_potential_destinations_path(
+                @trip,
+                @trip.trip_participants.find_by(user: current_user)
+              ),
+            class: "btn btn-primary"
+        %>
+      </li>
+      <li>
+        <%= link_to icon("fas", "sort-amount-down", "Rank trip"),
+            trip_trip_participant_participant_scores_path(
+              @trip, @trip.trip_participants.find_by(user: current_user)
+              ),
+            class: "btn btn-primary"
+        %>
+      </li>
+    </ul>
   <% end %>
+  </div>
 <% end %>
 
 <%= render 'shared/footer-medium' %>
