@@ -35,7 +35,7 @@
 <!-- IMAGE -->
             <div class="col-auto">
               <% if card[:ps].potential_destination.city.photo.attached? %>
-                  <%= cl_image_tag card[:ps].potential_destination.city.photo.key,height: 200, width: 200, crop: :fill %>
+                  <%= cl_image_tag card[:ps].potential_destination.city.photo.key,height: 200, width: 200, crop: :fill, radius: 5 %>
               <% end %>
             </div>
 
