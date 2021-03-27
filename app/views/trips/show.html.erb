@@ -53,7 +53,9 @@
                 as: :date,
                 html5: true %>
           </div>
-          <%= f.submit "Finalise trip", class: "w-100 btn btn-primary" %>
+          <%= button_tag(type: 'submit', class: "w-100 btn btn-primary") do %>
+            Finalise Trip <%= icon("fas", "check") %>
+          <% end %>
         <% end %>
       <% else %>
         <h2>Add your friends</h2>
