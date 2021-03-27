@@ -10,7 +10,7 @@
     <hr>
   <% end %>
 
-  <p>Attendees:</p>
+  <h2>Your travel crew</h2>
   <ul>
     <% @trip_participants.each do |trip_participant| %>
       <li>
@@ -58,11 +58,11 @@
           <% end %>
         <% end %>
       <% else %>
-        <h2>Add your friends</h2>
+        <h2>Add more friends</h2>
         <%= simple_form_for @trip do |f| %>
         <div class="form-row">
           <%= f.association :users,
-              collection: User.order(:first_name).where.not(id: current_user.id),
+              collection: User.order(:first_name).where.not(id: @trip.users.pluck(:id)),
               label: false,
               label_method: :name,
               wrapper_html: { class: "form-group col-md-10" },
