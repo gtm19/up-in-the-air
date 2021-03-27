@@ -10,12 +10,67 @@
       </button> -->
       <% if !@trip_participant.scoring_complete %>
       <div>
-        <div>
-          <%= link_to "Preferences", trip_trip_participant_potential_destinations_path(@trip, @trip_participant), class: 'btn btn-secondary purple' %>
-          <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch, class: 'btn btn-primary'%>
-        </div>
-      <div>
-      <% end %>
+        <%= link_to "Preferences", trip_trip_participant_potential_destinations_path(@trip, @trip_participant), class: 'btn btn-secondary purple' %>
+        <%= link_to "Submit!", trip_trip_participant_participant_score_path(@trip, @trip_participant, 0, sub_action: 'submit' ), method: :patch, class: 'btn btn-primary'%>
+      </div>
+    <div>
+    <% end %>
+
+
+    <!--TODO Make sure to move this back into the if statement, Wayne! -->
+    <% if @trip_participant.scoring_complete %>
+      <div class = "locked">
+        <i class="fas fa-lock"></i> Submitted
+      </div>
+    <% end %>
+</section>
+
+<section class="container-sm">
+<!--     <hr> -->
+    <br>
+    <div data-controller="sort" data-sort-url="/trips/:trip_id/trip_participants/:trip_participant_id/participant_scores/:id" id="sortable-list" data-status="<%= @trip_participant.scoring_complete ? 'disabled' : 'enabled' %>">
+      <% @cards.each do |card| %>
+        <div data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" class="card grab mt-2">
+          <div class="row no-gutter">
+<!-- IMAGE -->
+            <div class="col-auto">
+              <% if card[:ps].potential_destination.city.photo.attached? %>
+                  <%= cl_image_tag card[:ps].potential_destination.city.photo.key,height: 200, width: 200, crop: :fill, radius: 5 %>
+              <% end %>
+            </div>
+
+<!-- ICONS -->
+<!-- NEW CODE RANK-FLEX  & 2 DIVS-->
+              <div class="col list">
+                <!-- VETO -->
+                  <div class="veto-position">
+                    <button data-toggle="popover" title="Veto" data-content="You can veto one destination by clicking this icon..choose carefully!" data-trigger="hover" data-offset="4" data-action="sort#updateVeto" type="button" id="veto-button" class=" float-right m-3 <%= card[:ps].veto ? 'veto-on' : (@veto ? 'veto-off veto-hidden' : 'veto-off') %> " data-sort-target="ban" data-id="<%= card[:ps].id %>" data-tid="<%= card[:trip_id] %>" data-tpid="<%= card[:tp_id] %>" >
+                      <i class="fas fa-ban ml-1" ></i>
+                    </button>
+                  </div>
+                <h4 class="mt-4 mb-3"><%= card[:ps].potential_destination.city.name %></h4>
+
+                <ul class="text-light-grey">
+                  <div class="rank-flex">
+                    <div class="flex-stars">
+                      <li id="stars"><%= stars(card[:budget]) %> Budget</li>
+                      <li id="stars"><%= stars(card[:time]) %> Travel Time</li>
+                      </div>
+                      <div class="flex-stars">
+                      <li id="stars"><%= stars(card[:loved]) %> Favoured</li>
+                      <li id="stars"><%= stars(card[:calender])%> Calendar</li>
+                      </div>
+                  </div>
+                </ul>
+
+
+                <!--           FOOTER -->
+          <div class="card-footer bg-white">
+            <div class="d-flex">
+
+              <div class="p-2 flex-grow-1 text-light-grey">
+                <i class="fas fa-heart purple"></i> <%= card[:ps].potential_destination.trip_participant.user.first_name %> favourited this
+              </div>
 
 
       <!--TODO Make sure to move this back into the if statement, Wayne! -->
