@@ -4,9 +4,9 @@
 
 
   <div class="mb-4">
-    <!--<button type="button" class="btn btn-outline-primary">
+<!--     <button type="button" class="btn btn-outline-primary">
       <%= link_to "Return to trip", trip_path(@trip) %>
-    </button>-->
+    </button> -->
     <% if !@trip_participant.scoring_complete %>
     <div>
       <div>
@@ -58,7 +58,7 @@
                       </div>
                       <div class="flex-stars">
                       <li id="stars"><%= stars(card[:loved]) %> Favoured</li>
-                      <li id="stars"><%= stars(card[:calender])%> Calender</li>
+                      <li id="stars"><%= stars(card[:calender])%> Calendar</li>
                       </div>
                   </div>
                 </ul>
@@ -69,11 +69,11 @@
             <div class="d-flex">
 
               <div class="p-2 flex-grow-1 text-light-grey">
-                <i class="fas fa-heart purple"></i> <%= card[:ps].potential_destination.trip_participant.user.first_name %> has favourited this destination
+                <i class="fas fa-heart purple"></i> <%= card[:ps].potential_destination.trip_participant.user.first_name %> favourited this
               </div>
 
               <div class="p-2">
-                <i class="fas fa-plane"></i> <%= card[:te].flight_mins %> mins
+                <i class="fas fa-plane"></i> <%= min_convert(card[:te].flight_mins) if card[:te] %>
               </div>
 
               <div class="p-2">
